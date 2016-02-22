@@ -10,9 +10,9 @@ using namespace std;
 #include "mge/core/World.hpp"
 #include "mge/behaviours/AbstractBehaviour.hpp"
 
-GameObject::GameObject(std::string pName, glm::vec3 pPosition, GameObject::PhysicsType pPhysicsType )
+GameObject::GameObject(std::string pName, glm::vec3 pPosition, GameObject::PhysicsType pPhysicsType, GameObject::ColliderType pColliderType )
 :	_name( pName ), _transform( glm::translate( pPosition ) ),  _parent(NULL), _children(),
-    _mesh( NULL ), _physicsType(pPhysicsType), _rigidbody(NULL), _animatedbody(NULL),_behaviour( NULL ), _material(NULL), _world(NULL)
+    _mesh( NULL ), _physicsType(pPhysicsType), _colliderType(pColliderType), _rigidbody(NULL), _animatedbody(NULL),_behaviour( NULL ), _material(NULL), _world(NULL)
 {
 }
 
@@ -79,7 +79,9 @@ void GameObject::setMesh(Mesh* pMesh)
 void GameObject::_updatePhysicsBody() {
 
 	neGeometry* geometry;
-	neV3 boxSize;
+	neV3 size;
+	float sphereSize;
+	float capsuleHeight;
 	neV3 pos;
 	neQ rot;
 	glm::vec3 worldPos = this->getWorldPosition();
@@ -105,24 +107,76 @@ void GameObject::_updatePhysicsBody() {
 	switch (_physicsType)
 	{
 	case GameObject::RIGIDBODY:
+		if (_rigidbody != NULL) _world->getPhysics()->FreeRigidBody(_rigidbody);
+
 		_rigidbody = _world->getPhysics()->CreateRigidBody();
 		geometry = _rigidbody->AddGeometry();
-		boxSize.Set(scale[0] * 2.0f, scale[1] * 2.0f, scale[2] * 2.0f);
-		geometry->SetBoxSize(boxSize[0], boxSize[1], boxSize[2]);
-		_rigidbody->UpdateBoundingInfo();
+		
+		switch (_colliderType)
+		{
+		case GameObject::CUBE:
+			size.Set(scale[0] * 2.0f, scale[1] * 2.0f, scale[2] * 2.0f);
+			geometry->SetBoxSize(size[0], size[1], size[2]);
+			_rigidbody->UpdateBoundingInfo();
 
-		_rigidbody->SetInertiaTensor(neBoxInertiaTensor(boxSize[0], boxSize[1], boxSize[2], mass));
-		_rigidbody->SetMass(mass);
+			_rigidbody->SetInertiaTensor(neBoxInertiaTensor(size[0], size[1], size[2], mass));
+			_rigidbody->SetMass(mass);
+			break;
+		case GameObject::SPHERE:
+			sphereSize = max(max(scale.x, scale.y), scale.z);
+
+			geometry->SetSphereDiameter(sphereSize);
+			_rigidbody->UpdateBoundingInfo();
+			
+			_rigidbody->SetInertiaTensor(neSphereInertiaTensor(sphereSize, mass));
+			_rigidbody->SetMass(mass);
+			break;
+		case GameObject::CAPSULE:
+			sphereSize = max(scale.x, scale.z);
+			capsuleHeight = scale.y;
+
+			geometry->SetCylinder(sphereSize, capsuleHeight);
+			_rigidbody->UpdateBoundingInfo();
+
+			_rigidbody->SetInertiaTensor(neCylinderInertiaTensor(sphereSize, capsuleHeight, mass));
+			_rigidbody->SetMass(mass);
+			break;
+		}
 		
 		_rigidbody->SetPos(pos);
 		_rigidbody->SetRotation(rot);
+
+		//CollisionCallback callbackInstance;
+		//_rigidbody->AddController(&callbackInstance, 0);
+
 		break;
 	case GameObject::ANIMATEDBODY:
+		if (_animatedbody != NULL) _world->getPhysics()->FreeAnimatedBody(_animatedbody);
+
 		_animatedbody = _world->getPhysics()->CreateAnimatedBody();
 		geometry = _animatedbody->AddGeometry();
-		boxSize.Set(scale[0] * 2.0f, scale[1] * 2.0f, scale[2] * 2.0f);
-		geometry->SetBoxSize(boxSize[0], boxSize[1], boxSize[2]);
-		_animatedbody->UpdateBoundingInfo();
+
+		switch (_colliderType)
+		{
+		case GameObject::CUBE:
+			size.Set(scale[0] * 2.0f, scale[1] * 2.0f, scale[2] * 2.0f);
+			geometry->SetBoxSize(size[0], size[1], size[2]);
+			_animatedbody->UpdateBoundingInfo();
+			break;
+		case GameObject::SPHERE:
+			sphereSize = max(max(scale.x, scale.y), scale.z);
+
+			geometry->SetSphereDiameter(sphereSize);
+			_animatedbody->UpdateBoundingInfo();
+			break;
+		case GameObject::CAPSULE:
+			sphereSize = max(scale.x, scale.z);
+			capsuleHeight = scale.y;
+
+			geometry->SetCylinder(sphereSize, capsuleHeight);
+			_animatedbody->UpdateBoundingInfo();
+			break;
+		}
 
 		_animatedbody->SetPos(pos);
 		_animatedbody->SetRotation(rot);

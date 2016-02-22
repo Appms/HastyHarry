@@ -20,6 +20,14 @@ class Mesh;
  *
  * You will need to alter this class to add colliders etc.
  */
+
+/*class CollisionCallback : public neRigidBodyControllerCallback {
+	public:
+		virtual void RigidBodyControllerCallback(neRigidBodyController * controller) {
+			//controller code goes here.
+		}
+};*/
+
 class GameObject
 {
 	public:
@@ -29,7 +37,11 @@ class GameObject
 			RIGIDBODY, ANIMATEDBODY
 		};
 
-		GameObject(std::string pName = NULL, glm::vec3 pPosition = glm::vec3( 0.0f, 0.0f, 0.0f ),  PhysicsType pPhysicsType = PhysicsType::ANIMATEDBODY);
+		enum ColliderType {
+			CUBE, SPHERE, CAPSULE
+		};
+
+		GameObject(std::string pName = NULL, glm::vec3 pPosition = glm::vec3( 0.0f, 0.0f, 0.0f ),  PhysicsType pPhysicsType = PhysicsType::ANIMATEDBODY, ColliderType pColliderType = ColliderType::SPHERE);
 		virtual ~GameObject();
 
         void setName (std::string pName);
@@ -92,6 +104,7 @@ class GameObject
 
         Mesh* _mesh;
 		PhysicsType _physicsType;
+		ColliderType _colliderType;
 		neRigidBody* _rigidbody;
 		neAnimatedBody* _animatedbody;
 		AbstractBehaviour* _behaviour;
