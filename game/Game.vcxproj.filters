@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de código fuente\mge">
+      <UniqueIdentifier>{f0c0384e-9b05-4245-ab10-ac5167ab0dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\mge\behaviours">
+      <UniqueIdentifier>{bc47a0e7-9b8c-4ed3-a221-d1384702baa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\mge\core">
+      <UniqueIdentifier>{4e75aaca-f294-4975-9fcd-40760740be92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\mge\materials">
+      <UniqueIdentifier>{ce8dfd9f-f0d2-4135-8a2f-8217098f325a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\mge\util">
+      <UniqueIdentifier>{57913ad5-fe66-4a0b-ade7-b5fe42d1dada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\mge">
+      <UniqueIdentifier>{de6b03c7-3de8-4461-a0f9-aec98c4ec3cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\mge\behaviours">
+      <UniqueIdentifier>{d662bb1d-2609-49ce-b6fc-2535b007384c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\mge\core">
+      <UniqueIdentifier>{c3039e9c-73ad-4854-b837-6f82a45fff41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\mge\materials">
+      <UniqueIdentifier>{5fbdecd0-042c-4afe-bc29-a4828ff040ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\mge\util">
+      <UniqueIdentifier>{30087251-0e0f-4253-88d1-e590e249f374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\mge">
+      <UniqueIdentifier>{28e91485-86a7-4d7b-9f6e-90e11cb55b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\mge\assets">
+      <UniqueIdentifier>{bdc7e507-70d3-42a7-93e0-6984d8db14c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\mge\assets\fonts">
+      <UniqueIdentifier>{70c23f2a-fbe6-48ba-b824-664313c3c79d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\mge\assets\models">
+      <UniqueIdentifier>{ba2d6ee4-7226-44b7-ab6a-30ce24daa665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\mge\assets\scripts">
+      <UniqueIdentifier>{a117e854-0038-4136-99b6-34f25d2707f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\mge\assets\textures">
+      <UniqueIdentifier>{774500f7-178e-4b03-8252-1810165092bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\mge\assets\shaders">
+      <UniqueIdentifier>{41a77ddd-89d8-4189-a758-b6d60055a156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\mge\assets\levels">
+      <UniqueIdentifier>{38f922f6-d534-483f-bb39-d48845bffb33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\mge\behaviours\AbstractBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\KeysBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\LookAt.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\RotatingBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\config.hpp">
+      <Filter>Archivos de encabezado\mge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\LightingDemo.hpp">
+      <Filter>Archivos de encabezado\mge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\MGEDemo.hpp">
+      <Filter>Archivos de encabezado\mge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\glm.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\AbstractGame.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\materials\AbstractMaterial.hpp">
+      <Filter>Archivos de encabezado\mge\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\Camera.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\materials\ColorMaterial.hpp">
+      <Filter>Archivos de encabezado\mge\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\util\DebugHud.hpp">
+      <Filter>Archivos de encabezado\mge\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\FPS.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\GameObject.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\Light.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\materials\LitTextureMaterial.hpp">
+      <Filter>Archivos de encabezado\mge\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\Mesh.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\materials\PhongMaterial.hpp">
+      <Filter>Archivos de encabezado\mge\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\materials\PhongNormalMaterial.hpp">
+      <Filter>Archivos de encabezado\mge\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\Renderer.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\ShaderProgram.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\Texture.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\materials\TextureMaterial.hpp">
+      <Filter>Archivos de encabezado\mge\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\Timer.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\World.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\core\Level.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\util\DebugHud.cpp">
+      <Filter>Archivos de código fuente\mge\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\materials\AbstractMaterial.cpp">
+      <Filter>Archivos de código fuente\mge\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\materials\ColorMaterial.cpp">
+      <Filter>Archivos de código fuente\mge\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\LightingDemo.cpp">
+      <Filter>Archivos de código fuente\mge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\MGEDemo.cpp">
+      <Filter>Archivos de código fuente\mge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\AbstractBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\AbstractGame.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\Camera.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\KeysBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\LookAt.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\RotatingBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\FPS.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\GameObject.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\Light.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\Mesh.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\Renderer.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\ShaderProgram.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\Texture.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\Timer.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\World.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\materials\TextureMaterial.cpp">
+      <Filter>Archivos de código fuente\mge\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\materials\PhongMaterial.cpp">
+      <Filter>Archivos de código fuente\mge\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\materials\PhongNormalMaterial.cpp">
+      <Filter>Archivos de código fuente\mge\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\materials\LitTextureMaterial.cpp">
+      <Filter>Archivos de código fuente\mge\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\Level.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\mge\shaders\color.fs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\color.vs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\LitTexture.fs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\LitTexture.vs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\Phong.fs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\Phong.vs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\PhongNormal.fs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\PhongNormal.vs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\texture.fs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\texture.fs.temp">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\shaders\texture.vs">
+      <Filter>Archivos de recursos\mge\assets\shaders</Filter>
+    </None>
+    <None Include="assets\mge\scripts\helloworld.lua">
+      <Filter>Archivos de recursos\mge\assets\scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\mge\fonts\arial.ttf">
+      <Filter>Archivos de recursos\mge\assets\fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\mge\textures\bricks.jpg">
+      <Filter>Archivos de recursos\mge\assets\textures</Filter>
+    </Image>
+    <Image Include="assets\mge\textures\land.jpg">
+      <Filter>Archivos de recursos\mge\assets\textures</Filter>
+    </Image>
+    <Image Include="assets\mge\textures\Normal.png">
+      <Filter>Archivos de recursos\mge\assets\textures</Filter>
+    </Image>
+    <Image Include="assets\mge\textures\Normal2.png">
+      <Filter>Archivos de recursos\mge\assets\textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="assets\mge\levels\level_00.xml">
+      <Filter>Archivos de recursos\mge\assets\levels</Filter>
+    </Xml>
+    <Xml Include="assets\mge\levels\Level_01.xml">
+      <Filter>Archivos de recursos\mge\assets\levels</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C304EF9-8954-4ECE-9EFD-DE01C192E64D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>game</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../tokamak/src;../game/src;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-system-d.lib;sfml-window-d.lib;opengl32.lib;tokamak_d.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\glm.hpp" />
+    <ClInclude Include="src\mge\behaviours\AbstractBehaviour.hpp" />
+    <ClInclude Include="src\mge\behaviours\KeysBehaviour.hpp" />
+    <ClInclude Include="src\mge\behaviours\LookAt.hpp" />
+    <ClInclude Include="src\mge\behaviours\RotatingBehaviour.hpp" />
+    <ClInclude Include="src\mge\config.hpp" />
+    <ClInclude Include="src\mge\core\AbstractGame.hpp" />
+    <ClInclude Include="src\mge\core\Camera.hpp" />
+    <ClInclude Include="src\mge\core\FPS.hpp" />
+    <ClInclude Include="src\mge\core\GameObject.hpp" />
+    <ClInclude Include="src\mge\core\Level.hpp" />
+    <ClInclude Include="src\mge\core\Light.hpp" />
+    <ClInclude Include="src\mge\core\Mesh.hpp" />
+    <ClInclude Include="src\mge\core\Renderer.hpp" />
+    <ClInclude Include="src\mge\core\ShaderProgram.hpp" />
+    <ClInclude Include="src\mge\core\Texture.hpp" />
+    <ClInclude Include="src\mge\core\Timer.hpp" />
+    <ClInclude Include="src\mge\core\World.hpp" />
+    <ClInclude Include="src\mge\LightingDemo.hpp" />
+    <ClInclude Include="src\mge\materials\AbstractMaterial.hpp" />
+    <ClInclude Include="src\mge\materials\ColorMaterial.hpp" />
+    <ClInclude Include="src\mge\materials\LitTextureMaterial.hpp" />
+    <ClInclude Include="src\mge\materials\PhongMaterial.hpp" />
+    <ClInclude Include="src\mge\materials\PhongNormalMaterial.hpp" />
+    <ClInclude Include="src\mge\materials\TextureMaterial.hpp" />
+    <ClInclude Include="src\mge\MGEDemo.hpp" />
+    <ClInclude Include="src\mge\util\DebugHud.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mge\behaviours\AbstractBehaviour.cpp" />
+    <ClCompile Include="src\mge\behaviours\KeysBehaviour.cpp" />
+    <ClCompile Include="src\mge\behaviours\LookAt.cpp" />
+    <ClCompile Include="src\mge\behaviours\RotatingBehaviour.cpp" />
+    <ClCompile Include="src\mge\core\AbstractGame.cpp" />
+    <ClCompile Include="src\mge\core\Camera.cpp" />
+    <ClCompile Include="src\mge\core\FPS.cpp" />
+    <ClCompile Include="src\mge\core\GameObject.cpp" />
+    <ClCompile Include="src\mge\core\Level.cpp" />
+    <ClCompile Include="src\mge\core\Light.cpp" />
+    <ClCompile Include="src\mge\core\Mesh.cpp" />
+    <ClCompile Include="src\mge\core\Renderer.cpp" />
+    <ClCompile Include="src\mge\core\ShaderProgram.cpp" />
+    <ClCompile Include="src\mge\core\Texture.cpp" />
+    <ClCompile Include="src\mge\core\Timer.cpp" />
+    <ClCompile Include="src\mge\core\World.cpp" />
+    <ClCompile Include="src\mge\LightingDemo.cpp" />
+    <ClCompile Include="src\mge\materials\AbstractMaterial.cpp" />
+    <ClCompile Include="src\mge\materials\ColorMaterial.cpp" />
+    <ClCompile Include="src\mge\materials\LitTextureMaterial.cpp" />
+    <ClCompile Include="src\mge\materials\PhongMaterial.cpp" />
+    <ClCompile Include="src\mge\materials\PhongNormalMaterial.cpp" />
+    <ClCompile Include="src\mge\materials\TextureMaterial.cpp" />
+    <ClCompile Include="src\mge\MGEDemo.cpp" />
+    <ClCompile Include="src\mge\util\DebugHud.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\mge\scripts\helloworld.lua" />
+    <None Include="assets\mge\shaders\color.fs" />
+    <None Include="assets\mge\shaders\color.vs" />
+    <None Include="assets\mge\shaders\LitTexture.fs" />
+    <None Include="assets\mge\shaders\LitTexture.vs" />
+    <None Include="assets\mge\shaders\Phong.fs" />
+    <None Include="assets\mge\shaders\Phong.vs" />
+    <None Include="assets\mge\shaders\PhongNormal.fs" />
+    <None Include="assets\mge\shaders\PhongNormal.vs" />
+    <None Include="assets\mge\shaders\texture.fs" />
+    <None Include="assets\mge\shaders\texture.fs.temp" />
+    <None Include="assets\mge\shaders\texture.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\mge\fonts\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\mge\textures\bricks.jpg" />
+    <Image Include="assets\mge\textures\land.jpg" />
+    <Image Include="assets\mge\textures\Normal.png" />
+    <Image Include="assets\mge\textures\Normal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="assets\mge\levels\level_00.xml" />
+    <Xml Include="assets\mge\levels\Level_01.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

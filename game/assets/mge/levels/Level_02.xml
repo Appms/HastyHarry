@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level>
+	<gameobjects>
+		<gameobject>
+			<name>Floor (6)</name>
+			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 51.58, -45.4, 0, 0, 0, 1</transform>
+			<istrigger>True</istrigger>
+			<collidercenter>0.0, 0.0, 0.0</collidercenter>
+			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0.006896496, 1</materialparams>
+			<behaviour />
+		</gameobject>
+	</gameobjects>
+	<lights />
+</level>
