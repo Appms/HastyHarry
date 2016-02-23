@@ -1,11 +1,18 @@
 #include "mge/behaviours/KeysBehaviour.hpp"
 #include "mge/core/GameObject.hpp"
+#include "mge/config.hpp"
 
 #include <sfml/window/event.hpp>
 #include <iostream>
 
-KeysBehaviour::KeysBehaviour(float moveSpeed, float turnSpeed): AbstractBehaviour(), _moveSpeed(moveSpeed), _turnSpeed(turnSpeed)
+KeysBehaviour::KeysBehaviour(float moveSpeed, float turnSpeed, std::string pSoundName): AbstractBehaviour(), _moveSpeed(moveSpeed), _turnSpeed(turnSpeed)
 {
+	if (!_soundBuffer.loadFromFile(pSoundName)) {
+		std::cout << "ERROR: Jumping sound failed to load" << std::endl;
+	}
+	else {
+		_jumpingSound.setBuffer(_soundBuffer);
+	}
 }
 
 KeysBehaviour::~KeysBehaviour()
@@ -37,6 +44,7 @@ void KeysBehaviour::update( float pStep )
 			jumpVelocity[1] += _moveSpeed;
 
 			rb->SetVelocity(jumpVelocity);
+			_jumpingSound.play();
 		}
 	}
 

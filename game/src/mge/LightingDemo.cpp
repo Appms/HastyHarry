@@ -74,14 +74,14 @@ void LightingDemo::_initializeScene()
 	
 	//SCENE SETUP
 
-	Level::Load("Level_01.xml", _world);
+	//Level::Load("Level_01.xml", _world);
 
-	/*for (int i = 0; i < 50; i++) {
+	for (int i = 0; i < 50; i++) {
 		float rx = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 		float ry = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 		float rz = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 
-		GameObject* cube = new GameObject("teapot", glm::vec3(-3.0f + rx * 6.0f, 3.0f + (float)(i % 3), -3.0f + rz * 6.0f), GameObject::PhysicsType::RIGIDBODY);
+		GameObject* cube = new GameObject("teapot", glm::vec3(-3.0f + rx * 6.0f, 3.0f + (float)(i % 3), -3.0f + rz * 6.0f), GameObject::PhysicsType::RIGIDBODY, GameObject::ColliderType::CUBE);
 		_world->add(cube);
 		cube->scale(glm::vec3(0.2 + rx * 0.2f, 0.2 + ry * 0.2f, 0.2 + rz * 0.2f));
 		cube->setMesh(cubeMeshF);
@@ -89,18 +89,20 @@ void LightingDemo::_initializeScene()
 		//cube->setBehaviour(new KeysBehaviour());
 	}
 
-    GameObject* plane = new GameObject ("plane", glm::vec3(0,0,0), GameObject::PhysicsType::ANIMATEDBODY);
+    GameObject* plane = new GameObject ("plane", glm::vec3(0,0,0), GameObject::PhysicsType::ANIMATEDBODY, GameObject::ColliderType::CUBE);
 	_world->add(plane);
 	plane->scale(glm::vec3(20,1,20));
     plane->setMesh(planeMeshDefault);
-    plane->setMaterial(phongNormalMaterial);*/
+    plane->setMaterial(phongNormalMaterial);
 
-    GameObject* teapot = new GameObject ("teapot", glm::vec3(-35, 125, -50), GameObject::PhysicsType::RIGIDBODY);
+    GameObject* teapot = new GameObject ("teapot", glm::vec3(0, 10, 0), GameObject::PhysicsType::RIGIDBODY, GameObject::ColliderType::CAPSULE);
 	_world->add(teapot);
 	teapot->scale(glm::vec3(0.2, 0.2, 0.2));
 	teapot->setMesh (teapotMeshS);
     teapot->setMaterial(phongNormalMaterial);
-    teapot->setBehaviour (new KeysBehaviour());
+    teapot->setBehaviour (new KeysBehaviour(5.0f, 45.0f, config::MGE_AUDIO_PATH + "jump.wav"));
+	sf::Listener::setPosition(0, 10, 0);
+	sf::Listener::setDirection(0,0,1);
 
     /*GameObject* monkey = new GameObject ("monkey", glm::vec3(0,8,0), GameObject::PhysicsType::RIGIDBODY);
 	_world->add(monkey);
@@ -113,7 +115,8 @@ void LightingDemo::_initializeScene()
     _world->add(light);
     _world->setLights(light);
 
-    Camera* camera = new Camera ("camera", glm::vec3(-32,125,-53));
+    //Camera* camera = new Camera ("camera", glm::vec3(-32,125,-53));
+	Camera* camera = new Camera("camera", glm::vec3(0, 10, 10));
     camera->rotate(glm::radians(-40.0f), glm::vec3(1,0,0));
     camera->setBehaviour(new LookAt (teapot));
 	//camera->setBehaviour(new KeysBehaviour());
