@@ -153,9 +153,6 @@
     <ClInclude Include="src\mge\behaviours\PlayerBehaviour.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
-    <ClInclude Include="src\mge\core\Player.hpp">
-      <Filter>Archivos de encabezado\mge\core</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -238,9 +235,6 @@
     </ClCompile>
     <ClCompile Include="src\mge\behaviours\PlayerBehaviour.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
-    </ClCompile>
-    <ClCompile Include="src\mge\core\Player.cpp">
-      <Filter>Archivos de código fuente\mge\core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

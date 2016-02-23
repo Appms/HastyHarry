@@ -164,7 +164,6 @@
     <ClInclude Include="src\mge\core\Level.hpp" />
     <ClInclude Include="src\mge\core\Light.hpp" />
     <ClInclude Include="src\mge\core\Mesh.hpp" />
-    <ClInclude Include="src\mge\core\Player.hpp" />
     <ClInclude Include="src\mge\core\Renderer.hpp" />
     <ClInclude Include="src\mge\core\ShaderProgram.hpp" />
     <ClInclude Include="src\mge\core\Texture.hpp" />
@@ -194,7 +193,6 @@
     <ClCompile Include="src\mge\core\Level.cpp" />
     <ClCompile Include="src\mge\core\Light.cpp" />
     <ClCompile Include="src\mge\core\Mesh.cpp" />
-    <ClCompile Include="src\mge\core\Player.cpp" />
     <ClCompile Include="src\mge\core\Renderer.cpp" />
     <ClCompile Include="src\mge\core\ShaderProgram.cpp" />
     <ClCompile Include="src\mge\core\Texture.cpp" />

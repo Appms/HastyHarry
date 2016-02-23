@@ -12,7 +12,7 @@ using namespace std;
 #include "mge/core/Camera.hpp"
 #include "mge/core/Light.hpp"
 
-#include "mge/core/Player.hpp"
+//#include "mge/core/Player.hpp"
 
 #include "mge/core/GameObject.hpp"
 #include "mge/materials/AbstractMaterial.hpp"
@@ -56,8 +56,8 @@ void LightingDemo::_initializeScene()
     Camera* camera = new Camera ("camera", glm::vec3(0,0,0));
     _world->setMainCamera(camera);
 
-	Player* player = new Player(_world, glm::vec3(0, 0, 0));
-	player->setBehaviour(new PlayerBehaviour(camera, 1, 1, 5));
+	//Player* player = new Player(_world, glm::vec3(0, 0, 0));
+	//player->setBehaviour(new PlayerBehaviour(camera, 1, 1, 5));
 }
 
 void LightingDemo::_render() {
