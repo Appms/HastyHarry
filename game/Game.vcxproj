@@ -154,6 +154,7 @@
     <ClInclude Include="src\mge\behaviours\AbstractBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\KeysBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\LookAt.hpp" />
+    <ClInclude Include="src\mge\behaviours\PlayerBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\RotatingBehaviour.hpp" />
     <ClInclude Include="src\mge\config.hpp" />
     <ClInclude Include="src\mge\core\AbstractGame.hpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="src\mge\core\Level.hpp" />
     <ClInclude Include="src\mge\core\Light.hpp" />
     <ClInclude Include="src\mge\core\Mesh.hpp" />
+    <ClInclude Include="src\mge\core\Player.hpp" />
     <ClInclude Include="src\mge\core\Renderer.hpp" />
     <ClInclude Include="src\mge\core\ShaderProgram.hpp" />
     <ClInclude Include="src\mge\core\Texture.hpp" />
@@ -183,6 +185,7 @@
     <ClCompile Include="src\mge\behaviours\AbstractBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\KeysBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\LookAt.cpp" />
+    <ClCompile Include="src\mge\behaviours\PlayerBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\RotatingBehaviour.cpp" />
     <ClCompile Include="src\mge\core\AbstractGame.cpp" />
     <ClCompile Include="src\mge\core\Camera.cpp" />
@@ -191,6 +194,7 @@
     <ClCompile Include="src\mge\core\Level.cpp" />
     <ClCompile Include="src\mge\core\Light.cpp" />
     <ClCompile Include="src\mge\core\Mesh.cpp" />
+    <ClCompile Include="src\mge\core\Player.cpp" />
     <ClCompile Include="src\mge\core\Renderer.cpp" />
     <ClCompile Include="src\mge\core\ShaderProgram.cpp" />
     <ClCompile Include="src\mge\core\Texture.cpp" />
@@ -232,6 +236,8 @@
   <ItemGroup>
     <Xml Include="assets\mge\levels\level_00.xml" />
     <Xml Include="assets\mge\levels\Level_01.xml" />
+    <Xml Include="assets\mge\levels\Level_02.xml" />
+    <Xml Include="assets\mge\levels\Level_03.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

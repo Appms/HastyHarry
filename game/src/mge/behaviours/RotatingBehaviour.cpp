@@ -1,9 +1,15 @@
 #include "mge/behaviours/RotatingBehaviour.hpp"
 #include "mge/core/GameObject.hpp"
 
-RotatingBehaviour::RotatingBehaviour():AbstractBehaviour()
+RotatingBehaviour::RotatingBehaviour(float anglePerSec) :AbstractBehaviour()
 {
-	//ctor
+	_anglePerSec = anglePerSec;
+}
+
+RotatingBehaviour::RotatingBehaviour(std::string params) : AbstractBehaviour()
+{
+	std::cout << params << std::endl;
+	_anglePerSec = atof(params.c_str());
 }
 
 RotatingBehaviour::~RotatingBehaviour()
@@ -11,7 +17,7 @@ RotatingBehaviour::~RotatingBehaviour()
 	//dtor
 }
 
-void RotatingBehaviour::update( float step )
+void RotatingBehaviour::update(float step)
 {
-	_owner->rotate( step * glm::radians(45.0f), glm::vec3( 1.0f, 1.0f, 0.0f ) ); // rotates 45° per second
+	_owner->rotate(step * glm::radians(_anglePerSec), glm::vec3(1.0f, 1.0f, 0.0f)); // rotates 45° per second
 }

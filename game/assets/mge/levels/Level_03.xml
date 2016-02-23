@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level>
+	<gameobjects>
+		<gameobject>
+			<id>510221a0-59c9-474c-9dfd-180ad43ff523</id>
+			<name>Cube 3</name>
+			<parentid />
+			<transform>1, 0, 0, 1, 0, 1, 0, -1.5, 0, 0, 1, -2, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname />
+			<behaviourparams />
+		</gameobject>
+		<gameobject>
+			<id>4d87db5a-a525-46b4-9e29-eca527263653</id>
+			<name>Cube 2</name>
+			<parentid />
+			<transform>1, 0, 0, -1, 0, 1, 0, -1.5, 0, 0, 1, -2, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname />
+			<behaviourparams />
+		</gameobject>
+		<gameobject>
+			<id>de509dac-5401-4bbd-9bbb-7d2db7fe09ba</id>
+			<name>Cube 1</name>
+			<parentid />
+			<transform>1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0, 1, -2, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname />
+			<behaviourparams />
+		</gameobject>
+		<gameobject>
+			<id>8d65bd4f-f0c9-4b56-8439-b89668bdbc48</id>
+			<name>Plane 1</name>
+			<parentid />
+			<transform>1, 0, 0, 0, 0, 1, 0, -2, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Plane</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname />
+			<behaviourparams />
+		</gameobject>
+	</gameobjects>
+	<lights>
+		<light>
+			<name>Directional Light</name>
+			<position>0.0, 3.0, 0.0</position>
+			<rotation>50.0, 330.0, 0.0</rotation>
+			<type>Directional</type>
+			<color>1.0, 1.0, 0.8, 1.0</color>
+			<range>10</range>
+			<intensity>1</intensity>
+			<coneAngle>30</coneAngle>
+		</light>
+	</lights>
+</level>
