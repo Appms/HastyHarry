@@ -97,6 +97,9 @@ class GameObject
         int getChildCount();
         GameObject* getChildAt (int pIndex);
 
+		std::string UniqueId;
+		std::string UniqueParentId;
+
 	protected:
 		std::string _name;
 		glm::mat4 _transform;
