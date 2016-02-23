@@ -1,7 +1,9 @@
 #ifndef PLAYERBEHAVIOUR_H
 #define PLAYERBEHAVIOUR_H
 
+#include <glm.hpp>
 #include "mge/behaviours/AbstractBehaviour.hpp"
+#include "..\..\include\tokamak.h"
 
 class Camera;
 /**
@@ -14,7 +16,8 @@ public:
 	PlayerBehaviour(Camera* pCamera, float pWalkSpeed, float pRotateSpeed, float pJumpForce);
 	virtual ~PlayerBehaviour();
 	virtual void update(float step);
-
+	neV3 toTokamak(glm::vec3 v);
+	glm::vec3 toGLM(neV3 v);
 private:
 	float _walkSpeed;
 	float _rotateSpeed;

@@ -36,6 +36,7 @@ void KeysBehaviour::update( float pStep )
 		turnSpeed = +_turnSpeed;
 	}
 
+	/*
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 		if (!_jumping) {
 			neRigidBody * rb = _owner->getRigidBody();
@@ -48,6 +49,7 @@ void KeysBehaviour::update( float pStep )
 			_jumpingSound.play();
 		}
 	}
+	*/
 
 	if (_owner->getRigidBody()->GetVelocity().Y() <= (f32)1.0f) _jumping = false;
 	else _jumping = true;

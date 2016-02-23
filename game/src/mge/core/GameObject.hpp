@@ -44,7 +44,7 @@ class GameObject
 			CUBE, SPHERE, CAPSULE
 		};
 
-		GameObject(std::string pName = NULL, glm::vec3 pPosition = glm::vec3( 0.0f, 0.0f, 0.0f ),  PhysicsType pPhysicsType = PhysicsType::ANIMATEDBODY, ColliderType pColliderType = ColliderType::SPHERE);
+		GameObject(std::string pName = NULL, glm::vec3 pPosition = glm::vec3( 0.0f, 0.0f, 0.0f ),  PhysicsType pPhysicsType = PhysicsType::ANIMATEDBODY, ColliderType pColliderType = ColliderType::CUBE);
 		virtual ~GameObject();
 
         void setName (std::string pName);
@@ -100,6 +100,9 @@ class GameObject
 		std::string UniqueId;
 		std::string UniqueParentId;
 
+		//TODO add function to parse collider information from unity
+		void SetPlayerPhysics();
+		neRigidBody* GetRigidBody();
 	protected:
 		std::string _name;
 		glm::mat4 _transform;
