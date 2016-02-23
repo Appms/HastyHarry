@@ -2,2469 +2,1807 @@
 <level>
 	<gameobjects>
 		<gameobject>
-			<name>Floor (36)</name>
-			<transform>0, 0, 7, -209.3, 1, 0, 0, 84.03, 0, 12, 0, -25.7, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>04c1e404-a175-4eec-9548-48863874fb79</id>
+			<name>Cube (6)</name>
+			<parentid>1be99d9e-492b-4e04-9088-70386083ded4</parentid>
+			<transform>1, 0, 0, 8.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (150)</name>
-			<transform>0, 0, 7, -157.4, 0, 6, 0, 87.53, -1, 0, 0, -20.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>83b257cf-b4f0-41d1-bd00-104ce1ee328f</id>
+			<name>Cube (7)</name>
+			<parentid>fe80bc40-ceff-488a-a2e8-42a8fa0857a6</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -10, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (149)</name>
-			<transform>0, 0, 7, -137.4, 0, 6, 0, 87.53, -1, 0, 0, -20.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>9c64fcc4-7e32-4948-aa79-875f7f5f2cd8</id>
+			<name>Cube (3)</name>
+			<parentid>f5294887-719a-4bb8-a80c-7078f24c6082</parentid>
+			<transform>1, 0, 0, 13.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (155)</name>
-			<transform>0, 0, 7, -197.4, 0, 6, 0, 87.53, -1, 0, 0, -20.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>814dcd90-8d63-461a-b1b5-ac5a6d06b5b2</id>
+			<name>Cube (10)</name>
+			<parentid>dc133cb9-25f2-45c1-875a-6cb9ccf7f741</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 23.75, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Spike (1)</name>
-			<transform>0, 0, 7, -89.43, 1, 0, 0, 84.03, 0, 12, 0, -37.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname />
-			<materialparams />
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Spike (2)</name>
-			<transform>0, 0, 7, -96.43, 1, 0, 0, 84.03, 0, 12, 0, -37.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname />
-			<materialparams />
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (156)</name>
-			<transform>0, 0, 7, -187.4, 0, 6, 0, 87.53, -1, 0, 0, -30.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Spike (3)</name>
-			<transform>0, 0, 7, -89.43, 1, 0, 0, 84.03, 0, 12, 0, -25.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname />
-			<materialparams />
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (151)</name>
-			<transform>0, 0, 7, -147.4, 0, 6, 0, 87.53, -1, 0, 0, -30.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (153)</name>
-			<transform>0, 0, 7, -167.4, 0, 6, 0, 87.53, -1, 0, 0, -30.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (154)</name>
-			<transform>0, 0, 7, -177.4, 0, 6, 0, 87.53, -1, 0, 0, -20.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (147)</name>
-			<transform>0, 0, 7, -127.4, 0, 6, 0, 87.53, -1, 0, 0, -30.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (103)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 111.53, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (152)</name>
-			<transform>0, 0, 7, -110.4, 0, 6, 0, 87.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (91)</name>
-			<transform>0, 0, 7, -89.7361, 0, 6, 0, 121.4809, -1, 0, 0, -20.4154, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (14)</name>
-			<transform>0, 0, 7, -50.0961, 1, 0, 0, 114.0308, 0, 12, 0, 17.8246, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (65)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 127.4908, 0, 0, 7, -12.4954, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (35)</name>
-			<transform>1, 0, 0, -99.4261, 0, 0, -7, 130.0308, 0, 12, 0, 29.8446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (41)</name>
-			<transform>0, 0, 7, -88.7361, 0, 6, 0, 117.5308, -1, 0, 0, 31.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (11)</name>
-			<transform>0, 0, 7, -43.4061, 1, 0, 0, 114.0308, 0, 12, 0, 17.8246, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (87)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 117.5308, 0, 0, 7, -24.3354, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (70)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 117.5308, 0, 0, 7, -36.2054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (6)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -39.3554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (24)</name>
-			<transform>0, 0, 7, -36.4361, 0, 6, 0, 117.5308, -1, 0, 0, 24.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (31)</name>
-			<transform>0, 0, 7, -96.43, 1, 0, 0, 84.03, 0, 12, 0, -25.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (143)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 87.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (3)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -25.3554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -67.2054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (112)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 105.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (72)</name>
-			<transform>1, 0, 0, -86.4561, 0, 6, 0, 127.4908, 0, 0, 7, -36.1054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (83)</name>
-			<transform>0, 0, 7, -89.7361, 0, 6, 0, 117.5308, -1, 0, 0, -40.0254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (116)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 99.53, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (22)</name>
-			<transform>0, 0, 7, -96.4261, 1, 0, 0, 114.0308, 0, 12, 0, -33.7254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (49)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 123.5308, 0, 0, 7, 20.3846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (24)</name>
-			<transform>0, 0, 7, -96.43, 1, 0, 0, 108.0308, 0, 12, 0, -25.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (15)</name>
-			<transform>0, 0, 7, -83.6661, 1, 0, 0, 114.0308, 0, 12, 0, 17.8246, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (46)</name>
-			<transform>0, 0, 7, -70.9961, 0, 6, 0, 117.5308, -1, 0, 0, 31.3446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (60)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 127.4908, 0, 0, 7, -24.2554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (82)</name>
-			<transform>0, 0, 7, -95.4061, 0, 6, 0, 117.5308, -1, 0, 0, -40.0254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (6)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -25.5454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (25)</name>
-			<transform>0, 0, 7, -96.4261, 1, 0, 0, 114.0308, 0, 12, 0, -45.7254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (96)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 129.5308, 0, 0, 7, 13.3846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (2)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -46.3354, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (33)</name>
-			<transform>0, 0, 7, -117.43, 1, 0, 0, 84.03, 0, 12, 0, -25.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (124)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 93.53, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (108)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 105.53, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (13)</name>
-			<transform>0, -12, 0, -92.9661, 1, 0, 0, 123.9708, 0, 0, 7, -5.6054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (43)</name>
-			<transform>0, 0, 7, -95.4061, 0, 6, 0, 123.4908, -1, 0, 0, 31.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (110)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 105.53, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (137)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 87.5, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (33)</name>
-			<transform>0, 0, 7, -76.7261, 1, 0, 0, 114.0308, 0, 12, 0, 29.8446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (122)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 93.53, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (103)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 121.4908, 0, 0, 7, 11.5846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (30)</name>
-			<transform>0, 0, 7, -95.4261, 1, 0, 0, 114.0308, 0, 12, 0, 29.8446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (61)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 127.4908, 0, 0, 7, -24.2554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (66)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 127.4908, 0, 0, 7, -31.1454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (2)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -53.2054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (148)</name>
-			<transform>0, 0, 7, -117.4, 0, 6, 0, 87.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (101)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 117.5308, 0, 0, 7, 27.3846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (44)</name>
-			<transform>0, 0, 7, -88.7361, 0, 6, 0, 123.4809, -1, 0, 0, 31.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (79)</name>
-			<transform>0, 0, 7, -89.7361, 0, 6, 0, 127.4308, -1, 0, 0, -40.0254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (9)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -32.5254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (115)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 105.53, 0, 0, 7, -24.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (99)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 111.53, 0, 0, 7, -24.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (32)</name>
-			<transform>0, 0, 7, -69.8661, 1, 0, 0, 114.0308, 0, 12, 0, 29.8446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (105)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 111.53, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Trap/Obstacle (4)</name>
-			<transform>0, 0, 1, -93.4061, 0, 1, 0, 123.9308, -12, 0, 0, -14.9754, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>4bca519a-09bf-468c-94b8-352ef72b4b37</id>
+			<name>Cube (1)</name>
+			<parentid>65630e20-969b-4518-863b-580f88bea60a</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -2.5, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
 			<materialparams>1, 0, 0</materialparams>
-			<behaviour />
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (12)</name>
-			<transform>0, -12, 0, -92.9661, 1, 0, 0, 123.9708, 0, 0, 7, 1.3746, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>216a82ef-787a-4ffd-9fb2-96bc7f6af69a</id>
+			<name>Cube (3)</name>
+			<parentid>b27e30f1-59ea-42ee-b8ad-e910cfdc7179</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -15, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (102)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 111.53, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>26264236-8fde-4a58-9223-ab006bffc43d</id>
+			<name>Cube (6)</name>
+			<parentid>2fa9f555-6050-40bd-96da-cf75a96fcaaf</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -18.75, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (34)</name>
-			<transform>0, 0, 7, -63.9561, 0, 6, 0, 117.5308, -1, 0, 0, 11.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (10)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, 20.4246, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (39)</name>
-			<transform>0, 0, 7, -77.8061, 0, 6, 0, 117.5308, -1, 0, 0, 11.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (105)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 115.4908, 0, 0, 7, 18.5846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Trap/Obstacle (3)</name>
-			<transform>12, 0, 0, -34.0361, 0, 0, -1, 113.1408, 0, 7, 0, -0.0454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.0, 1.0, 1.0</collidersize>
+			<id>f5294887-719a-4bb8-a80c-7078f24c6082</id>
+			<name>Cube (9)</name>
+			<parentid>3d022ae7-245c-4fe3-ac75-d102f5db7145</parentid>
+			<transform>1, 0, 0, 12.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
 			<materialparams>1, 0, 0</materialparams>
-			<behaviour />
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (84)</name>
-			<transform>1, 0, 0, -86.4461, 0, 6, 0, 117.5308, 0, 0, 7, -24.3354, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (59)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 127.4908, 0, 0, 7, -5.6254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (8)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -18.6054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (10)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -32.5154, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (88)</name>
-			<transform>0, 0, 7, -89.7361, 0, 6, 0, 117.5308, -1, 0, 0, -20.4154, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (120)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 99.53, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (98)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 117.5308, 0, 0, 7, 13.3846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (97)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 111.53, -1, 0, 0, -20.4154, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (102)</name>
-			<transform>-1, 0, 0, -66.9961, 0, 6, 0, 117.5308, 0, 0, -7, 28.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (22)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, 13.4446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (129)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 99.53, 0, 0, 7, -24.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (97)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 123.5308, 0, 0, 7, 13.3846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (119)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 99.53, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (141)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 93.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (13)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -7.0954, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (131)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 99.53, 0, 0, 7, -24.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (54)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 127.4908, 0, 0, 7, -0.3554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (34)</name>
-			<transform>0, -12, 0, -93.0261, 7, 0, 0, 116.4908, 0, 0, 14, 15.3046, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (27)</name>
-			<transform>0, 0, 7, -96.43, 1, 0, 0, 108.0308, 0, 12, 0, -37.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (29)</name>
-			<transform>0, 0, 7, -90.6061, 1, 0, 0, 114.0308, 0, 12, 0, 29.8446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (109)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 105.53, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (107)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 105.53, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (32)</name>
-			<transform>0, 0, 7, -57.4361, 0, 6, 0, 117.5308, -1, 0, 0, 11.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -60.2054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (24)</name>
-			<transform>0, 0, 7, -89.4261, 1, 0, 0, 114.0308, 0, 12, 0, -45.7254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (51)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 127.4908, 0, 0, 7, -0.3554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (45)</name>
-			<transform>0, 0, 7, -83.5361, 0, 6, 0, 117.5308, -1, 0, 0, 31.3446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (5)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -25.5454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (1)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -46.2054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (76)</name>
-			<transform>1, 0, 0, -86.4461, 0, 6, 0, 117.5308, 0, 0, 7, -31.2454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (28)</name>
-			<transform>0, -12, 0, -92.9661, 1, 0, 0, 129.9708, 0, 0, 7, -29.6254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (104)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 115.4908, 0, 0, 7, 11.5846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (26)</name>
-			<transform>0, 0, 7, -89.43, 1, 0, 0, 108.0308, 0, 12, 0, -37.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (69)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 121.4608, 0, 0, 7, -36.1054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (14)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -7.0854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (90)</name>
-			<transform>0, 0, 7, -95.4061, 0, 6, 0, 121.4908, -1, 0, 0, -20.4154, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (27)</name>
-			<transform>0, 0, 7, -38.5161, 0, 6, 0, 117.5308, -1, 0, 0, 24.3646, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (104)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 111.53, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (100)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 111.53, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (26)</name>
-			<transform>0, -12, 0, -92.9661, 0, 0, -7, 126.9708, 1, 0, 0, -27.2754, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (17)</name>
-			<transform>0, 0, 7, -69.8661, 1, 0, 0, 114.0308, 0, 12, 0, 17.8246, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (81)</name>
-			<transform>0, 0, 7, -95.4061, 0, 6, 0, 121.4908, -1, 0, 0, -40.0254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (133)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 87.5, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (125)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 93.53, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (21)</name>
-			<transform>0, -12, 0, -92.9661, 1, 0, 0, 123.9708, 0, 0, 7, -24.6554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Trap/Obstacle</name>
-			<transform>10, 0, 0, -34.0361, 0, 1, 0, 115.0208, 0, 0, 1, -53.2854, 0, 0, 0, 1</transform>
-			<istrigger />
-			<collidercenter />
-			<collidersize />
+			<id>b235d3cb-b7cf-4b52-a281-363e75f91473</id>
+			<name>Cube (5)</name>
+			<parentid>c8af1afd-e25c-4b57-b112-899b082252b2</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -7.5, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
 			<materialparams>1, 0, 0</materialparams>
-			<behaviour />
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (57)</name>
-			<transform>0, 0, 7, -95.4061, 0, 6, 0, 129.4408, -1, 0, 0, 31.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>1fd3af80-344c-42ac-bc06-d724793ea106</id>
+			<name>Cube (4)</name>
+			<parentid>a3c282a0-1d1d-4233-80a2-22e89ef33baa</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -16.25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (48)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 117.5308, 0, 0, 7, 20.3846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (35)</name>
-			<transform>0, 0, 7, -70.9361, 0, 6, 0, 117.5308, -1, 0, 0, 11.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (101)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 111.53, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (95)</name>
-			<transform>0, 0, 4, -88.8761, 0, 6, 0, 117.5308, -1, 0, 0, -27.2854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (127)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 93.53, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (12)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -39.4654, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (56)</name>
-			<transform>0, 0, 7, -88.7361, 0, 6, 0, 129.4308, -1, 0, 0, 31.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (16)</name>
-			<transform>0, 0, 7, -76.7261, 1, 0, 0, 114.0308, 0, 12, 0, 17.8246, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (67)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 117.5308, 0, 0, 7, -31.2454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (30)</name>
-			<transform>0, 0, 7, -50.4961, 0, 6, 0, 117.5308, -1, 0, 0, 24.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -60.2554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Trap/Obstacle (2)</name>
-			<transform>12, 0, 0, -34.0361, 0, 0, -1, 113.1408, 0, 4.5, 0, -12.6254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.0, 1.0, 1.5</collidersize>
+			<id>4a3dffdd-6a52-4ab7-a91e-499ec1e6911d</id>
+			<name>Cube (5)</name>
+			<parentid>3cb44055-29ff-4a26-a0a3-d0eb47bafe0d</parentid>
+			<transform>1, 0, 0, -17.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
 			<materialparams>1, 0, 0</materialparams>
-			<behaviour />
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (31)</name>
-			<transform>0, 0, 7, -57.4961, 0, 6, 0, 117.5308, -1, 0, 0, 24.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>59bfc4ca-4a0f-4195-80c8-ceac8dae3c4c</id>
+			<name>Cube (3)</name>
+			<parentid>6be3d17b-b039-48f0-81b8-933b41bd3e1e</parentid>
+			<transform>1, 0, 0, -5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (118)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 99.53, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>7bd72e4e-9b9c-4815-b179-8c93d405a937</id>
+			<name>Cube (8)</name>
+			<parentid>acd70065-725c-40cb-9daa-6772a3117245</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 21.25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (142)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 87.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>9693bd0e-9ce5-4fc8-a55f-25b334ffad45</id>
+			<name>Cube (3)</name>
+			<parentid>1279a3df-bf7a-4422-b59f-29187cb1e17c</parentid>
+			<transform>1, 0, 0, -5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -67.2054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (55)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 127.4908, 0, 0, 7, 13.5846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (130)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 93.53, 0, 0, 7, -24.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (138)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 99.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (11)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -39.4654, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (25)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, 8.3146, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (86)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 121.4608, 0, 0, 7, -24.2354, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (132)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 87.5, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -60.2654, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (15)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -14.0354, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (47)</name>
-			<transform>0, 0, 7, -77.8661, 0, 6, 0, 117.5308, -1, 0, 0, 31.3446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (18)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -0.1554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (27)</name>
-			<transform>0, -12, 0, -92.9661, 1, 0, 0, 129.9708, 0, 0, 7, -36.6054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (145)</name>
-			<transform>0, 0, 7, -103.41, 0, 6, 0, 87.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (74)</name>
-			<transform>1, 0, 0, -86.4561, 0, 6, 0, 121.4608, 0, 0, 7, -36.1054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (93)</name>
-			<transform>0, 0, 7, -95.4061, 0, 4, 0, 122.5108, -1, 0, 0, -27.2854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (7)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -7.0654, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (121)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 99.53, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (31)</name>
-			<transform>0, 0, 7, -83.6661, 1, 0, 0, 114.0308, 0, 12, 0, 29.8446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (106)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 105.53, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (26)</name>
-			<transform>0, 0, 7, -43.4861, 0, 6, 0, 117.5308, -1, 0, 0, 24.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (78)</name>
-			<transform>0, 0, 7, -95.4061, 0, 6, 0, 127.4408, -1, 0, 0, -40.0254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>BackWall</name>
-			<transform>0, -12, 0, -33.9361, 0, 0, -6, 117.5208, 1, 0, 0, -71.2154, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (80)</name>
-			<transform>0, 0, 7, -89.7361, 0, 6, 0, 121.4809, -1, 0, 0, -40.0254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (123)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 93.53, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (146)</name>
-			<transform>0, 0, 7, -103.41, 0, 6, 0, 87.53, -1, 0, 0, -28.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (71)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 127.4908, 0, 0, 7, -36.1054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (4)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -53.2854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (52)</name>
-			<transform>1, 0, 0, -99.4161, 0, 6, 0, 127.4908, 0, 0, 7, 6.5846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (63)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 127.4908, 0, 0, 7, -17.2854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (85)</name>
-			<transform>1, 0, 0, -86.4561, 0, 6, 0, 121.4608, 0, 0, 7, -24.2354, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (38)</name>
-			<transform>0, 0, 7, -83.6461, 0, 6, 0, 117.5308, -1, 0, 0, 11.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (128)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 93.53, 0, 0, 7, -24.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (21)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, 20.3946, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (23)</name>
-			<transform>0, 0, 7, -89.4261, 1, 0, 0, 114.0308, 0, 12, 0, -33.7254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (21)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, 20.3946, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (106)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 121.4908, 0, 0, 7, 18.5846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (8)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, 6.8446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (50)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 129.5308, 0, 0, 7, 20.3846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (29)</name>
-			<transform>0, 0, 7, -50.4361, 0, 6, 0, 117.5308, -1, 0, 0, 11.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (94)</name>
-			<transform>0, 0, 4, -96.9961, 0, 6, 0, 117.5308, -1, 0, 0, -27.2854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (134)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 87.5, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (7)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -18.5954, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (98)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 111.53, 0, 0, 7, -24.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (126)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 93.53, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (68)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 121.4608, 0, 0, 7, -31.1454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Wall (20)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, 6.7846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Floor (5)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -32.3554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
-		</gameobject>
-		<gameobject>
-			<name>Trap/Obstacle (1)</name>
-			<transform>12, 0, 0, -34.0361, 0, 4.5, 0, 115.1308, 0, 0, 1, -32.7954, 0, 0, 0, 1</transform>
-			<istrigger />
-			<collidercenter />
-			<collidersize />
+			<id>5fc25ed3-b447-4dff-b93b-c2ca749b14e6</id>
+			<name>Cube (5)</name>
+			<parentid>b6bbfb4c-5e6f-4125-87f5-99bd4b96ab5c</parentid>
+			<transform>1, 0, 0, -7.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
 			<materialparams>1, 0, 0</materialparams>
-			<behaviour />
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (139)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 99.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>3bd2123c-c2aa-47ce-8e67-6d956ba720b7</id>
+			<name>Cube (6)</name>
+			<parentid>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</parentid>
+			<transform>-1, 0, 0, 1.25, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (19)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, 6.7946, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>a5841016-5d7a-4812-a37e-d2de4fa63e8e</id>
+			<name>Cube (4)</name>
+			<parentid>2c050102-b339-4dc2-9a61-a0f00685c466</parentid>
+			<transform>1, 0, 0, 16.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (28)</name>
-			<transform>0, 0, 7, -43.4261, 0, 6, 0, 117.5308, -1, 0, 0, 11.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>501683ee-4776-4099-9d63-8e64a34bdf10</id>
+			<name>Cube (8)</name>
+			<parentid>2803964f-729b-4ae0-9657-ba604bd7b302</parentid>
+			<transform>1, 0, 0, 11.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (114)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 105.53, 0, 0, 7, -24.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>fe8bba9e-0d72-4213-8b44-f2287bed92e2</id>
+			<name>Cube (3)</name>
+			<parentid>bce740dd-a362-4a47-90d0-58b021afbfbb</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -5, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (75)</name>
-			<transform>1, 0, 0, -86.4561, 0, 6, 0, 121.4608, 0, 0, 7, -31.1454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>bf6e7945-a71f-4615-9212-51b7c158c5d8</id>
+			<name>Cube (3)</name>
+			<parentid>125b85b6-868a-4c00-aed2-9c787fb2a16a</parentid>
+			<transform>1, 0, 0, -15, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (18)</name>
-			<transform>0, 0, 7, -90.6061, 1, 0, 0, 114.0308, 0, 12, 0, 17.8246, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>7c58431c-6907-4791-8e7d-ec4bcc918e93</id>
+			<name>Cube (3)</name>
+			<parentid>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</parentid>
+			<transform>0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 1.25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (99)</name>
-			<transform>1, 0, 0, -99.4461, 0, 6, 0, 123.5308, 0, 0, 7, 27.3846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>bbd9110a-29af-4799-ab1e-cae8f83a48ab</id>
+			<name>Cube (11)</name>
+			<parentid>e83d59c7-e80f-40d7-9b41-58c1add3f736</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (9)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, 13.6446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>3a0b6212-be22-482f-8d90-3576d7c8f1eb</id>
+			<name>Cube (3)</name>
+			<parentid>c0314556-a286-43e9-95e8-89164fd29e50</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -13.75, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (111)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 105.53, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>5c071c23-bb7b-40f4-a07d-0bd742a0367c</id>
+			<name>Cube (9)</name>
+			<parentid>fb4eb7c5-e3c6-4bba-bcb2-e5db6b2ef6c2</parentid>
+			<transform>1, 0, 0, -22.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (113)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 105.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>2e540491-c959-433c-805f-337fb81a953a</id>
+			<name>Cube (3)</name>
+			<parentid>0a121be1-d694-47bf-bbe5-e57bca96f32a</parentid>
+			<transform>1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (33)</name>
-			<transform>0, 0, 7, -64.0161, 0, 6, 0, 117.5308, -1, 0, 0, 24.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>e059e94e-652d-4924-a230-a6477825fb61</id>
+			<name>Cube (8)</name>
+			<parentid>c022df68-3725-453a-b537-7820ebd58a44</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -11.25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (117)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 99.53, 0, 0, 7, -31.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>6755cadb-2665-4ba4-8c91-6120e7f10e39</id>
+			<name>Cube (4)</name>
+			<parentid>bff0a808-0d87-4561-9352-13df6740624e</parentid>
+			<transform>1, 0, 0, 16.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (23)</name>
-			<transform>0, 0, 7, -31.4661, 0, 6, 0, 117.5308, -1, 0, 0, 24.3646, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>4aed23a0-6200-48e8-8304-fa9d91888360</id>
+			<name>Cube (5)</name>
+			<parentid>e78b2c4f-0259-4578-bed5-c2b5b6661dd8</parentid>
+			<transform>1, 0, 0, -7.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (17)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -0.1554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>f8dc5845-fa8e-44c2-ad85-d8a1175e48d8</id>
+			<name>Cube (3)</name>
+			<parentid>81ded492-3374-499b-917c-382018e2216c</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 13.75, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (89)</name>
-			<transform>0, 0, 7, -95.4061, 0, 6, 0, 117.5308, -1, 0, 0, -20.4154, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>5e51097d-fa0b-459a-b9c1-6d0d277db1de</id>
+			<name>Cube (2)</name>
+			<parentid>4af937f7-26ef-4ff9-8729-7381ea311d92</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 3.75, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (144)</name>
-			<transform>1, 0, 0, -86.41, 0, 6, 0, 87.5, 0, 0, 7, -24.4, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>303db79f-0fb5-4a8c-b63c-785c09e1f176</id>
+			<name>Cube (1)</name>
+			<parentid>a18e7121-8242-47fd-a2e0-78ce018e7f62</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2.5, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (16)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, -14.0354, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>4823cb1d-c17e-414d-ac31-d50500e79ea6</id>
+			<name>Cube (8)</name>
+			<parentid>9926f495-d986-402d-9855-9edaeaca158d</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -21.25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (77)</name>
-			<transform>1, 0, 0, -86.4561, 0, 6, 0, 127.4908, 0, 0, 7, -31.1454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>e78b2c4f-0259-4578-bed5-c2b5b6661dd8</id>
+			<name>Cube (4)</name>
+			<parentid>59bfc4ca-4a0f-4195-80c8-ceac8dae3c4c</parentid>
+			<transform>1, 0, 0, -6.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (136)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 87.5, -1, 0, 0, -42.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>6dc0f18a-b7e1-40b3-9582-0c4316f6a15b</id>
+			<name>Cube (10)</name>
+			<parentid>98accc9a-b500-4e99-a39e-4f9b452087b0</parentid>
+			<transform>1, 0, 0, 23.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (53)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 127.4908, 0, 0, 7, 6.5846, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>9ee678be-683d-4e53-9fde-cc5c6f95db46</id>
+			<name>Cube (4)</name>
+			<parentid>6f9d06dd-3c70-40bc-936f-41fefebe6c30</parentid>
+			<transform>1, 0, 0, 6.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (96)</name>
-			<transform>0, 0, 7, -96.41, 0, 6, 0, 111.53, -1, 0, 0, -20.4154, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>0a121be1-d694-47bf-bbe5-e57bca96f32a</id>
+			<name>Cube (2)</name>
+			<parentid>87bcc556-2d81-4372-836f-e055657e64b0</parentid>
+			<transform>1, 0, 0, 3.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (19)</name>
-			<transform>0, -12, 0, -93.0261, 10, 0, 0, 119.4908, 0, 0, 7, 8.3046, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>a18e7121-8242-47fd-a2e0-78ce018e7f62</id>
+			<name>Cube (4)</name>
+			<parentid>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</parentid>
+			<transform>0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1.25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (3)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -53.2854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>dd5c2fec-74b7-42fa-a038-7734dd9e3add</id>
+			<name>Cube (11)</name>
+			<parentid>de64071e-c877-4b6e-b3de-120232a34061</parentid>
+			<transform>1, 0, 0, 25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (62)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 127.4908, 0, 0, 7, -17.2854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>3d022ae7-245c-4fe3-ac75-d102f5db7145</id>
+			<name>Cube (8)</name>
+			<parentid>8eb58fc9-d652-4cc0-97cc-c29b788267ef</parentid>
+			<transform>1, 0, 0, 11.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -67.2054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>c1b5b758-2c11-427a-9a33-fa5dbba2e0e3</id>
+			<name>Cube (1)</name>
+			<parentid>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</parentid>
+			<transform>-1, 0, 0, 1.25, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (32)</name>
-			<transform>0, 0, 7, -103.43, 1, 0, 0, 84.03, 0, 12, 0, -25.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>d6aa6b66-aea9-44ea-8d2f-9ba191f5cebf</id>
+			<name>Cube (6)</name>
+			<parentid>5edc42cd-0e5c-4226-899f-d5af0bbc3a21</parentid>
+			<transform>1, 0, 0, 8.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (140)</name>
-			<transform>0, 0, 7, -89.41, 0, 6, 0, 93.53, -1, 0, 0, -20.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>6b3d02d0-c34e-447a-9edd-a536f5f726bf</id>
+			<name>Cube (8)</name>
+			<parentid>d4304043-ac59-4528-8feb-9da021683a3e</parentid>
+			<transform>1, 0, 0, -11.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (34)</name>
-			<transform>0, 0, 7, -137.4, 1, 0, 0, 84.03, 0, 12, 0, -25.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>d4304043-ac59-4528-8feb-9da021683a3e</id>
+			<name>Cube (7)</name>
+			<parentid>8bf71709-70af-4dc7-be66-b66515b502b5</parentid>
+			<transform>1, 0, 0, -10, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (42)</name>
-			<transform>0, 0, 7, -95.4061, 0, 6, 0, 117.5308, -1, 0, 0, 31.3546, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>1be99d9e-492b-4e04-9088-70386083ded4</id>
+			<name>Cube (5)</name>
+			<parentid>9ee678be-683d-4e53-9fde-cc5c6f95db46</parentid>
+			<transform>1, 0, 0, 7.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (1)</name>
-			<transform>1, 0, 0, -40.4361, 0, 6, 0, 117.5308, 0, 0, 7, -46.3454, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>98accc9a-b500-4e99-a39e-4f9b452087b0</id>
+			<name>Cube (9)</name>
+			<parentid>049dbc4b-b730-4c24-a863-9125d1bcd88c</parentid>
+			<transform>1, 0, 0, 22.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (22)</name>
-			<transform>1, 0, 0, -27.4361, 0, 6, 0, 117.5308, 0, 0, 7, 13.4446, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>01db8bcc-e00f-4e45-8809-fa567676882f</id>
+			<name>Cube (7)</name>
+			<parentid>9e39223b-45fa-479a-9281-d8e43ec96cec</parentid>
+			<transform>1, 0, 0, 20, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (4)</name>
-			<transform>0, -12, 0, -33.9361, 1, 0, 0, 114.0308, 0, 0, 7, -18.3554, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>8bf71709-70af-4dc7-be66-b66515b502b5</id>
+			<name>Cube (6)</name>
+			<parentid>5fc25ed3-b447-4dff-b93b-c2ca749b14e6</parentid>
+			<transform>1, 0, 0, -8.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (92)</name>
-			<transform>0, 0, 7, -89.7361, 0, 4, 0, 122.4809, -1, 0, 0, -27.2854, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>b6bbfb4c-5e6f-4125-87f5-99bd4b96ab5c</id>
+			<name>Cube (4)</name>
+			<parentid>9693bd0e-9ce5-4fc8-a55f-25b334ffad45</parentid>
+			<transform>1, 0, 0, -6.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (135)</name>
-			<transform>1, 0, 0, -99.41, 0, 6, 0, 87.5, 0, 0, 7, -38.42, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>d6a87620-1b45-47ec-8d3d-a0ee3a024c9d</id>
+			<name>Cube (3)</name>
+			<parentid>5fbbc098-b819-469e-90fe-310730e72fde</parentid>
+			<transform>1, 0, 0, 13.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (64)</name>
-			<transform>1, 0, 0, -99.4561, 0, 6, 0, 127.4908, 0, 0, 7, -12.4954, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>d17fc37b-44f2-4472-88b3-e1b653208658</id>
+			<name>Cube (7)</name>
+			<parentid>97d602cf-e739-45ba-a67b-8c8c4b4396f4</parentid>
+			<transform>1, 0, 0, -20, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (20)</name>
-			<transform>0, 0, 7, -95.4261, 1, 0, 0, 114.0308, 0, 12, 0, 17.8246, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>9926f495-d986-402d-9855-9edaeaca158d</id>
+			<name>Cube (7)</name>
+			<parentid>60cfbaf7-d9a5-4df8-a975-1956d3cbbd41</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -20, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (58)</name>
-			<transform>1, 0, 0, -86.5861, 0, 6, 0, 127.4908, 0, 0, 7, -5.6254, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>9c8f9819-d027-4a96-969d-6369faebe6ea</id>
+			<name>Cube (8)</name>
+			<parentid>83b257cf-b4f0-41d1-bd00-104ce1ee328f</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -11.25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Wall (73)</name>
-			<transform>1, 0, 0, -86.4461, 0, 6, 0, 117.5308, 0, 0, 7, -36.2054, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>c229cda4-8316-4c84-ba76-d08dc649d37a</id>
+			<name>Cube (5)</name>
+			<parentid>db2b2bd2-77f7-4bb4-b3ca-45efa560b9ed</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 7.5, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0.8382353, 0.8382353, 0.8382353</materialparams>
-			<behaviour />
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
 		</gameobject>
 		<gameobject>
-			<name>Floor (25)</name>
-			<transform>0, 0, 7, -89.43, 1, 0, 0, 108.0308, 0, 12, 0, -25.73, 0, 0, 0, 1</transform>
-			<istrigger>True</istrigger>
-			<collidercenter>0.0, 0.0, 0.0</collidercenter>
-			<collidersize>1.5, 1.0, 1.0</collidersize>
+			<id>8cca2e57-6bbb-4048-8cc8-dc68255ed4f4</id>
+			<name>Cube (8)</name>
+			<parentid>9d3e1e61-200d-425e-8209-8d07e4186a83</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 11.25, 0, 0, 0, 1</transform>
 			<mesh>Cube</mesh>
 			<materialname>ColorMaterial</materialname>
-			<materialparams>0, 0.006896496, 1</materialparams>
-			<behaviour />
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>91fee6c1-6da2-4487-9083-8d8a531613ef</id>
+			<name>Cube (7)</name>
+			<parentid>4a8cbe3f-9393-4fc0-9507-20e8638b81f7</parentid>
+			<transform>1, 0, 0, -20, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c8af1afd-e25c-4b57-b112-899b082252b2</id>
+			<name>Cube (4)</name>
+			<parentid>fe8bba9e-0d72-4213-8b44-f2287bed92e2</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -6.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>b40ef5b1-a48e-4d8b-af58-71edcf541eab</id>
+			<name>Cube (2)</name>
+			<parentid>303db79f-0fb5-4a8c-b63c-785c09e1f176</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 3.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>049dbc4b-b730-4c24-a863-9125d1bcd88c</id>
+			<name>Cube (8)</name>
+			<parentid>075d5df9-d8b0-4826-9722-ffa25393d9a6</parentid>
+			<transform>1, 0, 0, 21.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>93f3bf4b-0124-42f0-a76b-bba431747e04</id>
+			<name>Cube (3)</name>
+			<parentid>83a4930d-db4a-4a83-a2af-be862d5fc266</parentid>
+			<transform>1, 0, 0, -15, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>968ff3d1-c850-471a-8be1-024f7745b9a3</id>
+			<name>Cube (6)</name>
+			<parentid>eea4b501-7492-4574-8e77-3bbdadad7508</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 18.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>d67acb4c-024c-46e9-9069-bc5a71738d77</id>
+			<name>Cube (4)</name>
+			<parentid>228afdab-5414-4c51-82cb-fa708dea3b49</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -6.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>81252239-1920-4ad1-996d-9f0bbb8e5a47</id>
+			<name>Cube (10)</name>
+			<parentid>6d2471a5-8b10-4c1e-a221-d65194fb1be2</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 23.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>bce740dd-a362-4a47-90d0-58b021afbfbb</id>
+			<name>Cube (2)</name>
+			<parentid>0b103e25-d429-441e-aea0-4c843b46ee47</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -3.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c55d33b9-ddb7-49ed-908a-8de106ca2d89</id>
+			<name>Cube (8)</name>
+			<parentid>fafc6936-cc66-4f63-9554-263aee3835f1</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -21.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>9efcdd5e-7edd-4b1e-9109-7ff086fad5f9</id>
+			<name>Cube</name>
+			<parentid>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</parentid>
+			<transform>1, 0, 0, -1.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>f4f21a89-6525-473c-bfff-4377f4c3f4c9</id>
+			<name>Cube (3)</name>
+			<parentid>b40ef5b1-a48e-4d8b-af58-71edcf541eab</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>a01ce497-150c-45c9-84d3-01c76411cc12</id>
+			<name>Cube (8)</name>
+			<parentid>3b535dfa-ad48-444c-9feb-001e765fe354</parentid>
+			<transform>1, 0, 0, -11.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>ef49daeb-f868-4d49-829d-b1c6ce3c8c7c</id>
+			<name>Cube (1)</name>
+			<parentid>edbdccce-e17d-4459-a52a-748e6e53fbe7</parentid>
+			<transform>1, 0, 0, -2.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>9d4ac5a9-ea5a-40f6-a4d2-824bbcc88567</id>
+			<name>Cube (11)</name>
+			<parentid>da55ec0f-23dc-40ad-b694-933dfb06ab9c</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>3fa4cdce-7fd9-4c9d-9287-cc7358361d2a</id>
+			<name>Cube (11)</name>
+			<parentid>28e56006-b57f-46b6-af00-8a8edb1d3ec4</parentid>
+			<transform>1, 0, 0, -25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>18eb44b1-9b10-4b92-bd19-1280ba2e2ac5</id>
+			<name>Cube (7)</name>
+			<parentid>16ccf3ff-dc4b-40d9-922f-c8ebec73034c</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 10, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>9e39223b-45fa-479a-9281-d8e43ec96cec</id>
+			<name>Cube (6)</name>
+			<parentid>9f7a3536-caec-40f6-90c4-72dfa9a80f53</parentid>
+			<transform>1, 0, 0, 18.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>da55ec0f-23dc-40ad-b694-933dfb06ab9c</id>
+			<name>Cube (10)</name>
+			<parentid>267a9142-fb30-4199-a747-332ebc65a59a</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -23.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>83a4930d-db4a-4a83-a2af-be862d5fc266</id>
+			<name>Cube (3)</name>
+			<parentid>5584f9f7-e31f-458b-ba1c-942fbc502b7e</parentid>
+			<transform>1, 0, 0, -13.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>8478d189-8ee1-4916-81e9-9fed458f19cd</id>
+			<name>Cube (6)</name>
+			<parentid>c229cda4-8316-4c84-ba76-d08dc649d37a</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 8.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>a6017916-514c-4ac2-9bec-649453355d43</id>
+			<name>Cube (3)</name>
+			<parentid>f8dc5845-fa8e-44c2-ad85-d8a1175e48d8</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 15, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>bff0a808-0d87-4561-9352-13df6740624e</id>
+			<name>Cube (3)</name>
+			<parentid>9c64fcc4-7e32-4948-aa79-875f7f5f2cd8</parentid>
+			<transform>1, 0, 0, 15, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>5fbbc098-b819-469e-90fe-310730e72fde</id>
+			<name>Cube (9)</name>
+			<parentid>501683ee-4776-4099-9d63-8e64a34bdf10</parentid>
+			<transform>1, 0, 0, 12.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>5584f9f7-e31f-458b-ba1c-942fbc502b7e</id>
+			<name>Cube (9)</name>
+			<parentid>a01ce497-150c-45c9-84d3-01c76411cc12</parentid>
+			<transform>1, 0, 0, -12.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>4cbd624e-d33f-4a61-bac1-7764ce027856</id>
+			<name>Cube (3)</name>
+			<parentid>5e51097d-fa0b-459a-b9c1-6d0d277db1de</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>81ded492-3374-499b-917c-382018e2216c</id>
+			<name>Cube (9)</name>
+			<parentid>8cca2e57-6bbb-4048-8cc8-dc68255ed4f4</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 12.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>fa953697-d01f-476a-be53-54d000be337f</id>
+			<name>Cube (4)</name>
+			<parentid>216a82ef-787a-4ffd-9fb2-96bc7f6af69a</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -16.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>acd70065-725c-40cb-9daa-6772a3117245</id>
+			<name>Cube (7)</name>
+			<parentid>d1c98d85-5bf3-4ab8-bf94-3d9f57046add</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 20, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>b89211d4-9db0-4fe3-8866-65b01db122f9</id>
+			<name>Cube (2)</name>
+			<parentid>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</parentid>
+			<transform>0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, -1.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>dba8ddb7-3664-4d1a-b484-3e3c55b6c17e</id>
+			<name>Cube (11)</name>
+			<parentid>6dc0f18a-b7e1-40b3-9582-0c4316f6a15b</parentid>
+			<transform>1, 0, 0, 25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>996d5649-2487-4c5b-b672-3651532a4369</id>
+			<name>Cube (9)</name>
+			<parentid>6b3d02d0-c34e-447a-9edd-a536f5f726bf</parentid>
+			<transform>1, 0, 0, -12.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>7cb45609-f0c1-4b66-a79a-f9cf2261d542</id>
+			<name>Cube (4)</name>
+			<parentid>a6017916-514c-4ac2-9bec-649453355d43</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 16.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>817f1d2e-7c90-4bbd-b6ce-b0ce5655ed8c</id>
+			<name>Cube (11)</name>
+			<parentid>4747c2b4-fc22-4e85-aaf1-e404041da05c</parentid>
+			<transform>1, 0, 0, -25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>de64071e-c877-4b6e-b3de-120232a34061</id>
+			<name>Cube (10)</name>
+			<parentid>c197ac50-0f92-411b-8243-1e8aeb2da2ae</parentid>
+			<transform>1, 0, 0, 23.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>125b85b6-868a-4c00-aed2-9c787fb2a16a</id>
+			<name>Cube (3)</name>
+			<parentid>996d5649-2487-4c5b-b672-3651532a4369</parentid>
+			<transform>1, 0, 0, -13.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>9f7a3536-caec-40f6-90c4-72dfa9a80f53</id>
+			<name>Cube (5)</name>
+			<parentid>a5841016-5d7a-4812-a37e-d2de4fa63e8e</parentid>
+			<transform>1, 0, 0, 17.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>ddc92c36-4dd8-4e6a-9da6-ab822132233a</id>
+			<name>Cube (5)</name>
+			<parentid>d67acb4c-024c-46e9-9069-bc5a71738d77</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -7.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>28e56006-b57f-46b6-af00-8a8edb1d3ec4</id>
+			<name>Cube (10)</name>
+			<parentid>89cf2d0f-c3c9-43e8-858d-cba61498b881</parentid>
+			<transform>1, 0, 0, -23.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</id>
+			<name>Lone Cube</name>
+			<parentid />
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>40</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>191e5522-1920-4ab2-86a1-4e8d73b9ae22</id>
+			<name>Cube (5)</name>
+			<parentid>6755cadb-2665-4ba4-8c91-6120e7f10e39</parentid>
+			<transform>1, 0, 0, 17.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>d0dd0c53-4044-4de2-9d77-445f4a1d58f2</id>
+			<name>Cube (6)</name>
+			<parentid>ddc92c36-4dd8-4e6a-9da6-ab822132233a</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -8.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>eea4b501-7492-4574-8e77-3bbdadad7508</id>
+			<name>Cube (5)</name>
+			<parentid>ffb08573-6a97-4c70-a93c-559ca4ffe01a</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 17.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>9d3e1e61-200d-425e-8209-8d07e4186a83</id>
+			<name>Cube (7)</name>
+			<parentid>8478d189-8ee1-4916-81e9-9fed458f19cd</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 10, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>e1ac8e22-273a-47e9-812e-1da7e6a2959c</id>
+			<name>Cube (4)</name>
+			<parentid>93f3bf4b-0124-42f0-a76b-bba431747e04</parentid>
+			<transform>1, 0, 0, -16.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>da6fe442-070e-4d1a-add0-fada9b6d6251</id>
+			<name>Cube (1)</name>
+			<parentid>3bd2123c-c2aa-47ce-8e67-6d956ba720b7</parentid>
+			<transform>1, 0, 0, 2.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>87bcc556-2d81-4372-836f-e055657e64b0</id>
+			<name>Cube (1)</name>
+			<parentid>c1b5b758-2c11-427a-9a33-fa5dbba2e0e3</parentid>
+			<transform>1, 0, 0, 2.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>8eb58fc9-d652-4cc0-97cc-c29b788267ef</id>
+			<name>Cube (7)</name>
+			<parentid>d6aa6b66-aea9-44ea-8d2f-9ba191f5cebf</parentid>
+			<transform>1, 0, 0, 10, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>e83d59c7-e80f-40d7-9b41-58c1add3f736</id>
+			<name>Cube (10)</name>
+			<parentid>c9fd0ce6-a0e9-4ef5-85e9-7a499191483d</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -23.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>4d1a302f-ae19-42d0-9c3f-e988a575cef5</id>
+			<name>Cube (3)</name>
+			<parentid>aba78ae1-07d9-4391-bb71-7540a87ebdef</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 13.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>cb947bd6-13bc-45d0-9814-e8f88c71bba0</id>
+			<name>Cube (2)</name>
+			<parentid>da6fe442-070e-4d1a-add0-fada9b6d6251</parentid>
+			<transform>1, 0, 0, 3.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>228afdab-5414-4c51-82cb-fa708dea3b49</id>
+			<name>Cube (3)</name>
+			<parentid>cff23633-e369-4fb3-a1ea-4cc1d224035b</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>2803964f-729b-4ae0-9657-ba604bd7b302</id>
+			<name>Cube (7)</name>
+			<parentid>04c1e404-a175-4eec-9548-48863874fb79</parentid>
+			<transform>1, 0, 0, 10, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>7027b4a2-43ba-46a0-8b68-e294a7ba3451</id>
+			<name>Cube (4)</name>
+			<parentid>2e540491-c959-433c-805f-337fb81a953a</parentid>
+			<transform>1, 0, 0, 6.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>ae5f9bce-e16e-43d7-bfc1-1c62278023bd</id>
+			<name>Cube (8)</name>
+			<parentid>18eb44b1-9b10-4b92-bd19-1280ba2e2ac5</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 11.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>3ecd06fa-4786-4960-9ad5-3c4dc8fa2ab8</id>
+			<name>Cube (5)</name>
+			<parentid>7cb45609-f0c1-4b66-a79a-f9cf2261d542</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 17.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c9fd0ce6-a0e9-4ef5-85e9-7a499191483d</id>
+			<name>Cube (9)</name>
+			<parentid>4823cb1d-c17e-414d-ac31-d50500e79ea6</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -22.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>454363c5-dd3c-400b-9010-e7137f5c8946</id>
+			<name>Cube (8)</name>
+			<parentid>d17fc37b-44f2-4472-88b3-e1b653208658</parentid>
+			<transform>1, 0, 0, -21.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>b27e30f1-59ea-42ee-b8ad-e910cfdc7179</id>
+			<name>Cube (3)</name>
+			<parentid>142ee816-ac9b-4783-8b8b-1dc84e3b7489</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -13.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>8d559b34-f52b-4d26-8f51-189df4a94783</id>
+			<name>Cube (8)</name>
+			<parentid>c3a07b2b-2d6a-4e57-aec9-08c26c8bdbd5</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 21.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>93f20192-d5ce-411c-a15c-51b74a48a240</id>
+			<name>Cube (11)</name>
+			<parentid>814dcd90-8d63-461a-b1b5-ac5a6d06b5b2</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>267a9142-fb30-4199-a747-332ebc65a59a</id>
+			<name>Cube (9)</name>
+			<parentid>c55d33b9-ddb7-49ed-908a-8de106ca2d89</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -22.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>db2b2bd2-77f7-4bb4-b3ca-45efa560b9ed</id>
+			<name>Cube (4)</name>
+			<parentid>4cbd624e-d33f-4a61-bac1-7764ce027856</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 6.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>563dfcd7-abc7-4208-8b4c-bfec6d60a258</id>
+			<name>Cube (5)</name>
+			<parentid>e1ac8e22-273a-47e9-812e-1da7e6a2959c</parentid>
+			<transform>1, 0, 0, -17.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>768b2e07-d3a3-4808-b543-8af25e0c4b09</id>
+			<name>Cube (4)</name>
+			<parentid>f4f21a89-6525-473c-bfff-4377f4c3f4c9</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 6.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>3cb44055-29ff-4a26-a0a3-d0eb47bafe0d</id>
+			<name>Cube (4)</name>
+			<parentid>bf6e7945-a71f-4615-9212-51b7c158c5d8</parentid>
+			<transform>1, 0, 0, -16.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>6d2471a5-8b10-4c1e-a221-d65194fb1be2</id>
+			<name>Cube (9)</name>
+			<parentid>8d559b34-f52b-4d26-8f51-189df4a94783</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 22.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>aba78ae1-07d9-4391-bb71-7540a87ebdef</id>
+			<name>Cube (9)</name>
+			<parentid>ae5f9bce-e16e-43d7-bfc1-1c62278023bd</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 12.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>45883ed1-fb0d-40fa-94bd-3aa3f65b7afa</id>
+			<name>Cube (1)</name>
+			<parentid>9efcdd5e-7edd-4b1e-9109-7ff086fad5f9</parentid>
+			<transform>1, 0, 0, -2.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>97d602cf-e739-45ba-a67b-8c8c4b4396f4</id>
+			<name>Cube (6)</name>
+			<parentid>4a3dffdd-6a52-4ab7-a91e-499ec1e6911d</parentid>
+			<transform>1, 0, 0, -18.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>941f0584-93d7-47d2-b796-e2259f40ef1b</id>
+			<name>Cube (11)</name>
+			<parentid>81252239-1920-4ad1-996d-9f0bbb8e5a47</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>0206e91f-9758-4132-b5c2-89d1ce792896</id>
+			<name>Cube (8)</name>
+			<parentid>01db8bcc-e00f-4e45-8809-fa567676882f</parentid>
+			<transform>1, 0, 0, 21.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>cff23633-e369-4fb3-a1ea-4cc1d224035b</id>
+			<name>Cube (2)</name>
+			<parentid>4bca519a-09bf-468c-94b8-352ef72b4b37</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -3.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c0314556-a286-43e9-95e8-89164fd29e50</id>
+			<name>Cube (9)</name>
+			<parentid>e059e94e-652d-4924-a230-a6477825fb61</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -12.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>4af937f7-26ef-4ff9-8729-7381ea311d92</id>
+			<name>Cube (1)</name>
+			<parentid>7c58431c-6907-4791-8e7d-ec4bcc918e93</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c9a0ead1-003c-4af1-bc82-1e9b84142a2c</id>
+			<name>Cube (3)</name>
+			<parentid>4d1a302f-ae19-42d0-9c3f-e988a575cef5</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 15, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>fafc6936-cc66-4f63-9554-263aee3835f1</id>
+			<name>Cube (7)</name>
+			<parentid>26264236-8fde-4a58-9223-ab006bffc43d</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -20, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>ffb08573-6a97-4c70-a93c-559ca4ffe01a</id>
+			<name>Cube (4)</name>
+			<parentid>c9a0ead1-003c-4af1-bc82-1e9b84142a2c</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 16.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c022df68-3725-453a-b537-7820ebd58a44</id>
+			<name>Cube (7)</name>
+			<parentid>d0dd0c53-4044-4de2-9d77-445f4a1d58f2</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -10, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>9b41950f-4b6f-4147-a995-e2fcdaa50465</id>
+			<name>Cube (5)</name>
+			<parentid>1fd3af80-344c-42ac-bc06-d724793ea106</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -17.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c3a07b2b-2d6a-4e57-aec9-08c26c8bdbd5</id>
+			<name>Cube (7)</name>
+			<parentid>968ff3d1-c850-471a-8be1-024f7745b9a3</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 20, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>142ee816-ac9b-4783-8b8b-1dc84e3b7489</id>
+			<name>Cube (9)</name>
+			<parentid>9c8f9819-d027-4a96-969d-6369faebe6ea</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -12.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>4747c2b4-fc22-4e85-aaf1-e404041da05c</id>
+			<name>Cube (10)</name>
+			<parentid>5c071c23-bb7b-40f4-a07d-0bd742a0367c</parentid>
+			<transform>1, 0, 0, -23.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>0b103e25-d429-441e-aea0-4c843b46ee47</id>
+			<name>Cube (1)</name>
+			<parentid>b89211d4-9db0-4fe3-8866-65b01db122f9</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -2.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>075d5df9-d8b0-4826-9722-ffa25393d9a6</id>
+			<name>Cube (7)</name>
+			<parentid>0fcbc46f-e27c-41ed-bbe2-a8858f6653c7</parentid>
+			<transform>1, 0, 0, 20, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>2fa9f555-6050-40bd-96da-cf75a96fcaaf</id>
+			<name>Cube (5)</name>
+			<parentid>fa953697-d01f-476a-be53-54d000be337f</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -17.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>a3c282a0-1d1d-4233-80a2-22e89ef33baa</id>
+			<name>Cube (3)</name>
+			<parentid>3a0b6212-be22-482f-8d90-3576d7c8f1eb</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -15, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>65630e20-969b-4518-863b-580f88bea60a</id>
+			<name>Cube (5)</name>
+			<parentid>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</parentid>
+			<transform>0, 0, 1, 0, 0, -1, 0, 0, 1, 0, 0, -1.25, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>2c050102-b339-4dc2-9a61-a0f00685c466</id>
+			<name>Cube (3)</name>
+			<parentid>d6a87620-1b45-47ec-8d3d-a0ee3a024c9d</parentid>
+			<transform>1, 0, 0, 15, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>df04977b-6cdd-47f7-8b0b-b09fb7454991</id>
+			<name>Cube (6)</name>
+			<parentid>4aed23a0-6200-48e8-8304-fa9d91888360</parentid>
+			<transform>1, 0, 0, -8.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>6be3d17b-b039-48f0-81b8-933b41bd3e1e</id>
+			<name>Cube (2)</name>
+			<parentid>ef49daeb-f868-4d49-829d-b1c6ce3c8c7c</parentid>
+			<transform>1, 0, 0, -3.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>60cfbaf7-d9a5-4df8-a975-1956d3cbbd41</id>
+			<name>Cube (6)</name>
+			<parentid>9b41950f-4b6f-4147-a995-e2fcdaa50465</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -18.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>0fcbc46f-e27c-41ed-bbe2-a8858f6653c7</id>
+			<name>Cube (6)</name>
+			<parentid>191e5522-1920-4ab2-86a1-4e8d73b9ae22</parentid>
+			<transform>1, 0, 0, 18.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>3b535dfa-ad48-444c-9feb-001e765fe354</id>
+			<name>Cube (7)</name>
+			<parentid>df04977b-6cdd-47f7-8b0b-b09fb7454991</parentid>
+			<transform>1, 0, 0, -10, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>89cf2d0f-c3c9-43e8-858d-cba61498b881</id>
+			<name>Cube (9)</name>
+			<parentid>454363c5-dd3c-400b-9010-e7137f5c8946</parentid>
+			<transform>1, 0, 0, -22.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>5edc42cd-0e5c-4226-899f-d5af0bbc3a21</id>
+			<name>Cube (5)</name>
+			<parentid>7027b4a2-43ba-46a0-8b68-e294a7ba3451</parentid>
+			<transform>1, 0, 0, 7.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>50</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>1279a3df-bf7a-4422-b59f-29187cb1e17c</id>
+			<name>Cube (2)</name>
+			<parentid>45883ed1-fb0d-40fa-94bd-3aa3f65b7afa</parentid>
+			<transform>1, 0, 0, -3.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>dc133cb9-25f2-45c1-875a-6cb9ccf7f741</id>
+			<name>Cube (9)</name>
+			<parentid>7bd72e4e-9b9c-4815-b179-8c93d405a937</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 22.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c112bb2b-a061-4f8a-8347-d4e206a5d954</id>
+			<name>Cube (5)</name>
+			<parentid>768b2e07-d3a3-4808-b543-8af25e0c4b09</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 7.5, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>d1c98d85-5bf3-4ab8-bf94-3d9f57046add</id>
+			<name>Cube (6)</name>
+			<parentid>3ecd06fa-4786-4960-9ad5-3c4dc8fa2ab8</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 18.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>4a8cbe3f-9393-4fc0-9507-20e8638b81f7</id>
+			<name>Cube (6)</name>
+			<parentid>563dfcd7-abc7-4208-8b4c-bfec6d60a258</parentid>
+			<transform>1, 0, 0, -18.75, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>c197ac50-0f92-411b-8243-1e8aeb2da2ae</id>
+			<name>Cube (9)</name>
+			<parentid>0206e91f-9758-4132-b5c2-89d1ce792896</parentid>
+			<transform>1, 0, 0, 22.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 0, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>fb4eb7c5-e3c6-4bba-bcb2-e5db6b2ef6c2</id>
+			<name>Cube (8)</name>
+			<parentid>91fee6c1-6da2-4487-9083-8d8a531613ef</parentid>
+			<transform>1, 0, 0, -21.25, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>6f9d06dd-3c70-40bc-936f-41fefebe6c30</id>
+			<name>Cube (3)</name>
+			<parentid>cb947bd6-13bc-45d0-9814-e8f88c71bba0</parentid>
+			<transform>1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 0, 1</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>16ccf3ff-dc4b-40d9-922f-c8ebec73034c</id>
+			<name>Cube (6)</name>
+			<parentid>c112bb2b-a061-4f8a-8347-d4e206a5d954</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 8.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>45</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>edbdccce-e17d-4459-a52a-748e6e53fbe7</id>
+			<name>Cube (7)</name>
+			<parentid>d9cc898c-b6f4-4bf8-99ae-86ea23d57c4d</parentid>
+			<transform>1, 0, 0, -1.25, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>0, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>60</behaviourparams>
+		</gameobject>
+		<gameobject>
+			<id>fe80bc40-ceff-488a-a2e8-42a8fa0857a6</id>
+			<name>Cube (6)</name>
+			<parentid>b235d3cb-b7cf-4b52-a281-363e75f91473</parentid>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -8.75, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname>RotatingBehaviour</behaviourname>
+			<behaviourparams>55</behaviourparams>
 		</gameobject>
 	</gameobjects>
-	<lights />
+	<lights>
+		<light>
+			<name>Directional Light</name>
+			<position>0.0, 3.0, 0.0</position>
+			<rotation>50.0, 330.0, 0.0</rotation>
+			<type>Directional</type>
+			<color>1.0, 1.0, 0.8, 1.0</color>
+			<range>10</range>
+			<intensity>1</intensity>
+			<coneAngle>30</coneAngle>
+		</light>
+		<light>
+			<name>Point light</name>
+			<position>1.1, -2.3, 3.1</position>
+			<rotation>0.0, 0.0, 0.0</rotation>
+			<type>Point</type>
+			<color>1.0, 1.0, 1.0, 1.0</color>
+			<range>10</range>
+			<intensity>1</intensity>
+			<coneAngle>30</coneAngle>
+		</light>
+		<light>
+			<name>Spotlight</name>
+			<position>-10.1, -1.4, 9.0</position>
+			<rotation>324.9, 180.0, 180.0</rotation>
+			<type>Spot</type>
+			<color>1.0, 1.0, 1.0, 1.0</color>
+			<range>10</range>
+			<intensity>1</intensity>
+			<coneAngle>30</coneAngle>
+		</light>
+	</lights>
 </level>

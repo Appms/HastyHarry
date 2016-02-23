@@ -6,6 +6,8 @@
 class Mesh;
 class World;
 class AbstractMaterial;
+class AbstractBehaviour;
+class GameObject;
 
 class Level
 {
@@ -17,11 +19,11 @@ class Level
         static std::vector<std::string> split( std::string str, char delimiter );
     protected:
     private:
-        static std::vector<Mesh*> _loadedMeshes;
-        //TODO I could put this into the mesh class
-        static std::vector<std::string> _loadedMeshNames;
-
-        static std::vector<AbstractMaterial*> _loadedMaterials;
+		static std::vector<Mesh*> _loadedMeshes;
+		static std::vector<std::string> _loadedMeshNames;
+		static std::vector<AbstractMaterial*> _loadedMaterials;
+		static std::vector<AbstractBehaviour*> _loadedBehaviours;
+		static std::vector<GameObject*> _loadedGameObjects;
 };
 
 #endif // LEVEL_HPP
