@@ -81,7 +81,7 @@ void LightingDemo::_initializeScene()
 		float ry = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 		float rz = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 
-		GameObject* cube = new GameObject("teapot", glm::vec3(-3.0f + rx * 6.0f, 3.0f + (float)(i % 3), -3.0f + rz * 6.0f), GameObject::PhysicsType::RIGIDBODY, GameObject::ColliderType::SPHERE);
+		GameObject* cube = new GameObject("teapot", glm::vec3(-3.0f + rx * 6.0f, 3.0f + (float)(i % 3), -3.0f + rz * 6.0f), GameObject::PhysicsType::RIGIDBODY, GameObject::ColliderType::CUBE);
 		_world->add(cube);
 		cube->scale(glm::vec3(0.2 + rx * 0.2f, 0.2 + ry * 0.2f, 0.2 + rz * 0.2f));
 		cube->setMesh(cubeMeshF);
@@ -100,7 +100,9 @@ void LightingDemo::_initializeScene()
 	teapot->scale(glm::vec3(0.2, 0.2, 0.2));
 	teapot->setMesh (teapotMeshS);
     teapot->setMaterial(phongNormalMaterial);
-    teapot->setBehaviour (new KeysBehaviour());
+    teapot->setBehaviour (new KeysBehaviour(5.0f, 45.0f, config::MGE_AUDIO_PATH + "jump.wav"));
+	sf::Listener::setPosition(0, 10, 0);
+	sf::Listener::setDirection(0,0,1);
 
     /*GameObject* monkey = new GameObject ("monkey", glm::vec3(0,8,0), GameObject::PhysicsType::RIGIDBODY);
 	_world->add(monkey);

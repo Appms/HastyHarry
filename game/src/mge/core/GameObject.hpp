@@ -23,6 +23,9 @@ class Mesh;
 
 /*class CollisionCallback : public neRigidBodyControllerCallback {
 	public:
+		CollisionCallback();
+		virtual ~CollisionCallback();
+
 		virtual void RigidBodyControllerCallback(neRigidBodyController * controller) {
 			//controller code goes here.
 		}
