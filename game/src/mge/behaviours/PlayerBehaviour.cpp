@@ -5,11 +5,16 @@
 #include <iostream>
 #include "..\..\include\tokamak.h"
 #include <glm/gtx/matrix_decompose.hpp>
+#include <SFML/window.hpp>
+#include "mge/PlayerController.hpp"
 
-PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkSpeed, float pRotateSpeed, float pJumpForce) : AbstractBehaviour(), _camera(pCamera), _walkSpeed(pWalkSpeed), _rotateSpeed(pRotateSpeed), _jumpForce(pJumpForce)
+PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce) : AbstractBehaviour(), _camera(pCamera), _walkForce(pWalkForce), _maxVelocity(pMaxVelocity), _rotateSpeed(pRotateSpeed), _jumpForce(pJumpForce)
 {
-	_camera->setParent(_owner);
+	//_controllerCallback = new PlayerController();
+
+	_prevMousePos = sf::Mouse::getPosition();
 	//_camera->setLocalPosition(glm::vec3(0, 0, 0));
+	//_owner->getRigidBody()->AddController(&_controllerCallback, 0);
 }
 
 PlayerBehaviour::~PlayerBehaviour()
@@ -18,58 +23,63 @@ PlayerBehaviour::~PlayerBehaviour()
 
 void PlayerBehaviour::update(float pStep)
 {
-	glm::vec3 walkSpeed;
+	_speedVector = glm::vec3(0, 0, 0);
+	bool pressedKey = false;
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-		walkSpeed.z = _walkSpeed * pStep;
+		_speedVector.z = -1.0;
+		pressedKey = true;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-		walkSpeed.z = -_walkSpeed * pStep;
+		_speedVector.z = 1.0;
+		pressedKey = true;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-		walkSpeed.x = _walkSpeed * pStep;
+		_speedVector.x = 1.0;
+		pressedKey = true;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-		walkSpeed.x = -_walkSpeed * pStep;
+		_speedVector.x = -1.0;
+		pressedKey = true;
 	}
 
-	glm::vec3 yVel = toGLM(_owner->GetRigidBody()->GetVelocity());
-	_owner->GetRigidBody()->SetVelocity(toTokamak(glm::vec3(walkSpeed.x, yVel.y, walkSpeed.z)));
-	//_owner->GetRigidBody()->ApplyImpulse(toTokamak(glm::vec3(walkSpeed.x, 0.0f, walkSpeed.z)));
-	//_owner->GetRigidBody()->SetAngularMomentum(toTokamak(glm::vec3(0, 0, 0)));
+	if (pressedKey) {
+		_speedVector = glm::normalize(_speedVector) * _walkForce * pStep;
+	}
 
-	neV3 pos;
-	neQ rot;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+		_speedVector.y = _jumpForce * pStep;
+		pressedKey = true;
+	}
 
-	glm::vec3 scale;
-	glm::quat rotation;
-	glm::vec3 translation;
-	glm::vec3 skew;
-	glm::vec4 perspective;
+	//if(pressedKey)
+	if(pressedKey)
+	{
+		neV3 curVel = _owner->getRigidBody()->GetVelocity();
+		curVel[2] = 0.0f;
 
-	glm::decompose(_owner->getTransform(), scale, rotation, translation, skew, perspective);
+		if (curVel.Length() < _maxVelocity)
+		{
+			_owner->getRigidBody()->ApplyImpulse(toTokamak(_speedVector));
+		}
+	}
 
-	pos[0] = translation[0];
-	pos[1] = translation[1];
-	pos[2] = translation[2];
+	//std::cout << _owner->getRigidBody()
+	
+	_owner->getRigidBody()->SetTorque(toTokamak(glm::vec3(0.0, 0.0, 0.0)));
+	_owner->getRigidBody()->SetAngularMomentum(toTokamak(glm::vec3(0.0, 0.0, 0.0)));
+	_owner->getRigidBody()->SetRotation(neQ(0.0f, 0.0f, 0.0f, 1.0f));
 
-	rot.X = rotation.x;
-	rot.Y = rotation.y;
-	rot.Z = rotation.z;
-	rot.W = rotation.w;
 
-	_owner->GetRigidBody()->SetRotation(rot);
+	sf::Vector2i curMousePos = sf::Mouse::getPosition();
+	glm::vec2 mouseVector = glm::vec2(curMousePos.x, curMousePos.y) - glm::vec2(_prevMousePos.x, _prevMousePos.y);
 
-	/*
-	neV3 zero;
+	int screenHeight = sf::VideoMode::getDesktopMode().height;
+	int screenWidth = sf::VideoMode::getDesktopMode().width;
+	sf::Mouse::setPosition(sf::Vector2i(screenWidth / 2, screenHeight / 2));
+	_prevMousePos = sf::Mouse::getPosition();
 
-	zero = _owner->GetRigidBody()->GetAngularMomentum();
-	zero[0] = 0;
-	zero[2] = 0;
-	_owner->GetRigidBody()->SetAngularMomentum(zero);
-	*/
-
-	//std::cout << toGLM(_owner->GetRigidBody()->GetAngularVelocity()) << std::endl;
+	mouseVector *= _rotateSpeed;
 }
 
 neV3 PlayerBehaviour::toTokamak(glm::vec3 v)
@@ -79,9 +89,9 @@ neV3 PlayerBehaviour::toTokamak(glm::vec3 v)
 	vec[1] = v[1];
 	vec[2] = v[2];
 	return vec;
-}
+};
 
 glm::vec3 PlayerBehaviour::toGLM(neV3 v)
 {
 	return glm::vec3(v[0], v[1], v[2]);
-}
+};

@@ -56,10 +56,12 @@ void LightingDemo::_initializeScene()
     _world->setMainCamera(camera);
 	_world->add(camera);
 
-	GameObject* player = new GameObject("player", glm::vec3(0, 0, 0), GameObject::RIGIDBODY, GameObject::CAPSULE);
+	GameObject* player = new GameObject("player", glm::vec3(0, 2, -2), GameObject::RIGIDBODY, GameObject::CAPSULE);
 	player->setParent(_world);
 	player->SetPlayerPhysics();
-	player->setBehaviour(new PlayerBehaviour(camera, 40, 1, 5));
+	player->setMeshWithout(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+	player->setMaterial(new ColorMaterial(glm::vec3(1,1,1)));
+	player->setBehaviour(new PlayerBehaviour(camera, 2000, 40, 0.001, 10000));
 	player->add(camera);
 
 	//Mesh* m = Mesh::load(config::MGE_MODEL_PATH + "cube.obj");

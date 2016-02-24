@@ -69,6 +69,7 @@ class GameObject
 
         //mesh and material should be shared as much as possible
 		void setMesh(Mesh* pMesh);
+		void setMeshWithout(Mesh* pMesh);
 		Mesh* getMesh() const;
 
 		//you can just get the physics' bodies publicly, not set them... For now

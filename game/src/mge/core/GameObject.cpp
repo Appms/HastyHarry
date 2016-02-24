@@ -77,6 +77,11 @@ void GameObject::setMesh(Mesh* pMesh)
 	_updatePhysicsBody();
 }
 
+void GameObject::setMeshWithout(Mesh* pMesh)
+{
+	_mesh = pMesh;
+}
+
 void GameObject::_updatePhysicsBody() {
 
 	neGeometry* geometry;
@@ -367,6 +372,9 @@ void GameObject::SetPlayerPhysics()
 
 	_rigidbody->SetInertiaTensor(neCylinderInertiaTensor(0.5, 2.0, 1.0));
 	_rigidbody->SetMass(50.0);
+
+	//_rigidbody->SetAngularDamping(.03f);
+	_rigidbody->SetLinearDamping(0.1f);
 	
 	_rigidbody->SetPos(pos);
 	_rigidbody->SetRotation(rot);
