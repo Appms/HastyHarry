@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level>
+	<gameobjects>
+		<gameobject>
+			<id>12e35c72-224e-46e2-8682-367aaef5b7c1</id>
+			<name>Cube</name>
+			<parentid />
+			<transform>20, 0, 0, 0, 0, 1, 0, -2.57, 0, 0, 20, 0, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>ColorMaterial</materialname>
+			<materialparams>1, 1, 0</materialparams>
+			<behaviourname />
+			<behaviourparams />
+		</gameobject>
+	</gameobjects>
+	<lights>
+		<light>
+			<name>Directional Light</name>
+			<position>0.0, 3.0, 0.0</position>
+			<rotation>50.0, 330.0, 0.0</rotation>
+			<type>Directional</type>
+			<color>1.0, 1.0, 0.8, 1.0</color>
+			<range>10</range>
+			<intensity>1</intensity>
+			<coneAngle>30</coneAngle>
+		</light>
+	</lights>
+</level>

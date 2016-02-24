@@ -9,6 +9,7 @@ using namespace std;
 #include "mge/core/Mesh.hpp"
 #include "mge/core/World.hpp"
 #include "mge/behaviours/AbstractBehaviour.hpp"
+#include "..\..\include\tokamak.h"
 
 GameObject::GameObject(std::string pName, glm::vec3 pPosition, GameObject::PhysicsType pPhysicsType, GameObject::ColliderType pColliderType )
 :	_name( pName ), _transform( glm::translate( pPosition ) ),  _parent(NULL), _children(),
@@ -76,6 +77,11 @@ void GameObject::setMesh(Mesh* pMesh)
 	_updatePhysicsBody();
 }
 
+void GameObject::setMeshWithout(Mesh* pMesh)
+{
+	_mesh = pMesh;
+}
+
 void GameObject::_updatePhysicsBody() {
 
 	neGeometry* geometry;
@@ -115,7 +121,7 @@ void GameObject::_updatePhysicsBody() {
 		switch (_colliderType)
 		{
 		case GameObject::CUBE:
-			size.Set(scale[0] * 2.0f, scale[1] * 2.0f, scale[2] * 2.0f);
+			size.Set(scale[0] , scale[1] , scale[2] );
 			geometry->SetBoxSize(size[0], size[1], size[2]);
 			_rigidbody->UpdateBoundingInfo();
 
@@ -159,7 +165,7 @@ void GameObject::_updatePhysicsBody() {
 		switch (_colliderType)
 		{
 		case GameObject::CUBE:
-			size.Set(scale[0] * 2.0f, scale[1] * 2.0f, scale[2] * 2.0f);
+			size.Set(scale[0] , scale[1] , scale[2] );
 			geometry->SetBoxSize(size[0], size[1], size[2]);
 			_animatedbody->UpdateBoundingInfo();
 			break;
@@ -329,5 +335,53 @@ int GameObject::getChildCount() {
 
 GameObject* GameObject::getChildAt(int pIndex) {
     return _children[pIndex];
+}
+
+void GameObject::SetPlayerPhysics()
+{
+
+	neGeometry* geometry;
+	neV3 pos;
+	neQ rot;
+	glm::vec3 worldPos = this->getWorldPosition();
+
+	glm::vec3 scale;
+	glm::quat rotation;
+	glm::vec3 translation;
+	glm::vec3 skew;
+	glm::vec4 perspective;
+
+	glm::decompose(_transform, scale, rotation, translation, skew, perspective);
+
+	pos[0] = translation[0];
+	pos[1] = translation[1];
+	pos[2] = translation[2];
+
+	rot.X = rotation.x;
+	rot.Y = rotation.y;
+	rot.Z = rotation.z;
+	rot.W = rotation.w;
+
+	if (_rigidbody != NULL) _world->getPhysics()->FreeRigidBody(_rigidbody);
+
+	_rigidbody = _world->getPhysics()->CreateRigidBody();
+	geometry = _rigidbody->AddGeometry();
+
+	geometry->SetCylinder(0.5, 2.0);
+	_rigidbody->UpdateBoundingInfo();
+
+	_rigidbody->SetInertiaTensor(neCylinderInertiaTensor(0.5, 2.0, 1.0));
+	_rigidbody->SetMass(50.0);
+
+	//_rigidbody->SetAngularDamping(.03f);
+	_rigidbody->SetLinearDamping(0.1f);
+	
+	_rigidbody->SetPos(pos);
+	_rigidbody->SetRotation(rot);
+}
+
+neRigidBody* GameObject::GetRigidBody()
+{
+	return _rigidbody;
 }
 
