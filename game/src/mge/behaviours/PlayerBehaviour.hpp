@@ -20,6 +20,7 @@ public:
 	void PlayerController(neRigidBodyController* pController, float pStep);
 private:
 	float _walkForce;
+	float _angleY = 0;
 	float _rotateSpeed;
 	float _jumpForce;
 	float _maxVelocity;
