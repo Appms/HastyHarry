@@ -48,41 +48,21 @@ void LightingDemo::_initializeScene()
 
 	Level::Load("Level_04.xml", _world);
 
+	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);
     _world->add(light);
     _world->setLights(light);
 
+	//Init Camera
     Camera* camera = new Camera ("camera", glm::vec3(0,0,0));
     _world->setMainCamera(camera);
 	_world->add(camera);
-
-	GameObject* player = new GameObject("player", glm::vec3(0, 2, -2), GameObject::RIGIDBODY, GameObject::CAPSULE);
+	
+	//Init Player
+	GameObject* player = new GameObject("player", glm::vec3(0, 3, -2), GameObject::RIGIDBODY, GameObject::CAPSULE);
 	player->setParent(_world);
-	player->SetPlayerPhysics();
-	player->setMeshWithout(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
-	player->setMaterial(new ColorMaterial(glm::vec3(1,1,1)));
-	player->setBehaviour(new PlayerBehaviour(camera, 2000, 40, 0.001, 10000));
-	player->add(camera);
-
-	//Mesh* m = Mesh::load(config::MGE_MODEL_PATH + "cube.obj");
-
-	std::cout << _world->getChildAt(0)->getLocalPosition() << std::endl;
-
-	/*
-	GameObject* cube = new GameObject("cube", glm::vec3(0, 1, -3), GameObject::RIGIDBODY, GameObject::CUBE);
-	_world->add(cube);
-	cube->setMesh(m);
-	cube->setMaterial(new ColorMaterial(glm::vec3(1, 1, 0)));
-
-	GameObject* cube1 = new GameObject("cube", glm::vec3(1, 1, -3), GameObject::ANIMATEDBODY, GameObject::CUBE);
-	_world->add(cube1);
-	cube1->setMesh(m);
-	cube->add(cube1);
-	cube1->setMaterial(new ColorMaterial(glm::vec3(1, 1, 0)));
-	*/
-
-	//Player* player = new Player(_world, glm::vec3(0, 0, 0));
-	//player->setBehaviour(new PlayerBehaviour(camera, 1, 1, 5));
+	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 5.0f));
+	((PlayerBehaviour *)player->getBehaviour())->Initialize();
 }
 
 void LightingDemo::_render() {

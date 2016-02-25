@@ -40,6 +40,8 @@ bool World::initPhysics() {
 	sizeInfo.rigidBodiesCount = 100;
 	// Tell the simulator how many animated bodies we have
 	sizeInfo.animatedBodiesCount = 500;
+	//Tell the simulator how many sensors we have
+	sizeInfo.sensorsCount = 100;
 	// Tell the simulator how many bodies we have in total
 	s32 totalBody = sizeInfo.rigidBodiesCount + sizeInfo.animatedBodiesCount;
 	sizeInfo.geometriesCount = totalBody;
