@@ -64,6 +64,12 @@ void LightingDemo::_initializeScene()
 	cube->setMesh(cubeMesh);
 	cube->setMaterial(textureMaterial);
 
+	GameObject* monkey = new GameObject("monkey", glm::vec3(0, 0, 0), GameObject::PhysicsType::ANIMATEDBODY);
+	_world->add(monkey);
+	monkey->setMesh(monkeyMesh);
+	monkey->setMaterial(phongMaterial);
+	monkey->setBehaviour(new SoundBehaviour("jump.wav", glm::vec3(0, 0, 0)));
+
 	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);
     _world->add(light);
@@ -77,14 +83,8 @@ void LightingDemo::_initializeScene()
 	//Init Player
 	GameObject* player = new GameObject("player", glm::vec3(0, 3, -2), GameObject::RIGIDBODY, GameObject::CAPSULE);
 	player->setParent(_world);
-	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 5.0f));
+	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 5.0f, monkey));
 	((PlayerBehaviour *)player->getBehaviour())->Initialize();
-
-	GameObject* monkey = new GameObject("monkey", glm::vec3(0, 0, 0), GameObject::PhysicsType::ANIMATEDBODY);
-	_world->add(monkey);
-	monkey->setMesh(monkeyMesh);
-	monkey->setMaterial(phongMaterial);
-	monkey->setBehaviour(new SoundBehaviour("jump.wav", glm::vec3(0,0,0)));
 }
 
 void LightingDemo::_render() {
