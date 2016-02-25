@@ -13,17 +13,19 @@ class Camera;
 class PlayerBehaviour : public AbstractBehaviour
 {
 public:
-	PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce);
+	PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce, GameObject* pEnemy);
 	virtual ~PlayerBehaviour();
 	void Initialize();
 	virtual void update(float step);
 	void PlayerController(neRigidBodyController* pController, float pStep);
 private:
 	float _walkForce;
-	float _angleY = 0;
+	float _angleY;
 	float _rotateSpeed;
 	float _jumpForce;
 	float _maxVelocity;
+
+	GameObject* _enemy;
 
 	PlayerControllerCB _playerControllerCB;
 

@@ -11,13 +11,17 @@
 #include "mge/core/GameObject.hpp"
 #include "SFML/Audio.hpp"
 
-PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce) : AbstractBehaviour()
+#include "mge/config.hpp"
+#include "mge/core/Mesh.hpp"
+
+PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce, GameObject* pEnemy) : AbstractBehaviour()
 {
 	_camera = pCamera;
 	_walkForce = pWalkForce;
 	_maxVelocity = pMaxVelocity;
 	_rotateSpeed = pRotateSpeed;
 	_jumpForce = pJumpForce;
+	_enemy = pEnemy;
 
 	_prevMousePos = sf::Mouse::getPosition();
 }
@@ -152,8 +156,6 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		//_speedVector.x -= 1.0f;
 	}
 
-	std::cout << "Forward: " << _owner->getForwardVector() << "\tDirection: "<< _speedVector << std::endl;
-
 	//Normalize and apply appropriate speed
 	if (glm::length(_speedVector) > 0.0f)
 	{
@@ -191,8 +193,24 @@ void PlayerBehaviour::update(float pStep)
 	//Update previous mouse position
 	_prevMousePos = sf::Mouse::getPosition();
 
+	//Updating the audio listener pos and dir
 	sf::Listener::setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
 	sf::Listener::setDirection(_owner->getForwardVector().x, _owner->getForwardVector().y, -_owner->getForwardVector().z);
+
+	glm::vec3 monkeyVector = glm::normalize(_enemy->getWorldPosition() - _camera->getWorldPosition());
+	glm::vec3 raycastVector = glm::normalize(glm::vec3(_owner->getForwardVector().x, _camera->getForwardVector().y, -_owner->getForwardVector().z));
+
+	std::cout << monkeyVector << std::endl << raycastVector << std::endl;
+
+	float raycast = glm::dot(raycastVector, monkeyVector);
+	printf("%f\n", raycast);
+
+	//Shooting
+	if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
+		if ( raycast > 0.992) {
+			_enemy->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+		}
+	}
 }
 
 neV3 PlayerBehaviour::glmToNe(glm::vec3 v)
