@@ -156,6 +156,9 @@
     <ClInclude Include="src\mge\PlayerControllerCB.hpp">
       <Filter>Archivos de encabezado\mge</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\behaviours\SoundBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -241,6 +244,9 @@
     </ClCompile>
     <ClCompile Include="src\mge\PlayerControllerCB.cpp">
       <Filter>Archivos de código fuente\mge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\SoundBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -34,7 +34,7 @@ void LookAt::update( float step )
     //manually
     //the other way then you would expect, the camera is flipped over the z axis we are staring out of its a.. basically ;)
     //this is due to how the perspective matrix is set up
-    glm::vec3 forward = glm::normalize(_owner->getLocalPosition() - _target->getLocalPosition());
+    glm::vec3 forward = -glm::normalize(_owner->getLocalPosition() - _target->getLocalPosition());
     glm::vec3 right = glm::cross (glm::vec3(0,1,0), forward);
     glm::vec3 up = glm::cross (forward, right);
 
