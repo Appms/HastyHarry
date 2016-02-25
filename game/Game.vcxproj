@@ -177,7 +177,7 @@
     <ClInclude Include="src\mge\materials\PhongNormalMaterial.hpp" />
     <ClInclude Include="src\mge\materials\TextureMaterial.hpp" />
     <ClInclude Include="src\mge\MGEDemo.hpp" />
-    <ClInclude Include="src\mge\PlayerController.hpp" />
+    <ClInclude Include="src\mge\PlayerControllerCB.hpp" />
     <ClInclude Include="src\mge\util\DebugHud.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -207,7 +207,7 @@
     <ClCompile Include="src\mge\materials\PhongNormalMaterial.cpp" />
     <ClCompile Include="src\mge\materials\TextureMaterial.cpp" />
     <ClCompile Include="src\mge\MGEDemo.cpp" />
-    <ClCompile Include="src\mge\PlayerController.cpp" />
+    <ClCompile Include="src\mge\PlayerControllerCB.cpp" />
     <ClCompile Include="src\mge\util\DebugHud.cpp" />
   </ItemGroup>
   <ItemGroup>
