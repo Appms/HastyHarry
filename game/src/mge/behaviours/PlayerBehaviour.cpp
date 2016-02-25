@@ -115,23 +115,17 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 
 	//Get Inputs
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-		//_speedVector += glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
-		_speedVector.z += 1.0f;
+		_speedVector += glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-		//_speedVector -= glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
-		_speedVector.z -= 1.0f;
+		_speedVector -= glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-		//_speedVector += glm::vec3(_owner->getRightVector().x, 0.0f, _owner->getRightVector().z);
-		_speedVector.x += 1.0f;
+		_speedVector += glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-		//_speedVector -= glm::vec3(_owner->getRightVector().x, 0.0f, _owner->getRightVector().z);
-		_speedVector.x -= 1.0f;
+		_speedVector -= glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
 	}
-
-	std::cout << "Forward: " << _owner->getForwardVector() << "\tDirection: "<< _speedVector << std::endl;
 
 	//Normalize and apply appropriate speed
 	if (glm::length(_speedVector) > 0.0f)
@@ -142,7 +136,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	//Add current Y velocity unchanged
 	_speedVector.y = pController->GetRigidBody()->GetVelocity()[1];
 
-	if (grounded && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
 		_speedVector.y = _jumpForce;
 	}
@@ -182,59 +176,6 @@ void PlayerBehaviour::update(float pStep)
 
 	//Update previous mouse position
 	_prevMousePos = sf::Mouse::getPosition();
-
-
-	
-
-	/*
-	_speedVector = glm::vec3(0, 0, 0);
-	bool pressedKey = false;
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-		_speedVector.z = -1.0;
-		pressedKey = true;
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-		_speedVector.z = 1.0;
-		pressedKey = true;
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-		_speedVector.x = 1.0;
-		pressedKey = true;
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-		_speedVector.x = -1.0;
-		pressedKey = true;
-	}
-
-	if (pressedKey) {
-		_speedVector = glm::normalize(_speedVector) * _walkForce * pStep;
-	}
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-		_speedVector.y = _jumpForce * pStep;
-		pressedKey = true;
-	}
-	
-
-	//if(pressedKey)
-	if(pressedKey)
-	{
-		neV3 curVel = _owner->getRigidBody()->GetVelocity();
-		curVel[2] = 0.0f;
-
-		if (curVel.Length() < _maxVelocity)
-		{
-			_owner->getRigidBody()->ApplyImpulse(toTokamak(_speedVector));
-		}
-	}
-	*/
-
-	//std::cout << _owner->getRigidBody()
-	
-	//_owner->getRigidBody()->SetTorque(toTokamak(glm::vec3(0.0, 0.0, 0.0)));
-	//_owner->getRigidBody()->SetAngularMomentum(toTokamak(glm::vec3(0.0, 0.0, 0.0)));
-	//_owner->getRigidBody()->SetRotation(neQ(0.0f, 0.0f, 0.0f, 1.0f));
 }
 
 neV3 PlayerBehaviour::glmToNe(glm::vec3 v)

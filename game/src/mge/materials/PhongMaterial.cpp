@@ -7,6 +7,7 @@
 #include "mge/core/Mesh.hpp"
 #include "mge/core/Light.hpp"
 #include "mge/core/World.hpp"
+#include "mge/core/Level.hpp"
 
 ShaderProgram* PhongMaterial::_shader = NULL;
 
@@ -33,6 +34,23 @@ PhongMaterial::PhongMaterial(Texture* pDiffuseTexture, glm::vec3 pKa, glm::vec3 
 {
     //every time we create an instance of colormaterial we check if the corresponding shader has already been loaded
     _lazyInitializeShader();
+}
+
+PhongMaterial::PhongMaterial(std::string params)
+{
+	
+	std::vector<std::string> col = Level::split(params, ',');
+
+	//TODO save every loaded texture and request existing
+	//TODO Check image type
+
+	_diffuseTexture = Texture::load(config::MGE_TEXTURE_PATH+col[0]+".png");
+	_Ka = glm::vec3(1, 1, 1) * 0.005f;
+	_Kd = glm::vec3(atof(col[1].c_str()), atof(col[2].c_str()), atof(col[3].c_str()));
+	_Ks = glm::vec3(1, 1, 1);
+	_shininess = atof(col[4].c_str());
+
+	_lazyInitializeShader();
 }
 
 void PhongMaterial::_lazyInitializeShader() {

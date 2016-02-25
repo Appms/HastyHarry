@@ -46,7 +46,7 @@ void LightingDemo::_initializeScene()
 {
     _renderer->setClearColor(0,0,0);
 
-	Level::Load("Level_04.xml", _world);
+	Level::Load("Goal.xml", _world);
 
 	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);
@@ -59,7 +59,7 @@ void LightingDemo::_initializeScene()
 	_world->add(camera);
 	
 	//Init Player
-	GameObject* player = new GameObject("player", glm::vec3(0, 3, -2), GameObject::RIGIDBODY, GameObject::CAPSULE);
+	GameObject* player = new GameObject("player", glm::vec3(85, 10, 130), GameObject::RIGIDBODY, GameObject::CAPSULE);
 	player->setParent(_world);
 	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 5.0f));
 	((PlayerBehaviour *)player->getBehaviour())->Initialize();
