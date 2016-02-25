@@ -15,8 +15,12 @@ using namespace std;
 #include "mge/core/GameObject.hpp"
 #include "mge/materials/AbstractMaterial.hpp"
 #include "mge/materials/ColorMaterial.hpp"
+#include "materials\TextureMaterial.hpp"
+#include "materials\PhongMaterial.hpp"
 
 #include "mge/behaviours/PlayerBehaviour.hpp"
+#include "behaviours\LookAt.hpp"
+#include "behaviours\SoundBehaviour.hpp"
 
 #include "mge/util/DebugHud.hpp"
 
@@ -63,6 +67,12 @@ void LightingDemo::_initializeScene()
 	player->setParent(_world);
 	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 5.0f));
 	((PlayerBehaviour *)player->getBehaviour())->Initialize();
+
+	GameObject* monkey = new GameObject("monkey", glm::vec3(0, 0, 0), GameObject::PhysicsType::ANIMATEDBODY);
+	_world->add(monkey);
+	monkey->setMesh(monkeyMesh);
+	monkey->setMaterial(phongMaterial);
+	monkey->setBehaviour(new SoundBehaviour("jump.wav", glm::vec3(0,0,0)));
 }
 
 void LightingDemo::_render() {

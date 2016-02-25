@@ -9,6 +9,7 @@
 #include "mge/PlayerControllerCB.hpp"
 #include "mge/core/World.hpp"
 #include "mge/core/GameObject.hpp"
+#include "SFML/Audio.hpp"
 
 PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce) : AbstractBehaviour()
 {
@@ -79,6 +80,9 @@ void PlayerBehaviour::Initialize()
 	//Set Camera as child and set position
 	_camera->setParent(_owner);
 	_camera->setLocalPosition(glm::vec3(0, 0, 0));
+
+	//Set audio listener volume
+	sf::Listener::setGlobalVolume(50.0f);
 }
 
 PlayerBehaviour::~PlayerBehaviour()
@@ -87,13 +91,32 @@ PlayerBehaviour::~PlayerBehaviour()
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)
 {
-	//TODO Add body rotation over y axis (without physics?)
-	pController->GetRigidBody()->SetAngularMomentum(glmToNe(glm::vec3(0.0f, glm::radians(-_mouseDelta.x), 0.0f)));
-	//pController->GetRigidBody()->SetAngularMomentum(glmToNe(glm::vec3(0.0f, glm::radians(-0.5f), 0.0f)));
 
-	//TODO Add camera rotation over xz plane
-	_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+	//Capsule rotation (X-Z Locked)
+	_angleY += _mouseDelta.x / 90.0f;
 
+	neM3 rotationMatrixY;
+	rotationMatrixY[0].Set(cos(_angleY), 0.0f, sin(_angleY));
+	rotationMatrixY[1].Set(0.0f, 1.0f, 0.0f);
+	rotationMatrixY[2].Set(-sin(_angleY), 0.0f, cos(_angleY));
+
+	pController->GetRigidBody()->SetRotation(rotationMatrixY);
+
+	glm::vec3 camFor = _camera->getForwardVector();
+	glm::vec3 bodyFor = _owner->getForwardVector();
+
+	bool camGreater = camFor.y > bodyFor.y ? true : false;
+
+	if (camGreater) {
+		if (glm::abs(glm::dot(bodyFor, camFor)) > 0.1) {
+			_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+		} else if (-_mouseDelta.y < 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+	}
+	else {
+		if (glm::abs(glm::dot(bodyFor, camFor)) > 0.1) {
+			_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+		} else if (-_mouseDelta.y > 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+	} 
 
 	pController->GetRigidBody()->BeginIterateSensor();
 	neSensor* sensor;
@@ -108,8 +131,6 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			grounded = true;
 		}
 	}
-
-
 
 	_speedVector = glm::vec3(0, 0, 0);
 
@@ -141,25 +162,12 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		_speedVector.y = _jumpForce;
 	}
 
+	glm::vec3 momentum = glm::vec3(0.0f, pController->GetRigidBody()->GetAngularMomentum().Y(), 0.0f);
+
 	//Set dem velocitys
 	//TODO Get the forward and right vector to apply translation in the right direction
 	pController->GetRigidBody()->SetVelocity(glmToNe(_speedVector));
-
-	/*---------------NOTES-----------------
-
-	- Maybe update rigidbody when rotate
-	and translate function of a GameObject
-	are called (check animatedbody??)
-
-	- Add handy functions to GameObject 
-	would be neat (get scale, rot, pos)
-
-	- Add a function to set the rotation
-	of a GameObject
-
-	-------------------------------------*/
-
-	//TODO Freeze rotation on x and z axis
+	
 }
 
 void PlayerBehaviour::update(float pStep)
@@ -176,6 +184,9 @@ void PlayerBehaviour::update(float pStep)
 
 	//Update previous mouse position
 	_prevMousePos = sf::Mouse::getPosition();
+
+	sf::Listener::setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
+	sf::Listener::setDirection(_owner->getForwardVector().x, _owner->getForwardVector().y, -_owner->getForwardVector().z);
 }
 
 neV3 PlayerBehaviour::glmToNe(glm::vec3 v)
