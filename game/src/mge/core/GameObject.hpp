@@ -101,9 +101,16 @@ class GameObject
 		std::string UniqueId;
 		std::string UniqueParentId;
 
-		//TODO add function to parse collider information from unity
-		void SetPlayerPhysics();
-		neRigidBody* GetRigidBody();
+		void setRigidBody(neRigidBody* body);
+
+		glm::vec3 getPosition();
+		glm::quat getRotation();
+
+		World* GetWorld();
+
+		glm::vec3 getForwardVector();
+		glm::vec3 getRightVector();
+		glm::vec3 getUpVector();
 	protected:
 		std::string _name;
 		glm::mat4 _transform;

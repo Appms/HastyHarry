@@ -91,7 +91,7 @@ void GameObject::_updatePhysicsBody() {
 	neV3 pos;
 	neQ rot;
 	glm::vec3 worldPos = this->getWorldPosition();
-	f32 mass = 1.0f;
+	f32 mass = 100.0f;
 
 	glm::vec3 scale;
 	glm::quat rotation;
@@ -337,14 +337,11 @@ GameObject* GameObject::getChildAt(int pIndex) {
     return _children[pIndex];
 }
 
-void GameObject::SetPlayerPhysics()
-{
+void GameObject::setRigidBody(neRigidBody* body) {
+	_rigidbody = body;
+}
 
-	neGeometry* geometry;
-	neV3 pos;
-	neQ rot;
-	glm::vec3 worldPos = this->getWorldPosition();
-
+glm::vec3 GameObject::getPosition() {
 	glm::vec3 scale;
 	glm::quat rotation;
 	glm::vec3 translation;
@@ -353,35 +350,38 @@ void GameObject::SetPlayerPhysics()
 
 	glm::decompose(_transform, scale, rotation, translation, skew, perspective);
 
-	pos[0] = translation[0];
-	pos[1] = translation[1];
-	pos[2] = translation[2];
-
-	rot.X = rotation.x;
-	rot.Y = rotation.y;
-	rot.Z = rotation.z;
-	rot.W = rotation.w;
-
-	if (_rigidbody != NULL) _world->getPhysics()->FreeRigidBody(_rigidbody);
-
-	_rigidbody = _world->getPhysics()->CreateRigidBody();
-	geometry = _rigidbody->AddGeometry();
-
-	geometry->SetCylinder(0.5, 2.0);
-	_rigidbody->UpdateBoundingInfo();
-
-	_rigidbody->SetInertiaTensor(neCylinderInertiaTensor(0.5, 2.0, 1.0));
-	_rigidbody->SetMass(50.0);
-
-	//_rigidbody->SetAngularDamping(.03f);
-	_rigidbody->SetLinearDamping(0.1f);
-	
-	_rigidbody->SetPos(pos);
-	_rigidbody->SetRotation(rot);
+	return translation;
 }
 
-neRigidBody* GameObject::GetRigidBody()
+glm::quat GameObject::getRotation() {
+	glm::vec3 scale;
+	glm::quat rotation;
+	glm::vec3 translation;
+	glm::vec3 skew;
+	glm::vec4 perspective;
+
+	glm::decompose(_transform, scale, rotation, translation, skew, perspective);
+
+	return rotation;
+}
+
+World* GameObject::GetWorld()
 {
-	return _rigidbody;
+	return _world;
+}
+
+glm::vec3 GameObject::getRightVector()
+{
+	return glm::normalize(glm::vec3(_transform[0][0], _transform[1][0], _transform[2][0]));
+}
+
+glm::vec3 GameObject::getUpVector()
+{
+	return glm::normalize(glm::vec3(_transform[0][1], _transform[1][1], _transform[2][1]));
+}
+
+glm::vec3 GameObject::getForwardVector()
+{
+	return glm::normalize(glm::vec3(_transform[0][2], _transform[1][2], _transform[2][2]));
 }
 
