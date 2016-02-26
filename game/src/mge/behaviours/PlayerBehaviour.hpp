@@ -29,6 +29,8 @@ private:
 
 	PlayerControllerCB _playerControllerCB;
 
+	bool _holdingJump;
+
 	Camera* _camera;
 	glm::vec3 _speedVector;
 	sf::Vector2i _currMousePos;
@@ -37,6 +39,13 @@ private:
 
 	neV3 glmToNe(glm::vec3 v);
 	glm::vec3 neToGlm(neV3 v);
+
+	float _timer;
+	int _counter;
+	bool _dead;
+
+	glm::vec3 _resetPos;
+	glm::vec3 _prevPos;
 };
 
 #endif // PLAYERBEHAVIOUR_H

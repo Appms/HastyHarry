@@ -10,6 +10,7 @@ using namespace std;
 #include "mge/core/World.hpp"
 #include "mge/behaviours/AbstractBehaviour.hpp"
 #include "..\..\include\tokamak.h"
+#include "mge/behaviours/PlayerBehaviour.hpp"
 
 GameObject::GameObject(std::string pName, glm::vec3 pPosition, GameObject::PhysicsType pPhysicsType, GameObject::ColliderType pColliderType )
 :	_name( pName ), _transform( glm::translate( pPosition ) ),  _parent(NULL), _children(),
@@ -74,12 +75,12 @@ AbstractMaterial * GameObject::getMaterial() const
 void GameObject::setMesh(Mesh* pMesh)
 {
 	_mesh = pMesh;
-	_updatePhysicsBody();
 }
 
-void GameObject::setMeshWithout(Mesh* pMesh)
+void GameObject::setMeshWithCollider(Mesh* pMesh)
 {
 	_mesh = pMesh;
+	_updatePhysicsBody();
 }
 
 void GameObject::_updatePhysicsBody() {
@@ -303,13 +304,7 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 			break;
 		}
 
-		glm::vec3 scale;
-		glm::quat rotation;
-		glm::vec3 translation;
-		glm::vec3 skew;
-		glm::vec4 perspective;
-
-		glm::decompose(_transform, scale, rotation, translation, skew, perspective);
+		glm::vec3 scale = getScale();
 
 		_transform = glm::mat4(scale.x * (float)t.rot[0][0], scale.x * (float)t.rot[0][1], scale.x * (float)t.rot[0][2], 0.0f,
 								scale.y * (float)t.rot[1][0], scale.y * (float)t.rot[1][1], scale.y * (float)t.rot[1][2], 0.0f,
@@ -318,6 +313,22 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 	}
 
     _worldTransform = pParentTransform * _transform;
+
+	if (_isTrigger)
+	{
+		if (glm::length2(_player->getWorldPosition() - getWorldPosition()) < _triggerRadius * _triggerRadius)
+		{
+			_isTrigger = false;
+			_trigger->trigger(_player);
+		}
+	}
+
+	/*
+	if (_trigger) {
+		_trigger->update(pStep);
+	}
+	*/
+	
 
     //make sure behaviour is updated after worldtransform is set
 	if (_behaviour) {
@@ -339,6 +350,11 @@ GameObject* GameObject::getChildAt(int pIndex) {
 
 void GameObject::setRigidBody(neRigidBody* body) {
 	_rigidbody = body;
+}
+
+void GameObject::setAnimatedBody(neAnimatedBody* body)
+{
+	_animatedbody = body;
 }
 
 glm::vec3 GameObject::getPosition() {
@@ -365,6 +381,18 @@ glm::quat GameObject::getRotation() {
 	return rotation;
 }
 
+glm::vec3 GameObject::getScale() {
+	glm::vec3 scale;
+	glm::quat rotation;
+	glm::vec3 translation;
+	glm::vec3 skew;
+	glm::vec4 perspective;
+
+	glm::decompose(_transform, scale, rotation, translation, skew, perspective);
+
+	return scale;
+}
+
 World* GameObject::GetWorld()
 {
 	return _world;
@@ -383,5 +411,13 @@ glm::vec3 GameObject::getUpVector()
 glm::vec3 GameObject::getForwardVector()
 {
 	return glm::normalize(glm::vec3(_transform[0][2], _transform[1][2], _transform[2][2]));
+}
+
+void GameObject::SetTrigger(AbstractBehaviour* pTrigger, float pRadius, GameObject* pPlayer)
+{
+	_trigger = pTrigger;
+	_isTrigger = true;
+	_triggerRadius = pRadius;
+	_player = pPlayer;
 }
 

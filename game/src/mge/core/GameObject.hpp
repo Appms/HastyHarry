@@ -69,7 +69,7 @@ class GameObject
 
         //mesh and material should be shared as much as possible
 		void setMesh(Mesh* pMesh);
-		void setMeshWithout(Mesh* pMesh);
+		void setMeshWithCollider(Mesh* pMesh);
 		Mesh* getMesh() const;
 
 		//you can just get the physics' bodies publicly, not set them... For now
@@ -102,9 +102,13 @@ class GameObject
 		std::string UniqueParentId;
 
 		void setRigidBody(neRigidBody* body);
+		void setAnimatedBody(neAnimatedBody* body);
 
 		glm::vec3 getPosition();
 		glm::quat getRotation();
+		glm::vec3 getScale();
+
+		void SetTrigger(AbstractBehaviour* pTrigger = NULL, float pRadius = 0.0f, GameObject* pPlayer = NULL);
 
 		World* GetWorld();
 
@@ -125,8 +129,12 @@ class GameObject
 		neRigidBody* _rigidbody;
 		neAnimatedBody* _animatedbody;
 		AbstractBehaviour* _behaviour;
+		AbstractBehaviour* _trigger;
 		AbstractMaterial* _material;
 		World* _world;
+		bool _isTrigger;
+		float _triggerRadius;
+		GameObject* _player;
 
         //update children list administration
         void _innerAdd (GameObject* pChild);

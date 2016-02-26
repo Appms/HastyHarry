@@ -4,12 +4,14 @@
 #include "mge/core/Texture.hpp"
 #include "mge/materials/AbstractMaterial.hpp"
 #include <glm.hpp>
+#include <string>
 
 class PhongMaterial : public AbstractMaterial
 {
     public:
         PhongMaterial(Texture* pDiffuseTexture, glm::vec3 pKa = glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3 pKd = glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3 pKs = glm::vec3(1.0f, 1.0f, 1.0f), float pShininess = 1);
-        virtual ~PhongMaterial();
+		PhongMaterial(std::string params);
+		virtual ~PhongMaterial();
         virtual void render(World* pWorld, GameObject* pGameObject, Camera* pCamera);
 
         //in rgb values

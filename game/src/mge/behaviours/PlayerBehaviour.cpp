@@ -1,4 +1,5 @@
 #include "mge/behaviours/PlayerBehaviour.hpp"
+#include "mge/behaviours/SoundBehaviour.hpp"
 #include "mge/core/GameObject.hpp"
 #include "mge/core/Camera.hpp"
 #include <sfml/window/event.hpp>
@@ -10,7 +11,6 @@
 #include "mge/core/World.hpp"
 #include "mge/core/GameObject.hpp"
 #include "SFML/Audio.hpp"
-
 #include "mge/config.hpp"
 #include "mge/core/Mesh.hpp"
 
@@ -87,6 +87,11 @@ void PlayerBehaviour::Initialize()
 
 	//Set audio listener volume
 	sf::Listener::setGlobalVolume(50.0f);
+
+	_resetPos = _owner->getPosition();
+
+	_counter = 0;
+	_prevPos = _owner->getWorldPosition();
 }
 
 PlayerBehaviour::~PlayerBehaviour()
@@ -141,19 +146,15 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	//Get Inputs
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
 		_speedVector += glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
-		//_speedVector.z += 1.0f;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
 		_speedVector -= glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
-		//_speedVector.z -= 1.0f;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 		_speedVector += glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
-		//_speedVector.x += 1.0f;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
 		_speedVector -= glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
-		//_speedVector.x -= 1.0f;
 	}
 
 	//Normalize and apply appropriate speed
@@ -165,9 +166,22 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	//Add current Y velocity unchanged
 	_speedVector.y = pController->GetRigidBody()->GetVelocity()[1];
 
-	if (grounded && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	if (!_holdingJump && grounded && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
+		GameObject* sound = new GameObject("Sound");
+		_owner->add(sound);
+		sound->setBehaviour(new SoundBehaviour("jumpSound", _owner->getWorldPosition(), true, true));
+
 		_speedVector.y = _jumpForce;
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	{
+		_holdingJump = true;
+	}
+	else
+	{
+		_holdingJump = false;
 	}
 
 	glm::vec3 momentum = glm::vec3(0.0f, pController->GetRigidBody()->GetAngularMomentum().Y(), 0.0f);
@@ -206,9 +220,70 @@ void PlayerBehaviour::update(float pStep)
 	printf("%f\n", raycast);
 
 	//Shooting
-	if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-		if ( raycast > 0.992) {
+	if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+		if ( raycast > 0.992)
 			_enemy->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+
+	if (_owner->getWorldPosition().y <= -1.0f && !_dead)
+	{
+		_dead = true;
+		GameObject* sound = new GameObject("Sound");
+		_owner->add(sound);
+		sound->setBehaviour(new SoundBehaviour("fallingSound", _owner->getWorldPosition(), true, true));
+		_timer = 0.0f;
+	}
+
+	if (!_dead)
+	{
+		if (glm::length(_prevPos - _owner->getWorldPosition()) <= 4.0f)
+		{
+			_timer += pStep;
+		}
+		else
+		{
+			_prevPos = _owner->getWorldPosition();
+			_timer = 0.0f;
+		}
+
+		std::string sounds[2] = {
+			"Come on slowpoke",
+			"Take your time"
+		};
+
+		if (_timer > 6.0f)
+		{
+			GameObject* sound = new GameObject("Sound");
+			_owner->add(sound);
+			sound->setBehaviour(new SoundBehaviour(sounds[_counter], _owner->getWorldPosition(), true, true));
+			_timer = 0.0f;
+			_counter++;
+			if (_counter > 1) _counter = 0;
+		}
+	}
+	else
+	{
+		_timer += pStep;
+
+		std::string sounds[2] = {
+			"did you seriously just miss that",
+			"please youve made this mistake before"
+		};
+
+		if (_timer > 3.0f)
+		{
+			std::cout << _resetPos << std::endl;
+			_owner->getRigidBody()->SetVelocity(glmToNe(glm::vec3(0,0,0)));;
+			_owner->getRigidBody()->SetPos(glmToNe(_resetPos));;
+
+			GameObject* sound = new GameObject("Sound");
+			_owner->add(sound);
+			sound->setBehaviour(new SoundBehaviour(sounds[_counter], _owner->getWorldPosition(), true, true));
+
+			_timer = 0.0f;
+			_counter++;
+			if (_counter > 1) _counter = 0;
+
+			_dead = false;
 		}
 	}
 }
