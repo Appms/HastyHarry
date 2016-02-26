@@ -11,15 +11,18 @@
 #include "mge/core/World.hpp"
 #include "mge/core/GameObject.hpp"
 #include "SFML/Audio.hpp"
-#include "mge/config.hpp"
 
-PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce) : AbstractBehaviour()
+#include "mge/config.hpp"
+#include "mge/core/Mesh.hpp"
+
+PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce, GameObject* pEnemy) : AbstractBehaviour()
 {
 	_camera = pCamera;
 	_walkForce = pWalkForce;
 	_maxVelocity = pMaxVelocity;
 	_rotateSpeed = pRotateSpeed;
 	_jumpForce = pJumpForce;
+	_enemy = pEnemy;
 
 	_prevMousePos = sf::Mouse::getPosition();
 }
@@ -205,6 +208,7 @@ void PlayerBehaviour::update(float pStep)
 	//Update previous mouse position
 	_prevMousePos = sf::Mouse::getPosition();
 
+	//Updating the audio listener pos and dir
 	sf::Listener::setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
 	sf::Listener::setDirection(_owner->getForwardVector().x, _owner->getForwardVector().y, -_owner->getForwardVector().z);
 
@@ -256,7 +260,7 @@ void PlayerBehaviour::update(float pStep)
 		if (_timer > 3.0f)
 		{
 			std::cout << _resetPos << std::endl;
-			_owner->getRigidBody()->SetVelocity(glmToNe(glm::vec3(0,0,0)));;
+			_owner->getRigidBody()->SetVelocity(glmToNe(glm::vec3(0, 0, 0)));;
 			_owner->getRigidBody()->SetPos(glmToNe(_resetPos));;
 
 			GameObject* sound = new GameObject("Sound");
@@ -268,6 +272,22 @@ void PlayerBehaviour::update(float pStep)
 			if (_counter > 1) _counter = 0;
 
 			_dead = false;
+
+			glm::vec3 monkeyVector = glm::normalize(_enemy->getWorldPosition() - _camera->getWorldPosition());
+			glm::vec3 raycastVector = glm::normalize(glm::vec3(_owner->getForwardVector().x, _camera->getForwardVector().y, -_owner->getForwardVector().z));
+
+			std::cout << monkeyVector << std::endl << raycastVector << std::endl;
+
+			float raycast = glm::dot(raycastVector, monkeyVector);
+			printf("%f\n", raycast);
+
+			//Shooting
+			if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
+				if (raycast > 0.992) {
+					_enemy->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+
+				}
+			}
 		}
 	}
 }

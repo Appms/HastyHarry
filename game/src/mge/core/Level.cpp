@@ -34,6 +34,15 @@ Level::~Level()
 
 bool Level::Load(std::string pLevelName, World* pWorld)
 {
+	Mesh* monkeyMesh = Mesh::load(config::MGE_MODEL_PATH + "suzanna_smooth.obj");
+	PhongMaterial* phongMaterial = new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "bricks.jpg"));
+
+	GameObject* monkey = new GameObject("monkey", glm::vec3(0, 0, 0), GameObject::PhysicsType::ANIMATEDBODY);
+	pWorld->add(monkey);
+	monkey->setMesh(monkeyMesh);
+	monkey->setMaterial(phongMaterial);
+	//monkey->setBehaviour(new SoundBehaviour("jump.wav", glm::vec3(0, 0, 0)));
+	
 	//Init Camera
 	Camera* camera = new Camera("camera", glm::vec3(0, 0, 0));
 	pWorld->setMainCamera(camera);
@@ -42,7 +51,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	//Init Player
 	GameObject* player = new GameObject("player", glm::vec3(85, 10, 130), GameObject::RIGIDBODY, GameObject::CAPSULE);
 	player->setParent(pWorld);
-	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 7.0f));
+	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 7.0f, monkey));
 	((PlayerBehaviour *)player->getBehaviour())->Initialize();
 
 	string matName = "";

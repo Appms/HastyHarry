@@ -56,14 +56,6 @@ void LightingDemo::_initializeScene()
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);
     _world->add(light);
     _world->setLights(light);
-
-	/*
-	GameObject* monkey = new GameObject("monkey", glm::vec3(0, 0, 0), GameObject::PhysicsType::ANIMATEDBODY);
-	_world->add(monkey);
-	monkey->setMesh(monkeyMesh);
-	monkey->setMaterial(phongMaterial);
-	monkey->setBehaviour(new SoundBehaviour("jump.wav", glm::vec3(0,0,0)));
-	*/
 }
 
 void LightingDemo::_render() {
