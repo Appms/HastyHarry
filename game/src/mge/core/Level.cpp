@@ -9,6 +9,9 @@
 #include "mge/materials/PhongMaterial.hpp"
 #include "mge/materials/ColorMaterial.hpp"
 #include "mge/behaviours/RotatingBehaviour.hpp"
+#include "mge/behaviours/PlayerBehaviour.hpp"
+#include "mge/behaviours/SoundBehaviour.hpp"
+#include "mge/core/Camera.hpp"
 #include <map>
 #include "..\..\include\tokamak.h"
 
@@ -31,8 +34,21 @@ Level::~Level()
 
 bool Level::Load(std::string pLevelName, World* pWorld)
 {
+	//Init Camera
+	Camera* camera = new Camera("camera", glm::vec3(0, 0, 0));
+	pWorld->setMainCamera(camera);
+	pWorld->add(camera);
+
+	//Init Player
+	GameObject* player = new GameObject("player", glm::vec3(85, 10, 130), GameObject::RIGIDBODY, GameObject::CAPSULE);
+	player->setParent(pWorld);
+	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 7.0f));
+	((PlayerBehaviour *)player->getBehaviour())->Initialize();
+
 	string matName = "";
 	string behName = "";
+
+	float triggerRadius;
 
 	glm::vec3 collSize, collCenter, worldPos;
 	neQ worldRot;
@@ -206,7 +222,12 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						}
 						else if (0 == strcmp(part->Value(), "triggerradius"))
 						{
+							triggerRadius = atof(part->GetText());
 							//TODO add trigger
+						}
+						else if (0 == strcmp(part->Value(), "soundname"))
+						{
+							go->SetTrigger(new SoundBehaviour(part->GetText(), player->getPosition(), false, true), triggerRadius, player);
 						}
 						else if (0 == strcmp(part->Value(), "mass"))
 						{

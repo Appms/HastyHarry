@@ -108,7 +108,7 @@ class GameObject
 		glm::quat getRotation();
 		glm::vec3 getScale();
 
-		void SetTrigger(float pRadius, GameObject* pPlayer);
+		void SetTrigger(AbstractBehaviour* pTrigger = NULL, float pRadius = 0.0f, GameObject* pPlayer = NULL);
 
 		World* GetWorld();
 

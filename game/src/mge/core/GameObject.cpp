@@ -323,6 +323,13 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 		}
 	}
 
+	/*
+	if (_trigger) {
+		_trigger->update(pStep);
+	}
+	*/
+	
+
     //make sure behaviour is updated after worldtransform is set
 	if (_behaviour) {
 		_behaviour->update(pStep);
@@ -406,8 +413,9 @@ glm::vec3 GameObject::getForwardVector()
 	return glm::normalize(glm::vec3(_transform[0][2], _transform[1][2], _transform[2][2]));
 }
 
-void GameObject::SetTrigger(float pRadius, GameObject* pPlayer)
+void GameObject::SetTrigger(AbstractBehaviour* pTrigger, float pRadius, GameObject* pPlayer)
 {
+	_trigger = pTrigger;
 	_isTrigger = true;
 	_triggerRadius = pRadius;
 	_player = pPlayer;

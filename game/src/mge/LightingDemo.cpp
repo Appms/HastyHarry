@@ -57,29 +57,20 @@ void LightingDemo::_initializeScene()
     _world->add(light);
     _world->setLights(light);
 
-	//Init Camera
-    Camera* camera = new Camera ("camera", glm::vec3(0,0,0));
-    _world->setMainCamera(camera);
-	_world->add(camera);
-	
-	//Init Player
-	GameObject* player = new GameObject("player", glm::vec3(85, 10, 130), GameObject::RIGIDBODY, GameObject::CAPSULE);
-	player->setParent(_world);
-	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 5.0f));
-	((PlayerBehaviour *)player->getBehaviour())->Initialize();
-
+	/*
 	GameObject* monkey = new GameObject("monkey", glm::vec3(0, 0, 0), GameObject::PhysicsType::ANIMATEDBODY);
 	_world->add(monkey);
 	monkey->setMesh(monkeyMesh);
 	monkey->setMaterial(phongMaterial);
 	monkey->setBehaviour(new SoundBehaviour("jump.wav", glm::vec3(0,0,0)));
+	*/
 }
 
 void LightingDemo::_render() {
     AbstractGame::_render();
     _updateHud();
 
-    //_world->renderDebugInfo();
+    _world->renderDebugInfo();
 }
 
 void LightingDemo::_updateHud() {
