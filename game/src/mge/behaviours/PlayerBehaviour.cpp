@@ -11,7 +11,10 @@
 #include "mge/core/World.hpp"
 #include "mge/core/GameObject.hpp"
 #include "SFML/Audio.hpp"
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 #include "mge/config.hpp"
 #include "mge/core/Mesh.hpp"
 
@@ -212,6 +215,19 @@ void PlayerBehaviour::update(float pStep)
 	sf::Listener::setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
 	sf::Listener::setDirection(_owner->getForwardVector().x, _owner->getForwardVector().y, -_owner->getForwardVector().z);
 
+	glm::vec3 monkeyVector = glm::normalize(_enemy->getWorldPosition() - _camera->getWorldPosition());
+	glm::vec3 raycastVector = glm::normalize(glm::vec3(_owner->getForwardVector().x, _camera->getForwardVector().y, -_owner->getForwardVector().z));
+	
+	std::cout << monkeyVector << std::endl << raycastVector << std::endl;
+
+	float raycast = glm::dot(raycastVector, monkeyVector);
+	printf("%f\n", raycast);
+
+	//Shooting
+	if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+		if ( raycast > 0.992)
+			_enemy->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+
 	if (_owner->getWorldPosition().y <= -1.0f && !_dead)
 	{
 		_dead = true;
@@ -272,22 +288,6 @@ void PlayerBehaviour::update(float pStep)
 			if (_counter > 1) _counter = 0;
 
 			_dead = false;
-
-			glm::vec3 monkeyVector = glm::normalize(_enemy->getWorldPosition() - _camera->getWorldPosition());
-			glm::vec3 raycastVector = glm::normalize(glm::vec3(_owner->getForwardVector().x, _camera->getForwardVector().y, -_owner->getForwardVector().z));
-
-			std::cout << monkeyVector << std::endl << raycastVector << std::endl;
-
-			float raycast = glm::dot(raycastVector, monkeyVector);
-			printf("%f\n", raycast);
-
-			//Shooting
-			if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-				if (raycast > 0.992) {
-					_enemy->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
-
-				}
-			}
 		}
 	}
 }

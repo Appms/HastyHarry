@@ -48,6 +48,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	pWorld->setMainCamera(camera);
 	pWorld->add(camera);
 
+	GameObject* monkey = new GameObject("monkey");
+
 	//Init Player
 	GameObject* player = new GameObject("player", glm::vec3(85, 10, 130), GameObject::RIGIDBODY, GameObject::CAPSULE);
 	player->setParent(pWorld);
