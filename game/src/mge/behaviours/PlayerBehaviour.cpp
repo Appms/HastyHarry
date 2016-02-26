@@ -11,6 +11,10 @@
 #include "mge/core/World.hpp"
 #include "mge/core/GameObject.hpp"
 #include "SFML/Audio.hpp"
+<<<<<<< HEAD
+
+=======
+>>>>>>> refs/remotes/origin/master
 #include "mge/config.hpp"
 #include "mge/core/Mesh.hpp"
 
@@ -213,7 +217,7 @@ void PlayerBehaviour::update(float pStep)
 
 	glm::vec3 monkeyVector = glm::normalize(_enemy->getWorldPosition() - _camera->getWorldPosition());
 	glm::vec3 raycastVector = glm::normalize(glm::vec3(_owner->getForwardVector().x, _camera->getForwardVector().y, -_owner->getForwardVector().z));
-
+	
 	std::cout << monkeyVector << std::endl << raycastVector << std::endl;
 
 	float raycast = glm::dot(raycastVector, monkeyVector);
@@ -272,7 +276,7 @@ void PlayerBehaviour::update(float pStep)
 		if (_timer > 3.0f)
 		{
 			std::cout << _resetPos << std::endl;
-			_owner->getRigidBody()->SetVelocity(glmToNe(glm::vec3(0,0,0)));;
+			_owner->getRigidBody()->SetVelocity(glmToNe(glm::vec3(0, 0, 0)));;
 			_owner->getRigidBody()->SetPos(glmToNe(_resetPos));;
 
 			GameObject* sound = new GameObject("Sound");
