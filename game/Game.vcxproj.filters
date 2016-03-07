@@ -159,6 +159,15 @@
     <ClInclude Include="src\mge\behaviours\SoundBehaviour.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\core\SoundEngine.hpp">
+      <Filter>Archivos de encabezado\mge\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\TriggerBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\SoundTrigger.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -246,6 +255,15 @@
       <Filter>Archivos de código fuente\mge</Filter>
     </ClCompile>
     <ClCompile Include="src\mge\behaviours\SoundBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\core\SoundEngine.cpp">
+      <Filter>Archivos de código fuente\mge\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\TriggerBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\SoundTrigger.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
   </ItemGroup>

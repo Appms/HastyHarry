@@ -108,8 +108,6 @@ class GameObject
 		glm::quat getRotation();
 		glm::vec3 getScale();
 
-		void SetTrigger(AbstractBehaviour* pTrigger = NULL, float pRadius = 0.0f, GameObject* pPlayer = NULL);
-
 		World* GetWorld();
 
 		glm::vec3 getForwardVector();
@@ -129,12 +127,8 @@ class GameObject
 		neRigidBody* _rigidbody;
 		neAnimatedBody* _animatedbody;
 		AbstractBehaviour* _behaviour;
-		AbstractBehaviour* _trigger;
 		AbstractMaterial* _material;
 		World* _world;
-		bool _isTrigger;
-		float _triggerRadius;
-		GameObject* _player;
 
         //update children list administration
         void _innerAdd (GameObject* pChild);

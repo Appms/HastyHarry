@@ -10,15 +10,19 @@ class Sound;
 class SoundBehaviour : public AbstractBehaviour
 {
 	public:
-		SoundBehaviour(std::string pSound, glm::vec3 pPosition,bool playInstant, bool relative);
+		SoundBehaviour();
 		virtual ~SoundBehaviour();
 		virtual void update( float step );
-		virtual void trigger(GameObject* pPlayer);
+
+		void PlayAudio(sf::SoundBuffer &pBuffer, float pMinDistance = 5.0f, float pAttenuation = 10.0f);
+		void StopAudio();
+		float GetCreationTime();
+		bool IsFinished();
+
 
     private:
 		sf::Sound _sound;
-		sf::SoundBuffer _soundBuffer;
-		bool _triggered;
+		float _creationTime;
 };	
 
 #endif // KEYSBEHAVIOUR_H

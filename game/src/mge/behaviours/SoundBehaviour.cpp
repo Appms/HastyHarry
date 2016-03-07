@@ -1,34 +1,14 @@
 #include "mge/behaviours/SoundBehaviour.hpp"
 #include "mge/core/GameObject.hpp"
 #include "mge/config.hpp"
-
+#include "mge/core/Timer.hpp"
 #include <sfml/window/event.hpp>
 #include <iostream>
+#include <string>
+#include "mge/core/SoundEngine.hpp"
 
-SoundBehaviour::SoundBehaviour(std::string pSoundName, glm::vec3 pPosition, bool playInstant = false, bool relative = false)
+SoundBehaviour::SoundBehaviour()
 {
-	if (!_soundBuffer.loadFromFile(config::MGE_AUDIO_PATH + pSoundName + ".wav")) {
-		std::cout << "ERROR: " << pSoundName << " = sound failed to load" << std::endl;
-	}
-	else {
-		_sound.setPosition(pPosition.x, pPosition.y, pPosition.z);
-		_sound.setMinDistance(5.f);
-		_sound.setAttenuation(10.f);
-		_sound.setBuffer(_soundBuffer);
-		_sound.setRelativeToListener(relative);
-	}
-
-	if (!playInstant)
-	{
-		_triggered = false;
-		_sound.stop();
-	}
-	else
-	{
-		_triggered = true;
-		_sound.play();
-	}
-
 }
 
 SoundBehaviour::~SoundBehaviour()
@@ -37,18 +17,33 @@ SoundBehaviour::~SoundBehaviour()
 
 void SoundBehaviour::update( float pStep )
 {
-	//_sound.setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
-
-	//if (_sound.getStatus() != sf::SoundSource::Status::Playing && _triggered)
-	//{
-		//_owner->SetTrigger();
-		//std::cout << "Del" << std::endl;
-		//delete this;
-	//}
+	_sound.setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
 }
 
-void SoundBehaviour::trigger(GameObject* pPlayer)
+void SoundBehaviour::PlayAudio(sf::SoundBuffer &pBuffer, float pMinDistance, float pAttenuation)
 {
-	_triggered = true;
+	_sound.setBuffer(pBuffer);
+	_sound.setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
+
+	_sound.setMinDistance(pMinDistance);
+	_sound.setAttenuation(pAttenuation);
+
+	_creationTime = Timer::now();
+
 	_sound.play();
+}
+
+void SoundBehaviour::StopAudio()
+{
+	_sound.stop();
+}
+
+float SoundBehaviour::GetCreationTime()
+{
+	return _creationTime;
+}
+
+bool SoundBehaviour::IsFinished()
+{
+	return _sound.getStatus() != sf::Music::Status::Playing;
 }

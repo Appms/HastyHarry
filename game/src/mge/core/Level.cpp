@@ -36,24 +36,16 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 {
 	Mesh* monkeyMesh = Mesh::load(config::MGE_MODEL_PATH + "suzanna_smooth.obj");
 	PhongMaterial* phongMaterial = new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "bricks.jpg"));
-
-	GameObject* monkey = new GameObject("monkey", glm::vec3(0, 0, 0), GameObject::PhysicsType::ANIMATEDBODY);
-	pWorld->add(monkey);
-	monkey->setMesh(monkeyMesh);
-	monkey->setMaterial(phongMaterial);
-	//monkey->setBehaviour(new SoundBehaviour("jump.wav", glm::vec3(0, 0, 0)));
 	
 	//Init Camera
 	Camera* camera = new Camera("camera", glm::vec3(0, 0, 0));
 	pWorld->setMainCamera(camera);
 	pWorld->add(camera);
 
-	GameObject* monkey = new GameObject("monkey");
-
 	//Init Player
 	GameObject* player = new GameObject("player", glm::vec3(85, 10, 130), GameObject::RIGIDBODY, GameObject::CAPSULE);
 	player->setParent(pWorld);
-	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 7.0f, monkey));
+	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 9.0f));
 	((PlayerBehaviour *)player->getBehaviour())->Initialize();
 
 	string matName = "";
@@ -105,6 +97,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						if (0 == strcmp(part->Value(), "name"))
 						{
 							go->setName(part->GetText());
+
+							if (0 == strcmp(part->GetText(), "Enemy"))
+							{
+								((PlayerBehaviour*)(player->getBehaviour()))->AddEnemy(go);
+							}
 						}
 						else if (0 == strcmp(part->Value(), "id"))
 						{
@@ -138,7 +135,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							{
 								if (0 == (*it).compare(part->GetText()))
 								{
-									std::cout << "Level Loader: Mesh loaded from Buffer: " + *it + ".obj" << std::endl;
+									//std::cout << "Level Loader: Mesh loaded from Buffer: " + *it + ".obj" << std::endl;
 									found = true;
 									indexPlace = counter;
 								}
@@ -151,11 +148,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else
 							{
-								std::cout << "Level Loader: Loading Mesh " << part->GetText() << ".obj" << std::endl << std::endl;
+								//std::cout << "Level Loader: Loading Mesh " << part->GetText() << ".obj" << std::endl << std::endl;
 								_loadedMeshNames.push_back(part->GetText());
 								_loadedMeshes.push_back(Mesh::load(config::MGE_MODEL_PATH + part->GetText() + ".obj"));
 								go->setMesh(_loadedMeshes.back());
-								std::cout << std::endl;
+								//std::cout << std::endl;
 							}
 						}
 						else if (0 == strcmp(part->Value(), "behaviourname"))
@@ -172,7 +169,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 != behName.compare(""))
 							{
-								std::cout << "Level Loader: Behaviour \"" << matName << "\" not found!" << std::endl;
+								std::cout << "Level Loader: Behaviour \"" << behName << "\" not found!" << std::endl;
 								foundBeh = false;
 							}
 
@@ -238,7 +235,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						}
 						else if (0 == strcmp(part->Value(), "soundname"))
 						{
-							go->SetTrigger(new SoundBehaviour(part->GetText(), player->getPosition(), false, true), triggerRadius, player);
+							//go->SetTrigger(new SoundBehaviour(part->GetText(), player->getPosition(), false, true), triggerRadius, player);
 						}
 						else if (0 == strcmp(part->Value(), "mass"))
 						{
@@ -265,8 +262,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 				if (foundCollider)
 				{
-					std::cout << go->getLocalPosition() << std::endl;
-					std::cout << "Found Collider" << std::endl;
+					//std::cout << go->getLocalPosition() << std::endl;
+					//std::cout << "Found Collider" << std::endl;
 					//TODO Export physics material propeertys
 					neAnimatedBody* body = pWorld->getPhysics()->CreateAnimatedBody();
 					neGeometry* geometry = body->AddGeometry();
@@ -325,6 +322,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 		}
 	}
 	
+	doc.Clear();
+
 	std::cout << "Level Loader: \"" + pLevelName + "\" loaded successfully!" << std::endl;
 	return true;
 }

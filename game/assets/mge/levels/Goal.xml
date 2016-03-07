@@ -1039,6 +1039,23 @@
 			<soundname />
 		</gameobject>
 		<gameobject>
+			<id>2dedd6bc-2b57-4678-b83a-9df39f98371e</id>
+			<name>Enemy</name>
+			<parentid>d9ef790c-a479-4ff9-8775-e19550c66521</parentid>
+			<worldposition>153.23, 24, 112.49</worldposition>
+			<worldrotation>0, 0, 0, 1</worldrotation>
+			<transform>1, 0, 0, 65.73, 0, 1, 0, 24, 0, 0, 1, -18.73, 0, 0, 0, 1</transform>
+			<mesh>CrossHallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>blank, 0.2635705, 0.3251215, 0.5514706, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0, 0, 0</collidercenter>
+			<collidersize>0.8209, 6, 12</collidersize>
+			<triggerradius />
+			<soundname />
+		</gameobject>
+		<gameobject>
 			<id>3c07dadc-49fa-485a-a246-ca4a8c499bf7</id>
 			<name>CrossHallway_Wall 3 (5)</name>
 			<parentid>53a73a4d-72b7-4e76-a964-39aecd6e4cc7</parentid>
@@ -1668,7 +1685,7 @@
 			<soundname />
 		</gameobject>
 		<gameobject>
-			<id>fae7ac63-bec1-41fb-a154-c8e4a5b36d0b</id>
+			<id>6470a40e-81b9-4de7-ba68-aae4e77238a1</id>
 			<name>CrossHallway_Wall 3 (1)</name>
 			<parentid>53a73a4d-72b7-4e76-a964-39aecd6e4cc7</parentid>
 			<worldposition>123.5, 10, 142.22</worldposition>
@@ -1970,6 +1987,23 @@
 			<behaviourparams />
 			<collidercenter>0, 0, 0</collidercenter>
 			<collidersize>0.8209, 6, 12</collidersize>
+			<triggerradius />
+			<soundname />
+		</gameobject>
+		<gameobject>
+			<id>d9ef790c-a479-4ff9-8775-e19550c66521</id>
+			<name>Walls</name>
+			<parentid>34c54340-13b9-450c-9b3c-b96748159bef</parentid>
+			<worldposition>87.5, 0, 131.22</worldposition>
+			<worldrotation>0, 0, 0, 1</worldrotation>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
 			<triggerradius />
 			<soundname />
 		</gameobject>
@@ -2582,6 +2616,23 @@
 			<behaviourparams />
 			<collidercenter>0, 0, 0</collidercenter>
 			<collidersize>12, 0.3155, 12</collidersize>
+			<triggerradius />
+			<soundname />
+		</gameobject>
+		<gameobject>
+			<id>761e01fc-138e-4629-9d2a-ccc05b0eff3b</id>
+			<name>Enemy</name>
+			<parentid>d9ef790c-a479-4ff9-8775-e19550c66521</parentid>
+			<worldposition>123.5, 16, 142.22</worldposition>
+			<worldrotation>0, -0.7071, 0, 0.7071</worldrotation>
+			<transform>0, 0, -1, 36, 0, 1, 0, 16, 1, 0, 0, 11, 0, 0, 0, 1</transform>
+			<mesh>CrossHallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>blank, 0.2635705, 0.3251215, 0.5514706, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0, 0, 0</collidercenter>
+			<collidersize>0.8209, 6, 12</collidersize>
 			<triggerradius />
 			<soundname />
 		</gameobject>
@@ -3445,6 +3496,23 @@
 			<mesh>CrossHallway_Wall</mesh>
 			<materialname>TextureMaterial</materialname>
 			<materialparams>CrossroadWallUVHIGH, 1, 1, 1, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0, 0, 0</collidercenter>
+			<collidersize>0.8209, 6, 12</collidersize>
+			<triggerradius />
+			<soundname />
+		</gameobject>
+		<gameobject>
+			<id>a6056026-60b8-46b3-a0c3-e61a133b8cd0</id>
+			<name>Enemy</name>
+			<parentid>d9ef790c-a479-4ff9-8775-e19550c66521</parentid>
+			<worldposition>141.5, 18, 142.22</worldposition>
+			<worldrotation>0, -0.7071, 0, 0.7071</worldrotation>
+			<transform>0, 0, -1, 54, 0, 1, 0, 18, 1, 0, 0, 11, 0, 0, 0, 1</transform>
+			<mesh>CrossHallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>blank, 0.2635705, 0.3251215, 0.5514706, 10</materialparams>
 			<behaviourname />
 			<behaviourparams />
 			<collidercenter>0, 0, 0</collidercenter>
