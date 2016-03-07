@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<audio>
+	<sounds>
+		<sound>
+			<audioname>jump</audioname>
+			<filenames>
+				<filename>Jump1.wav</filename>
+				<filename>Jump2.wav</filename>
+				<filename>Jump3.wav</filename>
+			</filenames>
+			<mindistance>5.0</mindistance>
+			<attenuation>10.0</attenuation>
+		</sound>
+	</sounds>
+	<voices>
+		<voice>
+			<audioname>scream_fall</audioname>
+			<filenames>
+				<filename>Explosion1.wav</filename>
+				<filename>Explosion2.wav</filename>
+			</filenames>
+		</voice>
+	</voices>
+	<tracks>
+		<track>
+			<audioname>music</audioname>
+			<filenames>
+				<filename>music.wav</filename>
+			</filenames>
+		</track>
+	</tracks>
+</audio>

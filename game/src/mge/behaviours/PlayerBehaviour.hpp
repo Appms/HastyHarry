@@ -13,11 +13,12 @@ class Camera;
 class PlayerBehaviour : public AbstractBehaviour
 {
 public:
-	PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce, GameObject* pEnemy);
+	PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce);
 	virtual ~PlayerBehaviour();
 	void Initialize();
 	virtual void update(float step);
 	void PlayerController(neRigidBodyController* pController, float pStep);
+	void AddEnemy(GameObject* pEnemy) { _enemies.push_back(pEnemy); };
 private:
 	float _walkForce;
 	float _angleY;
@@ -25,7 +26,8 @@ private:
 	float _jumpForce;
 	float _maxVelocity;
 
-	GameObject* _enemy;
+	std::vector<GameObject*> _enemies;
+	//GameObject* _enemy;
 
 	PlayerControllerCB _playerControllerCB;
 
