@@ -1,4 +1,5 @@
 #include "mge/behaviours/PlayerBehaviour.hpp"
+#include "mge/behaviours/SoundBehaviour.hpp"
 #include "mge/core/GameObject.hpp"
 #include "mge/core/Camera.hpp"
 #include <sfml/window/event.hpp>
@@ -14,20 +15,25 @@
 #include "mge/config.hpp"
 #include "mge/core/Mesh.hpp"
 
-PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce, GameObject* pEnemy) : AbstractBehaviour()
+#include "mge/core/SoundEngine.hpp"
+
+PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce) : AbstractBehaviour()
 {
 	_camera = pCamera;
 	_walkForce = pWalkForce;
 	_maxVelocity = pMaxVelocity;
 	_rotateSpeed = pRotateSpeed;
 	_jumpForce = pJumpForce;
-	_enemy = pEnemy;
 
 	_prevMousePos = sf::Mouse::getPosition();
+
+	
 }
 
 void PlayerBehaviour::Initialize()
 {
+	SoundEngine::PlayMusic("music");
+
 	f32 mass = 1.0f;
 	f32 height = 1.0f;
 	f32 radius = 0.5f;
@@ -87,6 +93,11 @@ void PlayerBehaviour::Initialize()
 
 	//Set audio listener volume
 	sf::Listener::setGlobalVolume(50.0f);
+
+	_resetPos = _owner->getPosition();
+
+	_counter = 0;
+	_prevPos = _owner->getWorldPosition();
 }
 
 PlayerBehaviour::~PlayerBehaviour()
@@ -141,19 +152,15 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	//Get Inputs
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
 		_speedVector += glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
-		//_speedVector.z += 1.0f;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
 		_speedVector -= glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
-		//_speedVector.z -= 1.0f;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 		_speedVector += glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
-		//_speedVector.x += 1.0f;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
 		_speedVector -= glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
-		//_speedVector.x -= 1.0f;
 	}
 
 	//Normalize and apply appropriate speed
@@ -165,9 +172,23 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	//Add current Y velocity unchanged
 	_speedVector.y = pController->GetRigidBody()->GetVelocity()[1];
 
-	if (grounded && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	if (!_holdingJump && grounded && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
+		SoundEngine::PlayAudio("jump", _owner);
+		//GameObject* sound = new GameObject("Sound");
+		//_owner->add(sound);
+		//sound->setBehaviour(new SoundBehaviour("jumpSound", _owner->getWorldPosition(), true, true));
+
 		_speedVector.y = _jumpForce;
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	{
+		_holdingJump = true;
+	}
+	else
+	{
+		_holdingJump = false;
 	}
 
 	glm::vec3 momentum = glm::vec3(0.0f, pController->GetRigidBody()->GetAngularMomentum().Y(), 0.0f);
@@ -188,7 +209,7 @@ void PlayerBehaviour::update(float pStep)
 	//Keep the mouse from leaving the center
 	int screenHeight = sf::VideoMode::getDesktopMode().height;
 	int screenWidth = sf::VideoMode::getDesktopMode().width;
-	sf::Mouse::setPosition(sf::Vector2i(screenWidth / 2, screenHeight / 2));
+	//sf::Mouse::setPosition(sf::Vector2i(screenWidth / 2, screenHeight / 2));
 
 	//Update previous mouse position
 	_prevMousePos = sf::Mouse::getPosition();
@@ -197,18 +218,85 @@ void PlayerBehaviour::update(float pStep)
 	sf::Listener::setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
 	sf::Listener::setDirection(_owner->getForwardVector().x, _owner->getForwardVector().y, -_owner->getForwardVector().z);
 
-	glm::vec3 monkeyVector = glm::normalize(_enemy->getWorldPosition() - _camera->getWorldPosition());
-	glm::vec3 raycastVector = glm::normalize(glm::vec3(_owner->getForwardVector().x, _camera->getForwardVector().y, -_owner->getForwardVector().z));
+	for (std::vector<GameObject*>::iterator it = _enemies.begin(); it != _enemies.end(); ++it)
+	{
+		glm::vec3 monkeyVector = glm::normalize((*it)->getWorldPosition() - _camera->getWorldPosition());
+		glm::vec3 raycastVector = glm::normalize(glm::vec3(_owner->getForwardVector().x, _camera->getForwardVector().y, -_owner->getForwardVector().z));
 
-	std::cout << monkeyVector << std::endl << raycastVector << std::endl;
+		float raycast = glm::dot(raycastVector, monkeyVector);
 
-	float raycast = glm::dot(raycastVector, monkeyVector);
-	printf("%f\n", raycast);
+		//Shooting
+		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+			if (raycast > 0.85){
+				//(*it)->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+				(*it)->getAnimatedBody()->SetPos(glmToNe(glm::vec3(100000, 100000, 100000)));
+				(*it)->setLocalPosition(glm::vec3(100000, 100000, 100000));
+			}
+	}
 
-	//Shooting
-	if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-		if ( raycast > 0.992) {
-			_enemy->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+	
+
+	if (_owner->getWorldPosition().y <= -1.0f && !_dead)
+	{
+		_dead = true;
+		SoundEngine::PlayVoice("scream_fall");
+		//GameObject* sound = new GameObject("Sound");
+		//_owner->add(sound);
+		//sound->setBehaviour(new SoundBehaviour("fallingSound", _owner->getWorldPosition(), true, true));
+		_timer = 0.0f;
+	}
+
+	if (!_dead)
+	{
+		if (glm::length(_prevPos - _owner->getWorldPosition()) <= 4.0f)
+		{
+			_timer += pStep;
+		}
+		else
+		{
+			_prevPos = _owner->getWorldPosition();
+			_timer = 0.0f;
+		}
+
+		std::string sounds[2] = {
+			"Come on slowpoke",
+			"Take your time"
+		};
+
+		if (_timer > 6.0f)
+		{
+			//GameObject* sound = new GameObject("Sound");
+			//_owner->add(sound);
+			//sound->setBehaviour(new SoundBehaviour(sounds[_counter], _owner->getWorldPosition(), true, true));
+			_timer = 0.0f;
+			_counter++;
+			if (_counter > 1) _counter = 0;
+		}
+	}
+	else
+	{
+		_timer += pStep;
+
+		std::string sounds[2] = {
+			"did you seriously just miss that",
+			"please youve made this mistake before"
+		};
+
+		if (_timer > 3.0f)
+		{
+			std::cout << _resetPos << std::endl;
+			_owner->getRigidBody()->SetVelocity(glmToNe(glm::vec3(0, 0, 0)));;
+			_owner->getRigidBody()->SetPos(glmToNe(_resetPos));;
+
+			//GameObject* sound = new GameObject("Sound");
+			//_owner->add(sound);
+			//sound->setBehaviour(new SoundBehaviour(sounds[_counter], _owner->getWorldPosition(), true, true));
+
+			_timer = 0.0f;
+			_counter++;
+			if (_counter > 1) _counter = 0;
+
+			_dead = false;
 		}
 	}
 }

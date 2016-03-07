@@ -7,21 +7,22 @@
 
 class Sound;
 
-/**
- * KeysBehaviour allows you to move an object using the keyboard in its own local space.
- * Left right turns, forward back moves.
- */
 class SoundBehaviour : public AbstractBehaviour
 {
 	public:
-		SoundBehaviour(std::string pSound, glm::vec3 pPosition);
+		SoundBehaviour();
 		virtual ~SoundBehaviour();
 		virtual void update( float step );
 
+		void PlayAudio(sf::SoundBuffer &pBuffer, float pMinDistance = 5.0f, float pAttenuation = 10.0f);
+		void StopAudio();
+		float GetCreationTime();
+		bool IsFinished();
+
+
     private:
 		sf::Sound _sound;
-		sf::SoundBuffer _soundBuffer;
-		float _timer = 0.0f;
-};
+		float _creationTime;
+};	
 
 #endif // KEYSBEHAVIOUR_H

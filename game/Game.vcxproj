@@ -157,6 +157,8 @@
     <ClInclude Include="src\mge\behaviours\PlayerBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\RotatingBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundBehaviour.hpp" />
+    <ClInclude Include="src\mge\behaviours\SoundTrigger.hpp" />
+    <ClInclude Include="src\mge\behaviours\TriggerBehaviour.hpp" />
     <ClInclude Include="src\mge\config.hpp" />
     <ClInclude Include="src\mge\core\AbstractGame.hpp" />
     <ClInclude Include="src\mge\core\Camera.hpp" />
@@ -167,6 +169,7 @@
     <ClInclude Include="src\mge\core\Mesh.hpp" />
     <ClInclude Include="src\mge\core\Renderer.hpp" />
     <ClInclude Include="src\mge\core\ShaderProgram.hpp" />
+    <ClInclude Include="src\mge\core\SoundEngine.hpp" />
     <ClInclude Include="src\mge\core\Texture.hpp" />
     <ClInclude Include="src\mge\core\Timer.hpp" />
     <ClInclude Include="src\mge\core\World.hpp" />
@@ -189,6 +192,8 @@
     <ClCompile Include="src\mge\behaviours\PlayerBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\RotatingBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundBehaviour.cpp" />
+    <ClCompile Include="src\mge\behaviours\SoundTrigger.cpp" />
+    <ClCompile Include="src\mge\behaviours\TriggerBehaviour.cpp" />
     <ClCompile Include="src\mge\core\AbstractGame.cpp" />
     <ClCompile Include="src\mge\core\Camera.cpp" />
     <ClCompile Include="src\mge\core\FPS.cpp" />
@@ -198,6 +203,7 @@
     <ClCompile Include="src\mge\core\Mesh.cpp" />
     <ClCompile Include="src\mge\core\Renderer.cpp" />
     <ClCompile Include="src\mge\core\ShaderProgram.cpp" />
+    <ClCompile Include="src\mge\core\SoundEngine.cpp" />
     <ClCompile Include="src\mge\core\Texture.cpp" />
     <ClCompile Include="src\mge\core\Timer.cpp" />
     <ClCompile Include="src\mge\core\World.cpp" />

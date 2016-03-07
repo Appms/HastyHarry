@@ -4,6 +4,10 @@
 #include "mge/MGEDemo.hpp"
 #include "mge/LightingDemo.hpp"
 #include "mge/config.hpp"
+
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
+
 //#include "lua.hpp"
 
 /**
@@ -23,6 +27,8 @@
  */
 int main()
 {
+	srand(time(NULL));
+
     std::cout << "Starting Game" << std::endl;
 
     /*lua_State *L = luaL_newstate();

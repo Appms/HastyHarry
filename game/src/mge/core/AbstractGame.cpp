@@ -7,6 +7,7 @@ using namespace std;
 #include "mge/core/FPS.hpp"
 #include "mge/core/Renderer.hpp"
 #include "mge/core/World.hpp"
+#include "mge/core/SoundEngine.hpp"
 
 AbstractGame::AbstractGame():_window(NULL),_renderer(NULL),_world(NULL),_running(false)
 {
@@ -28,7 +29,13 @@ void AbstractGame::initialize() {
     _initializeGlew();
     _initializeRenderer();
     _initializeWorld();
+
+	SoundEngine::Init("AudioConfig.xml");
+
     _initializeScene();
+	
+	
+
     cout << endl << "Engine initialized." << endl << endl;
 }
 
@@ -36,10 +43,10 @@ void AbstractGame::initialize() {
 
 void AbstractGame::_initializeWindow() {
 	cout << "Initializing window..." << endl;
-	_window = new sf::RenderWindow( sf::VideoMode(860,540), "My Game!", sf::Style::Default, sf::ContextSettings(24,8,0,3,5));
+	_window = new sf::RenderWindow( sf::VideoMode(800,600), "My Game!", sf::Style::Default, sf::ContextSettings(24,8,0,3,5));
 	_window->setVerticalSyncEnabled(true);
 	_window->setMouseCursorVisible(false);
-    cout << "Window initialized." << endl << endl;
+	cout << "Window initialized." << endl << endl;
 }
 
 void AbstractGame::_printVersionInfo() {

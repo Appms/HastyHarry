@@ -2,27 +2,95 @@
 <level>
 	<gameobjects>
 		<gameobject>
-			<id>12e35c72-224e-46e2-8682-367aaef5b7c1</id>
-			<name>Cube</name>
+			<id>40df54aa-9074-4209-a84a-887333d7611b</id>
+			<name>Floors</name>
 			<parentid />
-			<transform>20, 0, 0, 0, 0, 1, 0, -2.57, 0, 0, 20, 0, 0, 0, 0, 1</transform>
-			<mesh>Cube</mesh>
-			<materialname>ColorMaterial</materialname>
-			<materialparams>1, 1, 0</materialparams>
+			<worldposition>0, 0, 10</worldposition>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 10, 0, 0, 0, 1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
 			<behaviourname />
 			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<triggerradius />
+		</gameobject>
+		<gameobject>
+			<id>47c1acbd-c490-47fb-b292-cfb25197c7d6</id>
+			<name>Trigger</name>
+			<parentid />
+			<worldposition>0, 0, 0</worldposition>
+			<transform>1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<triggerradius>7</triggerradius>
+		</gameobject>
+		<gameobject>
+			<id>75531c47-599e-46ac-8f49-021c37b8109f</id>
+			<name>Floor</name>
+			<parentid>40df54aa-9074-4209-a84a-887333d7611b</parentid>
+			<worldposition>12, -3, 22</worldposition>
+			<transform>-20, 0, 0, 12, 0, 1, 0, -3, 0, 0, -20, 12, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>land, 1, 1, 1, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0, 0, 0</collidercenter>
+			<collidersize>1, 1, 1</collidersize>
+			<triggerradius />
+		</gameobject>
+		<gameobject>
+			<id>4ab9ac80-6985-4090-afee-81edc42b1a23</id>
+			<name>Floor</name>
+			<parentid>40df54aa-9074-4209-a84a-887333d7611b</parentid>
+			<worldposition>12, -3, -2</worldposition>
+			<transform>0, 0, -20, 12, 0, 1, 0, -3, 20, 0, 0, -12, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>land, 1, 1, 1, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0, 0, 0</collidercenter>
+			<collidersize>1, 1, 1</collidersize>
+			<triggerradius />
+		</gameobject>
+		<gameobject>
+			<id>62c4554a-d36a-42bd-be7b-c5177744f43a</id>
+			<name>Floor</name>
+			<parentid>40df54aa-9074-4209-a84a-887333d7611b</parentid>
+			<worldposition>-12, -3, -2</worldposition>
+			<transform>20, 0, 0, -12, 0, 1, 0, -3, 0, 0, 20, -12, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>land, 1, 1, 1, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0, 0, 0</collidercenter>
+			<collidersize>1, 1, 1</collidersize>
+			<triggerradius />
+		</gameobject>
+		<gameobject>
+			<id>00c8d6b6-f7f7-4123-bdb2-53ca6dd8fd10</id>
+			<name>Floor</name>
+			<parentid>40df54aa-9074-4209-a84a-887333d7611b</parentid>
+			<worldposition>-12, -3, 22</worldposition>
+			<transform>0, 0, 20, -12, 0, 1, 0, -3, -20, 0, 0, 12, 0, 0, 0, 1</transform>
+			<mesh>Cube</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>land, 1, 1, 1, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0, 0, 0</collidercenter>
+			<collidersize>1, 1, 1</collidersize>
+			<triggerradius />
 		</gameobject>
 	</gameobjects>
-	<lights>
-		<light>
-			<name>Directional Light</name>
-			<position>0.0, 3.0, 0.0</position>
-			<rotation>50.0, 330.0, 0.0</rotation>
-			<type>Directional</type>
-			<color>1.0, 1.0, 0.8, 1.0</color>
-			<range>10</range>
-			<intensity>1</intensity>
-			<coneAngle>30</coneAngle>
-		</light>
-	</lights>
+	<lights />
 </level>
