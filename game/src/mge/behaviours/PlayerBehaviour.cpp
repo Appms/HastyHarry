@@ -131,6 +131,7 @@ void PlayerBehaviour::Initialize()
 PlayerBehaviour::~PlayerBehaviour()
 {
 	_enemies.clear();
+	delete test;
 }
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)
@@ -204,7 +205,8 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir) * -100.f);
 
 			if (!Timer::IsPaused() && !_holdingShoot && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left) && sensor->GetDetectDepth() > 0.0f) {
-				delete ((GameObject*)sensor->GetDetectAnimatedBody()->GetUserData());
+				GameObject* object = (GameObject*)sensor->GetDetectAnimatedBody()->GetUserData();
+				delete (object);
 			}
 
 			_holdingShoot = sf::Mouse::isButtonPressed(sf::Mouse::Button::Left);

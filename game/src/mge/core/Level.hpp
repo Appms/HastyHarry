@@ -27,6 +27,7 @@ class Level
 		static std::vector<Mesh*> _loadedMeshes;
 		static std::vector<std::string> _loadedMeshNames;
 		static std::vector<AbstractMaterial*> _loadedMaterials;
+		static std::vector<std::string> _loadedMaterialsNames;
 		static std::vector<GameObject*> _loadedGameObjects;
 };
 
