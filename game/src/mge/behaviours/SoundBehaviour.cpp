@@ -13,9 +13,6 @@ SoundBehaviour::SoundBehaviour()
 
 SoundBehaviour::~SoundBehaviour()
 {
-	_sound.stop();
-	_sound.~Sound();
-	_creationTime = NULL;
 }
 
 void SoundBehaviour::update( float pStep )

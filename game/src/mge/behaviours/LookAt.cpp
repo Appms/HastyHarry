@@ -11,7 +11,7 @@ LookAt::LookAt(GameObject * pTarget): AbstractBehaviour(), _target(pTarget)
 
 LookAt::~LookAt()
 {
-	_target = NULL;
+    //dtor
 }
 
 /**

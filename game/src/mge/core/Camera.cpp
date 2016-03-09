@@ -11,7 +11,7 @@ Camera::Camera( std::string pName, glm::vec3 pPosition, glm::mat4 pProjectionMat
 
 Camera::~Camera()
 {
-	//_projection = NULL;
+	//dtor
 }
 
 glm::mat4& Camera::getProjection() {

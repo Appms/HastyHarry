@@ -56,7 +56,7 @@ void LitTextureMaterial::_lazyInitializeShader() {
 
 LitTextureMaterial::~LitTextureMaterial()
 {
-	delete _diffuseTexture;
+    //dtor
 }
 
 void LitTextureMaterial::setDiffuseTexture(Texture* pDiffuseTexture) {
