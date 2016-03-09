@@ -8,9 +8,7 @@ ShaderProgram::ShaderProgram():_programId(0), _shaderIds() {
     cout << endl << "Program created with id:" << _programId << endl;
 }
 
-ShaderProgram::~ShaderProgram() {
-	_shaderIds.clear();
-}
+ShaderProgram::~ShaderProgram() {}
 
 void ShaderProgram::addShader (GLuint pShaderType, const string &pShaderPath) {
     std::string shaderCode = _readFile(pShaderPath);

@@ -14,6 +14,7 @@ RotatingBehaviour::RotatingBehaviour(std::string params) : AbstractBehaviour()
 
 RotatingBehaviour::~RotatingBehaviour()
 {
+	//dtor
 }
 
 void RotatingBehaviour::update(float step)

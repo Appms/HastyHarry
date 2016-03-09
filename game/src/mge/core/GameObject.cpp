@@ -47,6 +47,7 @@ GameObject::~GameObject()
 
 	if (_parent != NULL) _parent->remove(this);
 	_world = NULL;
+    //do not forget to delete behaviour, material, mesh, collider manually if required!
 }
 
 void GameObject::setName (std::string pName)
@@ -309,52 +310,24 @@ void GameObject::rotate(float pAngle, glm::vec3 pAxis)
 
 void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 {
-
-	switch (_physicsType)
-	{
+	if (_rigidbody != NULL ) {//|| _animatedbody != NULL) {
+		neT3 t;
+		switch (_physicsType)
+		{
 		case GameObject::RIGIDBODY:
-			if (_rigidbody != NULL) {
-				neT3 t;
-				t = _rigidbody->GetTransform();
-
-				glm::vec3 scale = getScale();
-
-				_transform = glm::mat4(scale.x * (float)t.rot[0][0], scale.x * (float)t.rot[0][1], scale.x * (float)t.rot[0][2], 0.0f,
-					scale.y * (float)t.rot[1][0], scale.y * (float)t.rot[1][1], scale.y * (float)t.rot[1][2], 0.0f,
-					scale.z * (float)t.rot[2][0], scale.z * (float)t.rot[2][1], scale.z * (float)t.rot[2][2], 0.0f,
-					(float)t.pos[0], (float)t.pos[1], (float)t.pos[2], 1.0f);
-				break;
-			}
+			t = _rigidbody->GetTransform();
+			break;
 		case GameObject::ANIMATEDBODY:
-			if (_animatedbody != NULL) {
-				neV3 pos;
-				neQ rot;
+			t = _animatedbody->GetTransform();
+			break;
+		}
 
-				pos = _animatedbody->GetPos();
-				glm::vec3 posi = getPosition();
+		glm::vec3 scale = getScale();
 
-				glm::vec3 scale;
-				glm::quat rotation;
-				glm::vec3 translation;
-				glm::vec3 skew;
-				glm::vec4 perspective;
-
-				glm::decompose(_worldTransform, scale, rotation, translation, skew, perspective);
-
-				pos[0] = translation[0];
-				pos[1] = translation[1];
-				pos[2] = translation[2];
-
-				rot.X = rotation.x;
-				rot.Y = rotation.y;
-				rot.Z = rotation.z;
-				rot.W = rotation.w;
-
-				_animatedbody->SetPos(pos);
-				_animatedbody->SetRotation(rot);
-
-				break;
-			}
+		_transform = glm::mat4(scale.x * (float)t.rot[0][0], scale.x * (float)t.rot[0][1], scale.x * (float)t.rot[0][2], 0.0f,
+								scale.y * (float)t.rot[1][0], scale.y * (float)t.rot[1][1], scale.y * (float)t.rot[1][2], 0.0f,
+								scale.z * (float)t.rot[2][0], scale.z * (float)t.rot[2][1], scale.z * (float)t.rot[2][2], 0.0f,
+								(float)t.pos[0], (float)t.pos[1], (float)t.pos[2], 1.0f);
 	}
 
     _worldTransform = pParentTransform * _transform;

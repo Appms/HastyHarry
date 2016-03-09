@@ -19,12 +19,7 @@ Mesh::Mesh(string pId)
 
 Mesh::~Mesh()
 {
-	_vertices.clear();
-	_normals.clear();
-	_uvs.clear();
-	_tangents.clear();
-	_indices.clear();
-	_tris.clear();
+	//dtor
 }
 
 /**
