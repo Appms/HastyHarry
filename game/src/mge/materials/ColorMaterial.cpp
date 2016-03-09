@@ -7,6 +7,7 @@
 #include "mge/core/Level.hpp"
 #include <string>
 #include <vector>
+#include "mge/util/Utility.hpp"
 
 ShaderProgram* ColorMaterial::_shader = NULL;
 
@@ -25,7 +26,7 @@ ColorMaterial::ColorMaterial(glm::vec3 pDiffuseColor):_diffuseColor (pDiffuseCol
 
 ColorMaterial::ColorMaterial(std::string params)
 {
-	std::vector<std::string> col = Level::split(params, ',');
+	std::vector<std::string> col = Utility::Split(params, ',');
 	
 	_diffuseColor = glm::vec3(atof(col[0].c_str()), atof(col[1].c_str()), atof(col[2].c_str()));
 

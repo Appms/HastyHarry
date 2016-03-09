@@ -8,6 +8,7 @@
 #include "mge/core/Light.hpp"
 #include "mge/core/World.hpp"
 #include "mge/core/Level.hpp"
+#include "mge/util/Utility.hpp"
 
 ShaderProgram* PhongMaterial::_shader = NULL;
 
@@ -39,7 +40,7 @@ PhongMaterial::PhongMaterial(Texture* pDiffuseTexture, glm::vec3 pKa, glm::vec3 
 PhongMaterial::PhongMaterial(std::string params)
 {
 	
-	std::vector<std::string> col = Level::split(params, ',');
+	std::vector<std::string> col = Utility::Split(params, ',');
 
 	//TODO save every loaded texture and request existing
 	//TODO Check image type

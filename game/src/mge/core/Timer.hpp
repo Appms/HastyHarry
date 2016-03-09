@@ -11,6 +11,8 @@ class Timer
 		static sf::Clock _clock;
 		static float _currentTime;
 		static float _deltaTime;
+		static float _slowmotionFactor;
+		static bool _paused;
 
 	private: // disable creation of time object
 		Timer(){}
@@ -19,6 +21,11 @@ class Timer
 		static void update();
 		static float now();
 		static float deltaTime();
+		static bool Slowmotion;
+		static void Pause();
+		static void UnPause();
+		static bool IsPaused();
+		static void TogglePause();
 
 };
 

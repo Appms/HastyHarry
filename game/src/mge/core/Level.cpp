@@ -10,10 +10,12 @@
 #include "mge/materials/ColorMaterial.hpp"
 #include "mge/behaviours/RotatingBehaviour.hpp"
 #include "mge/behaviours/PlayerBehaviour.hpp"
-#include "mge/behaviours/SoundBehaviour.hpp"
+#include "mge/behaviours/SoundTrigger.hpp"
 #include "mge/core/Camera.hpp"
 #include <map>
 #include "..\..\include\tokamak.h"
+#include "mge/util/Utility.hpp"
+#include "mge/core/Timer.hpp"
 
 
 std::vector<Mesh*> Level::_loadedMeshes;
@@ -21,6 +23,9 @@ std::vector<std::string> Level::_loadedMeshNames;
 std::vector<AbstractMaterial*> Level::_loadedMaterials;
 std::vector<AbstractBehaviour*> Level::_loadedBehaviours;
 std::vector<GameObject*> Level::_loadedGameObjects;
+
+World* Level::CurrentWorld;
+GameObject* Level::CurrentPlayer;
 
 Level::Level()
 {
@@ -30,6 +35,11 @@ Level::Level()
 Level::~Level()
 {
     //dtor
+}
+
+std::vector<GameObject*>& Level::GetGameObjects()
+{
+	return _loadedGameObjects;
 }
 
 void Level::Unload() {
@@ -43,6 +53,9 @@ void Level::Unload() {
 bool Level::Load(std::string pLevelName, World* pWorld)
 {
 	Unload();
+	Timer::Pause();
+
+	CurrentWorld = pWorld;
 
 	Mesh* monkeyMesh = Mesh::load(config::MGE_MODEL_PATH + "suzanna_smooth.obj");
 	PhongMaterial* phongMaterial = new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "bricks.jpg"));
@@ -53,10 +66,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	pWorld->add(camera);
 
 	//Init Player
-	GameObject* player = new GameObject("player", glm::vec3(85, 10, 130), GameObject::RIGIDBODY, GameObject::CAPSULE);
-	player->setParent(pWorld);
-	player->setBehaviour(new PlayerBehaviour(camera, 500.0f, 40.0f, 0.1f, 9.0f));
-	((PlayerBehaviour *)player->getBehaviour())->Initialize();
+	CurrentPlayer = new GameObject("player", glm::vec3(0, 0, 0), GameObject::RIGIDBODY, GameObject::CAPSULE);
+	CurrentPlayer->setParent(pWorld);
+	CurrentPlayer->setBehaviour(new PlayerBehaviour(camera, 1000.0f, 6.0f, 25.0f));
+	((PlayerBehaviour *)CurrentPlayer->getBehaviour())->Initialize();
+
 
 	string matName = "";
 	string behName = "";
@@ -110,7 +124,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 							if (0 == strcmp(part->GetText(), "Enemy"))
 							{
-								((PlayerBehaviour*)(player->getBehaviour()))->AddEnemy(go);
+								((PlayerBehaviour*)(CurrentPlayer->getBehaviour()))->AddEnemy(go);
 							}
 						}
 						else if (0 == strcmp(part->Value(), "id"))
@@ -124,7 +138,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						else if (0 == strcmp(part->Value(), "transform"))
 						{
 							std::string pos = part->GetText();
-							std::vector<std::string> mat = split(pos, ',');
+							std::vector<std::string> mat = Utility::Split(pos, ',');
 
 							glm::vec4 m1 = glm::vec4(atof(mat[0].c_str()), atof(mat[1].c_str()), atof(mat[2].c_str()), atof(mat[3].c_str()));
 							glm::vec4 m2 = glm::vec4(atof(mat[4].c_str()), atof(mat[5].c_str()), atof(mat[6].c_str()), atof(mat[7].c_str()));
@@ -134,6 +148,13 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							glm::mat4 m = glm::mat4(m1, m2, m3, m4);
 							m = glm::transpose(m);
 							go->setTransform(m);
+
+							if (0 == strcmp(go->getName().c_str(), "PlayerSpawn"))
+							{
+								glm::vec3 asd = go->getLocalPosition();
+								CurrentPlayer->getRigidBody()->SetPos(Utility::glmToNe(go->getLocalPosition()));
+								//Curre->getRigidBody()->SetPos(glmToNe(_resetPos)); (go->getLocalPosition());
+							}
 						}
 						else if (0 == strcmp(part->Value(), "mesh"))
 						{
@@ -175,6 +196,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							if (0 == behName.compare("RotatingBehaviour"))
 							{
 								_loadedBehaviours.push_back(new RotatingBehaviour(part->GetText()));
+								foundBeh = true;
+							}
+							else if (0 == behName.compare("SoundTrigger"))
+							{
+								_loadedBehaviours.push_back(new SoundTrigger(part->GetText()));
 								foundBeh = true;
 							}
 							else if (0 != behName.compare(""))
@@ -224,7 +250,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							{
 								foundCollider = true;
 								std::string pos = part->GetText();
-								std::vector<std::string> mat = split(pos, ',');
+								std::vector<std::string> mat = Utility::Split(pos, ',');
 								collSize = glm::vec3(atof(mat[0].c_str()), atof(mat[1].c_str()), atof(mat[2].c_str()));
 							}
 						}
@@ -234,18 +260,9 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							{
 								foundCollider = true;
 								std::string pos = part->GetText();
-								std::vector<std::string> mat = split(pos, ',');
+								std::vector<std::string> mat = Utility::Split(pos, ',');
 								collCenter = glm::vec3(atof(mat[0].c_str()), atof(mat[1].c_str()), atof(mat[2].c_str()));
 							}
-						}
-						else if (0 == strcmp(part->Value(), "triggerradius"))
-						{
-							triggerRadius = atof(part->GetText());
-							//TODO add trigger
-						}
-						else if (0 == strcmp(part->Value(), "soundname"))
-						{
-							//go->SetTrigger(new SoundBehaviour(part->GetText(), player->getPosition(), false, true), triggerRadius, player);
 						}
 						else if (0 == strcmp(part->Value(), "mass"))
 						{
@@ -258,13 +275,13 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						else if (0 == strcmp(part->Value(), "worldposition"))
 						{
 							std::string pos = part->GetText();
-							std::vector<std::string> mat = split(pos, ',');
+							std::vector<std::string> mat = Utility::Split(pos, ',');
 							worldPos = glm::vec3(atof(mat[0].c_str()), atof(mat[1].c_str()), atof(mat[2].c_str()));
 						}
 						else if (0 == strcmp(part->Value(), "worldrotation"))
 						{
 							std::string pos = part->GetText();
-							std::vector<std::string> mat = split(pos, ',');
+							std::vector<std::string> mat = Utility::Split(pos, ',');
 							worldRot.Set(atof(mat[0].c_str()), atof(mat[1].c_str()), atof(mat[2].c_str()), atof(mat[3].c_str()));
 						}
 					}
@@ -288,6 +305,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 					go->setAnimatedBody(body);
 
+					//This code shows colliders
 					/*
 					GameObject* test = new GameObject("");
 					pWorld->add(test);
@@ -334,29 +352,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	
 	doc.Clear();
 
+	Timer::UnPause();
 	std::cout << "Level Loader: \"" + pLevelName + "\" loaded successfully!" << std::endl;
 	return true;
-}
-
-std::vector<std::string> Level::split( std::string str, char delimiter )
-{
-    std::vector<std::string> ret;
-
-    size_t pos = str.find_first_of( delimiter );
-
-    while ( !str.empty() )
-    {
-        std::string cur = str.substr( 0, pos );
-        if ( !cur.empty() )
-            ret.push_back( cur );
-
-        if ( pos == std::string::npos )
-            break;
-
-        str = str.substr( pos + 1 );
-
-        pos = str.find_first_of( delimiter );
-    }
-
-    return ret;
 }
