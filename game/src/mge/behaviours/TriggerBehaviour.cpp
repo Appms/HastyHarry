@@ -6,11 +6,9 @@
 #include <iostream>
 #include <string>
 
-TriggerBehaviour::TriggerBehaviour(GameObject* pActivator, float pRadius)
+TriggerBehaviour::TriggerBehaviour()
 {
 	_triggered = false;
-	_activator = pActivator;
-	_radius = pRadius;
 }
 
 TriggerBehaviour::~TriggerBehaviour()

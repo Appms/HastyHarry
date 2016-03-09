@@ -10,17 +10,17 @@ class GameObject;
 class TriggerBehaviour : public AbstractBehaviour
 {
 	public:
-		TriggerBehaviour(GameObject* pActivator, float pRadius);
+		TriggerBehaviour();
 		virtual ~TriggerBehaviour();
 		virtual void update( float step );
 
 	protected:
 		virtual void trigger() = 0;
+		float _radius;
+		GameObject* _activator;
 
     private:
 		bool _triggered;
-		float _radius;
-		GameObject* _activator;
 };	
 
 #endif // TRIGGERBEHAVIOUR_H

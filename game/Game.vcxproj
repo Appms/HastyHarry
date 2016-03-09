@@ -183,6 +183,7 @@
     <ClInclude Include="src\mge\MGEDemo.hpp" />
     <ClInclude Include="src\mge\PlayerControllerCB.hpp" />
     <ClInclude Include="src\mge\util\DebugHud.hpp" />
+    <ClInclude Include="src\mge\util\Utility.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
@@ -217,6 +218,7 @@
     <ClCompile Include="src\mge\MGEDemo.cpp" />
     <ClCompile Include="src\mge\PlayerControllerCB.cpp" />
     <ClCompile Include="src\mge\util\DebugHud.cpp" />
+    <ClCompile Include="src\mge\util\Utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\mge\scripts\helloworld.lua" />

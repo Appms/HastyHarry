@@ -168,6 +168,9 @@
     <ClInclude Include="src\mge\behaviours\SoundTrigger.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\util\Utility.hpp">
+      <Filter>Archivos de encabezado\mge\util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -265,6 +268,9 @@
     </ClCompile>
     <ClCompile Include="src\mge\behaviours\SoundTrigger.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\util\Utility.cpp">
+      <Filter>Archivos de código fuente\mge\util</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

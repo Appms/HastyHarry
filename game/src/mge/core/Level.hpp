@@ -15,8 +15,11 @@ class Level
         Level();
         virtual ~Level();
         static bool Load(std::string pLevelName, World* pWorld);
-        //TODO move this to a util class
-        static std::vector<std::string> split( std::string str, char delimiter );
+
+		static World* CurrentWorld;
+		static GameObject* CurrentPlayer;
+		static std::vector<GameObject*>& GetGameObjects();
+
     protected:
     private:
 		static std::vector<Mesh*> _loadedMeshes;
