@@ -13,6 +13,8 @@ SoundBehaviour::SoundBehaviour()
 
 SoundBehaviour::~SoundBehaviour()
 {
+	_sound.stop();
+	_sound.~Sound();
 }
 
 void SoundBehaviour::update( float pStep )

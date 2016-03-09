@@ -21,7 +21,6 @@
 std::vector<Mesh*> Level::_loadedMeshes;
 std::vector<std::string> Level::_loadedMeshNames;
 std::vector<AbstractMaterial*> Level::_loadedMaterials;
-std::vector<AbstractBehaviour*> Level::_loadedBehaviours;
 std::vector<GameObject*> Level::_loadedGameObjects;
 
 World* Level::CurrentWorld;
@@ -34,7 +33,46 @@ Level::Level()
 
 Level::~Level()
 {
-    //dtor
+	Unload();
+}
+
+void Level::DeleteGameObject(GameObject* pGo)
+{
+	_loadedGameObjects.erase(std::remove(_loadedGameObjects.begin(), _loadedGameObjects.end(), pGo), _loadedGameObjects.end());
+}
+
+void Level::Unload()
+{
+	if (CurrentPlayer != NULL)
+	{
+		delete CurrentPlayer;
+	}
+
+	for each (Mesh* var in _loadedMeshes)
+	{
+		delete var;
+	}
+
+	_loadedMeshes.clear();
+
+
+	_loadedMeshNames.clear();
+
+
+	for each (AbstractMaterial* var in _loadedMaterials)
+	{
+		delete var;
+	}
+
+	_loadedMaterials.clear();
+
+	for each (GameObject* var in _loadedGameObjects)
+	{
+		if(var->UniqueParentId == "")
+			delete var;
+	}
+
+	_loadedGameObjects.clear();
 }
 
 std::vector<GameObject*>& Level::GetGameObjects()
@@ -45,6 +83,7 @@ std::vector<GameObject*>& Level::GetGameObjects()
 bool Level::Load(std::string pLevelName, World* pWorld)
 {
 	Timer::Pause();
+	Unload();
 
 	CurrentWorld = pWorld;
 
@@ -183,26 +222,17 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						}
 						else if (0 == strcmp(part->Value(), "behaviourparams"))
 						{
-							bool foundBeh = false;
 							if (0 == behName.compare("RotatingBehaviour"))
 							{
-								_loadedBehaviours.push_back(new RotatingBehaviour(part->GetText()));
-								foundBeh = true;
+								go->setBehaviour(new RotatingBehaviour(part->GetText()));
 							}
 							else if (0 == behName.compare("SoundTrigger"))
 							{
-								_loadedBehaviours.push_back(new SoundTrigger(part->GetText()));
-								foundBeh = true;
+								go->setBehaviour(new SoundTrigger(part->GetText()));
 							}
 							else if (0 != behName.compare(""))
 							{
 								std::cout << "Level Loader: Behaviour \"" << behName << "\" not found!" << std::endl;
-								foundBeh = false;
-							}
-
-							if (foundBeh)
-							{
-								go->setBehaviour(_loadedBehaviours.back());
 							}
 						}
 						else if (0 == strcmp(part->Value(), "materialname"))

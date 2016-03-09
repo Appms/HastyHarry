@@ -11,6 +11,7 @@ using namespace std;
 #include "mge/behaviours/AbstractBehaviour.hpp"
 #include "..\..\include\tokamak.h"
 #include "mge/behaviours/PlayerBehaviour.hpp"
+#include "mge/core/Level.hpp"
 
 GameObject::GameObject(std::string pName, glm::vec3 pPosition, GameObject::PhysicsType pPhysicsType, GameObject::ColliderType pColliderType )
 :	_name( pName ), _transform( glm::translate( pPosition ) ),  _parent(NULL), _children(),
@@ -20,6 +21,7 @@ GameObject::GameObject(std::string pName, glm::vec3 pPosition, GameObject::Physi
 
 GameObject::~GameObject()
 {
+	
     //detach all children
     cout << "GC running on:" << _name << endl;
 
@@ -29,7 +31,6 @@ GameObject::~GameObject()
         delete child;
     }
 
-	//delete _mesh;
 	_mesh = NULL;
 
 	if (_world != NULL) {
@@ -47,7 +48,6 @@ GameObject::~GameObject()
 
 	if (_parent != NULL) _parent->remove(this);
 	_world = NULL;
-    //do not forget to delete behaviour, material, mesh, collider manually if required!
 }
 
 void GameObject::setName (std::string pName)
@@ -402,21 +402,21 @@ World* GameObject::GetWorld()
 
 glm::vec3 GameObject::getRightVector()
 {
-	return glm::normalize(glm::vec3(_worldTransform[0][0], _worldTransform[1][0], _worldTransform[2][0]));
+	return glm::normalize(glm::vec3(_worldTransform[0]));
 }
 
 glm::vec3 GameObject::getUpVector()
 {
-	return glm::normalize(glm::vec3(_worldTransform[0][1], _worldTransform[1][1], _worldTransform[2][1]));
+	return glm::normalize(glm::vec3(_worldTransform[1]));
 }
 
 glm::vec3 GameObject::getForwardVector()
 {
-	return glm::normalize(glm::vec3(_worldTransform[0][2], _worldTransform[1][2], _worldTransform[2][2]));
+	return glm::normalize(glm::vec3(_worldTransform[2]));// glm::vec3(_worldTransform[0][2], _worldTransform[1][2], _worldTransform[2][2]));
 }
 
 glm::vec3 GameObject::getLocalForwardVector()
 {
-	return glm::normalize(glm::vec3(_transform[0][2], _transform[1][2], _transform[2][2]));
+	return glm::normalize(glm::vec3(_transform[2]));// [2], _transform[1][2], _transform[2][2]));
 }
 
