@@ -15,17 +15,18 @@ class Level
         Level();
         virtual ~Level();
         static bool Load(std::string pLevelName, World* pWorld);
+		static void Unload();
 
 		static World* CurrentWorld;
 		static GameObject* CurrentPlayer;
 		static std::vector<GameObject*>& GetGameObjects();
+		static void DeleteGameObject(GameObject* pGo);
 
     protected:
     private:
 		static std::vector<Mesh*> _loadedMeshes;
 		static std::vector<std::string> _loadedMeshNames;
 		static std::vector<AbstractMaterial*> _loadedMaterials;
-		static std::vector<AbstractBehaviour*> _loadedBehaviours;
 		static std::vector<GameObject*> _loadedGameObjects;
 };
 

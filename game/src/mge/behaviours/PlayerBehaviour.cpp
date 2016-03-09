@@ -130,6 +130,7 @@ void PlayerBehaviour::Initialize()
 
 PlayerBehaviour::~PlayerBehaviour()
 {
+	_enemies.clear();
 }
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)
@@ -145,8 +146,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 
 	pController->GetRigidBody()->SetRotation(rotationMatrixY);
 
-	/*
-	glm::vec3 camFor = _camera->getForwardVector();
+	glm::vec3 camFor = _camera->getForwardVector() * -1.f;
 	glm::vec3 bodyFor = _owner->getForwardVector();
 
 	bool camGreater = camFor.y > bodyFor.y ? true : false;
@@ -163,9 +163,10 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		}
 		else if (-_mouseDelta.y > 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
 	}
-	*/
+	
+
 	//TODO Fix the rotation limit
-	_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+	//_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
 
 	//Sensor reading
 	pController->GetRigidBody()->BeginIterateSensor();
@@ -189,11 +190,18 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		}
 		else if (sensor->GetUserData() == 'r')
 		{
+			glm::vec3 pointDir = _camera->getWorldPosition() + _camera->getForwardVector() * -10.0f;
+			//test->setLocalPosition(pointDir);
 			test->setLocalPosition(Utility::neToGlm(sensor->GetDetectContactPoint()));
+			
+			//if(sensor->GetDetectAnimatedBody() != NULL)
+			//std::cout << ((GameObject*)(sensor->GetDetectAnimatedBody()->GetUserData()))->getName() << std::endl;
+
 			glm::vec3 vecDir = _camera->getLocalForwardVector();
-			vecDir.z = -vecDir.z;
-			vecDir = glm::normalize(vecDir) * 100.0f;
-			sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir * 100.0f));
+			vecDir = glm::normalize(vecDir);// *-100.0f;
+
+			std::cout << vecDir << std::endl;
+			sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir) * -100.f);
 
 			if (!Timer::IsPaused() && !_holdingShoot && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left) && sensor->GetDetectDepth() > 0.0f) {
 				delete ((GameObject*)sensor->GetDetectAnimatedBody()->GetUserData());
@@ -229,16 +237,16 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	glm::vec3 _speedVector = glm::vec3(0, 0, 0);
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-		_speedVector += glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
+		_speedVector -= glm::vec3(_owner->getForwardVector().x, 0.0f, _owner->getForwardVector().z);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-		_speedVector -= glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
+		_speedVector += glm::vec3(_owner->getForwardVector().x, 0.0f, _owner->getForwardVector().z);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-		_speedVector += glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
+		_speedVector += glm::vec3(_owner->getRightVector().x, 0.0f, _owner->getRightVector().z);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-		_speedVector -= glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
+		_speedVector -= glm::vec3(_owner->getRightVector().x, 0.0f, _owner->getRightVector().z);
 	}
 
 	bool applyVelocity = false;

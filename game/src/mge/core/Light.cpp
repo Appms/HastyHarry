@@ -14,7 +14,9 @@ Light::Light(std::string pName, glm::vec3 pPosition, glm::vec3 pDirection, glm::
     addLight(this);
 }
 
-Light::~Light() { }
+Light::~Light() { 
+	//TODO Only remove the light form vector
+}
 
 void Light::addLight(Light* pLight)
 {

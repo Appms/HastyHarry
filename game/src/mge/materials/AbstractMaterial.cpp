@@ -7,6 +7,6 @@ AbstractMaterial::AbstractMaterial()
 
 AbstractMaterial::~AbstractMaterial()
 {
-    //dtor
+    
 }
 
