@@ -12,7 +12,9 @@ TextureMaterial::TextureMaterial(Texture * pDiffuseTexture):_diffuseTexture(pDif
     _lazyInitializeShader();
 }
 
-TextureMaterial::~TextureMaterial() {}
+TextureMaterial::~TextureMaterial() {
+	delete _diffuseTexture;
+}
 
 void TextureMaterial::_lazyInitializeShader() {
     if (!_shader) {
