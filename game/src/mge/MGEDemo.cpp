@@ -108,5 +108,5 @@ void MGEDemo::_updateHud() {
 
 MGEDemo::~MGEDemo()
 {
-	//dtor
+	delete _hud;
 }

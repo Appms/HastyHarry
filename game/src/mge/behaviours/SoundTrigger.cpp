@@ -45,6 +45,8 @@ SoundTrigger::SoundTrigger(std::string params) : TriggerBehaviour()
 
 SoundTrigger::~SoundTrigger()
 {
+	_activator = NULL;
+	_parent = NULL;
 }
 
 void SoundTrigger::trigger()

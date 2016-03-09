@@ -71,7 +71,8 @@ void PhongNormalMaterial::_lazyInitializeShader() {
 
 PhongNormalMaterial::~PhongNormalMaterial()
 {
-    //dtor
+	delete _diffuseTexture;
+	delete _normalTexture;
 }
 
 void PhongNormalMaterial::setDiffuseTexture(Texture* pDiffuseTexture) {
