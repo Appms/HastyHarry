@@ -14,9 +14,7 @@ Light::Light(std::string pName, glm::vec3 pPosition, glm::vec3 pDirection, glm::
     addLight(this);
 }
 
-Light::~Light() { 
-	_lights.clear();
-}
+Light::~Light() { }
 
 void Light::addLight(Light* pLight)
 {

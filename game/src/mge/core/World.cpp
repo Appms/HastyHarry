@@ -15,14 +15,6 @@ World::World():GameObject("root"), _mainCamera(0), _sceneLights(0), _physicsWorl
 	initPhysics();
 }
 
-World::~World() {
-	delete _mainCamera;
-	delete _sceneLights;
-	neSimulator::DestroySimulator(_physicsWorld);
-	_rigidbodyVector.clear();
-	_animatedbodyVector.clear();
-}
-
 void World::setMainCamera (Camera* pCamera) {
     if (pCamera != NULL) _mainCamera = pCamera;
 }

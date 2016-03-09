@@ -35,11 +35,6 @@ LightingDemo::LightingDemo():AbstractGame ()
 {
 }
 
-LightingDemo::~LightingDemo()
-{
-	delete _hud;
-}
-
 void LightingDemo::initialize() {
     //setup the core part
     AbstractGame::initialize();
@@ -56,15 +51,6 @@ void LightingDemo::_initializeScene()
     _renderer->setClearColor(0,0,0);
 
 	Level::Load("Goal.xml", _world);
-
-	/*Mesh* planeMeshDefault = Mesh::load(config::MGE_MODEL_PATH + "plane.obj");
-	AbstractMaterial* textureMaterial = new TextureMaterial(Texture::load(config::MGE_TEXTURE_PATH + "Normal2.png"));
-	GameObject* plane = new GameObject("plane", glm::vec3(88, 10, 130), GameObject::PhysicsType::ANIMATEDBODY);
-	_world->add(plane);
-	plane->scale(glm::vec3(20, 1, 20));
-	plane->setMesh(planeMeshDefault);
-	plane->setMaterial(textureMaterial);
-	//plane->setBehaviour(new LookAt());*/
 
 	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);
@@ -85,4 +71,10 @@ void LightingDemo::_updateHud() {
 
     _hud->setDebugInfo(debugInfo);
     _hud->draw();
+}
+
+
+LightingDemo::~LightingDemo()
+{
+	//dtor
 }
