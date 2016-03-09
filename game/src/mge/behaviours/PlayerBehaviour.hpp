@@ -13,7 +13,7 @@ class Camera;
 class PlayerBehaviour : public AbstractBehaviour
 {
 public:
-	PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce);
+	PlayerBehaviour(Camera* pCamera, float pWalkForce, float pRotateSpeed, float pJumpForce);
 	virtual ~PlayerBehaviour();
 	void Initialize();
 	virtual void update(float step);
@@ -24,30 +24,23 @@ private:
 	float _angleY;
 	float _rotateSpeed;
 	float _jumpForce;
-	float _maxVelocity;
 
 	std::vector<GameObject*> _enemies;
-	//GameObject* _enemy;
 
 	PlayerControllerCB _playerControllerCB;
 
+	//These are for button states
+	//TODO Write Input Manager
 	bool _holdingJump;
+	bool _holdingShoot;
+	bool _holdingSlowmotion;
+	bool _holdingPause;
+	GameObject *test;
 
 	Camera* _camera;
-	glm::vec3 _speedVector;
 	sf::Vector2i _currMousePos;
 	sf::Vector2i _prevMousePos;
 	glm::vec2 _mouseDelta;
-
-	neV3 glmToNe(glm::vec3 v);
-	glm::vec3 neToGlm(neV3 v);
-
-	float _timer;
-	int _counter;
-	bool _dead;
-
-	glm::vec3 _resetPos;
-	glm::vec3 _prevPos;
 };
 
 #endif // PLAYERBEHAVIOUR_H

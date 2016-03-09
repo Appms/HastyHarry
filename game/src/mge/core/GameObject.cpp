@@ -29,6 +29,24 @@ GameObject::~GameObject()
         delete child;
     }
 
+	//delete _mesh;
+	_mesh = NULL;
+
+	if (_world != NULL) {
+		if (_rigidbody != NULL) {
+			_world->getPhysics()->FreeRigidBody(_rigidbody);
+			_rigidbody = NULL;
+		}
+		if (_animatedbody != NULL) {
+			_world->getPhysics()->FreeAnimatedBody(_animatedbody);
+			_animatedbody = NULL;
+		}
+	}
+	delete _behaviour;
+	_material = NULL;
+
+	if (_parent != NULL) _parent->remove(this);
+	_world = NULL;
     //do not forget to delete behaviour, material, mesh, collider manually if required!
 }
 
@@ -384,15 +402,20 @@ World* GameObject::GetWorld()
 
 glm::vec3 GameObject::getRightVector()
 {
-	return glm::normalize(glm::vec3(_transform[0][0], _transform[1][0], _transform[2][0]));
+	return glm::normalize(glm::vec3(_worldTransform[0][0], _worldTransform[1][0], _worldTransform[2][0]));
 }
 
 glm::vec3 GameObject::getUpVector()
 {
-	return glm::normalize(glm::vec3(_transform[0][1], _transform[1][1], _transform[2][1]));
+	return glm::normalize(glm::vec3(_worldTransform[0][1], _worldTransform[1][1], _worldTransform[2][1]));
 }
 
 glm::vec3 GameObject::getForwardVector()
+{
+	return glm::normalize(glm::vec3(_worldTransform[0][2], _worldTransform[1][2], _worldTransform[2][2]));
+}
+
+glm::vec3 GameObject::getLocalForwardVector()
 {
 	return glm::normalize(glm::vec3(_transform[0][2], _transform[1][2], _transform[2][2]));
 }

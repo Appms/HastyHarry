@@ -37,7 +37,10 @@ void DebugHud::_createDebugHud() {
 
 void DebugHud::setDebugInfo(std::string pInfo) {
     _debugText.setString("X");
-	_debugText.setPosition(960, 540);
+	int screenHeight = sf::VideoMode::getDesktopMode().height;
+	int screenWidth = sf::VideoMode::getDesktopMode().width;
+	//_debugText.setPosition(screenWidth / 2.0f, screenHeight / 2.0f);
+	_debugText.setPosition(400, 300);
 }
 
 void DebugHud::draw()

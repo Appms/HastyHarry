@@ -4,12 +4,18 @@
 		<sound>
 			<audioname>jump</audioname>
 			<filenames>
-				<filename>Jump1.wav</filename>
-				<filename>Jump2.wav</filename>
-				<filename>Jump3.wav</filename>
+				<filename>music_converted.wav</filename>
 			</filenames>
 			<mindistance>5.0</mindistance>
 			<attenuation>10.0</attenuation>
+		</sound>
+		<sound>
+			<audioname>music</audioname>
+			<filenames>
+				<filename>music.wav</filename>
+			</filenames>
+			<mindistance>1.0</mindistance>
+			<attenuation>20.0</attenuation>
 		</sound>
 	</sounds>
 	<voices>
@@ -23,7 +29,7 @@
 	</voices>
 	<tracks>
 		<track>
-			<audioname>music</audioname>
+			<audioname>music2</audioname>
 			<filenames>
 				<filename>music.wav</filename>
 			</filenames>

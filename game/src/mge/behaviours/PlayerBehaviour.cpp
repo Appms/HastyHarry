@@ -11,36 +11,36 @@
 #include "mge/core/World.hpp"
 #include "mge/core/GameObject.hpp"
 #include "SFML/Audio.hpp"
+#include "mge/util/Utility.hpp"
 
 #include "mge/config.hpp"
 #include "mge/core/Mesh.hpp"
 
 #include "mge/core/SoundEngine.hpp"
+#include "mge/core/Level.hpp"
+#include "mge/core/Timer.hpp"
+#include "mge/materials/ColorMaterial.hpp"
 
-PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce) : AbstractBehaviour()
+#define WALLRUN_GRAVITY -0.1f
+#define HARD_INERTIA  0.2f
+#define AIR_CONTROLL  0.4f
+
+PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pRotateSpeed, float pJumpForce) : AbstractBehaviour()
 {
 	_camera = pCamera;
 	_walkForce = pWalkForce;
-	_maxVelocity = pMaxVelocity;
 	_rotateSpeed = pRotateSpeed;
 	_jumpForce = pJumpForce;
 
 	_prevMousePos = sf::Mouse::getPosition();
-
-	
 }
 
 void PlayerBehaviour::Initialize()
 {
-	SoundEngine::PlayMusic("music");
+	//SoundEngine::PlayMusic("music");
 
-	f32 mass = 1.0f;
-	f32 height = 1.0f;
-	f32 radius = 0.5f;
-
-	neV3 sensorPos, sensorDir;
-	sensorPos.Set(0.0f, -1.0f, 0.0f);
-	sensorDir.Set(0.0f, 1.0f, 0.0f);
+	f32 mass = 65.0f;
+	f32 diameter = 2.0f;
 
 	//Request a rigidbody from Physicsworld
 	if (_owner->getRigidBody() != NULL) _owner->GetWorld()->getPhysics()->FreeRigidBody(_owner->getRigidBody());
@@ -48,16 +48,48 @@ void PlayerBehaviour::Initialize()
 
 	//Add geometry to it and set it up
 	neGeometry* geometry = rigidBody->AddGeometry();
-	geometry->SetCylinder(radius, height);
+	geometry->SetSphereDiameter(diameter);
 
 	//Create material and apply it
-	_owner->GetWorld()->getPhysics()->SetMaterial(0, 0.0f, 0.0f);
+	_owner->GetWorld()->getPhysics()->SetMaterial(0, 100000000.0f, 0.0f);
 	geometry->SetMaterialIndex(0);
 
 	//Add a sensor for groundcheck
-	neSensor* sensor;
-	sensor = rigidBody->AddSensor();
-	sensor->SetLineSensor(sensorPos, sensorDir);
+	{
+		neSensor* sensor;
+		neV3 sensorPos, sensorDir;
+		sensorPos.Set(0.0f, -1.0f, 0.0f);
+		sensorDir.Set(0.0f, -0.1f, 0.0f);
+		sensor = rigidBody->AddSensor();
+		sensor->SetLineSensor(sensorPos, sensorDir);
+		sensor->SetUserData('g');
+	}
+
+	//Add a sensor for raycast
+	{
+		neSensor* sensor;
+		sensor = rigidBody->AddSensor();
+		glm::vec3 vecDir = _camera->getLocalForwardVector();
+		vecDir.z = -vecDir.z;
+		vecDir = glm::normalize(vecDir) * 100.0f;
+		sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir * 100));
+		sensor->SetUserData('r');
+	}
+
+	//Add sensors for Wall check
+	glm::vec3 sensorDir = glm::vec3(0, 0, 1.2);
+	int sensorCount = 8;
+
+	for (int i = 0; i < sensorCount; ++i)
+	{
+		neSensor* sensor;
+		neV3 sensorPos;
+		sensorPos.Set(0.0f, 0.0f, 0.0f);
+		sensor = rigidBody->AddSensor();
+		sensor->SetLineSensor(sensorPos, Utility::glmToNe(sensorDir));
+		sensorDir = glm::rotateY(sensorDir, glm::radians(360.0f / sensorCount));
+		sensor->SetUserData('w');
+	}
 
 	//Add a controller callback
 	neRigidBodyController* controller;
@@ -67,21 +99,17 @@ void PlayerBehaviour::Initialize()
 	rigidBody->UpdateBoundingInfo();
 
 	//Set Physics Propertys
-	rigidBody->SetInertiaTensor(neCylinderInertiaTensor(radius, height, mass));
+	rigidBody->SetInertiaTensor(neSphereInertiaTensor(diameter, mass));
 	rigidBody->SetMass(mass);
 	rigidBody->SetUserData((u32)this);
 
 	//Parse pos and rot info to Tokamak
-	glm::vec3 pos;
-	glm::quat rot;
-	pos = _owner->getPosition();
-	rot = _owner->getRotation();
-	neV3 nPos;
+	//TODO Make more helper functions
+	glm::quat rot = _owner->getRotation();;
 	neQ nRot;
-	nPos.Set(pos.x, pos.y, pos.z);
 	nRot.Set(rot.x, rot.y, rot.z, rot.w);
 
-	rigidBody->SetPos(nPos);
+	rigidBody->SetPos(Utility::glmToNe(_owner->getPosition()));
 	rigidBody->SetRotation(nRot);
 
 	//Set the created rigidbody as the players rigidbody
@@ -89,15 +117,15 @@ void PlayerBehaviour::Initialize()
 
 	//Set Camera as child and set position
 	_camera->setParent(_owner);
-	_camera->setLocalPosition(glm::vec3(0, 0, 0));
+	_camera->setLocalPosition(glm::vec3(0, 0.8, 0));
 
 	//Set audio listener volume
 	sf::Listener::setGlobalVolume(50.0f);
 
-	_resetPos = _owner->getPosition();
-
-	_counter = 0;
-	_prevPos = _owner->getWorldPosition();
+	test = new GameObject("");
+	Level::CurrentWorld->add(test);
+	test->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+	test->setMaterial(new ColorMaterial(glm::vec3(1, 0, 1)));
 }
 
 PlayerBehaviour::~PlayerBehaviour()
@@ -106,8 +134,8 @@ PlayerBehaviour::~PlayerBehaviour()
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)
 {
-
-	//Capsule rotation (X-Z Locked)
+	_mouseDelta = _mouseDelta * pStep * _rotateSpeed;
+	//HACK X and Z rotation locking (may be deprecated)
 	_angleY += _mouseDelta.x / 90.0f;
 
 	neM3 rotationMatrixY;
@@ -117,39 +145,89 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 
 	pController->GetRigidBody()->SetRotation(rotationMatrixY);
 
+	/*
 	glm::vec3 camFor = _camera->getForwardVector();
 	glm::vec3 bodyFor = _owner->getForwardVector();
 
 	bool camGreater = camFor.y > bodyFor.y ? true : false;
-
+	
 	if (camGreater) {
 		if (glm::abs(glm::dot(bodyFor, camFor)) > 0.1) {
 			_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
-		} else if (-_mouseDelta.y < 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+		}
+		else if (-_mouseDelta.y < 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
 	}
 	else {
 		if (glm::abs(glm::dot(bodyFor, camFor)) > 0.1) {
 			_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
-		} else if (-_mouseDelta.y > 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
-	} 
+		}
+		else if (-_mouseDelta.y > 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+	}
+	*/
+	//TODO Fix the rotation limit
+	_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
 
+	//Sensor reading
 	pController->GetRigidBody()->BeginIterateSensor();
 	neSensor* sensor;
+
 	bool grounded = false;
+	bool onWall = false;
+	std::vector<glm::vec3> wallNormals;
 
 	while (sensor = pController->GetRigidBody()->GetNextSensor())
 	{
-		//std::cout << sensor->GetDetectDepth() << std::endl;
-
-		if (sensor->GetDetectDepth() > 1.0f)
+		if (sensor->GetUserData() == 'g' && sensor->GetDetectDepth() > 0.0f)
 		{
 			grounded = true;
 		}
+		else if (sensor->GetUserData() == 'w' && sensor->GetDetectDepth() > 0.0f)
+		{
+			//TODO Make sure the object is actually a wall
+			onWall = true;
+			wallNormals.push_back(Utility::neToGlm(sensor->GetDetectNormal()));
+		}
+		else if (sensor->GetUserData() == 'r')
+		{
+			test->setLocalPosition(Utility::neToGlm(sensor->GetDetectContactPoint()));
+			glm::vec3 vecDir = _camera->getLocalForwardVector();
+			vecDir.z = -vecDir.z;
+			vecDir = glm::normalize(vecDir) * 100.0f;
+			sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir * 100.0f));
+
+			if (!Timer::IsPaused() && !_holdingShoot && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left) && sensor->GetDetectDepth() > 0.0f) {
+				delete ((GameObject*)sensor->GetDetectAnimatedBody()->GetUserData());
+			}
+
+			_holdingShoot = sf::Mouse::isButtonPressed(sf::Mouse::Button::Left);
+		}
 	}
 
-	_speedVector = glm::vec3(0, 0, 0);
+	if (onWall)
+	{
+		glm::vec3 potentialNormal;
+		float potentialDot = 1.0f;
 
-	//Get Inputs
+		for (std::vector<glm::vec3>::iterator it = wallNormals.begin(); it != wallNormals.end(); ++it)
+		{
+			float dot = glm::dot((*it), _owner->getForwardVector());
+			if (abs(dot) < potentialDot)
+			{
+				potentialNormal = (*it);
+			}
+		}
+
+		neV3 newVel; 
+		newVel.Set(pController->GetRigidBody()->GetVelocity());
+		newVel[1] = WALLRUN_GRAVITY;
+		pController->GetRigidBody()->SetVelocity(newVel);
+
+		//TODO WTF
+		//glm::vec3 moveVec = glm::vec3(1, 1, 1) - glm::vec3(abs(), abs(), abs());
+	}
+
+	glm::vec3 _speedVector = glm::vec3(0, 0, 0);
+
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
 		_speedVector += glm::vec3(_owner->getForwardVector().x, 0.0f, -_owner->getForwardVector().z);
 	}
@@ -163,40 +241,43 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		_speedVector -= glm::vec3(_owner->getRightVector().x, 0.0f, -_owner->getRightVector().z);
 	}
 
+	bool applyVelocity = false;
+	
 	//Normalize and apply appropriate speed
 	if (glm::length(_speedVector) > 0.0f)
 	{
+		//TODO Add Air controll paramater
 		_speedVector = glm::normalize(_speedVector) * _walkForce * pStep;
+		applyVelocity = true;
 	}
 
 	//Add current Y velocity unchanged
 	_speedVector.y = pController->GetRigidBody()->GetVelocity()[1];
 
-	if (!_holdingJump && grounded && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-	{
-		SoundEngine::PlayAudio("jump", _owner);
-		//GameObject* sound = new GameObject("Sound");
-		//_owner->add(sound);
-		//sound->setBehaviour(new SoundBehaviour("jumpSound", _owner->getWorldPosition(), true, true));
-
+	//Jump
+	if (!_holdingJump && grounded && sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 		_speedVector.y = _jumpForce;
+		applyVelocity = true;
 	}
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-	{
-		_holdingJump = true;
-	}
-	else
-	{
-		_holdingJump = false;
+	_holdingJump = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
+
+	if (applyVelocity) {
+		pController->GetRigidBody()->SetVelocity(Utility::glmToNe(_speedVector));
 	}
 
-	glm::vec3 momentum = glm::vec3(0.0f, pController->GetRigidBody()->GetAngularMomentum().Y(), 0.0f);
+	//Slowmotion
+	if (!_holdingSlowmotion && sf::Mouse::isButtonPressed(sf::Mouse::Button::Right)) {
+		Timer::Slowmotion = !Timer::Slowmotion;
+	}
 
-	//Set dem velocitys
-	//TODO Get the forward and right vector to apply translation in the right direction
-	pController->GetRigidBody()->SetVelocity(glmToNe(_speedVector));
-	
+	_holdingSlowmotion = sf::Mouse::isButtonPressed(sf::Mouse::Button::Right);
+
+	if (grounded) {
+		pController->GetRigidBody()->SetLinearDamping(HARD_INERTIA);
+	} else {
+		pController->GetRigidBody()->SetLinearDamping(0.0f);
+	}
 }
 
 void PlayerBehaviour::update(float pStep)
@@ -204,12 +285,15 @@ void PlayerBehaviour::update(float pStep)
 	//Calculate the mouse Vector
 	_currMousePos = sf::Mouse::getPosition();
 	_mouseDelta = glm::vec2(_currMousePos.x, _currMousePos.y) - glm::vec2(_prevMousePos.x, _prevMousePos.y);
-	_mouseDelta *= _rotateSpeed;
 
 	//Keep the mouse from leaving the center
 	int screenHeight = sf::VideoMode::getDesktopMode().height;
 	int screenWidth = sf::VideoMode::getDesktopMode().width;
-	//sf::Mouse::setPosition(sf::Vector2i(screenWidth / 2, screenHeight / 2));
+
+	if (!Timer::IsPaused())
+	{
+		sf::Mouse::setPosition(sf::Vector2i(screenWidth / 2, screenHeight / 2));
+	}
 
 	//Update previous mouse position
 	_prevMousePos = sf::Mouse::getPosition();
@@ -217,98 +301,13 @@ void PlayerBehaviour::update(float pStep)
 	//Updating the audio listener pos and dir
 	sf::Listener::setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
 	sf::Listener::setDirection(_owner->getForwardVector().x, _owner->getForwardVector().y, -_owner->getForwardVector().z);
+	sf::Listener::setUpVector(_camera->getUpVector().x, _camera->getUpVector().y, _camera->getUpVector().z);
 
-	for (std::vector<GameObject*>::iterator it = _enemies.begin(); it != _enemies.end(); ++it)
+	//Pause
+	if (!_holdingPause && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P))
 	{
-		glm::vec3 monkeyVector = glm::normalize((*it)->getWorldPosition() - _camera->getWorldPosition());
-		glm::vec3 raycastVector = glm::normalize(glm::vec3(_owner->getForwardVector().x, _camera->getForwardVector().y, -_owner->getForwardVector().z));
-
-		float raycast = glm::dot(raycastVector, monkeyVector);
-
-		//Shooting
-		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
-			if (raycast > 0.85){
-				//(*it)->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
-				(*it)->getAnimatedBody()->SetPos(glmToNe(glm::vec3(100000, 100000, 100000)));
-				(*it)->setLocalPosition(glm::vec3(100000, 100000, 100000));
-			}
+		Timer::TogglePause();
 	}
-
 	
-
-	if (_owner->getWorldPosition().y <= -1.0f && !_dead)
-	{
-		_dead = true;
-		SoundEngine::PlayVoice("scream_fall");
-		//GameObject* sound = new GameObject("Sound");
-		//_owner->add(sound);
-		//sound->setBehaviour(new SoundBehaviour("fallingSound", _owner->getWorldPosition(), true, true));
-		_timer = 0.0f;
-	}
-
-	if (!_dead)
-	{
-		if (glm::length(_prevPos - _owner->getWorldPosition()) <= 4.0f)
-		{
-			_timer += pStep;
-		}
-		else
-		{
-			_prevPos = _owner->getWorldPosition();
-			_timer = 0.0f;
-		}
-
-		std::string sounds[2] = {
-			"Come on slowpoke",
-			"Take your time"
-		};
-
-		if (_timer > 6.0f)
-		{
-			//GameObject* sound = new GameObject("Sound");
-			//_owner->add(sound);
-			//sound->setBehaviour(new SoundBehaviour(sounds[_counter], _owner->getWorldPosition(), true, true));
-			_timer = 0.0f;
-			_counter++;
-			if (_counter > 1) _counter = 0;
-		}
-	}
-	else
-	{
-		_timer += pStep;
-
-		std::string sounds[2] = {
-			"did you seriously just miss that",
-			"please youve made this mistake before"
-		};
-
-		if (_timer > 3.0f)
-		{
-			std::cout << _resetPos << std::endl;
-			_owner->getRigidBody()->SetVelocity(glmToNe(glm::vec3(0, 0, 0)));;
-			_owner->getRigidBody()->SetPos(glmToNe(_resetPos));;
-
-			//GameObject* sound = new GameObject("Sound");
-			//_owner->add(sound);
-			//sound->setBehaviour(new SoundBehaviour(sounds[_counter], _owner->getWorldPosition(), true, true));
-
-			_timer = 0.0f;
-			_counter++;
-			if (_counter > 1) _counter = 0;
-
-			_dead = false;
-		}
-	}
-}
-
-neV3 PlayerBehaviour::glmToNe(glm::vec3 v)
-{
-	neV3 result;
-	result.Set(v.x, v.y, v.z);
-	return result;
-}
-
-glm::vec3 PlayerBehaviour::neToGlm(neV3 v)
-{
-	return glm::vec3(v[0], v[1], v[2]);
+	_holdingPause = sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P);
 }

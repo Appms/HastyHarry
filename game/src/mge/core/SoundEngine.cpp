@@ -1,4 +1,5 @@
 #include "mge/core/SoundEngine.hpp"
+#include "mge/core/Level.hpp"
 #include "mge/behaviours/SoundBehaviour.hpp"
 #include "mge/config.hpp"
 #include <stdlib.h>
@@ -9,6 +10,8 @@
 #include <iomanip>
 #include <sstream>
 #include <cctype>
+#include "mge/core/Mesh.hpp"
+#include "mge/materials/ColorMaterial.hpp"
 
 #define MAX_SOUNDS 16
 
@@ -146,6 +149,17 @@ void SoundEngine::PlayAudio(std::string pAudioName, GameObject* pParent, glm::ve
 	int randInt =  rand() % (int)(_soundData[pAudioName].SoundBuffer.size());
 	_soundObjects[index]->setParent(pParent);
 	_soundObjects[index]->setLocalPosition(pPosition);
+	
+	//This is for seeing soundobject position
+	/*
+	GameObject* test = new GameObject("");
+	_soundObjects[index]->add(test);
+	test->setLocalPosition(glm::vec3(0, 0, 0));
+	test->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+	test->setMaterial(new ColorMaterial(glm::vec3(1, 0, 1)));
+	*/
+	//
+
 	((SoundBehaviour*)_soundObjects[index]->getBehaviour())->PlayAudio(_soundData[pAudioName].SoundBuffer[randInt], _soundData[pAudioName].MinDistance, _soundData[pAudioName].Attenuation);
 }
 

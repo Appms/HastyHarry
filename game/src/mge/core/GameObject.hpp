@@ -111,6 +111,7 @@ class GameObject
 		World* GetWorld();
 
 		glm::vec3 getForwardVector();
+		glm::vec3 getLocalForwardVector();
 		glm::vec3 getRightVector();
 		glm::vec3 getUpVector();
 	protected:
