@@ -15,6 +15,7 @@ TriggerBehaviour::TriggerBehaviour(GameObject* pActivator, float pRadius)
 
 TriggerBehaviour::~TriggerBehaviour()
 {
+	_activator = NULL;
 }
 
 void TriggerBehaviour::update( float pStep )

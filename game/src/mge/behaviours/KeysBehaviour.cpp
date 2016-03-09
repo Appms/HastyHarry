@@ -17,6 +17,9 @@ KeysBehaviour::KeysBehaviour(float moveSpeed, float turnSpeed, std::string pSoun
 
 KeysBehaviour::~KeysBehaviour()
 {
+	_jumpingSound.stop();
+	_jumpingSound.~Sound();
+	_soundBuffer.~SoundBuffer();
 }
 
 void KeysBehaviour::update( float pStep )

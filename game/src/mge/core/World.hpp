@@ -12,6 +12,7 @@ class World : public GameObject
 {
 	public:
         World();
+		~World();
 
 		void setMainCamera (Camera* pCamera);
 		Camera* getMainCamera();

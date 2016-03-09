@@ -17,6 +17,8 @@
 
 #include "mge/core/SoundEngine.hpp"
 
+#include "mge/core/Level.hpp"
+
 PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVelocity, float pRotateSpeed, float pJumpForce) : AbstractBehaviour()
 {
 	_camera = pCamera;
@@ -28,6 +30,11 @@ PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pMaxVe
 	_prevMousePos = sf::Mouse::getPosition();
 
 	
+}
+
+PlayerBehaviour::~PlayerBehaviour()
+{
+	_enemies.clear();
 }
 
 void PlayerBehaviour::Initialize()
@@ -98,10 +105,6 @@ void PlayerBehaviour::Initialize()
 
 	_counter = 0;
 	_prevPos = _owner->getWorldPosition();
-}
-
-PlayerBehaviour::~PlayerBehaviour()
-{
 }
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)

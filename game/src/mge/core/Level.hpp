@@ -15,6 +15,7 @@ class Level
         Level();
         virtual ~Level();
         static bool Load(std::string pLevelName, World* pWorld);
+		static void Unload();
         //TODO move this to a util class
         static std::vector<std::string> split( std::string str, char delimiter );
     protected:
