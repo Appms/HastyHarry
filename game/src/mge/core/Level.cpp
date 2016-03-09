@@ -42,8 +42,17 @@ std::vector<GameObject*>& Level::GetGameObjects()
 	return _loadedGameObjects;
 }
 
+void Level::Unload() {
+	_loadedMeshes.clear();
+	_loadedMeshNames.clear();
+	_loadedMaterials.clear();
+	_loadedBehaviours.clear();
+	_loadedGameObjects.clear();
+}
+
 bool Level::Load(std::string pLevelName, World* pWorld)
 {
+	Unload();
 	Timer::Pause();
 
 	CurrentWorld = pWorld;

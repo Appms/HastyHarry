@@ -15,6 +15,7 @@ class Level
         Level();
         virtual ~Level();
         static bool Load(std::string pLevelName, World* pWorld);
+		static void Unload();
 
 		static World* CurrentWorld;
 		static GameObject* CurrentPlayer;

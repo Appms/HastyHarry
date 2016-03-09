@@ -13,6 +13,7 @@ TriggerBehaviour::TriggerBehaviour()
 
 TriggerBehaviour::~TriggerBehaviour()
 {
+	_activator = NULL;
 }
 
 void TriggerBehaviour::update( float pStep )

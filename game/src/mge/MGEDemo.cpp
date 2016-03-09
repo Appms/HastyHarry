@@ -32,6 +32,11 @@ MGEDemo::MGEDemo():AbstractGame ()
 {
 }
 
+MGEDemo::~MGEDemo()
+{
+	delete _hud;
+}
+
 void MGEDemo::initialize() {
     //setup the core part
     AbstractGame::initialize();
@@ -103,10 +108,4 @@ void MGEDemo::_updateHud() {
 
     _hud->setDebugInfo(debugInfo);
     _hud->draw();
-}
-
-
-MGEDemo::~MGEDemo()
-{
-	//dtor
 }

@@ -35,6 +35,11 @@ PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pRotat
 	_prevMousePos = sf::Mouse::getPosition();
 }
 
+PlayerBehaviour::~PlayerBehaviour()
+{
+	_enemies.clear();
+}
+
 void PlayerBehaviour::Initialize()
 {
 	//SoundEngine::PlayMusic("music");
@@ -126,10 +131,6 @@ void PlayerBehaviour::Initialize()
 	Level::CurrentWorld->add(test);
 	test->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
 	test->setMaterial(new ColorMaterial(glm::vec3(1, 0, 1)));
-}
-
-PlayerBehaviour::~PlayerBehaviour()
-{
 }
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)
