@@ -155,7 +155,9 @@
     <ClInclude Include="src\mge\behaviours\ArmBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\KeysBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\LookAt.hpp" />
+    <ClInclude Include="src\mge\behaviours\MovingBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\PlayerBehaviour.hpp" />
+    <ClInclude Include="src\mge\behaviours\Projectile.hpp" />
     <ClInclude Include="src\mge\behaviours\RotatingBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundTrigger.hpp" />
@@ -193,7 +195,9 @@
     <ClCompile Include="src\mge\behaviours\ArmBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\KeysBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\LookAt.cpp" />
+    <ClCompile Include="src\mge\behaviours\MovingBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\PlayerBehaviour.cpp" />
+    <ClCompile Include="src\mge\behaviours\Projectile.cpp" />
     <ClCompile Include="src\mge\behaviours\RotatingBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundTrigger.cpp" />
@@ -248,7 +252,6 @@
     <Image Include="assets\mge\textures\Normal2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="assets\mge\levels\Goal.xml" />
     <Xml Include="assets\mge\levels\level_00.xml" />
     <Xml Include="assets\mge\levels\Level_01.xml" />
     <Xml Include="assets\mge\levels\Level_02.xml" />
