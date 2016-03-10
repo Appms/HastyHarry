@@ -4,18 +4,19 @@
 #include <SFML/window.hpp>
 #include <iostream>
 #include <cmath>
+#include "mge/behaviours/PlayerBehaviour.hpp"
 using namespace std;
 
-ArmBehaviour::ArmBehaviour(): AbstractBehaviour()
+ArmBehaviour::ArmBehaviour(bool pCos): AbstractBehaviour()
 {
-
+	_cos = pCos;
 }
 
 ArmBehaviour::~ArmBehaviour()
 {
 }
 
-void ArmBehaviour::update( float step )
+void ArmBehaviour::update(float step)
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
 		glm::vec3 pos = _owner->getLocalPosition();
@@ -70,7 +71,24 @@ void ArmBehaviour::update( float step )
 
 	std::cout << "Pos: " << _owner->getLocalPosition() << " Rot: " << _owner->getRotation() << std::endl;
 
-	//_timer += step;
-	//float t = sin(_timer * 7.5f);
-	//_owner->rotate(t * 0.1f, glm::vec3(1, 0, 0));
+	if (((PlayerBehaviour*)_owner->getParent()->getBehaviour())->IsMoving())
+	{
+		_timer += step;
+		glm::vec3 pos = _owner->getLocalPosition();
+
+		if (_cos) {
+			pos.z += -sin(_timer * 7.5f) * 0.05f;
+		} else {
+			pos.z += sin(_timer * 7.5f) * 0.05f;
+		}
+		
+		_owner->setLocalPosition(pos);
+
+		if (_cos) {
+			_owner->rotate(-sin(_timer * 7.5f) * 0.1f, glm::vec3(1, 0, 0));
+		}
+		else {
+			_owner->rotate(sin(_timer * 7.5f) * 0.1f, glm::vec3(1, 0, 0));
+		}
+	}
 }

@@ -19,6 +19,7 @@ public:
 	virtual void update(float step);
 	void PlayerController(neRigidBodyController* pController, float pStep);
 	void AddEnemy(GameObject* pEnemy) { _enemies.push_back(pEnemy); };
+	bool IsMoving();
 private:
 	float _angleY;
 
@@ -27,6 +28,7 @@ private:
 	bool _falling;
 	bool _wallJumped;
 	bool _walking;
+	bool _moving;
 
 	glm::vec3 _inputVector;
 	glm::vec3 _moveVelocity;

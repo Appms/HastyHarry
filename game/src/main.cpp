@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 
 #include "mge/core/AbstractGame.hpp"
 #include "mge/MGEDemo.hpp"
@@ -27,6 +29,10 @@
  */
 int main()
 {
+	std:ofstream out("log.txt");
+	std::streambuf *coutbuf = std::cout.rdbuf();
+	std::cout.rdbuf(out.rdbuf());
+
 	srand(time(NULL));
 
     std::cout << "Starting Game" << std::endl;
@@ -46,6 +52,8 @@ int main()
     game->run();
 
 	delete game;
+
+	std::cout.rdbuf(coutbuf);
 
     return 0;
 }

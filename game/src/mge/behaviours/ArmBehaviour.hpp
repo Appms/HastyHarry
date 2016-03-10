@@ -7,13 +7,14 @@
 class ArmBehaviour : public AbstractBehaviour
 {
     public:
-		ArmBehaviour();
+		ArmBehaviour(bool pCos);
         virtual ~ArmBehaviour();
 
         virtual void update( float step );
 
 private:
 	float _timer;
+	bool _cos;
 };
 
 #endif // LookAt_H
