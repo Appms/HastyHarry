@@ -43,7 +43,7 @@ void AbstractGame::initialize() {
 
 void AbstractGame::_initializeWindow() {
 	cout << "Initializing window..." << endl;
-	_window = new sf::RenderWindow( sf::VideoMode(800,600), "My Game!", sf::Style::Default, sf::ContextSettings(24,8,0,3,5));
+	_window = new sf::RenderWindow( sf::VideoMode(1920,1080), "My Game!", sf::Style::Fullscreen, sf::ContextSettings(24,8,0,3,5));
 	_window->setVerticalSyncEnabled(true);
 	_window->setMouseCursorVisible(false);
 	cout << "Window initialized." << endl << endl;
