@@ -23,13 +23,11 @@ void LookAt::update( float step )
 
 
     //Through GLM
-    /*
-    _owner->setTransform(
+    /*_owner->setTransform(
         glm::inverse (
             glm::lookAt (_owner->getWorldPosition(), _target->getWorldPosition(), glm::vec3(0,1,0))
         )
-    );
-    */
+    );*/
 
     //manually
     //the other way then you would expect, the camera is flipped over the z axis we are staring out of its a.. basically ;)
@@ -37,10 +35,6 @@ void LookAt::update( float step )
     glm::vec3 forward = glm::normalize(_owner->getLocalPosition() - _target->getLocalPosition());
     glm::vec3 right = glm::normalize(glm::cross (glm::vec3(0,1,0), forward));
     glm::vec3 up = glm::normalize(glm::cross (forward, right));
-
-	/*glm::vec3 forward = -glm::vec3(_target->getTransform()[2]);
-    glm::vec3 up = glm::vec3(_target->getTransform()[1]);
-	glm::vec3 right = glm::cross(up, forward);*/
 
     _owner->setTransform(
       glm::mat4 (glm::vec4(right,0), glm::vec4(forward,0), glm::vec4(up,0), glm::vec4(_owner->getLocalPosition(),1) )

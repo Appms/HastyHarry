@@ -171,6 +171,9 @@
     <ClInclude Include="src\mge\util\Utility.hpp">
       <Filter>Archivos de encabezado\mge\util</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\behaviours\Turret.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -272,6 +275,9 @@
     <ClCompile Include="src\mge\util\Utility.cpp">
       <Filter>Archivos de código fuente\mge\util</Filter>
     </ClCompile>
+    <ClCompile Include="src\mge\behaviours\Turret.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\mge\shaders\color.fs">
@@ -341,6 +347,9 @@
       <Filter>Archivos de recursos\mge\assets\levels</Filter>
     </Xml>
     <Xml Include="assets\mge\levels\Level_03.xml">
+      <Filter>Archivos de recursos\mge\assets\levels</Filter>
+    </Xml>
+    <Xml Include="assets\mge\levels\Goal.xml">
       <Filter>Archivos de recursos\mge\assets\levels</Filter>
     </Xml>
   </ItemGroup>

@@ -12,6 +12,7 @@ using namespace std;
 #include "..\..\include\tokamak.h"
 #include "mge/behaviours/PlayerBehaviour.hpp"
 #include "mge/core/Level.hpp"
+#include "mge/util/Utility.hpp"
 
 GameObject::GameObject(std::string pName, glm::vec3 pPosition, GameObject::PhysicsType pPhysicsType, GameObject::ColliderType pColliderType )
 :	_name( pName ), _transform( glm::translate( pPosition ) ),  _parent(NULL), _children(),
@@ -310,24 +311,37 @@ void GameObject::rotate(float pAngle, glm::vec3 pAxis)
 
 void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 {
-	if (_rigidbody != NULL ) {//|| _animatedbody != NULL) {
-		neT3 t;
-		switch (_physicsType)
-		{
+		
+	switch (_physicsType)
+	{
 		case GameObject::RIGIDBODY:
-			t = _rigidbody->GetTransform();
+			if (_rigidbody != NULL) {
+				neT3 t = _rigidbody->GetTransform();
+
+				glm::vec3 scale = getScale();
+
+				_transform = glm::mat4(scale.x * (float)t.rot[0][0], scale.x * (float)t.rot[0][1], scale.x * (float)t.rot[0][2], 0.0f,
+					scale.y * (float)t.rot[1][0], scale.y * (float)t.rot[1][1], scale.y * (float)t.rot[1][2], 0.0f,
+					scale.z * (float)t.rot[2][0], scale.z * (float)t.rot[2][1], scale.z * (float)t.rot[2][2], 0.0f,
+					(float)t.pos[0], (float)t.pos[1], (float)t.pos[2], 1.0f);
+			}
 			break;
 		case GameObject::ANIMATEDBODY:
-			t = _animatedbody->GetTransform();
+			if (_animatedbody != NULL) {
+
+				//this->setLocalPosition(this->getLocalPosition() - glm::vec3(1.0f, 0, 0));
+
+				neV3 pos = _animatedbody->GetPos();
+				pos.Set(_transform[3][0] + pParentTransform[3][0], _transform[3][1] + pParentTransform[3][1], _transform[3][2] + pParentTransform[3][2]);
+				_animatedbody->SetPos(pos);
+				
+				//this->rotate(0.01f, glm::vec3(0, 1, 0));
+
+				neM3 rot = _animatedbody->GetRotationM3();
+				rot.SetColumns(Utility::glmToNe(glm::vec3(_transform[0])/getScale().x), Utility::glmToNe(glm::vec3(_transform[1])/ getScale().y), Utility::glmToNe(glm::vec3(_transform[2])/ getScale().z));
+				_animatedbody->SetRotation(rot);
+			}
 			break;
-		}
-
-		glm::vec3 scale = getScale();
-
-		_transform = glm::mat4(scale.x * (float)t.rot[0][0], scale.x * (float)t.rot[0][1], scale.x * (float)t.rot[0][2], 0.0f,
-								scale.y * (float)t.rot[1][0], scale.y * (float)t.rot[1][1], scale.y * (float)t.rot[1][2], 0.0f,
-								scale.z * (float)t.rot[2][0], scale.z * (float)t.rot[2][1], scale.z * (float)t.rot[2][2], 0.0f,
-								(float)t.pos[0], (float)t.pos[1], (float)t.pos[2], 1.0f);
 	}
 
     _worldTransform = pParentTransform * _transform;

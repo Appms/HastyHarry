@@ -159,6 +159,7 @@
     <ClInclude Include="src\mge\behaviours\SoundBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundTrigger.hpp" />
     <ClInclude Include="src\mge\behaviours\TriggerBehaviour.hpp" />
+    <ClInclude Include="src\mge\behaviours\Turret.hpp" />
     <ClInclude Include="src\mge\config.hpp" />
     <ClInclude Include="src\mge\core\AbstractGame.hpp" />
     <ClInclude Include="src\mge\core\Camera.hpp" />
@@ -195,6 +196,7 @@
     <ClCompile Include="src\mge\behaviours\SoundBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundTrigger.cpp" />
     <ClCompile Include="src\mge\behaviours\TriggerBehaviour.cpp" />
+    <ClCompile Include="src\mge\behaviours\Turret.cpp" />
     <ClCompile Include="src\mge\core\AbstractGame.cpp" />
     <ClCompile Include="src\mge\core\Camera.cpp" />
     <ClCompile Include="src\mge\core\FPS.cpp" />
@@ -244,6 +246,7 @@
     <Image Include="assets\mge\textures\Normal2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Xml Include="assets\mge\levels\Goal.xml" />
     <Xml Include="assets\mge\levels\level_00.xml" />
     <Xml Include="assets\mge\levels\Level_01.xml" />
     <Xml Include="assets\mge\levels\Level_02.xml" />

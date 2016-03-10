@@ -335,6 +335,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 					body->SetUserData((u32)go);
 					
 					neV3 nPos;
+					glm::mat4 m = go->getTransform();
+
 					nPos.Set(worldPos.x + collCenter.x, worldPos.y + collCenter.y, worldPos.z + collCenter.z);
 					body->SetPos(nPos);
 					body->SetRotation(worldRot);

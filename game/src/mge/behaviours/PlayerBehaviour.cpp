@@ -174,6 +174,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	neSensor* sensor;
 
 	bool grounded = false;
+	//_owner->setParent(Level::CurrentWorld);
 	bool onWall = false;
 	std::vector<glm::vec3> wallNormals;
 
@@ -182,6 +183,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		if (sensor->GetUserData() == 'g' && sensor->GetDetectDepth() > 0.0f)
 		{
 			grounded = true;
+			//_owner->setParent((GameObject*)sensor->GetDetectAnimatedBody()->GetUserData());
 		}
 		else if (sensor->GetUserData() == 'w' && sensor->GetDetectDepth() > 0.0f)
 		{

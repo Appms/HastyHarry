@@ -20,6 +20,7 @@ using namespace std;
 
 #include "mge/behaviours/PlayerBehaviour.hpp"
 #include "behaviours\LookAt.hpp"
+#include "behaviours\Turret.hpp"
 #include "behaviours\SoundBehaviour.hpp"
 
 #include "mge/util/DebugHud.hpp"
@@ -60,7 +61,7 @@ void LightingDemo::_initializeScene()
 	billboard->setMesh(planeMeshDefault);
 	billboard->scale(glm::vec3(1.0f,0.5f,1.0f));
 	billboard->setMaterial(textureMaterial);
-	billboard->setBehaviour(new LookAt(Level::CurrentPlayer));
+	billboard->setBehaviour(new Turret(Level::CurrentPlayer));
 
 	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);
