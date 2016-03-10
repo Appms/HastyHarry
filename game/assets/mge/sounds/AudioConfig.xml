@@ -2,36 +2,45 @@
 <audio>
 	<sounds>
 		<sound>
-			<audioname>jump</audioname>
+			<audioname>Land</audioname>
 			<filenames>
-				<filename>music_converted.wav</filename>
+				<filename>Land.wav</filename>
 			</filenames>
 			<mindistance>5.0</mindistance>
 			<attenuation>10.0</attenuation>
 		</sound>
-		<sound>
-			<audioname>music</audioname>
-			<filenames>
-				<filename>music.wav</filename>
-			</filenames>
-			<mindistance>1.0</mindistance>
-			<attenuation>20.0</attenuation>
-		</sound>
 	</sounds>
 	<voices>
 		<voice>
-			<audioname>scream_fall</audioname>
+			<audioname>fall</audioname>
 			<filenames>
-				<filename>Explosion1.wav</filename>
-				<filename>Explosion2.wav</filename>
+				<filename>Falling.wav</filename>
+			</filenames>
+		</voice>
+		<voice>
+			<audioname>jump</audioname>
+			<filenames>
+				<filename>Jump.wav</filename>
+			</filenames>
+		</voice>
+		<voice>
+			<audioname>dialogue_1_1</audioname>
+			<filenames>
+				<filename>Dialogue_1_1.wav</filename>
+			</filenames>
+		</voice>
+		<voice>
+			<audioname>dialogue_1_2</audioname>
+			<filenames>
+				<filename>Dialogue_1_2.wav</filename>
 			</filenames>
 		</voice>
 	</voices>
 	<tracks>
 		<track>
-			<audioname>music2</audioname>
+			<audioname>track_1</audioname>
 			<filenames>
-				<filename>music.wav</filename>
+				<filename>Track_1.wav</filename>
 			</filenames>
 		</track>
 	</tracks>
