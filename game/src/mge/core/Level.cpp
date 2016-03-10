@@ -16,6 +16,7 @@
 #include "..\..\include\tokamak.h"
 #include "mge/util/Utility.hpp"
 #include "mge/core/Timer.hpp"
+#include "mge/behaviours/ArmBehaviour.hpp"
 
 
 std::vector<Mesh*> Level::_loadedMeshes;
@@ -87,8 +88,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 	CurrentWorld = pWorld;
 
-	Mesh* monkeyMesh = Mesh::load(config::MGE_MODEL_PATH + "suzanna_smooth.obj");
-	PhongMaterial* phongMaterial = new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "bricks.jpg"));
+	//Mesh* monkeyMesh = Mesh::load(config::MGE_MODEL_PATH + "suzanna_smooth.obj");
+	//PhongMaterial* phongMaterial = new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "bricks.jpg"));
 	
 	//Init Camera
 	Camera* camera = new Camera("camera", glm::vec3(0, 0, 0));
@@ -98,9 +99,22 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	//Init Player
 	CurrentPlayer = new GameObject("player", glm::vec3(0, 0, 0), GameObject::RIGIDBODY, GameObject::CAPSULE);
 	CurrentPlayer->setParent(pWorld);
-	CurrentPlayer->setBehaviour(new PlayerBehaviour(camera, 1000.0f, 6.0f, 25.0f));
+	CurrentPlayer->setBehaviour(new PlayerBehaviour(camera));
 	((PlayerBehaviour *)CurrentPlayer->getBehaviour())->Initialize();
 
+	GameObject* LeftArm = new GameObject("LeftArm", glm::vec3(-0.8, 0.75, 0));
+	LeftArm->setParent(CurrentPlayer);
+	LeftArm->setBehaviour(new ArmBehaviour());
+	LeftArm->setMesh(Mesh::load(config::MGE_MODEL_PATH+"LeftArm.obj"));
+	LeftArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0,0,0), glm::vec3(1,1,1), glm::vec3(0,0,0), 10.0f));
+
+	/*
+	GameObject* RightArm = new GameObject("RightArm", glm::vec3(1.2, -0.2, -0.5));
+	RightArm->setParent(CurrentPlayer);
+	RightArm->rotate(160.0f, glm::vec3(0, 1, 0));
+	RightArm->setMesh(Mesh::load(config::MGE_MODEL_PATH + "RightArm.obj"));
+	RightArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1), glm::vec3(0, 0, 0), 10.0f));
+	*/
 
 	string matName = "";
 	string behName = "";
@@ -287,11 +301,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						}
 						else if (0 == strcmp(part->Value(), "mass"))
 						{
-							//TODO THIS
+							//TODO Add the mass to the level loading
 						}
 						else if (0 == strcmp(part->Value(), "iskinematic"))
 						{
-							//TODO THIS
+							//TODO Add distinction of Rigid and ANimated bodys when loading
 						}
 						else if (0 == strcmp(part->Value(), "worldposition"))
 						{
@@ -310,8 +324,6 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 				if (foundCollider)
 				{
-					//std::cout << go->getLocalPosition() << std::endl;
-					//std::cout << "Found Collider" << std::endl;
 					//TODO Export physics material propeertys
 					neAnimatedBody* body = pWorld->getPhysics()->CreateAnimatedBody();
 					neGeometry* geometry = body->AddGeometry();

@@ -21,16 +21,28 @@
 #include "mge/core/Timer.hpp"
 #include "mge/materials/ColorMaterial.hpp"
 
-#define WALLRUN_GRAVITY -0.1f
-#define HARD_INERTIA  0.2f
-#define AIR_CONTROLL  0.4f
+#define WALLRUN_GRAVITY -0.05f
+#define NORMAL_GRAVITY -0.2f
 
-PlayerBehaviour::PlayerBehaviour(Camera* pCamera, float pWalkForce, float pRotateSpeed, float pJumpForce) : AbstractBehaviour()
+#define HARD_INERTIA  0.75f
+#define SOFT_INERTIA 0.9f
+
+#define MOVE_FORCE 240.0f
+#define RUN_MAXVELOCITY 25.0f
+#define WALK_MAXVELOCITY 10.0f
+#define AIR_CONTROLL  0.1f
+
+#define GROUND_JUMP_FORCE 12.5f
+
+#define WALLJUMP_NORMALFORCE 7.5f
+#define WALLJUMP_UPFORCE 5.0f
+#define WALLJUMP_FORWARDFORCE 10.0f
+
+#define ROTATE_SPEED 6.0f
+
+PlayerBehaviour::PlayerBehaviour(Camera* pCamera) : AbstractBehaviour()
 {
 	_camera = pCamera;
-	_walkForce = pWalkForce;
-	_rotateSpeed = pRotateSpeed;
-	_jumpForce = pJumpForce;
 
 	_prevMousePos = sf::Mouse::getPosition();
 }
@@ -45,6 +57,8 @@ void PlayerBehaviour::Initialize()
 	//Request a rigidbody from Physicsworld
 	if (_owner->getRigidBody() != NULL) _owner->GetWorld()->getPhysics()->FreeRigidBody(_owner->getRigidBody());
 	neRigidBody* rigidBody = _owner->GetWorld()->getPhysics()->CreateRigidBody();
+
+	rigidBody->GravityEnable(false);
 
 	//Add geometry to it and set it up
 	neGeometry* geometry = rigidBody->AddGeometry();
@@ -104,7 +118,6 @@ void PlayerBehaviour::Initialize()
 	rigidBody->SetUserData((u32)this);
 
 	//Parse pos and rot info to Tokamak
-	//TODO Make more helper functions
 	glm::quat rot = _owner->getRotation();;
 	neQ nRot;
 	nRot.Set(rot.x, rot.y, rot.z, rot.w);
@@ -135,8 +148,11 @@ PlayerBehaviour::~PlayerBehaviour()
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)
 {
-	_mouseDelta = _mouseDelta * pStep * _rotateSpeed;
-	//HACK X and Z rotation locking (may be deprecated)
+	_grounded = false;
+	_walled = false;
+
+	_mouseDelta = _mouseDelta * pStep * ROTATE_SPEED;
+
 	_angleY += _mouseDelta.x / 90.0f;
 
 	neM3 rotationMatrixY;
@@ -146,6 +162,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 
 	pController->GetRigidBody()->SetRotation(rotationMatrixY);
 
+	/*
 	glm::vec3 camFor = _camera->getForwardVector() * -1.f;
 	glm::vec3 bodyFor = _owner->getForwardVector();
 
@@ -163,45 +180,37 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		}
 		else if (-_mouseDelta.y > 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
 	}
-	
+	*/
 
 	//TODO Fix the rotation limit
-	//_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
+	_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
 
 	//Sensor reading
 	pController->GetRigidBody()->BeginIterateSensor();
 	neSensor* sensor;
 
-	bool grounded = false;
-	bool onWall = false;
 	std::vector<glm::vec3> wallNormals;
 
 	while (sensor = pController->GetRigidBody()->GetNextSensor())
 	{
 		if (sensor->GetUserData() == 'g' && sensor->GetDetectDepth() > 0.0f)
 		{
-			grounded = true;
+			_grounded = true;
 		}
 		else if (sensor->GetUserData() == 'w' && sensor->GetDetectDepth() > 0.0f)
 		{
 			//TODO Make sure the object is actually a wall
-			onWall = true;
+			_walled = true;
 			wallNormals.push_back(Utility::neToGlm(sensor->GetDetectNormal()));
 		}
 		else if (sensor->GetUserData() == 'r')
 		{
-			glm::vec3 pointDir = _camera->getWorldPosition() + _camera->getForwardVector() * -10.0f;
-			//test->setLocalPosition(pointDir);
 			test->setLocalPosition(Utility::neToGlm(sensor->GetDetectContactPoint()));
 			
-			//if(sensor->GetDetectAnimatedBody() != NULL)
-			//std::cout << ((GameObject*)(sensor->GetDetectAnimatedBody()->GetUserData()))->getName() << std::endl;
-
-			glm::vec3 vecDir = _camera->getLocalForwardVector();
-			vecDir = glm::normalize(vecDir);// *-100.0f;
-
-			std::cout << vecDir << std::endl;
-			sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir) * -100.f);
+			glm::vec3 vecDir = -_camera->getLocalForwardVector();
+			vecDir = glm::normalize(vecDir) * 100.0f;
+			
+			sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir));
 
 			if (!Timer::IsPaused() && !_holdingShoot && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left) && sensor->GetDetectDepth() > 0.0f) {
 				delete ((GameObject*)sensor->GetDetectAnimatedBody()->GetUserData());
@@ -211,12 +220,42 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		}
 	}
 
-	if (onWall)
+
+	//Group the wallnormals
+	std::vector<glm::vec3> groupedWallNormals;
+
+	for (std::vector<glm::vec3>::iterator it = wallNormals.begin(); it != wallNormals.end(); ++it)
 	{
-		glm::vec3 potentialNormal;
+		bool notGroupedYet = false;
+
+		if (groupedWallNormals.size() == 0)
+		{
+			notGroupedYet = true;
+		}
+		else
+		{
+			for (std::vector<glm::vec3>::iterator it2 = groupedWallNormals.begin(); it2 != groupedWallNormals.end(); ++it2)
+			{
+				if (!(*it == *it2)) {
+					notGroupedYet = true;
+				}
+			}
+		}
+
+		if (notGroupedYet) {
+			groupedWallNormals.push_back(*it);
+		}
+	}
+
+
+	//Get the best candidate for wallrunning
+	glm::vec3 potentialNormal;
+
+	if (_walled)
+	{
 		float potentialDot = 1.0f;
 
-		for (std::vector<glm::vec3>::iterator it = wallNormals.begin(); it != wallNormals.end(); ++it)
+		for (std::vector<glm::vec3>::iterator it = groupedWallNormals.begin(); it != groupedWallNormals.end(); ++it)
 		{
 			float dot = glm::dot((*it), _owner->getForwardVector());
 			if (abs(dot) < potentialDot)
@@ -224,68 +263,113 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 				potentialNormal = (*it);
 			}
 		}
-
-		neV3 newVel; 
-		newVel.Set(pController->GetRigidBody()->GetVelocity());
-		newVel[1] = WALLRUN_GRAVITY;
-		pController->GetRigidBody()->SetVelocity(newVel);
-
-		//TODO WTF
-		//glm::vec3 moveVec = glm::vec3(1, 1, 1) - glm::vec3(abs(), abs(), abs());
 	}
 
-	glm::vec3 _speedVector = glm::vec3(0, 0, 0);
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-		_speedVector -= glm::vec3(_owner->getForwardVector().x, 0.0f, _owner->getForwardVector().z);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-		_speedVector += glm::vec3(_owner->getForwardVector().x, 0.0f, _owner->getForwardVector().z);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-		_speedVector += glm::vec3(_owner->getRightVector().x, 0.0f, _owner->getRightVector().z);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-		_speedVector -= glm::vec3(_owner->getRightVector().x, 0.0f, _owner->getRightVector().z);
+	//Reset WallJumped Flag
+	if (_grounded || _walled && _falling) {
+		_wallJumped = false;
 	}
 
-	bool applyVelocity = false;
-	
-	//Normalize and apply appropriate speed
-	if (glm::length(_speedVector) > 0.0f)
+	//Apply Jump force
+	_jumpVelocity = glm::vec3(0, 0, 0);
+
+	if (!_holdingJump && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
-		//TODO Add Air controll paramater
-		_speedVector = glm::normalize(_speedVector) * _walkForce * pStep;
-		applyVelocity = true;
-	}
-
-	//Add current Y velocity unchanged
-	_speedVector.y = pController->GetRigidBody()->GetVelocity()[1];
-
-	//Jump
-	if (!_holdingJump && grounded && sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-		_speedVector.y = _jumpForce;
-		applyVelocity = true;
+		if (_grounded) {
+			_jumpVelocity.y = GROUND_JUMP_FORCE;
+		}
+		else if (_walled && !_wallJumped) {
+			//TODO Revise Walljump
+			_jumpVelocity.y = WALLJUMP_UPFORCE;
+			std::cout << "here lol" << std::endl;
+			_moveVelocity += -_camera->getForwardVector() * WALLJUMP_FORWARDFORCE + potentialNormal * WALLJUMP_NORMALFORCE;
+			_wallJumped = true;
+		}
 	}
 
 	_holdingJump = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
 
-	if (applyVelocity) {
-		pController->GetRigidBody()->SetVelocity(Utility::glmToNe(_speedVector));
+
+	//Get Inputs
+	_inputVector = glm::vec3(0, 0, 0);
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+		_inputVector -= glm::vec3(_owner->getForwardVector().x, 0.0f, _owner->getForwardVector().z);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+		_inputVector += glm::vec3(_owner->getForwardVector().x, 0.0f, _owner->getForwardVector().z);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+		_inputVector += glm::vec3(_owner->getRightVector().x, 0.0f, _owner->getRightVector().z);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+		_inputVector -= glm::vec3(_owner->getRightVector().x, 0.0f, _owner->getRightVector().z);
 	}
 
-	//Slowmotion
-	if (!_holdingSlowmotion && sf::Mouse::isButtonPressed(sf::Mouse::Button::Right)) {
-		Timer::Slowmotion = !Timer::Slowmotion;
+
+	//See if walking
+	_walking = sf::Keyboard::isKeyPressed(sf::Keyboard::LShift);
+
+
+	//Apply proper acceleration
+	if (glm::length2(_inputVector) > 0.0f) {
+		_moveVelocity +=  glm::normalize(_inputVector) * (_grounded ? MOVE_FORCE : MOVE_FORCE * AIR_CONTROLL) * pStep;
+	} else if(_grounded){
+		_moveVelocity *= HARD_INERTIA;
 	}
 
-	_holdingSlowmotion = sf::Mouse::isButtonPressed(sf::Mouse::Button::Right);
-
-	if (grounded) {
-		pController->GetRigidBody()->SetLinearDamping(HARD_INERTIA);
-	} else {
-		pController->GetRigidBody()->SetLinearDamping(0.0f);
+	//TODO Do not apply Walk_MAxvelocity when in air
+	//Clamp the moveVelocity
+	if (glm::length2(_moveVelocity) > (_walking ? WALK_MAXVELOCITY * WALK_MAXVELOCITY : RUN_MAXVELOCITY * RUN_MAXVELOCITY))
+	{
+		_moveVelocity = glm::normalize(_moveVelocity) * (_walking ? WALK_MAXVELOCITY : RUN_MAXVELOCITY);
 	}
+
+
+	//TODO Implement that the player cant wallrun backwards
+
+	//Remove Wallnormals from move Velocity
+	for (std::vector<glm::vec3>::iterator it = groupedWallNormals.begin(); it != groupedWallNormals.end(); ++it)
+	{
+		float dot = glm::dot((*it), _moveVelocity);
+
+		//TODO Sticking to the wall might be buggy
+		if (_grounded && dot < 0.0f || _wallJumped && dot < 0.0f || !_grounded && !_wallJumped)
+		{
+			_moveVelocity -= (*it) * dot;
+		}
+	}
+
+	//See if falling
+	_falling = _physicsVelocity.y < 0.0f;
+
+
+	//Apply Gravity
+	_physicsVelocity += _jumpVelocity;
+
+	if (_walled && !_grounded && _falling)
+	{
+		_physicsVelocity += glm::vec3(0, WALLRUN_GRAVITY, 0);
+	}
+	else if(!_grounded)
+	{
+		_physicsVelocity += glm::vec3(0, NORMAL_GRAVITY, 0);
+	}
+	else if (_grounded && _falling)
+	{
+		_physicsVelocity = glm::vec3(0, 0, 0);
+	}
+
+
+	if (!Timer::IsPaused())
+	{
+		//std::cout << "P: " << glm::round(_physicsVelocity) << " J: " << glm::round(_jumpVelocity) << " M: " << glm::round(_moveVelocity) << " R: " << glm::round(_moveVelocity + _jumpVelocity + _physicsVelocity) << std::endl;
+		//std::cout << "G: " << _grounded << " W: " << _walled << " F: " << _falling << " J: " << _wallJumped << std::endl;
+	}
+
+	//Apply the velocity
+	pController->GetRigidBody()->SetVelocity(Utility::glmToNe(_moveVelocity + _physicsVelocity));
 }
 
 void PlayerBehaviour::update(float pStep)
@@ -294,28 +378,37 @@ void PlayerBehaviour::update(float pStep)
 	_currMousePos = sf::Mouse::getPosition();
 	_mouseDelta = glm::vec2(_currMousePos.x, _currMousePos.y) - glm::vec2(_prevMousePos.x, _prevMousePos.y);
 
-	//Keep the mouse from leaving the center
-	int screenHeight = sf::VideoMode::getDesktopMode().height;
-	int screenWidth = sf::VideoMode::getDesktopMode().width;
 
+	//Keep the mouse from leaving the center
 	if (!Timer::IsPaused())
 	{
+		int screenHeight = sf::VideoMode::getDesktopMode().height;
+		int screenWidth = sf::VideoMode::getDesktopMode().width;
 		sf::Mouse::setPosition(sf::Vector2i(screenWidth / 2, screenHeight / 2));
 	}
 
+
 	//Update previous mouse position
 	_prevMousePos = sf::Mouse::getPosition();
+
 
 	//Updating the audio listener pos and dir
 	sf::Listener::setPosition(_owner->getWorldPosition().x, _owner->getWorldPosition().y, _owner->getWorldPosition().z);
 	sf::Listener::setDirection(_owner->getForwardVector().x, _owner->getForwardVector().y, -_owner->getForwardVector().z);
 	sf::Listener::setUpVector(_camera->getUpVector().x, _camera->getUpVector().y, _camera->getUpVector().z);
 
+
 	//Pause
-	if (!_holdingPause && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P))
-	{
+	if (!_holdingPause && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P)) {
 		Timer::TogglePause();
 	}
-	
 	_holdingPause = sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P);
+
+
+	//Slowmotion
+	if (!_holdingSlowmotion && sf::Mouse::isButtonPressed(sf::Mouse::Button::Right)) {
+		Timer::Slowmotion = !Timer::Slowmotion;
+	}
+	_holdingSlowmotion = sf::Mouse::isButtonPressed(sf::Mouse::Button::Right);
+	
 }

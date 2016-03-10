@@ -171,6 +171,9 @@
     <ClInclude Include="src\mge\util\Utility.hpp">
       <Filter>Archivos de encabezado\mge\util</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\behaviours\ArmBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -271,6 +274,9 @@
     </ClCompile>
     <ClCompile Include="src\mge\util\Utility.cpp">
       <Filter>Archivos de código fuente\mge\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\ArmBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

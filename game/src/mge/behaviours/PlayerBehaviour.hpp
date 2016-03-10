@@ -13,17 +13,25 @@ class Camera;
 class PlayerBehaviour : public AbstractBehaviour
 {
 public:
-	PlayerBehaviour(Camera* pCamera, float pWalkForce, float pRotateSpeed, float pJumpForce);
+	PlayerBehaviour(Camera* pCamera);
 	virtual ~PlayerBehaviour();
 	void Initialize();
 	virtual void update(float step);
 	void PlayerController(neRigidBodyController* pController, float pStep);
 	void AddEnemy(GameObject* pEnemy) { _enemies.push_back(pEnemy); };
 private:
-	float _walkForce;
 	float _angleY;
-	float _rotateSpeed;
-	float _jumpForce;
+
+	bool _grounded;
+	bool _walled;
+	bool _falling;
+	bool _wallJumped;
+	bool _walking;
+
+	glm::vec3 _inputVector;
+	glm::vec3 _moveVelocity;
+	glm::vec3 _jumpVelocity;
+	glm::vec3 _physicsVelocity;
 
 	std::vector<GameObject*> _enemies;
 
@@ -35,6 +43,7 @@ private:
 	bool _holdingShoot;
 	bool _holdingSlowmotion;
 	bool _holdingPause;
+
 	GameObject *test;
 
 	Camera* _camera;
