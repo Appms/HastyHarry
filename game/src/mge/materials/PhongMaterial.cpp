@@ -46,9 +46,9 @@ PhongMaterial::PhongMaterial(std::string params)
 	//TODO Check image type
 
 	_diffuseTexture = Texture::load(config::MGE_TEXTURE_PATH+col[0]+".png");
-	_Ka = glm::vec3(1, 1, 1) * 0.005f;
+	_Ka = glm::vec3(0.2f, 0.2f, 0.2f);
 	_Kd = glm::vec3(atof(col[1].c_str()), atof(col[2].c_str()), atof(col[3].c_str()));
-	_Ks = glm::vec3(1, 1, 1);
+	_Ks = glm::vec3(0.1f, 0.1f, 0.1f);
 	_shininess = atof(col[4].c_str());
 
 	_lazyInitializeShader();

@@ -20,6 +20,7 @@ using namespace std;
 
 #include "mge/behaviours/PlayerBehaviour.hpp"
 #include "behaviours\LookAt.hpp"
+#include "behaviours\Turret.hpp"
 #include "behaviours\SoundBehaviour.hpp"
 
 #include "mge/util/DebugHud.hpp"
