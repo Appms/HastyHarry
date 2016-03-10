@@ -22,6 +22,7 @@
 std::vector<Mesh*> Level::_loadedMeshes;
 std::vector<std::string> Level::_loadedMeshNames;
 std::vector<AbstractMaterial*> Level::_loadedMaterials;
+std::vector<std::string> Level::_loadedMaterialsNames;
 std::vector<GameObject*> Level::_loadedGameObjects;
 
 World* Level::CurrentWorld;
@@ -43,20 +44,13 @@ void Level::DeleteGameObject(GameObject* pGo)
 }
 
 void Level::Unload()
-{
-	if (CurrentPlayer != NULL)
-	{
-		delete CurrentPlayer;
-	}
-
+{	
 	for each (Mesh* var in _loadedMeshes)
 	{
 		delete var;
 	}
 
 	_loadedMeshes.clear();
-
-
 	_loadedMeshNames.clear();
 
 
@@ -66,6 +60,7 @@ void Level::Unload()
 	}
 
 	_loadedMaterials.clear();
+	_loadedMaterialsNames.clear();
 
 	for each (GameObject* var in _loadedGameObjects)
 	{
@@ -74,6 +69,9 @@ void Level::Unload()
 	}
 
 	_loadedGameObjects.clear();
+
+	delete CurrentPlayer;
+	if(CurrentWorld != NULL) CurrentWorld->killPhysics();
 }
 
 std::vector<GameObject*>& Level::GetGameObjects()
@@ -87,6 +85,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	Unload();
 
 	CurrentWorld = pWorld;
+	CurrentWorld->initPhysics();
 
 	//Init Camera
 	Camera* camera = new Camera("camera", glm::vec3(0, 0, 0));
@@ -258,6 +257,46 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						}
 						else if (0 == strcmp(part->Value(), "materialparams"))
 						{
+							/*int counter = 0;
+							int indexPlace = 0;
+							bool foundMat = false;
+
+							for (std::vector<std::string>::iterator it = _loadedMaterialsNames.begin(); it != _loadedMaterialsNames.end(); ++it)
+							{
+								if (0 == (*it).compare(matName))
+								{
+									//std::cout << "Level Loader: Mesh loaded from Buffer: " + *it + ".obj" << std::endl;
+									foundMat = true;
+									indexPlace = counter;
+								}
+								counter++;
+							}
+
+							if (foundMat)
+							{
+								go->setMaterial(_loadedMaterials[indexPlace]);
+							}
+							else {
+								//TODO Add all the materials
+								if (0 == matName.compare("ColorMaterial"))
+								{
+									_loadedMaterialsNames.push_back(matName);
+									_loadedMaterials.push_back(new ColorMaterial(part->GetText()));
+									foundMat = true;
+								}
+								if (0 == matName.compare("TextureMaterial"))
+								{
+									_loadedMaterialsNames.push_back(matName);
+									_loadedMaterials.push_back(new PhongMaterial(part->GetText()));
+									foundMat = true;
+								}
+								else if (0 != matName.compare(""))
+								{
+									std::cout << "Level Loader: Material \"" << matName << "\" not found!" << std::endl;
+									foundMat = false;
+								}
+							}*/
+
 							bool foundMat = false;
 							//TODO Add all the materials
 							if (0 == matName.compare("ColorMaterial"))
@@ -280,7 +319,6 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							{
 								go->setMaterial(_loadedMaterials.back());
 							}
-
 						}
 						else if (0 == strcmp(part->Value(), "collidersize"))
 						{
@@ -335,6 +373,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 					body->SetUserData((u32)go);
 					
 					neV3 nPos;
+					glm::mat4 m = go->getTransform();
+
 					nPos.Set(worldPos.x + collCenter.x, worldPos.y + collCenter.y, worldPos.z + collCenter.z);
 					body->SetPos(nPos);
 					body->SetRotation(worldRot);
