@@ -88,9 +88,6 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 	CurrentWorld = pWorld;
 
-	//Mesh* monkeyMesh = Mesh::load(config::MGE_MODEL_PATH + "suzanna_smooth.obj");
-	//PhongMaterial* phongMaterial = new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "bricks.jpg"));
-	
 	//Init Camera
 	Camera* camera = new Camera("camera", glm::vec3(0, 0, 0));
 	pWorld->setMainCamera(camera);
@@ -102,11 +99,17 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	CurrentPlayer->setBehaviour(new PlayerBehaviour(camera));
 	((PlayerBehaviour *)CurrentPlayer->getBehaviour())->Initialize();
 
-	GameObject* LeftArm = new GameObject("LeftArm", glm::vec3(-0.8, 0.75, 0));
+	GameObject* LeftArm = new GameObject("RightArm", glm::vec3(-0.8, 0.75, 0));
 	LeftArm->setParent(CurrentPlayer);
-	LeftArm->setBehaviour(new ArmBehaviour());
-	LeftArm->setMesh(Mesh::load(config::MGE_MODEL_PATH+"LeftArm.obj"));
+	LeftArm->setBehaviour(new ArmBehaviour(false));
+	LeftArm->setMesh(Mesh::load(config::MGE_MODEL_PATH+"RightArm.obj"));
 	LeftArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0,0,0), glm::vec3(1,1,1), glm::vec3(0,0,0), 10.0f));
+
+	GameObject* RightArm = new GameObject("LeftArm", glm::vec3(-0.8, 0.75, 0));
+	RightArm->setParent(CurrentPlayer);
+	RightArm->setBehaviour(new ArmBehaviour(true));
+	RightArm->setMesh(Mesh::load(config::MGE_MODEL_PATH + "LeftArm.obj"));
+	RightArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1), glm::vec3(0, 0, 0), 10.0f));
 
 	/*
 	GameObject* RightArm = new GameObject("RightArm", glm::vec3(1.2, -0.2, -0.5));

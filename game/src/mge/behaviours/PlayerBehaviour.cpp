@@ -40,6 +40,11 @@
 
 #define ROTATE_SPEED 6.0f
 
+bool PlayerBehaviour::IsMoving()
+{
+	return _grounded && _moving;
+}
+
 PlayerBehaviour::PlayerBehaviour(Camera* pCamera) : AbstractBehaviour()
 {
 	_camera = pCamera;
@@ -148,6 +153,7 @@ PlayerBehaviour::~PlayerBehaviour()
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)
 {
+	_moving = false;
 	_grounded = false;
 	_walled = false;
 
@@ -315,6 +321,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	//Apply proper acceleration
 	if (glm::length2(_inputVector) > 0.0f) {
 		_moveVelocity +=  glm::normalize(_inputVector) * (_grounded ? MOVE_FORCE : MOVE_FORCE * AIR_CONTROLL) * pStep;
+		_moving = true;
 	} else if(_grounded){
 		_moveVelocity *= HARD_INERTIA;
 	}
