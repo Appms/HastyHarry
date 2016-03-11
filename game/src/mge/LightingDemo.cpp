@@ -22,6 +22,8 @@ using namespace std;
 #include "behaviours\LookAt.hpp"
 #include "behaviours\Turret.hpp"
 #include "behaviours\SoundBehaviour.hpp"
+#include "behaviours\MovingBehaviour.hpp"
+#include "behaviours\Butterfly.hpp"
 
 #include "mge/util/DebugHud.hpp"
 
@@ -62,6 +64,17 @@ void LightingDemo::_initializeScene()
 	billboard->scale(glm::vec3(1.0f, 0.5f, 1.0f));
 	billboard->setMaterial(textureMaterial);
 	billboard->setBehaviour(new Turret(Level::CurrentPlayer, 10.0f));
+
+	std::vector<glm::vec3> waypoints;
+	waypoints.push_back(glm::vec3(0, 0, 10));
+	waypoints.push_back(glm::vec3(0, 0, 0));
+
+	GameObject* butterfly = new GameObject("Butterfly", glm::vec3(0, 0, -10), GameObject::PhysicsType::ANIMATEDBODY);
+	_world->add(butterfly);
+	butterfly->setMesh(planeMeshDefault);
+	butterfly->setMaterial(textureMaterial);
+	butterfly->setBehaviour(new MovingBehaviour(glm::vec3(0, 0, -10), glm::vec3(0, 0, -10), 1.0f, false));
+	butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, glm::vec3(0, 0, -10), (MovingBehaviour*)butterfly->getBehaviour(), waypoints));
 
 	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);
