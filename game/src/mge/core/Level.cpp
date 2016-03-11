@@ -17,6 +17,7 @@
 #include "mge/util/Utility.hpp"
 #include "mge/core/Timer.hpp"
 #include "mge/behaviours/ArmBehaviour.hpp"
+#include "mge/behaviours/CollectTrigger.hpp"
 
 
 std::vector<Mesh*> Level::_loadedMeshes;
@@ -110,13 +111,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	RightArm->setMesh(Mesh::load(config::MGE_MODEL_PATH + "LeftArm.obj"));
 	RightArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1), glm::vec3(0, 0, 0), 10.0f));
 
-	/*
-	GameObject* RightArm = new GameObject("RightArm", glm::vec3(1.2, -0.2, -0.5));
-	RightArm->setParent(CurrentPlayer);
-	RightArm->rotate(160.0f, glm::vec3(0, 1, 0));
-	RightArm->setMesh(Mesh::load(config::MGE_MODEL_PATH + "RightArm.obj"));
-	RightArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1), glm::vec3(0, 0, 0), 10.0f));
-	*/
+	GameObject* collectable = new GameObject("Collectable", glm::vec3(2, 1, 2));
+	collectable->setParent(CurrentWorld);
+	collectable->setBehaviour(new CollectTrigger());
+	collectable->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+	collectable->setMaterial(new ColorMaterial(glm::vec3(1, 1, 0)));
 
 	string matName = "";
 	string behName = "";

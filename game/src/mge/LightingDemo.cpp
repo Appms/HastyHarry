@@ -53,7 +53,9 @@ void LightingDemo::_initializeScene()
 {
     _renderer->setClearColor(0,0,0);
 
-	Level::Load("Goal.xml", _world);
+	//Turrets and Butterfly showcase
+
+	/*Level::Load("Goal.xml", _world);
 
 	Mesh* planeMeshDefault = Mesh::load(config::MGE_MODEL_PATH + "Billboard.obj");
 	AbstractMaterial* textureMaterial = new TextureMaterial(Texture::load(config::MGE_TEXTURE_PATH + "land.png"));
@@ -74,7 +76,10 @@ void LightingDemo::_initializeScene()
 	butterfly->setMesh(planeMeshDefault);
 	butterfly->setMaterial(textureMaterial);
 	butterfly->setBehaviour(new MovingBehaviour(glm::vec3(0, 0, -10), glm::vec3(0, 0, -10), 1.0f, false));
-	butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, glm::vec3(0, 0, -10), (MovingBehaviour*)butterfly->getBehaviour(), waypoints));
+	butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, glm::vec3(0, 0, -10), (MovingBehaviour*)butterfly->getBehaviour(), waypoints));*/
+
+	Level::Load("Level_01.xml", _world);
+	//Level::Load("TestScene.xml", _world);
 
 	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);

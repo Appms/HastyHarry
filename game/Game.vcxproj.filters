@@ -183,6 +183,9 @@
     <ClInclude Include="src\mge\behaviours\Butterfly.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\behaviours\CollectTrigger.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -294,6 +297,9 @@
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
     <ClCompile Include="src\mge\behaviours\Butterfly.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\CollectTrigger.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
   </ItemGroup>

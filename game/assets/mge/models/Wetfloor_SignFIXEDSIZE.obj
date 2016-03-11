@@ -1,7 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
 mtllib Wetfloor SignFIXEDSIZE.mtl
-g Wetfloor SignFIXEDSIZE
+g Wetfloor_SignFIXEDSIZE
 v 0.129488 1.175560 0.079857
 v 0.129488 1.203602 0.008877
 v 0.043163 1.175560 0.079857
