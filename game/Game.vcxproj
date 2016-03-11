@@ -162,6 +162,7 @@
     <ClInclude Include="src\mge\behaviours\RotatingBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundTrigger.hpp" />
+    <ClInclude Include="src\mge\behaviours\TestBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\TriggerBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\Turret.hpp" />
     <ClInclude Include="src\mge\config.hpp" />
@@ -203,6 +204,7 @@
     <ClCompile Include="src\mge\behaviours\RotatingBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundTrigger.cpp" />
+    <ClCompile Include="src\mge\behaviours\TestBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\TriggerBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\Turret.cpp" />
     <ClCompile Include="src\mge\core\AbstractGame.cpp" />
