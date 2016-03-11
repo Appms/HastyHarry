@@ -66,6 +66,27 @@
 			</filenames>
 			<priority>3</priority>
 		</voice>
+		<voice>
+			<audioname>dialogue_2_1</audioname>
+			<filenames>
+				<filename>Dialogue_2_1.wav</filename>
+			</filenames>
+			<priority>3</priority>
+		</voice>
+		<voice>
+			<audioname>dialogue_2_2</audioname>
+			<filenames>
+				<filename>Dialogue_2_2.wav</filename>
+			</filenames>
+			<priority>3</priority>
+		</voice>
+		<voice>
+			<audioname>dialogue_3_1</audioname>
+			<filenames>
+				<filename>Dialogue_3_1.wav</filename>
+			</filenames>
+			<priority>3</priority>
+		</voice>
 	</voices>
 	<tracks>
 		<track>

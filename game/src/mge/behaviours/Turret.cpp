@@ -17,6 +17,12 @@ Turret::Turret(GameObject * pTarget, float pRadius): AbstractBehaviour(), _targe
 {
 }
 
+Turret::Turret(std::string params) : AbstractBehaviour()
+{
+	_target = Level::CurrentPlayer;
+	_radius = atof(params.c_str());
+}
+
 Turret::~Turret()
 {
 	_target = NULL;

@@ -38,9 +38,9 @@
 #define GROUND_JUMP_FORCE 7.5f
 
 
-#define WALLJUMP_NORMALFORCE 7.5f
-#define WALLJUMP_UPFORCE 5.0f
-#define WALLJUMP_FORWARDFORCE 10.0f
+#define WALLJUMP_NORMALFORCE 25.0f
+#define WALLJUMP_UPFORCE 11.0f
+#define WALLJUMP_FORWARDFORCE 30.0f
 
 
 #define ROTATE_SPEED 6.0f
@@ -50,7 +50,7 @@
 #define SLOW_FEEDBACK_TIMER 11.0f
 
 
-#define DEATH_HEIGHT -10.0f
+#define DEATH_HEIGHT -40.0f
 #define RESPAWN_TIME 4.0f
 
 bool PlayerBehaviour::IsMoving()
@@ -68,10 +68,8 @@ PlayerBehaviour::PlayerBehaviour(Camera* pCamera) : AbstractBehaviour()
 
 void PlayerBehaviour::Initialize()
 {
-	SoundEngine::PlayMusic("track_1");
-
 	_lastPosition = _owner->getPosition();
-	_spawnPos = _owner->getLocalPosition();
+	SpawnPos = _owner->getPosition();
 
 	f32 mass = 65.0f;
 	f32 diameter = 2.0f;
@@ -445,7 +443,8 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			SoundEngine::PlayVoice("fall_feedback");
 			_physicsVelocity = glm::vec3(0,0,0);
 			_moveVelocity = glm::vec3(0,0,0);
-			pController->GetRigidBody()->SetPos(Utility::glmToNe(_spawnPos));
+			pController->GetRigidBody()->SetVelocity(Utility::glmToNe(glm::vec3(0,0,0)));
+			pController->GetRigidBody()->SetPos(Utility::glmToNe(SpawnPos));
 			_respawnTimer = 0.0f;
 			_dead = false;
 		}
