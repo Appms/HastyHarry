@@ -19,6 +19,7 @@ std::map<std::string, SoundData> SoundEngine::_soundData;
 GameObject* SoundEngine::_soundObjects[MAX_SOUNDS];
 sf::Music SoundEngine::_music;
 sf::Music SoundEngine::_voice;
+std::string SoundEngine::_lastPlayedVoice;
 
 void SoundEngine::Init(std::string pConfigFileName)
 {
@@ -110,6 +111,11 @@ void SoundEngine::Init(std::string pConfigFileName)
 				{
 					_soundData[audioname].Attenuation = atof(attribute->GetText());
 				}
+				else if (0 == strcmp(attribute->Value(), "priority"))
+				{
+					//istringstream("1") >> _soundData[audioname].Persistent;
+					_soundData[audioname].Priority = (VoicePriority)atoi(attribute->GetText());
+				}
 			}
 
 			_soundData[audioname].Type = type;
@@ -165,14 +171,20 @@ void SoundEngine::PlayAudio(std::string pAudioName, GameObject* pParent, glm::ve
 
 void SoundEngine::PlayVoice(std::string pAudioName)
 {
-	int randInt = rand() % (int)(_soundData[pAudioName].FileName.size());
-	_voice.stop();
-	_voice.openFromFile(config::MGE_AUDIO_PATH+_soundData[pAudioName].FileName[randInt]);
-	_voice.play();
+	if(_lastPlayedVoice == "" || (int)_soundData[_lastPlayedVoice].Priority < (int)_soundData[pAudioName].Priority || _voice.getStatus() != sf::Music::Playing)
+	{
+		int randInt = rand() % (int)(_soundData[pAudioName].FileName.size());
+		_voice.stop();
+		_voice.openFromFile(config::MGE_AUDIO_PATH + _soundData[pAudioName].FileName[randInt]);
+		_voice.play();
+		_lastPlayedVoice = pAudioName;
+	}
 }
 
 void SoundEngine::PlayMusic(std::string pAudioName)
 {
+	//TODO Import volume from file
+	_music.setVolume(1.0f);
 	int randInt = rand() % (int)(_soundData[pAudioName].FileName.size());
 	_music.stop();
 	_music.openFromFile(config::MGE_AUDIO_PATH+_soundData[pAudioName].FileName[randInt]);

@@ -1,7 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
 mtllib Waiting ChairsFIXEDSIZE.mtl
-g Waiting ChairsFIXEDSIZE
+g Waiting_ChairsFIXEDSIZE
 v -0.855566 0.000374 0.289519
 v -0.805965 0.000374 0.289519
 v -0.855566 0.019780 0.289519

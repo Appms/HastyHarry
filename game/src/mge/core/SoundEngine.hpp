@@ -16,6 +16,14 @@ enum SoundType
 	Voice
 };
 
+enum VoicePriority
+{
+	Effect,
+	Feedback,
+	Dialogue,
+	Opaque
+};
+
 struct SoundData
 {
 	std::vector<std::string> FileName;
@@ -23,6 +31,7 @@ struct SoundData
 	float Attenuation;
 	float MinDistance;
 	SoundType Type;
+	VoicePriority Priority;
 };
 
 class SoundEngine
@@ -32,6 +41,7 @@ class SoundEngine
 		static GameObject* _soundObjects[16];
 		static sf::Music _music;
 		static sf::Music _voice;
+		static std::string _lastPlayedVoice;
 
 	public:
 		static void Init(std::string pConfigFileName);
