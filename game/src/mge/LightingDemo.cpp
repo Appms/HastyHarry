@@ -24,6 +24,7 @@ using namespace std;
 #include "behaviours\SoundBehaviour.hpp"
 #include "behaviours\MovingBehaviour.hpp"
 #include "behaviours\Butterfly.hpp"
+#include "behaviours/ArmBehaviour.hpp"
 
 #include "mge/util/DebugHud.hpp"
 
@@ -78,8 +79,13 @@ void LightingDemo::_initializeScene()
 	butterfly->setBehaviour(new MovingBehaviour(glm::vec3(0, 0, -10), glm::vec3(0, 0, -10), 1.0f, false));
 	butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, glm::vec3(0, 0, -10), (MovingBehaviour*)butterfly->getBehaviour(), waypoints));*/
 
-	Level::Load("Level_01.xml", _world);
-	//Level::Load("TestScene.xml", _world);
+	Level::Load("Level_03.xml", _world);
+
+	//Level::Load("Level_03.xml", _world);
+
+	GameObject * s = new GameObject("lol");
+	_world->add(s);
+	s->setBehaviour(new ArmBehaviour(true));
 
 	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);

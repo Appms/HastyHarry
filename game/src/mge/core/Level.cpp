@@ -18,6 +18,8 @@
 #include "mge/core/Timer.hpp"
 #include "mge/behaviours/ArmBehaviour.hpp"
 #include "mge/behaviours/CollectTrigger.hpp"
+#include "mge/behaviours/MovingBehaviour.hpp"
+#include "mge/behaviours/Turret.hpp"
 
 
 std::vector<Mesh*> Level::_loadedMeshes;
@@ -98,7 +100,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	CurrentPlayer->setParent(pWorld);
 	CurrentPlayer->setBehaviour(new PlayerBehaviour(camera));
 	((PlayerBehaviour *)CurrentPlayer->getBehaviour())->Initialize();
-
+	/*
 	GameObject* LeftArm = new GameObject("RightArm", glm::vec3(-0.8, 0.75, 0));
 	LeftArm->setParent(CurrentPlayer);
 	LeftArm->setBehaviour(new ArmBehaviour(false));
@@ -110,12 +112,22 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	RightArm->setBehaviour(new ArmBehaviour(true));
 	RightArm->setMesh(Mesh::load(config::MGE_MODEL_PATH + "LeftArm.obj"));
 	RightArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1), glm::vec3(0, 0, 0), 10.0f));
+	*/
 
+	/*
 	GameObject* collectable = new GameObject("Collectable", glm::vec3(2, 1, 2));
 	collectable->setParent(CurrentWorld);
 	collectable->setBehaviour(new CollectTrigger());
 	collectable->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
 	collectable->setMaterial(new ColorMaterial(glm::vec3(1, 1, 0)));
+
+	
+	GameObject* turret = new GameObject("Turret", glm::vec3(6, 2, 6));
+	turret->setParent(CurrentWorld);
+	turret->setBehaviour(new Turret(Level::CurrentPlayer, 20.0f));
+	turret->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+	turret->setMaterial(new ColorMaterial(glm::vec3(0, 1, 1)));
+	*/
 
 	string matName = "";
 	string behName = "";
@@ -196,7 +208,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 							if (0 == strcmp(go->getName().c_str(), "PlayerSpawn"))
 							{
-								glm::vec3 asd = go->getLocalPosition();
+								glm::vec3 asd = go->getPosition();
+								((PlayerBehaviour *)CurrentPlayer->getBehaviour())->SpawnPos = asd;
 								CurrentPlayer->getRigidBody()->SetPos(Utility::glmToNe(go->getLocalPosition()));
 								//Curre->getRigidBody()->SetPos(glmToNe(_resetPos)); (go->getLocalPosition());
 							}
@@ -244,6 +257,18 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							else if (0 == behName.compare("SoundTrigger"))
 							{
 								go->setBehaviour(new SoundTrigger(part->GetText()));
+							}
+							else if (0 == behName.compare("CollectTrigger"))
+							{
+								go->setBehaviour(new CollectTrigger());
+							}
+							else if (0 == behName.compare("MovingBehaviour"))
+							{
+								go->setBehaviour(new MovingBehaviour(part->GetText()));
+							}
+							else if (0 == behName.compare("TurretBehaviour"))
+							{
+								go->setBehaviour(new Turret(part->GetText()));
 							}
 							else if (0 != behName.compare(""))
 							{
@@ -429,5 +454,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 	Timer::UnPause();
 	std::cout << "Level Loader: \"" + pLevelName + "\" loaded successfully!" << std::endl;
+
+	SoundEngine::PlayMusic("track_1");
+
 	return true;
 }

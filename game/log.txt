@@ -31,11 +31,12 @@ Compiling shader...
 Shader compiled ok.
 Program linked ok.
 
-Loading assets/mge/models/RightArm.obj...3182
-5482
+Level Loader: Loading level "Level_03.xml"...
+Loading assets/mge/models/BeerBottleFIXEDSIZE.obj...339
+418
 Tangents calculated!
-Mesh loaded and buffered:5482 triangles.
-Texture assets/mge/textures/HandUV.png with id 1 loaded.
+Mesh loaded and buffered:418 triangles.
+Texture assets/mge/textures/BottleUV.png with id 1 loaded.
 Caching texture.
 
 Program created with id:4
@@ -47,369 +48,501 @@ Compiling shader...
 Shader compiled ok.
 Program linked ok.
 
-Loading assets/mge/models/LeftArm.obj...3006
-5242
-Tangents calculated!
-Mesh loaded and buffered:5242 triangles.
-Loading assets/mge/models/cube.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Level Loader: Loading level "Level_01.xml"...
 Loading assets/mge/models/CrossHallway_Wall.obj...354
 168
 Tangents calculated!
 Mesh loaded and buffered:168 triangles.
-Texture assets/mge/textures/CrossroadWallUV.png with id 2 loaded.
-Caching texture.
-Loading assets/mge/models/Plants2FIXEDSIZE.obj...740
-732
-Tangents calculated!
-Mesh loaded and buffered:732 triangles.
-Texture assets/mge/textures/Plants2.png with id 3 loaded.
-Caching texture.
-Loading assets/mge/models/ClosetFIXEDSIZE.obj...300
-294
-Tangents calculated!
-Mesh loaded and buffered:294 triangles.
-Texture assets/mge/textures/Closet 1.png with id 4 loaded.
-Caching texture.
-Loading assets/mge/models/ExitSignFIXEDSIZE.obj...184
-148
-Tangents calculated!
-Mesh loaded and buffered:148 triangles.
-Texture assets/mge/textures/Exit Sign.png with id 5 loaded.
-Caching texture.
-Loading assets/mge/models/Hallway_Wall.obj...196
-168
-Tangents calculated!
-Mesh loaded and buffered:168 triangles.
-Texture assets/mge/textures/HallwayWallUV.png with id 6 loaded.
+Texture assets/mge/textures/CrossroadWallUVHIGH.png with id 2 loaded.
 Caching texture.
 Loading assets/mge/models/Hallway_Floor.obj...24
 12
 Tangents calculated!
 Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/HallwayFloorUV.png with id 7 loaded.
-Caching texture.
-Loading assets/mge/models/ComputerMonitorFIXEDSIZE.obj...188
-106
-Tangents calculated!
-Mesh loaded and buffered:106 triangles.
-Texture assets/mge/textures/ComputerScreen.png with id 8 loaded.
-Caching texture.
-Loading assets/mge/models/CornerPillars.obj...92
-76
-Tangents calculated!
-Mesh loaded and buffered:76 triangles.
-Texture assets/mge/textures/blank.png with id 9 loaded.
-Caching texture.
-Loading assets/mge/models/CrossHallway_Ceilling.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadCeilling.png with id 10 loaded.
-Caching texture.
-Loading assets/mge/models/Hallway_Ceilling.obj...76
-38
-Tangents calculated!
-Mesh loaded and buffered:38 triangles.
-Texture assets/mge/textures/HallwayCeillingUV.png with id 11 loaded.
-Caching texture.
-Loading assets/mge/models/Wetfloor_SignFIXEDSIZE.obj...424
-336
-Tangents calculated!
-Mesh loaded and buffered:336 triangles.
-Texture assets/mge/textures/Syringes Sign Guideline.png with id 12 loaded.
-Caching texture.
-Texture assets/mge/textures/Wetfloor Sign Guideline.png with id 13 loaded.
-Caching texture.
-Loading assets/mge/models/Reception2FIXEDSIZE.obj...317
-264
-Tangents calculated!
-Mesh loaded and buffered:264 triangles.
-Texture assets/mge/textures/Desk2.png with id 14 loaded.
-Caching texture.
-Loading assets/mge/models/BedFIXEDSIZE.obj...752
-802
-Tangents calculated!
-Mesh loaded and buffered:802 triangles.
-Texture assets/mge/textures/Hospital Bed 1.png with id 15 loaded.
+Texture assets/mge/textures/HallwayFloorUVHIGH.png with id 3 loaded.
 Caching texture.
 Loading assets/mge/models/CrossHallway_Floor.obj...24
 12
 Tangents calculated!
 Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadFloorUV.png with id 16 loaded.
+Texture assets/mge/textures/CrossroadFloorUVHigh.png with id 4 loaded.
 Caching texture.
-Loading assets/mge/models/CabinetFIXEDSIZE.obj...378
-308
+Texture assets/mge/textures/blank.png with id 5 loaded.
+Caching texture.
+Loading assets/mge/models/CrossHallway_Ceilling.obj...24
+12
 Tangents calculated!
-Mesh loaded and buffered:308 triangles.
-Texture assets/mge/textures/Cabinet 1.png with id 17 loaded.
-Caching texture.
-Loading assets/mge/models/Recption1FIXEDSIZE.obj...267
-176
-Tangents calculated!
-Mesh loaded and buffered:176 triangles.
-Texture assets/mge/textures/Desk1blue.png with id 18 loaded.
-Caching texture.
-Loading assets/mge/models/HospitalChairFIXEDSIZE.obj...336
-328
-Tangents calculated!
-Mesh loaded and buffered:328 triangles.
-Texture assets/mge/textures/Random Chair guideline 1.png with id 19 loaded.
-Caching texture.
-Loading assets/mge/models/Plants3FIXEDSIZE.obj...806
-660
-Tangents calculated!
-Mesh loaded and buffered:660 triangles.
-Texture assets/mge/textures/Plants3.png with id 20 loaded.
-Caching texture.
-Loading assets/mge/models/Waiting_ChairsFIXEDSIZE.obj...622
-448
-Tangents calculated!
-Mesh loaded and buffered:448 triangles.
-Texture assets/mge/textures/Waiting Chairs guideline 1.png with id 21 loaded.
-Caching texture.
-Loading assets/mge/models/Infuus2FIXEDSIZE.obj...816
-816
-Tangents calculated!
-Mesh loaded and buffered:816 triangles.
-Texture assets/mge/textures/Infuus.png with id 22 loaded.
-Caching texture.
-Texture assets/mge/textures/Waiting Chairs 1.png with id 23 loaded.
-Caching texture.
-Loading assets/mge/models/MagazinesObjectFIXEDSIZE.obj...222
-180
-Tangents calculated!
-Mesh loaded and buffered:180 triangles.
-Texture assets/mge/textures/Tiny Table with magazines 1.png with id 24 loaded.
-Caching texture.
-Loading assets/mge/models/TableObjectFIXEDSIZE.obj...336
-260
-Tangents calculated!
-Mesh loaded and buffered:260 triangles.
-Loading assets/mge/models/Trash2FIXEDSIZE.obj...238
-288
-Tangents calculated!
-Mesh loaded and buffered:288 triangles.
-Texture assets/mge/textures/Bin2Blue.png with id 25 loaded.
-Caching texture.
-Loading assets/mge/models/KeyboardFIXEDSIZE.obj...18
-6
-Tangents calculated!
-Mesh loaded and buffered:6 triangles.
-Texture assets/mge/textures/Keyboard.png with id 26 loaded.
-Caching texture.
-Loading assets/mge/models/PhotoFrameFIXEDSIZE.obj...88
-48
-Tangents calculated!
-Mesh loaded and buffered:48 triangles.
-Texture assets/mge/textures/PhotoUV.png with id 27 loaded.
-Caching texture.
-Loading assets/mge/models/Trash3FIXEDSIZE.obj...199
-208
-Tangents calculated!
-Mesh loaded and buffered:208 triangles.
-Texture assets/mge/textures/Bin3.png with id 28 loaded.
-Caching texture.
-Texture assets/mge/textures/Cabinet guideline 1.png with id 29 loaded.
-Caching texture.
-Loading assets/mge/models/HeartMonitorFIXEDSIZE.obj...184
-92
-Tangents calculated!
-Mesh loaded and buffered:92 triangles.
-Texture assets/mge/textures/Heart Monitor.png with id 30 loaded.
+Mesh loaded and buffered:12 triangles.
+Texture assets/mge/textures/CrossroadCeillingHigh.png with id 6 loaded.
 Caching texture.
 Loading assets/mge/models/Cube.obj...24
 12
 Tangents calculated!
 Mesh loaded and buffered:12 triangles.
-Loading assets/mge/models/Plants1FIXEDSIZE.obj...683
-736
-Tangents calculated!
-Mesh loaded and buffered:736 triangles.
-Texture assets/mge/textures/Plants1.png with id 31 loaded.
-Caching texture.
-Texture assets/mge/textures/Random Chair 1.png with id 32 loaded.
-Caching texture.
 Level Loader: Setting up Hierarchy...
-Level Loader: "Level_01.xml" loaded successfully!
+Level Loader: "Level_03.xml" loaded successfully!
 
 Engine initialized.
 
 Initializing HUD
 HUD initialized.
 
+GC running on:CrossHallway_Wall 3 (19)
+GC running on:CrossHallway_Wall 3 (18)
+GC running on:Cube (10)
+GC running on:Cube (11)
 GC running on:root
 GC running on:player
 GC running on:camera
-GC running on:RightArm
-GC running on:LeftArm
+GC running on:AudioSource
 GC running on:AudioSource
 GC running on:
-GC running on:Collectable
-GC running on:Level1
 GC running on:PlayerSpawn
-GC running on:Ceiling
-GC running on:HallwayCeilling (7)
-GC running on:HallwayCeilling (3)
-GC running on:HallwayCeilling (12)
-GC running on:HallwayCeilling (6)
-GC running on:HallwayCeilling
-GC running on:HallwayCeilling (2)
-GC running on:HallwayCeilling (10)
-GC running on:HallwayCeilling (4)
-GC running on:HallwayCeilling (13)
-GC running on:HallwayCeilling (1)
-GC running on:CrossHallway_Ceilling
-GC running on:HallwayCeilling (11)
-GC running on:HallwayCeilling (5)
-GC running on:HallwayCeilling (15)
-GC running on:HallwayCeilling (8)
-GC running on:HallwayCeilling (9)
-GC running on:HallwayCeilling (14)
-GC running on:Guiding
-GC running on:Guiding_Wetfloor_SignSyringe
-GC running on:Guiding_Wetfloor_Sign
-GC running on:Guiding_ReceptionDesk
-GC running on:Guiding_HospitalChair_Object
-GC running on:Guiding_Waiting_Chairs
-GC running on:Guiding_TrashCan2
-GC running on:Guiding_Cabinet
-GC running on:Walls
-GC running on:CrossHallway_Wall (4)
-GC running on:Wall (49)
-GC running on:Wall (47)
-GC running on:Wall (41)
-GC running on:Wall (21)
-GC running on:Wall (33)
-GC running on:Wall (29)
-GC running on:Wall (26)
-GC running on:Wall (22)
-GC running on:Wall (46)
-GC running on:Wall (24)
-GC running on:Wall (38)
-GC running on:Wall (34)
-GC running on:Wall (37)
-GC running on:Wall (30)
-GC running on:CrossHallway_Wall
-GC running on:Wall (25)
-GC running on:CrossHallway_Wall (9)
-GC running on:Wall (27)
-GC running on:Wall (31)
-GC running on:CrossHallway_Wall (7)
-GC running on:Wall (28)
-GC running on:Wall (25)
-GC running on:Wall (36)
-GC running on:Wall (35)
-GC running on:Wall (42)
-GC running on:CrossHallway_Wall (5)
-GC running on:Wall (32)
-GC running on:CrossHallway_Wall (1)
-GC running on:Wall (40)
-GC running on:Wall (40)
-GC running on:Wall (23)
-GC running on:Wall (44)
-GC running on:Wall (26)
-GC running on:Wall (41)
-GC running on:CrossHallway_Wall (3)
-GC running on:Wall (45)
-GC running on:Wall (47)
-GC running on:Wall (39)
-GC running on:Wall (46)
-GC running on:Wall (43)
-GC running on:CrossHallway_Wall (6)
-GC running on:CrossHallway_Wall (8)
-GC running on:Wall (27)
-GC running on:Wall (48)
-GC running on:Wall (21)
-GC running on:Floor
-GC running on:Floor (6)
-GC running on:Floor (4)
-GC running on:CrossHallway_Ceilling (1)
-GC running on:Floor (5)
-GC running on:Floor (5)
-GC running on:Floor (4)
-GC running on:Floor (4)
-GC running on:Floor (3)
-GC running on:Floor (3)
-GC running on:Hallway_Floor:HallwayFloor_Hallway_Floor:HallwayLamp1_Hallway_Floor:polySurface2_CrossHallway_Floor (1)
-GC running on:Floor (7)
-GC running on:Floor (4)
-GC running on:Floor (1)
-GC running on:CrossHallway_Ceilling (2)
-GC running on:Hallway_Floor:HallwayFloor_Hallway_Floor:HallwayLamp1_Hallway_Floor:polySurface2_CrossHallway_Floor
-GC running on:Floor (5)
-GC running on:Floor (4)
-GC running on:Floor (5)
-GC running on:Hallway_Floor:HallwayFloor_Hallway_Floor:HallwayLamp1_Hallway_Floor:polySurface2_CrossHallway_Floor (1)
-GC running on:Hallway_Floor:HallwayFloor_Hallway_Floor:HallwayLamp1_Hallway_Floor:polySurface2_CrossHallway_Floor (2)
-GC running on:Floor (4)
-GC running on:CrossHallway_Ceilling (3)
-GC running on:Floor (2)
-GC running on:Props
-GC running on:Big
-GC running on:Pillars
-GC running on:CornerPillar (3)
-GC running on:CornerPillar (1)
-GC running on:CornerPillar (15)
-GC running on:CornerPillar (12)
-GC running on:CornerPillar (6)
-GC running on:CornerPillar (9)
-GC running on:CornerPillar (4)
-GC running on:CornerPillar (11)
-GC running on:CornerPillar (13)
-GC running on:CornerPillar (8)
-GC running on:CornerPillar (10)
-GC running on:CornerPillar (14)
-GC running on:CornerPillar (5)
-GC running on:CornerPillar (7)
-GC running on:CornerPillar
-GC running on:CornerPillar (2)
-GC running on:Other
-GC running on:Plants2
-GC running on:Closet (3)
-GC running on:ExitSign
-GC running on:ComputerMonitor
-GC running on:ClosetLow
-GC running on:ReceptionDesk2
-GC running on:Cabinet
-GC running on:Plants3
-GC running on:Cabinet
-GC running on:Infuus2
-GC running on:Waiting_Chairs
-GC running on:Waiting_Chairs (1)
-GC running on:Magazines
-GC running on:ComputerMonitor
-GC running on:Table
-GC running on:Plants2
-GC running on:Keyboard
-GC running on:PhotoFrame
-GC running on:Trash3
-GC running on:Closet (2)
-GC running on:HeartMonitor
-GC running on:Magazines
-GC running on:Plants1
-GC running on:HospitalChair_Object
-GC running on:Medium
-GC running on:SoundTrigger
-GC running on:SoundTrigger
-GC running on:SoundTrigger (1)
+GC running on:Level3
 GC running on:Elevator
-GC running on:Cube (5)
-GC running on:Cube
-GC running on:Cube (9)
-GC running on:Cube (10)
-GC running on:Cube (6)
 GC running on:Cube (12)
-GC running on:Cube (4)
-GC running on:Cube (7)
-GC running on:Cube (11)
+GC running on:Cube (9)
 GC running on:Cube (8)
-GC running on:Traps/Obstacles
-GC running on:Bed
-GC running on:Closet
-GC running on:Bed (1)
+GC running on:Cube (7)
+GC running on:Cube (6)
+GC running on:Cube
+GC running on:Cube (5)
+GC running on:Cube (4)
+GC running on:Props
+GC running on:BeerBottle (68)
+GC running on:BeerBottle (2)
+GC running on:BeerBottle (148)
+GC running on:BeerBottle (120)
+GC running on:BeerBottle (83)
+GC running on:BeerBottle (130)
+GC running on:BeerBottle (101)
+GC running on:BeerBottle (40)
+GC running on:BeerBottle (142)
+GC running on:BeerBottle (128)
+GC running on:BeerBottle (13)
+GC running on:BeerBottle (78)
+GC running on:BeerBottle (24)
+GC running on:BeerBottle
+GC running on:BeerBottle (85)
+GC running on:BeerBottle (97)
+GC running on:BeerBottle (45)
+GC running on:BeerBottle (159)
+GC running on:BeerBottle (54)
+GC running on:BeerBottle (118)
+GC running on:BeerBottle (155)
+GC running on:BeerBottle (27)
+GC running on:BeerBottle (44)
+GC running on:BeerBottle (113)
+GC running on:BeerBottle (47)
+GC running on:BeerBottle (122)
+GC running on:BeerBottle (80)
+GC running on:BeerBottle (62)
+GC running on:BeerBottle (188)
+GC running on:BeerBottle (58)
+GC running on:BeerBottle (95)
+GC running on:BeerBottle (48)
+GC running on:BeerBottle (181)
+GC running on:BeerBottle (144)
+GC running on:BeerBottle (53)
+GC running on:BeerBottle (37)
+GC running on:BeerBottle (134)
+GC running on:BeerBottle (137)
+GC running on:BeerBottle (165)
+GC running on:BeerBottle (22)
+GC running on:BeerBottle (176)
+GC running on:BeerBottle (50)
+GC running on:BeerBottle (11)
+GC running on:BeerBottle (125)
+GC running on:BeerBottle (108)
+GC running on:BeerBottle (94)
+GC running on:BeerBottle (57)
+GC running on:BeerBottle (170)
+GC running on:BeerBottle (71)
+GC running on:BeerBottle (34)
+GC running on:BeerBottle (175)
+GC running on:BeerBottle (91)
+GC running on:BeerBottle (69)
+GC running on:BeerBottle (64)
+GC running on:BeerBottle (153)
+GC running on:BeerBottle (12)
+GC running on:BeerBottle (173)
+GC running on:BeerBottle (136)
+GC running on:BeerBottle (59)
+GC running on:BeerBottle (180)
+GC running on:BeerBottle (38)
+GC running on:BeerBottle (87)
+GC running on:BeerBottle (66)
+GC running on:BeerBottle (21)
+GC running on:BeerBottle (9)
+GC running on:BeerBottle (75)
+GC running on:BeerBottle (104)
+GC running on:BeerBottle (26)
+GC running on:BeerBottle (84)
+GC running on:BeerBottle (107)
+GC running on:BeerBottle (184)
+GC running on:BeerBottle (174)
+GC running on:BeerBottle (4)
+GC running on:BeerBottle (10)
+GC running on:BeerBottle (20)
+GC running on:BeerBottle (177)
+GC running on:BeerBottle (5)
+GC running on:BeerBottle (167)
+GC running on:BeerBottle (17)
+GC running on:BeerBottle (32)
+GC running on:BeerBottle (140)
+GC running on:BeerBottle (99)
+GC running on:BeerBottle (25)
+GC running on:BeerBottle (126)
+GC running on:BeerBottle (77)
+GC running on:BeerBottle (132)
+GC running on:BeerBottle (49)
+GC running on:BeerBottle (14)
+GC running on:BeerBottle (123)
+GC running on:BeerBottle (139)
+GC running on:BeerBottle (152)
+GC running on:BeerBottle (1)
+GC running on:BeerBottle (185)
+GC running on:BeerBottle (55)
+GC running on:BeerBottle (171)
+GC running on:BeerBottle (183)
+GC running on:BeerBottle (39)
+GC running on:BeerBottle (92)
+GC running on:BeerBottle (72)
+GC running on:BeerBottle (160)
+GC running on:BeerBottle (169)
+GC running on:BeerBottle (106)
+GC running on:BeerBottle (60)
+GC running on:BeerBottle (191)
+GC running on:BeerBottle (23)
+GC running on:BeerBottle (145)
+GC running on:BeerBottle (89)
+GC running on:BeerBottle (43)
+GC running on:BeerBottle (65)
+GC running on:BeerBottle (149)
+GC running on:BeerBottle (46)
+GC running on:BeerBottle (90)
+GC running on:BeerBottle (19)
+GC running on:BeerBottle (164)
+GC running on:BeerBottle (151)
+GC running on:BeerBottle (52)
+GC running on:BeerBottle (178)
+GC running on:BeerBottle (30)
+GC running on:BeerBottle (51)
+GC running on:BeerBottle (186)
+GC running on:BeerBottle (146)
+GC running on:BeerBottle (117)
+GC running on:BeerBottle (28)
+GC running on:BeerBottle (129)
+GC running on:BeerBottle (76)
+GC running on:BeerBottle (105)
+GC running on:BeerBottle (35)
+GC running on:BeerBottle (192)
+GC running on:BeerBottle (187)
+GC running on:BeerBottle (179)
+GC running on:BeerBottle (163)
+GC running on:BeerBottle (182)
+GC running on:BeerBottle (74)
+GC running on:BeerBottle (193)
+GC running on:BeerBottle (111)
+GC running on:BeerBottle (166)
+GC running on:BeerBottle (7)
+GC running on:BeerBottle (114)
+GC running on:BeerBottle (168)
+GC running on:BeerBottle (131)
+GC running on:BeerBottle (172)
+GC running on:BeerBottle (3)
+GC running on:BeerBottle (16)
+GC running on:BeerBottle (119)
+GC running on:BeerBottle (158)
+GC running on:BeerBottle (147)
+GC running on:BeerBottle (156)
+GC running on:BeerBottle (103)
+GC running on:BeerBottle (100)
+GC running on:BeerBottle (42)
+GC running on:BeerBottle (124)
+GC running on:BeerBottle (189)
+GC running on:BeerBottle (36)
+GC running on:BeerBottle (61)
+GC running on:BeerBottle (96)
+GC running on:BeerBottle (6)
+GC running on:BeerBottle (70)
+GC running on:BeerBottle (102)
+GC running on:BeerBottle (63)
+GC running on:BeerBottle (116)
+GC running on:BeerBottle (93)
+GC running on:BeerBottle (157)
+GC running on:BeerBottle (143)
+GC running on:BeerBottle (138)
+GC running on:BeerBottle (110)
+GC running on:BeerBottle (73)
+GC running on:BeerBottle (150)
+GC running on:BeerBottle (112)
+GC running on:BeerBottle (162)
+GC running on:BeerBottle (141)
+GC running on:BeerBottle (109)
+GC running on:BeerBottle (67)
+GC running on:BeerBottle (135)
+GC running on:BeerBottle (15)
+GC running on:BeerBottle (115)
+GC running on:BeerBottle (18)
+GC running on:BeerBottle (79)
+GC running on:BeerBottle (154)
+GC running on:BeerBottle (86)
+GC running on:BeerBottle (41)
+GC running on:BeerBottle (82)
+GC running on:BeerBottle (88)
+GC running on:BeerBottle (190)
+GC running on:BeerBottle (56)
+GC running on:BeerBottle (33)
+GC running on:BeerBottle (98)
+GC running on:BeerBottle (161)
+GC running on:BeerBottle (81)
+GC running on:BeerBottle (29)
+GC running on:BeerBottle (121)
+GC running on:BeerBottle (31)
+GC running on:BeerBottle (127)
+GC running on:BeerBottle (8)
+GC running on:BeerBottle (133)
+GC running on:Towers
+GC running on:Tower (6)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (5)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (4)
+GC running on:SecondMid
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:FirstMid
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:zo
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:zo (2)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:zo (4)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:zo (6)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:zo (1)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:zo (5)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3
+GC running on:zo (3)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3
+GC running on:ThirdMid
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:Tower (4)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:CrossHallway_Wall 3 (15)
+GC running on:CrossHallway_Wall 3 (20)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (11)
+GC running on:CrossHallway_Wall 3 (10)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (8)
+GC running on:CrossHallway_Wall 3 (12)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (3)
+GC running on:CrossHallway_Wall 3 (19)
+GC running on:CrossHallway_Wall 3 (7)
+GC running on:CrossHallway_Wall 3 (13)
+GC running on:CrossHallway_Wall 3 (16)
+GC running on:CrossHallway_Wall 3 (21)
+GC running on:CrossHallway_Wall 3 (14)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (9)
+GC running on:CrossHallway_Wall 3 (17)
+GC running on:CrossHallway_Wall 3 (18)
+GC running on:CrossHallway_Wall 3 (5)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:Tower (2)
+GC running on:CrossHallway_Wall 3 (14)
+GC running on:CrossHallway_Wall 3
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (3)
+GC running on:CrossHallway_Wall 3 (11)
+GC running on:CrossHallway_Wall 3 (15)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:CrossHallway_Wall 3 (8)
+GC running on:CrossHallway_Wall 3 (5)
+GC running on:CrossHallway_Wall 3 (7)
+GC running on:CrossHallway_Wall 3 (12)
+GC running on:CrossHallway_Wall 3 (10)
+GC running on:CrossHallway_Wall 3 (13)
+GC running on:CrossHallway_Wall 3 (9)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:Tower (5)
+GC running on:CrossHallway_Wall 3 (14)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (3)
+GC running on:CrossHallway_Wall 3 (7)
+GC running on:CrossHallway_Wall 3 (12)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (11)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (8)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:CrossHallway_Wall 3 (15)
+GC running on:CrossHallway_Wall 3 (9)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:Tower
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (14)
+GC running on:CrossHallway_Wall 3 (9)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (15)
+GC running on:CrossHallway_Wall 3 (12)
+GC running on:CrossHallway_Wall 3 (8)
+GC running on:CrossHallway_Wall 3 (5)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (3)
+GC running on:CrossHallway_Wall 3 (7)
+GC running on:CrossHallway_Wall 3 (10)
+GC running on:CrossHallway_Wall 3 (13)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (11)
+GC running on:Tower (1)
+GC running on:CrossHallway_Wall 3 (8)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (3)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (10)
+GC running on:CrossHallway_Wall 3 (15)
+GC running on:CrossHallway_Wall 3 (5)
+GC running on:CrossHallway_Wall 3 (9)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:CrossHallway_Wall 3 (14)
+GC running on:CrossHallway_Wall 3 (11)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (12)
+GC running on:CrossHallway_Wall 3 (13)
+GC running on:CrossHallway_Wall 3 (7)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:Tower (7)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:CrossHallway_Wall 3 (13)
+GC running on:CrossHallway_Wall 3 (12)
+GC running on:CrossHallway_Wall 3 (7)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (11)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (9)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (3)
+GC running on:CrossHallway_Wall 3 (16)
+GC running on:CrossHallway_Wall 3 (5)
+GC running on:CrossHallway_Wall 3 (15)
+GC running on:CrossHallway_Wall 3 (14)
+GC running on:CrossHallway_Wall 3 (21)
+GC running on:CrossHallway_Wall 3 (22)
+GC running on:CrossHallway_Wall 3 (8)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:CrossHallway_Wall 3 (10)
+GC running on:CrossHallway_Wall 3 (17)
+GC running on:Tower (13)
+GC running on:CrossHallway_Wall 3 (16)
+GC running on:CrossHallway_Wall 3 (9)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (7)
+GC running on:CrossHallway_Wall 3 (11)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (15)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:CrossHallway_Ceilling 2 (1)
+GC running on:CrossHallway_Wall 3 (13)
+GC running on:CrossHallway_Wall 3 (8)
+GC running on:CrossHallway_Wall 3 (12)
+GC running on:CrossHallway_Wall 3 (10)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (17)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (14)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (2)
+GC running on:CrossHallway_Wall 3 (5)
+GC running on:CrossHallway_Wall 3 (18)
+GC running on:Tower (3)
+GC running on:CrossHallway_Wall 3 (13)
+GC running on:CrossHallway_Wall 3 (14)
+GC running on:CrossHallway_Wall 3 (16)
+GC running on:CrossHallway_Wall 3 (21)
+GC running on:CrossHallway_Wall 3 (9)
+GC running on:CrossHallway_Wall 3 (5)
+GC running on:Hallway_Floor_HallwayFloor_Hallway_Floor_HallwayLamp1_Hallway_Floor_polySurface2_CrossHallway_Floor 2 (3)
+GC running on:CrossHallway_Wall 3 (23)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3 (22)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (17)
+GC running on:CrossHallway_Wall 3 (7)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:CrossHallway_Wall 3 (11)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:CrossHallway_Wall 3 (15)
+GC running on:CrossHallway_Wall 3 (8)
+GC running on:CrossHallway_Wall 3 (12)
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (20)
+GC running on:CrossHallway_Wall 3 (10)
+GC running on:CrossHallway_Wall 3
+GC running on:SoundTriggers
+GC running on:SoundTrigger
+GC running on:Walls
+GC running on:CrossHallway_Wall 3 (5)
+GC running on:CrossHallway_Wall 3 (6)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3
+GC running on:CrossHallway_Wall 3 (1)
+GC running on:CrossHallway_Wall 3 (4)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (2)
+GC running on:CrossHallway_Wall 3 (3)
+GC running on:Floors
+GC running on:Floor 2 (6)
+GC running on:Floor 2 (8)
+GC running on:Floor 2 (2)
+GC running on:Floor 2 (3)
+GC running on:Floor (1)
+GC running on:Floor 2 (5)
+GC running on:Floor
+GC running on:Floor 2 (4)
+GC running on:Floor (2)
+GC running on:Floor 2 (7)
+GC running on:Floor 2 (1)
+GC running on:FloorSection (2)
+GC running on:FloorSection (3)
+GC running on:lol
 GC running on:Light
