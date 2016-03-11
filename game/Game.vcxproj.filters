@@ -177,6 +177,12 @@
     <ClInclude Include="src\mge\behaviours\ArmBehaviour.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\behaviours\MovingBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\Butterfly.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
     <ClInclude Include="src\mge\behaviours\CollectTrigger.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
@@ -287,6 +293,12 @@
     <ClCompile Include="src\mge\behaviours\ArmBehaviour.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
+    <ClCompile Include="src\mge\behaviours\MovingBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\Butterfly.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
     <ClCompile Include="src\mge\behaviours\CollectTrigger.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
@@ -359,9 +371,6 @@
       <Filter>Archivos de recursos\mge\assets\levels</Filter>
     </Xml>
     <Xml Include="assets\mge\levels\Level_03.xml">
-      <Filter>Archivos de recursos\mge\assets\levels</Filter>
-    </Xml>
-    <Xml Include="assets\mge\levels\Goal.xml">
       <Filter>Archivos de recursos\mge\assets\levels</Filter>
     </Xml>
   </ItemGroup>
