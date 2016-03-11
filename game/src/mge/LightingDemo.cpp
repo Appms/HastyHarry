@@ -51,7 +51,8 @@ void LightingDemo::_initializeScene()
 {
     _renderer->setClearColor(0,0,0);
 
-	Level::Load("Level_01.xml", _world);
+	//Level::Load("Level_01.xml", _world);
+	Level::Load("TestScene.xml", _world);
 
 	//Init Light
     Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);

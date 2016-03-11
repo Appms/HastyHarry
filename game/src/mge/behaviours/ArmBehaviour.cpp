@@ -69,7 +69,7 @@ void ArmBehaviour::update(float step)
 		_owner->rotate(-step, glm::vec3(0, 1, 0));
 	}
 
-	std::cout << "Pos: " << _owner->getLocalPosition() << " Rot: " << _owner->getRotation() << std::endl;
+	//std::cout << "Pos: " << _owner->getLocalPosition() << " Rot: " << _owner->getRotation() << std::endl;
 
 	if (((PlayerBehaviour*)_owner->getParent()->getBehaviour())->IsMoving())
 	{
