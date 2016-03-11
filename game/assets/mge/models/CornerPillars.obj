@@ -1,7 +1,7 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
 mtllib CornerPillar.mtl
-g CornerPillar
+g CornerPillars
 v 0.000000 0.000001 0.700000
 v 0.700000 0.000001 0.700000
 v 0.000000 0.000001 0.000000
@@ -191,7 +191,6 @@ vn 0.000000 0.000000 -1.000000
 vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 s 1
-g CornerPillars
 usemtl lambert3SG
 f 13/45/1 14/2/2 16/42/3
 f 16/42/3 14/2/2 15/3/4
