@@ -9,7 +9,6 @@
 #include "mge\core\Level.hpp"
 #include "mge/core/World.hpp"
 #include "MovingBehaviour.hpp"
-#include "Projectile.hpp"
 
 #include <iostream>
 using namespace std;

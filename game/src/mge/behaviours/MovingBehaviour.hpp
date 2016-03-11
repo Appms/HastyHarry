@@ -12,6 +12,7 @@ class MovingBehaviour : public AbstractBehaviour
 public:
 	MovingBehaviour(glm::vec3 pOrigin, glm::vec3 pEnd, float pSpeed, bool pLoop = false);
 	MovingBehaviour(std::string params);
+	void updateValues(glm::vec3 pOrigin, glm::vec3 pEnd, float pSpeed, bool pLoop = false);
 	virtual ~MovingBehaviour();
 
 	virtual void update(float step);

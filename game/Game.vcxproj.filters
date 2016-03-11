@@ -174,13 +174,13 @@
     <ClInclude Include="src\mge\behaviours\Turret.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
-    <ClInclude Include="src\mge\behaviours\Projectile.hpp">
-      <Filter>Archivos de encabezado\mge\behaviours</Filter>
-    </ClInclude>
     <ClInclude Include="src\mge\behaviours\ArmBehaviour.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
     <ClInclude Include="src\mge\behaviours\MovingBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\Butterfly.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
   </ItemGroup>
@@ -287,13 +287,13 @@
     <ClCompile Include="src\mge\behaviours\Turret.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
-    <ClCompile Include="src\mge\behaviours\Projectile.cpp">
-      <Filter>Archivos de código fuente\mge\behaviours</Filter>
-    </ClCompile>
     <ClCompile Include="src\mge\behaviours\ArmBehaviour.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
     <ClCompile Include="src\mge\behaviours\MovingBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\Butterfly.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
   </ItemGroup>
