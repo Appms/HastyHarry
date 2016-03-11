@@ -35,6 +35,16 @@ private:
 	glm::vec3 _jumpVelocity;
 	glm::vec3 _physicsVelocity;
 
+	glm::vec3 _spawnPos;
+
+	glm::vec3 _lastPosition;
+	float _slowFeedbackTimer;
+
+	bool _dead;
+	float _respawnTimer;
+
+	//TODO This Audio is a little hacky
+
 	std::vector<GameObject*> _enemies;
 
 	PlayerControllerCB _playerControllerCB;

@@ -47,5 +47,5 @@ float SoundBehaviour::GetCreationTime()
 
 bool SoundBehaviour::IsFinished()
 {
-	return _sound.getStatus() != sf::Music::Status::Playing;
+	return _sound.getStatus() != sf::Sound::Status::Playing;
 }

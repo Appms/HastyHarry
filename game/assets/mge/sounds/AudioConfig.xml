@@ -2,9 +2,17 @@
 <audio>
 	<sounds>
 		<sound>
-			<audioname>Land</audioname>
+			<audioname>land</audioname>
 			<filenames>
 				<filename>Land.wav</filename>
+			</filenames>
+			<mindistance>5.0</mindistance>
+			<attenuation>10.0</attenuation>
+		</sound>
+		<sound>
+			<audioname>collect</audioname>
+			<filenames>
+				<filename>Collect.wav</filename>
 			</filenames>
 			<mindistance>5.0</mindistance>
 			<attenuation>10.0</attenuation>
@@ -14,26 +22,49 @@
 		<voice>
 			<audioname>fall</audioname>
 			<filenames>
-				<filename>Falling.wav</filename>
+				<filename>Fall.wav</filename>
 			</filenames>
+			<priority>4</priority>
 		</voice>
 		<voice>
 			<audioname>jump</audioname>
 			<filenames>
 				<filename>Jump.wav</filename>
 			</filenames>
+			<priority>1</priority>
+		</voice>
+		<voice>
+			<audioname>slow_feedback</audioname>
+			<filenames>
+				<filename>Slow_Feedback_01.wav</filename>
+				<filename>Slow_Feedback_02.wav</filename>
+				<filename>Slow_Feedback_03.wav</filename>
+			</filenames>
+			<priority>2</priority>
+		</voice>
+		<voice>
+			<audioname>fall_feedback</audioname>
+			<filenames>
+				<filename>Fall_Feedback_01.wav</filename>
+				<filename>Fall_Feedback_02.wav</filename>
+				<filename>Fall_Feedback_03.wav</filename>
+				<filename>Fall_Feedback_04.wav</filename>
+			</filenames>
+			<priority>2</priority>
 		</voice>
 		<voice>
 			<audioname>dialogue_1_1</audioname>
 			<filenames>
 				<filename>Dialogue_1_1.wav</filename>
 			</filenames>
+			<priority>3</priority>
 		</voice>
 		<voice>
 			<audioname>dialogue_1_2</audioname>
 			<filenames>
 				<filename>Dialogue_1_2.wav</filename>
 			</filenames>
+			<priority>3</priority>
 		</voice>
 	</voices>
 	<tracks>

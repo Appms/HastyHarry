@@ -8,7 +8,6 @@ RotatingBehaviour::RotatingBehaviour(float anglePerSec) :AbstractBehaviour()
 
 RotatingBehaviour::RotatingBehaviour(std::string params) : AbstractBehaviour()
 {
-	std::cout << params << std::endl;
 	_anglePerSec = atof(params.c_str());
 }
 
