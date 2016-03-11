@@ -1,4 +1,5 @@
 #include "mge/behaviours/TriggerBehaviour.hpp"
+#include "mge/behaviours/SoundTrigger.hpp"
 #include "mge/core/GameObject.hpp"
 #include "mge/config.hpp"
 #include "mge/core/Timer.hpp"

@@ -153,6 +153,7 @@
     <ClInclude Include="src\glm.hpp" />
     <ClInclude Include="src\mge\behaviours\AbstractBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\ArmBehaviour.hpp" />
+    <ClInclude Include="src\mge\behaviours\CollectTrigger.hpp" />
     <ClInclude Include="src\mge\behaviours\KeysBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\LookAt.hpp" />
     <ClInclude Include="src\mge\behaviours\PlayerBehaviour.hpp" />
@@ -191,6 +192,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\mge\behaviours\AbstractBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\ArmBehaviour.cpp" />
+    <ClCompile Include="src\mge\behaviours\CollectTrigger.cpp" />
     <ClCompile Include="src\mge\behaviours\KeysBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\LookAt.cpp" />
     <ClCompile Include="src\mge\behaviours\PlayerBehaviour.cpp" />
