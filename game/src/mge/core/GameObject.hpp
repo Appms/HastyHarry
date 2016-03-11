@@ -82,6 +82,7 @@ class GameObject
         //behaviour will probably be a unique instance per gameobject
 		void setBehaviour(AbstractBehaviour* pBehaviour);
 		AbstractBehaviour* getBehaviour() const;
+		AbstractBehaviour* getBehaviour(int index) const;
 
 		virtual void update(float pStep, const glm::mat4& pParentTransform);
 
@@ -127,7 +128,7 @@ class GameObject
 		ColliderType _colliderType;
 		neRigidBody* _rigidbody;
 		neAnimatedBody* _animatedbody;
-		AbstractBehaviour* _behaviour;
+		std::vector<AbstractBehaviour*> _behaviours;
 		AbstractMaterial* _material;
 		World* _world;
 

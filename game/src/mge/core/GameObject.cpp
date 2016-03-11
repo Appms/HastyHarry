@@ -16,7 +16,7 @@ using namespace std;
 
 GameObject::GameObject(std::string pName, glm::vec3 pPosition, GameObject::PhysicsType pPhysicsType, GameObject::ColliderType pColliderType )
 :	_name( pName ), _transform( glm::translate( pPosition ) ),  _parent(NULL), _children(),
-    _mesh( NULL ), _physicsType(pPhysicsType), _colliderType(pColliderType), _rigidbody(NULL), _animatedbody(NULL),_behaviour( NULL ), _material(NULL), _world(NULL)
+    _mesh( NULL ), _physicsType(pPhysicsType), _colliderType(pColliderType), _rigidbody(NULL), _animatedbody(NULL),_behaviours( NULL ), _material(NULL), _world(NULL)
 {
 }
 
@@ -44,7 +44,13 @@ GameObject::~GameObject()
 			_animatedbody = NULL;
 		}
 	}
-	delete _behaviour;
+
+	for each (AbstractBehaviour* behaviour in _behaviours)
+	{
+		delete behaviour;
+	}
+	_behaviours.clear();
+
 	_material = NULL;
 
 	if (_parent != NULL) _parent->remove(this);
@@ -225,13 +231,18 @@ neAnimatedBody * GameObject::getAnimatedBody() const {
 
 void GameObject::setBehaviour(AbstractBehaviour* pBehaviour)
 {
-	_behaviour = pBehaviour;
-	_behaviour->setOwner(this);
+	_behaviours.push_back(pBehaviour);
+	_behaviours.back()->setOwner(this);
 }
 
 AbstractBehaviour * GameObject::getBehaviour() const
 {
-    return _behaviour;
+    return _behaviours.back();
+}
+
+AbstractBehaviour * GameObject::getBehaviour(int index) const
+{
+	return _behaviours[index];
 }
 
 void GameObject::setParent (GameObject* pParent) {
@@ -347,8 +358,12 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
     _worldTransform = pParentTransform * _transform;
 	
     //make sure behaviour is updated after worldtransform is set
-	if (_behaviour) {
-		_behaviour->update(pStep);
+	if (_behaviours.size() > 0) {
+		for (int i = 0; i < _behaviours.size(); i++)
+		{
+			_behaviours[i]->update(pStep);
+		}
+		//_behaviour->update(pStep);
 	}
 
     for (int i = _children.size()-1; i >= 0; --i ) {
