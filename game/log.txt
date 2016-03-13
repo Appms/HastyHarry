@@ -32,11 +32,11 @@ Shader compiled ok.
 Program linked ok.
 
 Level Loader: Loading level "TestScene.xml"...
-Loading assets/mge/models/BeerBottle.obj...339
-418
+Loading assets/mge/models/Trash3.obj...199
+208
 Tangents calculated!
-Mesh loaded and buffered:418 triangles.
-Texture assets/mge/textures/BottleUV.png with id 1 loaded.
+Mesh loaded and buffered:208 triangles.
+Texture assets/mge/textures/Bin3blue.png with id 1 loaded.
 Caching texture.
 
 Program created with id:4
@@ -48,66 +48,66 @@ Compiling shader...
 Shader compiled ok.
 Program linked ok.
 
-Loading assets/mge/models/CrossHallway_Floor.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadFloorUVHigh.png with id 2 loaded.
-Caching texture.
-Loading assets/mge/models/Trash3.obj...199
-208
-Tangents calculated!
-Mesh loaded and buffered:208 triangles.
-Texture assets/mge/textures/Bin3blue.png with id 3 loaded.
-Caching texture.
 Loading assets/mge/models/Bed.obj...752
 802
 Tangents calculated!
 Mesh loaded and buffered:802 triangles.
-Texture assets/mge/textures/Hospital Bed 3.png with id 4 loaded.
+Texture assets/mge/textures/Hospital Bed 3.png with id 2 loaded.
+Caching texture.
+Loading assets/mge/models/BeerBottle.obj...339
+418
+Tangents calculated!
+Mesh loaded and buffered:418 triangles.
+Texture assets/mge/textures/BottleUV.png with id 3 loaded.
 Caching texture.
 Loading assets/mge/models/Plants3.obj...806
 660
 Tangents calculated!
 Mesh loaded and buffered:660 triangles.
-Texture assets/mge/textures/Plants3level3.png with id 5 loaded.
+Texture assets/mge/textures/Plants3level3.png with id 4 loaded.
 Caching texture.
 Loading assets/mge/models/HospitalChair.obj...336
 328
 Tangents calculated!
 Mesh loaded and buffered:328 triangles.
-Texture assets/mge/textures/Random Chair guideline 2.png with id 6 loaded.
+Texture assets/mge/textures/Random Chair guideline 2.png with id 5 loaded.
 Caching texture.
 Loading assets/mge/models/Keyboard.obj...18
 6
 Tangents calculated!
 Mesh loaded and buffered:6 triangles.
-Texture assets/mge/textures/Keyboard.png with id 7 loaded.
+Texture assets/mge/textures/Keyboard.png with id 6 loaded.
 Caching texture.
 Loading assets/mge/models/CrossHallway_Ceilling.obj...24
 12
 Tangents calculated!
 Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadCeillingMID.png with id 8 loaded.
+Texture assets/mge/textures/CrossroadCeillingMID.png with id 7 loaded.
 Caching texture.
 Loading assets/mge/models/Cabinet.obj...378
 308
 Tangents calculated!
 Mesh loaded and buffered:308 triangles.
-Texture assets/mge/textures/Cabinet guideline 1.png with id 9 loaded.
+Texture assets/mge/textures/Cabinet guideline 1.png with id 8 loaded.
 Caching texture.
-Texture assets/mge/textures/Bin3Level2.png with id 10 loaded.
+Texture assets/mge/textures/Bin3Level2.png with id 9 loaded.
 Caching texture.
-Texture assets/mge/textures/Hospital Bed guideline 2.png with id 11 loaded.
+Texture assets/mge/textures/Hospital Bed guideline 2.png with id 10 loaded.
 Caching texture.
 Loading assets/mge/models/Trash1.obj...Error reading obj, needing v,vn,vt
-Texture assets/mge/textures/Bin1.png with id 12 loaded.
+Texture assets/mge/textures/Bin1.png with id 11 loaded.
 Caching texture.
 Loading assets/mge/models/Closet.obj...300
 294
 Tangents calculated!
 Mesh loaded and buffered:294 triangles.
-Texture assets/mge/textures/Closet guideline more blueish.png with id 13 loaded.
+Texture assets/mge/textures/Closet guideline more blueish.png with id 12 loaded.
+Caching texture.
+Loading assets/mge/models/CrossHallway_Floor.obj...24
+12
+Tangents calculated!
+Mesh loaded and buffered:12 triangles.
+Texture assets/mge/textures/CrossroadFloorUVHigh.png with id 13 loaded.
 Caching texture.
 Loading assets/mge/models/Trash2.obj...238
 288
@@ -121,7 +121,10 @@ Tangents calculated!
 Mesh loaded and buffered:732 triangles.
 Texture assets/mge/textures/Plants2Level2.png with id 15 loaded.
 Caching texture.
-Loading assets/mge/models/Monitor_holder.obj...Could not read assets/mge/models/Monitor_holder.obj
+Loading assets/mge/models/Monitor_holder.obj...321
+164
+Tangents calculated!
+Mesh loaded and buffered:164 triangles.
 Texture assets/mge/textures/Monitor holder.png with id 16 loaded.
 Caching texture.
 Texture assets/mge/textures/Plants3.png with id 17 loaded.
@@ -138,7 +141,10 @@ Texture assets/mge/textures/Plants1.png with id 20 loaded.
 Caching texture.
 Texture assets/mge/textures/Closet guideline.png with id 21 loaded.
 Caching texture.
-Loading assets/mge/models/Wetfloor_Sign.obj...Could not read assets/mge/models/Wetfloor_Sign.obj
+Loading assets/mge/models/Wetfloor_Sign.obj...424
+336
+Tangents calculated!
+Mesh loaded and buffered:336 triangles.
 Texture assets/mge/textures/Wetfloor Sign Guideline.png with id 22 loaded.
 Caching texture.
 Texture assets/mge/textures/Random Chair 1.png with id 23 loaded.
@@ -146,7 +152,10 @@ Caching texture.
 Loading assets/mge/models/Medicine_Cabinet_2.obj...Could not read assets/mge/models/Medicine_Cabinet_2.obj
 Texture assets/mge/textures/Medicine Cabinet 2.png with id 24 loaded.
 Caching texture.
-Loading assets/mge/models/Medicine_Cabinet.obj...Could not read assets/mge/models/Medicine_Cabinet.obj
+Loading assets/mge/models/Medicine_Cabinet.obj...128
+124
+Tangents calculated!
+Mesh loaded and buffered:124 triangles.
 Texture assets/mge/textures/Medicine Cabinet.png with id 25 loaded.
 Caching texture.
 Texture assets/mge/textures/Cabinet 1.png with id 26 loaded.
@@ -177,7 +186,10 @@ Tangents calculated!
 Mesh loaded and buffered:260 triangles.
 Texture assets/mge/textures/Tiny Table with magazines guideline more blue.png with id 31 loaded.
 Caching texture.
-Loading assets/mge/models/Waiting_Chairs.obj...Could not read assets/mge/models/Waiting_Chairs.obj
+Loading assets/mge/models/Waiting_Chairs.obj...622
+448
+Tangents calculated!
+Mesh loaded and buffered:448 triangles.
 Texture assets/mge/textures/Waiting Chairs 3.png with id 32 loaded.
 Caching texture.
 Texture assets/mge/textures/Bin2Blue.png with id 33 loaded.
@@ -426,50 +438,49 @@ GC running on:root
 GC running on:player
 GC running on:camera
 GC running on:AudioSource
-GC running on:AudioSource
 GC running on:
 GC running on:Functional
 GC running on:Turret
 GC running on:TurretCamera
 GC running on:TurretHolder
 GC running on:Props
-GC running on:BeerBottle (19)
-GC running on:BeerBottle (18)
-GC running on:BeerBottle (17)
-GC running on:BeerBottle (16)
-GC running on:BeerBottle (15)
-GC running on:BeerBottle (14)
-GC running on:BeerBottle (13)
-GC running on:BeerBottle (12)
-GC running on:BeerBottle (11)
-GC running on:BeerBottle (10)
-GC running on:BeerBottle (9)
-GC running on:BeerBottle (8)
-GC running on:BeerBottle (7)
-GC running on:BeerBottle (6)
-GC running on:BeerBottle (5)
-GC running on:BeerBottle (4)
-GC running on:BeerBottle (3)
-GC running on:BeerBottle (2)
 GC running on:BeerBottle (1)
 GC running on:BeerBottle
+GC running on:BeerBottle (18)
+GC running on:BeerBottle (3)
 GC running on:Monitor_holder
+GC running on:BeerBottle (11)
+GC running on:BeerBottle (10)
 GC running on:Medicine_Cabinet_2
 GC running on:Medicine_Cabinet_1
 GC running on:Syringe
+GC running on:BeerBottle (17)
+GC running on:BeerBottle (7)
+GC running on:BeerBottle (16)
 GC running on:Document1
+GC running on:BeerBottle (2)
 GC running on:Standing_Lamp
+GC running on:BeerBottle (8)
 GC running on:ExitSign
 GC running on:Pills
+GC running on:BeerBottle (5)
 GC running on:CleaningUtility
+GC running on:BeerBottle (14)
 GC running on:Table
 GC running on:Trolley
+GC running on:BeerBottle (4)
 GC running on:HeartMonitor
+GC running on:BeerBottle (6)
 GC running on:Tire
+GC running on:BeerBottle (9)
+GC running on:BeerBottle (12)
 GC running on:Wetfloor_Sign_Syringes
 GC running on:Document2
 GC running on:Mop
 GC running on:Magazines
+GC running on:BeerBottle (13)
+GC running on:BeerBottle (15)
+GC running on:BeerBottle (19)
 GC running on:Wetfloor_Sign_WetFloor
 GC running on:PhotoFrame
 GC running on:Medium
@@ -510,13 +521,13 @@ GC running on:Hallway_Ceilling_3
 GC running on:Hallway_Wall_3
 GC running on:Hallway_Floor_3
 GC running on:CrossHallway
-GC running on:CrossHallway_Floor_3 (4)
-GC running on:CrossHallway_Floor_3 (3)
-GC running on:CrossHallway_Floor_3 (2)
 GC running on:CrossHallway_Floor_3 (1)
 GC running on:CrossHallway_Floor_3
 GC running on:CrossHallway_Wall_3
+GC running on:CrossHallway_Floor_3 (2)
 GC running on:CrossHallway_Ceilling_3
+GC running on:CrossHallway_Floor_3 (3)
+GC running on:CrossHallway_Floor_3 (4)
 GC running on:Props
 GC running on:Bed_3
 GC running on:Plants3_3
