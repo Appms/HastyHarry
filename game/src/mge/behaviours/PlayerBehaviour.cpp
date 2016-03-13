@@ -369,7 +369,6 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		_moveVelocity *= HARD_INERTIA;
 	}
 
-	//TODO Do not apply Walk_MAxvelocity when in air but Air_MAXVELCOITY
 	//Clamp the moveVelocity
 	if (glm::length2(_moveVelocity) > (_grounded ? ((_walking && !_walled) ? WALK_MAXVELOCITY * WALK_MAXVELOCITY : RUN_MAXVELOCITY * RUN_MAXVELOCITY) : AIR_MAXVELOCITY * AIR_MAXVELOCITY))
 	{
@@ -384,7 +383,6 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	{
 		float dot = glm::dot((*it), _moveVelocity);
 
-		//TODO Sticking to the wall might be buggy
 		if (_grounded && dot < 0.0f || _wallJumped && dot < 0.0f || !_grounded && !_wallJumped)
 		{
 			_moveVelocity -= (*it) * dot;
@@ -398,7 +396,6 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	//Apply Gravity
 	_physicsVelocity += _jumpVelocity;
 
-	//TODO Apply deltatime to gravity otherwise slowmotion and pause wont work properly
 	if (_walled && !_grounded && _falling)
 	{
 		_physicsVelocity += glm::vec3(0, WALLRUN_GRAVITY, 0) * pStep;

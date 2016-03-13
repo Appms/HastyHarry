@@ -136,13 +136,13 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	float triggerRadius;
 
 	glm::vec3 collSize, collCenter, worldPos;
-	float collRadius, collHeight;
+	//float collRadius, collHeight;
 	neQ worldRot;
 
 	bool foundCollider = false;
 	bool isKinematic, useGravity;
 	float mass;
-	string collType;
+	//string collType;
 
     std::cout << "Level Loader: Loading level \""+pLevelName+"\"..." << std::endl;
     //_loadedMaterials.push_back(new PhongMaterial (Texture::load(config::MGE_TEXTURE_PATH+"bricks.jpg"), glm::vec3(0.2f,0.2f,0.2f), glm::vec3(0.8f,0.8f,0.8f), glm::vec3(0.1f,0.1f,0.1f), 2.0f));
@@ -253,6 +253,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						}
 						else if (0 == strcmp(part->Value(), "behaviourparams"))
 						{
+							//TODO Add all Behaviours
 							if (0 == behName.compare("SoundTrigger"))
 							{
 								go->setBehaviour(new SoundTrigger(part->GetText()));
@@ -269,6 +270,10 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							{
 								//go->setBehaviour(new CollectTrigger());s
 							}
+							else if (0 == behName.compare("EndTrigger"))
+							{
+								//go->setBehaviour(new CollectTrigger());s
+							}
 							else if (0 == behName.compare("MovingBehaviour"))
 							{
 								go->setBehaviour(new MovingBehaviour(part->GetText()));
@@ -280,6 +285,26 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							else if (0 == behName.compare("TurretBehaviour"))
 							{
 								go->setBehaviour(new Turret(part->GetText()));
+							}
+							else if (0 == behName.compare("ButterflyBehaviour"))
+							{
+								//go->setBehaviour(new Turret(part->GetText()));
+							}
+							else if (0 == behName.compare("CollectableTrigger"))
+							{
+								//go->setBehaviour(new Turret(part->GetText()));
+							}
+							else if (0 == behName.compare("DeleteSwitch"))
+							{
+								//go->setBehaviour(new Turret(part->GetText()));
+							}
+							else if (0 == behName.compare("MoveSwitch"))
+							{
+								//go->setBehaviour(new Turret(part->GetText()));
+							}
+							else if (0 == behName.compare("RotateSwitch"))
+							{
+								//go->setBehaviour(new Turret(part->GetText()));
 							}
 							else if (0 != behName.compare(""))
 							{
@@ -312,7 +337,6 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 								go->setMaterial(_loadedMaterials[indexPlace]);
 							}
 							else {
-								//TODO Add all the materials
 								if (0 == matName.compare("ColorMaterial"))
 								{
 									_loadedMaterialsNames.push_back(matName);
@@ -333,7 +357,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}*/
 
 							bool foundMat = false;
-							//TODO Add all the materials
+
 							if (0 == matName.compare("ColorMaterial"))
 							{
 								_loadedMaterials.push_back(new ColorMaterial(part->GetText()));
@@ -363,19 +387,19 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 								std::string pos = part->GetText();
 								std::vector<std::string> mat = Utility::Split(pos, ',');
 
-								if (0 == strcmp(collType.c_str(), "Box"))
-								{
+								//if (0 == strcmp(collType.c_str(), "Box"))
+								//{
 									collSize = glm::vec3(atof(mat[0].c_str()), atof(mat[1].c_str()), atof(mat[2].c_str()));
-								}
-								else if (0 == strcmp(collType.c_str(), "Sphere"))
-								{
-									collRadius = atof(mat[0].c_str());
-								}
-								else if (0 == strcmp(collType.c_str(), "Cylinder"))
-								{
-									collRadius = atof(mat[0].c_str());
-									collHeight = atof(mat[1].c_str());
-								}
+								//}
+								//else if (0 == strcmp(collType.c_str(), "Sphere"))
+								//{
+								//	collRadius = atof(mat[0].c_str());
+								//}
+								//else if (0 == strcmp(collType.c_str(), "Cylinder"))
+								//{
+								//	collRadius = atof(mat[0].c_str());
+								//	collHeight = atof(mat[1].c_str());
+								//}
 							}
 						}
 						else if (0 == strcmp(part->Value(), "collidercenter"))
@@ -440,22 +464,22 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						neAnimatedBody* body = pWorld->getPhysics()->CreateAnimatedBody();
 						neGeometry* geometry = body->AddGeometry();
 
-						if (0 == strcmp(collType.c_str(), "Box"))
-						{
+						//if (0 == strcmp(collType.c_str(), "Box"))
+						//{
 							geometry->SetBoxSize(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z);
-						}
-						else if (0 == strcmp(collType.c_str(), "Sphere"))
-						{
-							geometry->SetSphereDiameter(collRadius * 2.0f);
-						}
-						else if (0 == strcmp(collType.c_str(), "Cylinder"))
-						{
-							geometry->SetCylinder(collRadius * 2.0f, collHeight);
-						}
-						else
-						{
-							std::cout << "Error: Invalid collider type \"" << collType << "\"" << std::endl;
-						}
+						//}
+						//else if (0 == strcmp(collType.c_str(), "Sphere"))
+						//{
+						//	geometry->SetSphereDiameter(collRadius * 2.0f);
+						//}
+						//else if (0 == strcmp(collType.c_str(), "Cylinder"))
+						//{
+						//	geometry->SetCylinder(collRadius * 2.0f, collHeight);
+						//}
+						//else
+						//{
+						//	std::cout << "Error: Invalid collider type \"" << collType << "\"" << std::endl;
+						//}
 						
 						body->UpdateBoundingInfo();
 						body->SetUserData((u32)go);
@@ -476,26 +500,26 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						neRigidBody* body = pWorld->getPhysics()->CreateRigidBody();
 						neGeometry* geometry = body->AddGeometry();
 
-						if (0 == strcmp(collType.c_str(), "Box"))
-						{
+						//if (0 == strcmp(collType.c_str(), "Box"))
+						//{
 							geometry->SetBoxSize(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z);
 							body->SetInertiaTensor(neBoxInertiaTensor(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z, mass));
 
-						}
-						else if (0 == strcmp(collType.c_str(), "Sphere"))
-						{
-							geometry->SetSphereDiameter(collRadius * 2.0f);
-							body->SetInertiaTensor(neSphereInertiaTensor(collRadius * 2.0f, mass));
-						}
-						else if (0 == strcmp(collType.c_str(), "Cylinder"))
-						{
-							geometry->SetCylinder(collRadius * 2.0f, collHeight);
-							body->SetInertiaTensor(neCylinderInertiaTensor(collRadius * 2.0f, collHeight, mass));
-						}
-						else
-						{
-							std::cout << "Error: Invalid collider type \"" << collType << "\"" << std::endl;
-						}
+						//}
+						//else if (0 == strcmp(collType.c_str(), "Sphere"))
+						//{
+						//	geometry->SetSphereDiameter(collRadius * 2.0f);
+						//	body->SetInertiaTensor(neSphereInertiaTensor(collRadius * 2.0f, mass));
+						//}
+						//else if (0 == strcmp(collType.c_str(), "Cylinder"))
+						//{
+						//	geometry->SetCylinder(collRadius * 2.0f, collHeight);
+						//	body->SetInertiaTensor(neCylinderInertiaTensor(collRadius * 2.0f, collHeight, mass));
+						//}
+						//else
+						//{
+						//	std::cout << "Error: Invalid collider type \"" << collType << "\"" << std::endl;
+						//}
 
 						body->SetMass(mass);
 						
