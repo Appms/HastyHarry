@@ -1,7 +1,7 @@
 #include <cassert>
 #include <iostream>
+
 #include "mge/behaviours/AbstractBehaviour.hpp"
-#include "mge/core/GameObject.hpp"
 
 AbstractBehaviour::AbstractBehaviour():_owner(NULL) {}
 

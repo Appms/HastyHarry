@@ -438,6 +438,7 @@ GC running on:root
 GC running on:player
 GC running on:camera
 GC running on:AudioSource
+GC running on:AudioSource
 GC running on:
 GC running on:Functional
 GC running on:Turret

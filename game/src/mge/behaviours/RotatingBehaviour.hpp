@@ -2,7 +2,6 @@
 #define ROTATINGBEHAVIOUR_H
 
 #include "mge/behaviours/AbstractBehaviour.hpp"
-#include <string>
 /**
  * Simply rotates the object around its origin
  */

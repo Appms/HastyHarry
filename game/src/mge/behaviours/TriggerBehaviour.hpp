@@ -1,9 +1,7 @@
 #ifndef TRIGGERBEHAVIOUR_H
 #define TRIGGERBEHAVIOUR_H
 
-#include <glm.hpp>
 #include "mge/behaviours/AbstractBehaviour.hpp"
-#include "SFML/Audio.hpp"
 
 class GameObject;
 

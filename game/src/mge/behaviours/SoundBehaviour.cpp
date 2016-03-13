@@ -7,9 +7,7 @@
 #include <string>
 #include "mge/core/SoundEngine.hpp"
 
-SoundBehaviour::SoundBehaviour()
-{
-}
+SoundBehaviour::SoundBehaviour() {}
 
 SoundBehaviour::~SoundBehaviour()
 {

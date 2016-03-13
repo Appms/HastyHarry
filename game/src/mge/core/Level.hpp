@@ -9,6 +9,10 @@ class AbstractMaterial;
 class AbstractBehaviour;
 class GameObject;
 
+/*
+* Takes care of reading an XML with information about the level generated in Unity.
+* It also takes care of unloading the previous loaded level, allowing easy level transitions.
+*/
 class Level
 {
     public:

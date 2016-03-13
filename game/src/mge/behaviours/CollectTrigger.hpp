@@ -1,13 +1,10 @@
 #ifndef COLLECTTRIGGER_H
 #define COLLECTTRIGGER_H
 
-#include <glm.hpp>
 #include "mge/behaviours/TriggerBehaviour.hpp"
-#include "SFML/Audio.hpp"
-#include "mge/core/SoundEngine.hpp"
-
-class GameObject;
-
+/*
+* Behaviour for collectables that play a sound when picked.
+*/
 class CollectTrigger : public TriggerBehaviour
 {
 	public:
