@@ -79,7 +79,7 @@ void LightingDemo::_initializeScene()
 	butterfly->setBehaviour(new MovingBehaviour(glm::vec3(0, 0, -10), glm::vec3(0, 0, -10), 1.0f, false));
 	butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, glm::vec3(0, 0, -10), (MovingBehaviour*)butterfly->getBehaviour(), waypoints));*/
 
-	Level::Load("Level_03.xml", _world);
+	Level::Load("TestScene.xml", _world);
 
 	//Level::Load("Level_03.xml", _world);
 

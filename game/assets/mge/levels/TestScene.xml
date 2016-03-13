@@ -2,8 +2,2371 @@
 <level>
 	<gameobjects>
 		<gameobject>
-			<id>80a15730-0170-4a13-b128-1728154530cf</id>
-			<name>SoundTrigger</name>
+			<id>2b339129-ff0d-4c81-a014-b401b159561b</id>
+			<name>BeerBottle (19)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-9.53,2.6,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-9.53,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>28630fe9-7159-45e3-8604-97545e4c2ac9</id>
+			<name>BeerBottle (18)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-9.53,2.6,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-9.53,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8c800b47-a6ae-4a4e-9dd9-64bf4bb36b85</id>
+			<name>BeerBottle (17)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-10.26,2.6,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-10.26,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>23b1814a-40f6-46e8-af0c-b779e0041cae</id>
+			<name>BeerBottle (16)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-11.21,2.6,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-11.21,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>e7086cb7-181c-4add-a4f3-37365c4c918b</id>
+			<name>BeerBottle (15)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-9.85,2.6,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-9.85,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>7838e82b-8257-47ed-9e28-7ddca8768b5c</id>
+			<name>BeerBottle (14)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-10.63,2.6,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-10.63,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>4393786c-6415-4c30-adac-03fa11caf171</id>
+			<name>BeerBottle (13)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-11.6,2.6,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-11.6,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>9866e06d-57cd-4fee-bbf6-d4a67ee4c4f2</id>
+			<name>BeerBottle (12)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-11.84,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-11.84,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>a148a55e-efe2-4b94-b5fd-5e89d7ed5b24</id>
+			<name>BeerBottle (11)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-11.53,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-11.53,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>d0a7b06f-5af2-42d8-91d7-564fa2afa876</id>
+			<name>BeerBottle (10)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-10.92,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-10.92,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>f1cac890-e857-454b-8e65-9a0bd501b05f</id>
+			<name>BeerBottle (9)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-10.62,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-10.62,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>261e7283-a0be-41da-ad9a-6ef733e33898</id>
+			<name>BeerBottle (8)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-9.98,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-9.98,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>5f0280d1-f4ff-4fe6-aa47-a678fcbaed7f</id>
+			<name>BeerBottle (7)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-9.71,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-9.71,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>bb7d7375-2ffe-40bc-8fe6-e78221938e13</id>
+			<name>BeerBottle (6)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-9.35,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-9.35,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>9a75a02a-22a9-4d65-aeac-4e4afef6e751</id>
+			<name>BeerBottle (5)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-10.27,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-10.27,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>e6efc1bb-3487-44f2-8b2c-a6eca9d2ca99</id>
+			<name>BeerBottle (4)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-11.18,1.77,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-11.18,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>6eba1d95-a6f0-4bd6-832d-6796b66af5e4</id>
+			<name>BeerBottle (3)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-11.55,1.12,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-11.55,0,1,0,1.12,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>43b87cf5-7cc7-4e74-a382-d4a7ca35630b</id>
+			<name>BeerBottle (2)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-10.91,1.12,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-10.91,0,1,0,1.12,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>3bbb8338-76a9-4374-a5e7-f340cab12edb</id>
+			<name>BeerBottle (1)</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-10.21,1.12,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-10.21,0,1,0,1.12,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>f63b1856-36b5-47cb-ab68-7e4c10673144</id>
+			<name>CrossHallway_Floor_3 (4)</name>
+			<parentid>0d664efc-e421-47fb-b52e-46a15367c57a</parentid>
+			<worldposition>-48,0,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-48,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUVHigh, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>3398ea73-f5c7-4742-91ef-4f06ff1e05b2</id>
+			<name>CrossHallway_Floor_3 (3)</name>
+			<parentid>0d664efc-e421-47fb-b52e-46a15367c57a</parentid>
+			<worldposition>-36,0,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-36,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUVHigh, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>4153ad7a-f8fd-46fc-9748-a6be95c49e57</id>
+			<name>CrossHallway_Floor_3 (2)</name>
+			<parentid>0d664efc-e421-47fb-b52e-46a15367c57a</parentid>
+			<worldposition>-24,0,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-24,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUVHigh, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>759c6962-3e89-48dc-bf69-6d9b905912d2</id>
+			<name>CrossHallway_Floor_3 (1)</name>
+			<parentid>0d664efc-e421-47fb-b52e-46a15367c57a</parentid>
+			<worldposition>-12,0,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-12,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUVHigh, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>ce39a8eb-7db8-4930-b116-4e98157d5fa4</id>
+			<name>Trash3_Guide</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-22.9308,44.7871,-27.36</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-22.9308,0,1,0,44.7871,0,0,1,-27.36,0,0,0,1</transform>
+			<mesh>Trash3</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin3blue, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5823,0</collidercenter>
+			<collidersize>0.654,0.8197,0.654</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>c93275d5-57f4-4e58-83cf-3b97b39c82d9</id>
+			<name>Bed_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-32.5,0.4038,-11.2549</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-32.5,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
+			<mesh>Bed</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Hospital Bed 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7841,0</collidercenter>
+			<collidersize>3.4395,1.5642,1.6015</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>7482a1f8-857b-4b47-b3ed-982122c70001</id>
+			<name>BeerBottle</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-9.42,1.12,-31.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-9.42,0,1,0,1.12,0,0,1,-31.66,0,0,0,1</transform>
+			<mesh>BeerBottle</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>BottleUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0293,0.2739,0.0197</collidercenter>
+			<collidersize>0.145,0.5481,0.145</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>d0b3851a-68c3-47b8-b2e4-b0ceac269a4f</id>
+			<name>Plants3_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-37.68,10.3611,43.1272</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-37.68,0,1,0,10.3611,0,0,1,43.1272,0,0,0,1</transform>
+			<mesh>Plants3</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants3level3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7257,-0.0434</collidercenter>
+			<collidersize>0.452,1.4356,0.722</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>33f3c55d-4359-490f-bd35-b9255c06c4e4</id>
+			<name>HospitalChair_Guide_2</name>
+			<parentid>117496a1-e6bd-4835-8b8d-41f21e4f83c4</parentid>
+			<worldposition>-28.995,19.0203,53.5836</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-28.995,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
+			<mesh>HospitalChair</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Random Chair guideline 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5681,-0.0063</collidercenter>
+			<collidersize>0.72,1.1364,0.6326</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>2a007e75-d680-4e76-9129-551ae7290795</id>
+			<name>Keyboard_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-76.9491,26.2216,-33.8778</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-76.9491,0,1,0,26.2216,0,0,1,-33.8778,0,0,0,1</transform>
+			<mesh>Keyboard</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Keyboard, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>c012ef6b-1cb7-4a35-a5be-a51338cb2617</id>
+			<name>CrossHallway_Ceilling_2</name>
+			<parentid>8eea01c6-0d0e-42e0-afab-c9a1fd86397c</parentid>
+			<worldposition>-0.004,5.682,-15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-0.004,0,1,0,5.682,0,0,1,-15,0,0,0,1</transform>
+			<mesh>CrossHallway_Ceilling</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadCeillingMID, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>e3e0a44e-81ca-4f8d-a87e-4af0c15df4e5</id>
+			<name>Cabinet_Guide</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-20.532,-1.9327,-26.54</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-20.532,0,1,0,-1.9327,0,0,1,-26.54,0,0,0,1</transform>
+			<mesh>Cabinet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Cabinet guideline 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0166,0.489,0</collidercenter>
+			<collidersize>0.6216,0.9018,0.7495</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8bc13d43-1455-4b52-b139-72cf334e964a</id>
+			<name>Trash3_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-22.9308,44.7871,-24.935</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-22.9308,0,1,0,44.7871,0,0,1,-24.935,0,0,0,1</transform>
+			<mesh>Trash3</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin3Level2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5823,0</collidercenter>
+			<collidersize>0.654,0.8197,0.654</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>bb7faaa8-4e9d-4761-aaa2-dce007148c51</id>
+			<name>Bed_Guide_2</name>
+			<parentid>117496a1-e6bd-4835-8b8d-41f21e4f83c4</parentid>
+			<worldposition>-40.32,0.4038,-11.2549</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-40.32,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
+			<mesh>Bed</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Hospital Bed guideline 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7841,0</collidercenter>
+			<collidersize>3.4395,1.5642,1.6015</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>059dc42c-010f-4f1f-8fa4-4beba975488d</id>
+			<name>Trash1_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-34.4624,40.7163,-26.1047</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-34.4624,0,1,0,40.7163,0,0,1,-26.1047,0,0,0,1</transform>
+			<mesh>Trash1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0001,0.4294,-0.0001</collidercenter>
+			<collidersize>0.5349,0.7867,0.5349</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>d2e40360-0d92-4870-93e2-dcfdeafc5cdc</id>
+			<name>Closet_Guide_2</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-28.84,-1.4996,-3.7433</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-28.84,0,1,0,-1.4996,0,0,1,-3.7433,0,0,0,1</transform>
+			<mesh>Closet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Closet guideline more blueish, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,1.317,0.0354</collidercenter>
+			<collidersize>2.157,2.6296,0.6647</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>a9c45fe6-3c00-40e5-9b37-e5f3158f46e7</id>
+			<name>Trash2_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-27.4867,43.3757,-26.479</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-27.4867,0,1,0,43.3757,0,0,1,-26.479,0,0,0,1</transform>
+			<mesh>Trash2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin2Level2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.3318,0.0855</collidercenter>
+			<collidersize>0.737,0.947,0.4616</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>420728b2-bb4e-430e-8fd8-abc59d48467b</id>
+			<name>Plants2_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-39.778,11.573,41.2382</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-39.778,0,1,0,11.573,0,0,1,41.2382,0,0,0,1</transform>
+			<mesh>Plants2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants2Level2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0292,0.6631,-0.0046</collidercenter>
+			<collidersize>1.4101,1.3609,1.4758</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>6ef4f75a-0378-42dc-b9b8-ddc3598f4c1f</id>
+			<name>CrossHallway_Floor_3</name>
+			<parentid>0d664efc-e421-47fb-b52e-46a15367c57a</parentid>
+			<worldposition>0,0,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUVHigh, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>cb49a96f-466a-4f14-ac2a-c620f9e0edc2</id>
+			<name>Monitor_holder</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-99.4373,12.1762,25.9573</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-99.4373,0,1,0,12.1762,0,0,1,25.9573,0,0,0,1</transform>
+			<mesh>Monitor_holder</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Monitor holder, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0006,0.3345,-0.1637</collidercenter>
+			<collidersize>0.8843,0.7741,1.0748</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>f30e33b7-bd54-49b5-bab4-68002d9da8d8</id>
+			<name>Plants3_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-41.4227,10.3611,43.1272</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-41.4227,0,1,0,10.3611,0,0,1,43.1272,0,0,0,1</transform>
+			<mesh>Plants3</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7257,-0.0434</collidercenter>
+			<collidersize>0.452,1.4356,0.722</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>5e14347c-a788-47db-a706-ace5d323453c</id>
+			<name>Plants3_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-39.72,10.3611,43.1272</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-39.72,0,1,0,10.3611,0,0,1,43.1272,0,0,0,1</transform>
+			<mesh>Plants3</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants3level2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7257,-0.0434</collidercenter>
+			<collidersize>0.452,1.4356,0.722</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>98798f2f-ebdf-4114-a2f5-9ab2c9a9527b</id>
+			<name>Trash1_Guide</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-34.4624,40.7163,-31.12</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-34.4624,0,1,0,40.7163,0,0,1,-31.12,0,0,0,1</transform>
+			<mesh>Trash1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin1Blue, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0001,0.4294,-0.0001</collidercenter>
+			<collidersize>0.5349,0.7867,0.5349</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>063ff07d-4ebd-41bd-8894-8b290295d459</id>
+			<name>Plants1_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-41.1867,13.8388,39.9515</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-41.1867,0,1,0,13.8388,0,0,1,39.9515,0,0,0,1</transform>
+			<mesh>Plants1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.1151,0.4182,-0.0326</collidercenter>
+			<collidersize>1.2771,0.847,1.3302</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>5c57f842-5995-495e-8f23-c8443bf805b9</id>
+			<name>Closet_Guide_1</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-26.44,-1.4996,-3.7433</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-26.44,0,1,0,-1.4996,0,0,1,-3.7433,0,0,0,1</transform>
+			<mesh>Closet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Closet guideline, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,1.317,0.0354</collidercenter>
+			<collidersize>2.157,2.6296,0.6647</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8f3e1338-9cf1-4252-a0cd-1f2837e144c1</id>
+			<name>Wetfloor_Sign_WetFloot_Guide</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-0.211,54.3551,-1.7654</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-0.211,0,1,0,54.3551,0,0,1,-1.7654,0,0,0,1</transform>
+			<mesh>Wetfloor_Sign</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Wetfloor Sign Guideline, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.6065,0.0089</collidercenter>
+			<collidersize>0.6731,1.1942,0.6313</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>71004343-cc95-4c5c-97c9-1d4a8eb578f0</id>
+			<name>HospitalChair_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-45.18,0.202,-34.39</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-45.18,0,1,0,0.202,0,0,1,-34.39,0,0,0,1</transform>
+			<mesh>HospitalChair</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Random Chair 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5681,-0.0063</collidercenter>
+			<collidersize>0.72,1.1364,0.6326</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>7788adfc-7d8c-4c1d-8d9d-93ba9ea14b7c</id>
+			<name>Medicine_Cabinet_2</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-110.0241,8.68,25.41</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-110.0241,0,1,0,8.68,0,0,1,25.41,0,0,0,1</transform>
+			<mesh>Medicine_Cabinet_2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Medicine Cabinet 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,1.5093,0</collidercenter>
+			<collidersize>1.8084,3.0025,0.7794</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>f3340873-eb35-4c0e-8162-ae8f52eff1c0</id>
+			<name>Medicine_Cabinet_1</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-116.4271,10.206,23.84</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-116.4271,0,1,0,10.206,0,0,1,23.84,0,0,0,1</transform>
+			<mesh>Medicine_Cabinet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Medicine Cabinet, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,1.5101,0</collidercenter>
+			<collidersize>1.8084,3.0025,0.7794</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>234b5962-614f-4d99-bc16-b75bd67e23e0</id>
+			<name>Cabinet_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-4.73,0.12,-32</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-4.73,0,1,0,0.12,0,0,1,-32,0,0,0,1</transform>
+			<mesh>Cabinet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Cabinet 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0166,0.489,0</collidercenter>
+			<collidersize>0.6216,0.9018,0.7495</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>5ae6b23f-99d1-4ac5-97f2-f98db90bb929</id>
+			<name>Syringe</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-85.8122,6.9669,8.945</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-85.8122,0,1,0,6.9669,0,0,1,8.945,0,0,0,1</transform>
+			<mesh>Syringe</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>SyringUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0.1242</collidercenter>
+			<collidersize>0.1652,0.0962,0.8338</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>98d0bde7-af36-464c-987e-af5cba615ec7</id>
+			<name>CrossHallway_Wall_2</name>
+			<parentid>8eea01c6-0d0e-42e0-afab-c9a1fd86397c</parentid>
+			<worldposition>6.27,2.84,-15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,6.27,0,1,0,2.84,0,0,1,-15,0,0,0,1</transform>
+			<mesh>CrossHallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadWallUVMID, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>0d8326a5-bd17-4b63-8df9-21d417ec53a3</id>
+			<name>Plants1_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-37.14,13.8388,39.9515</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-37.14,0,1,0,13.8388,0,0,1,39.9515,0,0,0,1</transform>
+			<mesh>Plants1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants1Level3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.1151,0.4182,-0.0326</collidercenter>
+			<collidersize>1.2771,0.847,1.3302</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8a73365f-28ae-4522-9817-3ce9e5e4e401</id>
+			<name>Infuus2_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-24.82,14.9091,49.5585</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-24.82,0,1,0,14.9091,0,0,1,49.5585,0,0,0,1</transform>
+			<mesh>Infuus2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>InfuusLevel3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0004,1.3764,0.0097</collidercenter>
+			<collidersize>1.066,2.7887,1.0757</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>70d50928-6c5d-4840-a68e-5eec144e5083</id>
+			<name>Table_Guide</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-98.8528,33.1186,3.32</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-98.8528,0,1,0,33.1186,0,0,1,3.32,0,0,0,1</transform>
+			<mesh>Table</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Tiny Table with magazines guideline more blue, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.007,0.25,0.0269</collidercenter>
+			<collidersize>1.0017,0.4987,1</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>20b99b2e-0f33-4d11-8704-9ac05f472c07</id>
+			<name>Waiting_Chairs_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-42.8,0.2,-34.455</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-42.8,0,1,0,0.2,0,0,1,-34.455,0,0,0,1</transform>
+			<mesh>Waiting_Chairs</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Waiting Chairs 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0001,0.5633,0</collidercenter>
+			<collidersize>1.7333,1.1259,0.609</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>78a9cac6-fde5-4bda-ae34-ea54c16d646a</id>
+			<name>Trash2_Guide</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-27.4867,43.3757,-28.724</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-27.4867,0,1,0,43.3757,0,0,1,-28.724,0,0,0,1</transform>
+			<mesh>Trash2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin2Blue, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.3318,0.0855</collidercenter>
+			<collidersize>0.737,0.947,0.4616</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>29ede354-49f3-4958-90da-d382a0cf8470</id>
+			<name>Document1</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-111.915,23.6701,54.4004</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-111.915,0,1,0,23.6701,0,0,1,54.4004,0,0,0,1</transform>
+			<mesh>Document1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Documentholder2UV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0043,0,0.0746</collidercenter>
+			<collidersize>0.4011,0.3924,0.1986</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>7e8cea26-1bc4-42bf-a1fd-268563dab9ae</id>
+			<name>Closet_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-23.69,-1.4996,-3.7433</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-23.69,0,1,0,-1.4996,0,0,1,-3.7433,0,0,0,1</transform>
+			<mesh>Closet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Closet 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,1.317,0.0354</collidercenter>
+			<collidersize>2.157,2.6296,0.6647</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>bc097ec1-ccb0-4f2e-aab4-84793b37b143</id>
+			<name>Hallway_Wall_3</name>
+			<parentid>08771dce-7cff-4f46-ae56-243116d0dbdf</parentid>
+			<worldposition>20.74,2.84,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,5.74,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayWallUVHIGH, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>fe283a8e-247d-4dbf-96e4-619054274b22</id>
+			<name>Hallway_Ceilling_3</name>
+			<parentid>08771dce-7cff-4f46-ae56-243116d0dbdf</parentid>
+			<worldposition>15,5.62,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,5.62,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Ceilling</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayCeillingUVHIGH, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>10.9462,0.436,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8e84c319-4543-4aeb-ae9a-370b16c51e03</id>
+			<name>Hallway_Wall_3</name>
+			<parentid>08771dce-7cff-4f46-ae56-243116d0dbdf</parentid>
+			<worldposition>9.27,2.84,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-5.73,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayWallUVHIGH, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>2eda345e-9fdb-4993-b2ac-8e5bffbae4ff</id>
+			<name>Hallway_Floor_3</name>
+			<parentid>08771dce-7cff-4f46-ae56-243116d0dbdf</parentid>
+			<worldposition>15,0,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayFloorUVHIGH, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>10.9462,0.3155,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>08771dce-7cff-4f46-ae56-243116d0dbdf</id>
+			<name>Hallway</name>
+			<parentid>a5ccee7c-a44c-4fca-ac99-b0a9c3c4c2c7</parentid>
+			<worldposition>15,0,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,15,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>672b259f-7e94-4606-b7b2-aec685fe89dd</id>
+			<name>Infuus1_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-28.64,16.1215,51.8743</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-28.64,0,1,0,16.1215,0,0,1,51.8743,0,0,0,1</transform>
+			<mesh>Infuus1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>InfuusLevel3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0057,1.3764,0.0097</collidercenter>
+			<collidersize>1.066,2.7887,1.0757</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>ac15f775-ebc1-4eda-97ce-49b518673aa1</id>
+			<name>HideScreen_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-38.08,0.38,-34.85</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-38.08,0,1,0,0.38,0,0,1,-34.85,0,0,0,1</transform>
+			<mesh>Screen</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Screen 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0005,1.593,0.0335</collidercenter>
+			<collidersize>3.5832,3.1912,0.4246</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>1ac05f0a-8853-49b4-a3c8-5fa1414129ee</id>
+			<name>Keyboard_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-76.9491,26.2216,-30.719</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-76.9491,0,1,0,26.2216,0,0,1,-30.719,0,0,0,1</transform>
+			<mesh>Keyboard</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Keyboardlevel3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>19876cee-d8e6-48fe-8eef-c03b70d30ae7</id>
+			<name>Trash2_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-27.4867,43.3757,-25.4448</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-27.4867,0,1,0,43.3757,0,0,1,-25.4448,0,0,0,1</transform>
+			<mesh>Trash2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.3318,0.0855</collidercenter>
+			<collidersize>0.737,0.947,0.4616</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>c09fcfe1-e7f2-44ca-b45c-30e68e003384</id>
+			<name>TurretCamera</name>
+			<parentid>1e4aa8e9-2caf-46b9-8a48-ed5d0ebd8424</parentid>
+			<worldposition>-11.13,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh>TurretCamera</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Camera Turrets, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>TurretBehaviour</behaviourname>
+			<behaviourparams>0</behaviourparams>
+			<collidercenter>-0.0049,0.1657,0.1885</collidercenter>
+			<collidersize>0.3,0.4034,0.7315</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>d3c9cd10-0b38-49a3-9187-f418457c555f</id>
+			<name>TurretHolder</name>
+			<parentid>1e4aa8e9-2caf-46b9-8a48-ed5d0ebd8424</parentid>
+			<worldposition>-11.13,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh>TurretHolder</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Camera Turrets, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0049,-0.1849,-0.1682</collidercenter>
+			<collidersize>0.3241,0.3482,0.3981</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>1e4aa8e9-2caf-46b9-8a48-ed5d0ebd8424</id>
+			<name>Turret</name>
+			<parentid>ba648427-4422-44d3-9ff5-5bc4a0f9241b</parentid>
+			<worldposition>-11.13,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-11.13,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>1c86188c-a3f8-4d56-afa5-6e7ac509b155</id>
+			<name>Infuus1_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-26.96,16.1215,51.8743</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-26.96,0,1,0,16.1215,0,0,1,51.8743,0,0,0,1</transform>
+			<mesh>Infuus1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>InfuusLevel2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0057,1.3764,0.0097</collidercenter>
+			<collidersize>1.066,2.7887,1.0757</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>c2b57e20-d5b6-4570-84f2-ff95889cc835</id>
+			<name>Standing_Lamp</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-87.4652,7.7841,14.4539</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-87.4652,0,1,0,7.7841,0,0,1,14.4539,0,0,0,1</transform>
+			<mesh>Standing_Lamp</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Standing Lamp, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.3118,1.2754,0</collidercenter>
+			<collidersize>1.2041,2.5389,0.562</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>1c78d3f5-544a-43c3-b124-e7cd6fa957e9</id>
+			<name>Waiting_Chairs_2</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-13.478,41.888,-27.3507</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-13.478,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
+			<mesh>Waiting_Chairs</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Waiting Chairs 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0001,0.5633,0</collidercenter>
+			<collidersize>1.7333,1.1259,0.609</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>99394384-abf8-4c3a-a783-98c726af7edf</id>
+			<name>Recption1_Guide</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-99.3483,33.7997,-5.5</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-99.3483,0,1,0,33.7997,0,0,1,-5.5,0,0,0,1</transform>
+			<mesh>Recption1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Desk1blue, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.651,0.6246,-1.1653</collidercenter>
+			<collidersize>3.2834,1.2667,3.4503</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>6f00fd8c-90a8-4647-8ae9-e797d73b4a77</id>
+			<name>CrossHallway_Floor_2</name>
+			<parentid>8eea01c6-0d0e-42e0-afab-c9a1fd86397c</parentid>
+			<worldposition>0,0,-15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,-15,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUVMID, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>f6e9f769-564f-44b2-9b29-d9d3e695b9c1</id>
+			<name>Trash3_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-22.9308,44.7871,-23.7866</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-22.9308,0,1,0,44.7871,0,0,1,-23.7866,0,0,0,1</transform>
+			<mesh>Trash3</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5823,0</collidercenter>
+			<collidersize>0.654,0.8197,0.654</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>c7b2be92-f717-44c7-b13f-ff0d07d3a908</id>
+			<name>ExitSign</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-13.3065,0.4299,-5.5062</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-13.3065,0,1,0,0.4299,0,0,1,-5.5062,0,0,0,1</transform>
+			<mesh>ExitSign</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Exit Sign, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>23842a87-502d-472a-a144-d6548160448b</id>
+			<name>ComputerMonitor_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-78.1826,29.5567,-29.79</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-78.1826,0,1,0,29.5567,0,0,1,-29.79,0,0,0,1</transform>
+			<mesh>ComputerMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>ComputerScreenlevel3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.03,0.3953,0</collidercenter>
+			<collidersize>0.1618,0.8018,1.1534</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>23a38c62-e07e-45bc-ad33-eaff001bb418</id>
+			<name>Reception1_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-99.3483,33.7997,-15.05</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-99.3483,0,1,0,33.7997,0,0,1,-15.05,0,0,0,1</transform>
+			<mesh>Recption1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Desk1level2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.651,0.6246,-1.1653</collidercenter>
+			<collidersize>3.2834,1.2667,3.4503</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>3b42812f-b582-43f3-a46f-c3ff9cb7d4a9</id>
+			<name>Trash2_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-27.4867,43.3757,-27.591</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-27.4867,0,1,0,43.3757,0,0,1,-27.591,0,0,0,1</transform>
+			<mesh>Trash2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin2Level3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.3318,0.0855</collidercenter>
+			<collidersize>0.737,0.947,0.4616</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>f66a0517-6604-41f3-8548-c71e206178a1</id>
+			<name>Waiting_Chairs_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-15.45,41.888,-27.3507</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-15.45,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
+			<mesh>Waiting_Chairs</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Waiting Chairs 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0001,0.5633,0</collidercenter>
+			<collidersize>1.7333,1.1259,0.609</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>db16db0a-af73-457d-af49-ee2b1e90b206</id>
+			<name>Bed_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-28.59,0.4038,-11.2549</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-28.59,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
+			<mesh>Bed</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Hospital Bed 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7841,0</collidercenter>
+			<collidersize>3.4395,1.5642,1.6015</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>230d90fc-6296-47f8-99b6-ec33b048c35b</id>
+			<name>Closet_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-19.02,0.29,-33.65</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-19.02,0,1,0,0.29,0,0,1,-33.65,0,0,0,1</transform>
+			<mesh>Closet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Closet 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,1.317,0.0354</collidercenter>
+			<collidersize>2.157,2.6296,0.6647</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>57a827da-e3e2-4ab8-afd0-33e2953d6690</id>
+			<name>Pills</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-92.8628,9.5446,22.1546</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-92.8628,0,1,0,9.5446,0,0,1,22.1546,0,0,0,1</transform>
+			<mesh>Pills</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>PillsUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.1179,0</collidercenter>
+			<collidersize>0.1449,0.2288,0.1449</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>40bd740c-6b5b-4d6f-a531-fc8392262fce</id>
+			<name>ComputerMonitor_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-78.1826,29.5567,-31.303</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-78.1826,0,1,0,29.5567,0,0,1,-31.303,0,0,0,1</transform>
+			<mesh>ComputerMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>ComputerScreenlevel2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.03,0.3953,0</collidercenter>
+			<collidersize>0.1618,0.8018,1.1534</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>3cca55f8-811f-4bd8-97dc-411b8a0910f1</id>
+			<name>CrossHallway_Wall_3</name>
+			<parentid>0d664efc-e421-47fb-b52e-46a15367c57a</parentid>
+			<worldposition>6.27,2.84,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,6.27,0,1,0,2.84,0,0,1,-30,0,0,0,1</transform>
+			<mesh>CrossHallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadWallUVHIGH, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>141ce378-ba8b-4f93-ba9e-55ef7d5d9736</id>
+			<name>Plants2_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-41.6625,11.573,41.2382</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-41.6625,0,1,0,11.573,0,0,1,41.2382,0,0,0,1</transform>
+			<mesh>Plants2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0292,0.6631,-0.0046</collidercenter>
+			<collidersize>1.4101,1.3609,1.4758</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>ca9a37fd-a7b7-49c1-ad15-f77e388d129a</id>
+			<name>Infuus2_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-20.6162,14.9091,49.5585</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-20.6162,0,1,0,14.9091,0,0,1,49.5585,0,0,0,1</transform>
+			<mesh>Infuus2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Infuus, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0004,1.3764,0.0097</collidercenter>
+			<collidersize>1.066,2.7887,1.0757</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>94a9e0e0-cf5d-4ace-8401-a5afdc7faa3d</id>
+			<name>CleaningUtility</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-126.1284,18.4017,44.4688</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-126.1284,0,1,0,18.4017,0,0,1,44.4688,0,0,0,1</transform>
+			<mesh>CleaningUtility</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CleaningUtility, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0118,0.8814,0</collidercenter>
+			<collidersize>1.5796,1.7711,0.79</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>b71ca166-8b79-4911-a3b4-1457d2e2f2d6</id>
+			<name>Table</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-98.8528,33.1186,2.026</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-98.8528,0,1,0,33.1186,0,0,1,2.026,0,0,0,1</transform>
+			<mesh>Table</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Tiny Table with magazines 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.007,0.25,0.0269</collidercenter>
+			<collidersize>1.0017,0.4987,1</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>5c12e883-3afb-4509-abb7-ec4cc7dc317a</id>
+			<name>Bed_Guide_3</name>
+			<parentid>3d6fef0f-ce3d-4c87-a058-a2dc03e2a32f</parentid>
+			<worldposition>-44.4,0.4038,-11.2549</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-44.4,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
+			<mesh>Bed</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Hospital Bed guideline 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7841,0</collidercenter>
+			<collidersize>3.4395,1.5642,1.6015</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>d1433805-0596-443a-b9b6-9735685c613a</id>
+			<name>Waiting_Chairs_Guide_1</name>
+			<parentid>33d60175-54f0-48b8-95bb-c1bddba8e3a5</parentid>
+			<worldposition>-9.226,41.888,-27.3507</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-9.226,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
+			<mesh>Waiting_Chairs</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Waiting Chairs guideline 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0001,0.5633,0</collidercenter>
+			<collidersize>1.7333,1.1259,0.609</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>924f9fea-f3f9-4373-98dd-deeeb1c3c8dc</id>
+			<name>Trolley</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-94.1183,4.1149,10.4511</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-94.1183,0,1,0,4.1149,0,0,1,10.4511,0,0,0,1</transform>
+			<mesh>Trolley</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Trolley, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7132,0</collidercenter>
+			<collidersize>1.7552,1.4273,0.9578</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>2bf465b8-6d0e-4445-86d8-777daf64aae0</id>
+			<name>Wetfloor_Sign_Syringes_Guide</name>
+			<parentid>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</parentid>
+			<worldposition>-2.011,54.3551,-1.7654</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-2.011,0,1,0,54.3551,0,0,1,-1.7654,0,0,0,1</transform>
+			<mesh>Wetfloor_Sign</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Syringes Sign Guideline, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.6065,0.0089</collidercenter>
+			<collidersize>0.6731,1.1942,0.6313</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>cfd82f51-25f3-4548-9ce5-96da593b15b7</id>
+			<name>CrossHallway_Floor_1</name>
+			<parentid>97d69fbf-7352-4daf-8c15-7ebfe81b62fa</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8102b96a-d6d9-4ccb-b87b-a7921315c28b</id>
+			<name>Keyboard_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-76.9491,26.2216,-32.244</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-76.9491,0,1,0,26.2216,0,0,1,-32.244,0,0,0,1</transform>
+			<mesh>Keyboard</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Keyboardlevel2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>9cfb80fe-f8a7-46bf-9b9f-fa2b957ea050</id>
+			<name>CrossHallway_Ceilling_3</name>
+			<parentid>0d664efc-e421-47fb-b52e-46a15367c57a</parentid>
+			<worldposition>0,5.68,-30</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,5.68,0,0,1,-30,0,0,0,1</transform>
+			<mesh>CrossHallway_Ceilling</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadCeillingHigh, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>6493635a-c934-4655-ab34-4f9fc4fd8a59</id>
+			<name>HospitalChair_Guide_3</name>
+			<parentid>3d6fef0f-ce3d-4c87-a058-a2dc03e2a32f</parentid>
+			<worldposition>-29.995,19.0203,53.5836</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-29.995,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
+			<mesh>HospitalChair</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Random Chair guideline 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5681,-0.0063</collidercenter>
+			<collidersize>0.72,1.1364,0.6326</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>6b56e0e0-48d3-450f-a739-bc05e6542c1b</id>
+			<name>Infuus2_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-22.47,14.9091,49.5585</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-22.47,0,1,0,14.9091,0,0,1,49.5585,0,0,0,1</transform>
+			<mesh>Infuus2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>InfuusLevel2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0004,1.3764,0.0097</collidercenter>
+			<collidersize>1.066,2.7887,1.0757</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>d50803a4-0a18-4217-afa9-eac5cb046a3d</id>
+			<name>Hallway_Wall_2</name>
+			<parentid>43c895a8-61e4-49fe-80b5-5887313ed6c9</parentid>
+			<worldposition>20.74,2.84,-15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,5.74,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayWallUVMID, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>044a4cd8-c38e-4a15-ba66-fc3a3c2a46be</id>
+			<name>Hallway_Ceilling_2</name>
+			<parentid>43c895a8-61e4-49fe-80b5-5887313ed6c9</parentid>
+			<worldposition>15,5.62,-15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,5.62,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Ceilling</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayCeillingUVMID, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>10.9462,0.436,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>b5bf1d52-a549-4570-9474-409d2303e18d</id>
+			<name>Hallway_Wall_2</name>
+			<parentid>43c895a8-61e4-49fe-80b5-5887313ed6c9</parentid>
+			<worldposition>9.27,2.84,-15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-5.73,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayWallUVMID, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>33f01ee3-bb53-4742-b4cc-dabcf8afe33c</id>
+			<name>Hallway_Floor_2</name>
+			<parentid>43c895a8-61e4-49fe-80b5-5887313ed6c9</parentid>
+			<worldposition>15,0,-15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayFloorUVMID, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>10.9462,0.3155,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>43c895a8-61e4-49fe-80b5-5887313ed6c9</id>
+			<name>Hallway</name>
+			<parentid>a08f5629-e03d-44a4-a143-90fceb876177</parentid>
+			<worldposition>15,0,-15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,15,0,1,0,0,0,0,1,-15,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>0fb8fb78-c0c6-430e-9483-76ba50e95966</id>
+			<name>Infuus1_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-25.2793,16.1215,51.8743</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-25.2793,0,1,0,16.1215,0,0,1,51.8743,0,0,0,1</transform>
+			<mesh>Infuus1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Infuus, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0057,1.3764,0.0097</collidercenter>
+			<collidersize>1.066,2.7887,1.0757</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>53426e73-6090-4140-9ee1-ed633b1d7bee</id>
+			<name>Bed_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-26.41,0.4038,-32.64</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-26.41,0,1,0,0.4038,0,0,1,-32.64,0,0,0,1</transform>
+			<mesh>Bed</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Hospital Bed 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7841,0</collidercenter>
+			<collidersize>3.4395,1.5642,1.6015</collidersize>
+			<usegravity>True</usegravity>
+			<iskinematic>False</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>afc9630f-1463-4d67-a6c5-9e80ec46c00e</id>
+			<name>Trash3_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-22.9308,44.7871,-26.211</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-22.9308,0,1,0,44.7871,0,0,1,-26.211,0,0,0,1</transform>
+			<mesh>Trash3</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin3Level3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5823,0</collidercenter>
+			<collidersize>0.654,0.8197,0.654</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>aebc0ecc-2660-451b-bd1a-d6ca86e62cf3</id>
+			<name>Waiting_Chairs_Guide_2</name>
+			<parentid>117496a1-e6bd-4835-8b8d-41f21e4f83c4</parentid>
+			<worldposition>-7.177,41.888,-27.3507</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-7.177,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
+			<mesh>Waiting_Chairs</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Waiting Chairs guideline 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0001,0.5633,0</collidercenter>
+			<collidersize>1.7333,1.1259,0.609</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8d7e5814-d1d2-4aac-a70c-a8bb9625e943</id>
+			<name>ComputerMonitor_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-78.1826,29.5567,-32.909</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-78.1826,0,1,0,29.5567,0,0,1,-32.909,0,0,0,1</transform>
+			<mesh>ComputerMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>ComputerScreen, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.03,0.3953,0</collidercenter>
+			<collidersize>0.1618,0.8018,1.1534</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>47f9108e-097b-42df-bdf6-f6ac8d7f050e</id>
+			<name>Plants1_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-39.19,13.8388,39.9515</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-39.19,0,1,0,13.8388,0,0,1,39.9515,0,0,0,1</transform>
+			<mesh>Plants1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants1Level2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.1151,0.4182,-0.0326</collidercenter>
+			<collidersize>1.2771,0.847,1.3302</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>2719cf64-5fcc-4dbb-a71e-f36beb95d6c7</id>
+			<name>HospitalChair_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-26.367,19.0203,53.5836</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-26.367,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
+			<mesh>HospitalChair</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Random Chair 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5681,-0.0063</collidercenter>
+			<collidersize>0.72,1.1364,0.6326</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>a05f258a-840a-48a0-a357-8ee78facc1c8</id>
+			<name>HeartMonitor</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-18.039,1.307,-5.0715</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-18.039,0,1,0,1.307,0,0,1,-5.0715,0,0,0,1</transform>
+			<mesh>HeartMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Heart Monitor, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.2613,-0.0377</collidercenter>
+			<collidersize>0.5055,0.5239,0.3928</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>e4879b7c-9e92-40f6-baf9-05d123d5f499</id>
+			<name>Reception1_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-99.3483,33.7997,-10.65</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-99.3483,0,1,0,33.7997,0,0,1,-10.65,0,0,0,1</transform>
+			<mesh>Recption1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Desk1level3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.651,0.6246,-1.1653</collidercenter>
+			<collidersize>3.2834,1.2667,3.4503</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>fc10c6f7-1fda-4c03-a832-45fa7a1db96c</id>
+			<name>Tire</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-52.4831,46.7389,0.7943</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-52.4831,0,1,0,46.7389,0,0,1,0.7943,0,0,0,1</transform>
+			<mesh>Tire</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Tire, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,-0.0021,-0.172</collidercenter>
+			<collidersize>0.84,0.84,0.4656</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>484190bc-00ea-4933-a8c3-c55c5664ed92</id>
+			<name>HospitalChair_Guide_1</name>
+			<parentid>33d60175-54f0-48b8-95bb-c1bddba8e3a5</parentid>
+			<worldposition>-28.171,19.0203,53.5836</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-28.171,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
+			<mesh>HospitalChair</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Random Chair guideline 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5681,-0.0063</collidercenter>
+			<collidersize>0.72,1.1364,0.6326</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>9b356c00-8d69-4d49-875e-82751ecaa9af</id>
+			<name>Trash1_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-34.4624,40.7163,-29.62</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-34.4624,0,1,0,40.7163,0,0,1,-29.62,0,0,0,1</transform>
+			<mesh>Trash1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin1Level3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0001,0.4294,-0.0001</collidercenter>
+			<collidersize>0.5349,0.7867,0.5349</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>fcf4c06f-e624-4563-b3ca-d79101b8b79c</id>
+			<name>Trash1_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-34.4624,40.7163,-27.57</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-34.4624,0,1,0,40.7163,0,0,1,-27.57,0,0,0,1</transform>
+			<mesh>Trash1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Bin1Level2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0001,0.4294,-0.0001</collidercenter>
+			<collidersize>0.5349,0.7867,0.5349</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>07ba0da8-0396-43a7-80ac-f875fd42a411</id>
+			<name>Hallway_Ceilling_1</name>
+			<parentid>ad4dda8d-296c-45b6-9a7b-486c3bdf85d6</parentid>
+			<worldposition>15,5.62,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,5.62,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Ceilling</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayCeillingUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>10.9462,0.436,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>1b2e8c77-467a-4c6a-81b0-4b788eb15258</id>
+			<name>Hallway_Wall_1</name>
+			<parentid>ad4dda8d-296c-45b6-9a7b-486c3bdf85d6</parentid>
+			<worldposition>20.74,2.84,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,5.74,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayWallUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>9d93a04e-9589-403c-a447-7bd964c690a7</id>
+			<name>Hallway_Wall_1</name>
+			<parentid>ad4dda8d-296c-45b6-9a7b-486c3bdf85d6</parentid>
+			<worldposition>9.27,2.84,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-5.73,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayWallUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>a394b103-c418-4c39-b5fc-c28525f94bc1</id>
+			<name>Hallway_Floor_1</name>
+			<parentid>ad4dda8d-296c-45b6-9a7b-486c3bdf85d6</parentid>
+			<worldposition>15,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh>Hallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>HallwayFloorUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>10.9462,0.3155,7</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>ad4dda8d-296c-45b6-9a7b-486c3bdf85d6</id>
+			<name>Hallway</name>
+			<parentid>528b2edc-c89c-4925-a143-5ac566935190</parentid>
+			<worldposition>15,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,15,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>37b76278-0a7a-4612-ad2e-c6d00815798d</id>
+			<name>Cabinet_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-19.84,-1.9327,-26.54</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-19.84,0,1,0,-1.9327,0,0,1,-26.54,0,0,0,1</transform>
+			<mesh>Cabinet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Cabinet 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0166,0.489,0</collidercenter>
+			<collidersize>0.6216,0.9018,0.7495</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>ce3ea5b7-38bb-42ad-8970-b6d29a67b511</id>
+			<name>Wetfloor_Sign_Syringes</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-2.9123,54.3551,-1.7654</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-2.9123,0,1,0,54.3551,0,0,1,-1.7654,0,0,0,1</transform>
+			<mesh>Wetfloor_Sign</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Syringes Sign, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.6065,0.0089</collidercenter>
+			<collidersize>0.6731,1.1942,0.6313</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8c9b7ffe-3475-419d-8088-74931d88b389</id>
+			<name>Document2</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-107.9273,18.9374,47.7554</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-107.9273,0,1,0,18.9374,0,0,1,47.7554,0,0,0,1</transform>
+			<mesh>Document2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Documentholder2UV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,-0.0017,0.0694</collidercenter>
+			<collidersize>0.5943,1.7345,0.1431</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>162a6759-778d-4e8d-b09e-9f875cc1155e</id>
+			<name>Cabinet_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-19.076,-1.9327,-26.54</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-19.076,0,1,0,-1.9327,0,0,1,-26.54,0,0,0,1</transform>
+			<mesh>Cabinet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Cabinet 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0166,0.489,0</collidercenter>
+			<collidersize>0.6216,0.9018,0.7495</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>b29d9739-e7fb-4483-8be9-f58ba86fe57c</id>
+			<name>Mop</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-123.8431,17.1506,45.3564</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-123.8431,0,1,0,17.1506,0,0,1,45.3564,0,0,0,1</transform>
+			<mesh>Mop</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>MopUtility, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.1425,0.5554,0.0382</collidercenter>
+			<collidersize>0.9608,1.1179,0.6655</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>36714703-e306-4c5f-ba43-319bf106821e</id>
+			<name>Magazines</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-97.142,32.959,-0.49</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-97.142,0,1,0,32.959,0,0,1,-0.49,0,0,0,1</transform>
+			<mesh>Magazines</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Tiny Table with magazines 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>0f2c76d4-c234-405a-b3bb-d7114b92fa30</id>
+			<name>CrossHallway_Wall_1</name>
+			<parentid>97d69fbf-7352-4daf-8c15-7ebfe81b62fa</parentid>
+			<worldposition>6.27,2.84,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,6.27,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
+			<mesh>CrossHallway_Wall</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadWallUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>0.8209,6,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>b92393c6-70a3-4db5-8090-65631960366f</id>
+			<name>Plants2_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-37.752,11.573,41.2382</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-37.752,0,1,0,11.573,0,0,1,41.2382,0,0,0,1</transform>
+			<mesh>Plants2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Plants2Level3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0292,0.6631,-0.0046</collidercenter>
+			<collidersize>1.4101,1.3609,1.4758</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>0113153b-0db5-4802-9b04-d6e61678d4a6</id>
+			<name>Closet_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-21.22,-1.4996,-3.7433</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-21.22,0,1,0,-1.4996,0,0,1,-3.7433,0,0,0,1</transform>
+			<mesh>Closet</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Closet 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,1.317,0.0354</collidercenter>
+			<collidersize>2.157,2.6296,0.6647</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>04a0a7a3-2647-41a5-ab85-0ca472ac1941</id>
+			<name>HospitalChair_3</name>
+			<parentid>610c3d05-d6e4-440f-a558-98baf7ec40d4</parentid>
+			<worldposition>-27.204,19.0203,53.5836</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-27.204,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
+			<mesh>HospitalChair</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Random Chair 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.5681,-0.0063</collidercenter>
+			<collidersize>0.72,1.1364,0.6326</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>7b037adf-4583-48aa-973d-5d237c2685c0</id>
+			<name>Waiting_Chairs_Guide_3</name>
+			<parentid>3d6fef0f-ce3d-4c87-a058-a2dc03e2a32f</parentid>
+			<worldposition>-5.045,41.888,-27.3507</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-5.045,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
+			<mesh>Waiting_Chairs</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Waiting Chairs guideline 3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.0001,0.5633,0</collidercenter>
+			<collidersize>1.7333,1.1259,0.609</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>c91d4c7e-6d00-43b6-9d83-345f2855a873</id>
+			<name>HideScreen_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-112.6279,5.6454,8.3795</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-112.6279,0,1,0,5.6454,0,0,1,8.3795,0,0,0,1</transform>
+			<mesh>Screen</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Screen 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0005,1.593,0.0335</collidercenter>
+			<collidersize>3.5832,3.1912,0.4246</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>6391762f-d46c-4b06-bcf8-73b36b5e0ab4</id>
+			<name>Bed_Guide_1</name>
+			<parentid>33d60175-54f0-48b8-95bb-c1bddba8e3a5</parentid>
+			<worldposition>-36.53,0.4038,-11.2549</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-36.53,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
+			<mesh>Bed</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Hospital Bed guideline 1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.7841,0</collidercenter>
+			<collidersize>3.4395,1.5642,1.6015</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>457f2fb9-e74b-4994-a200-cb6fb0d88afb</id>
+			<name>Wetfloor_Sign_WetFloor</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-1.088,54.3551,-1.7654</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-1.088,0,1,0,54.3551,0,0,1,-1.7654,0,0,0,1</transform>
+			<mesh>Wetfloor_Sign</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Wetfloor Sign, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0.6065,0.0089</collidercenter>
+			<collidersize>0.6731,1.1942,0.6313</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>d0b4c6e8-9d69-4910-98dd-66fa86265143</id>
+			<name>Reception1_1</name>
+			<parentid>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</parentid>
+			<worldposition>-33.1,0.4,-32.3</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-33.1,0,1,0,0.4,0,0,1,-32.3,0,0,0,1</transform>
+			<mesh>Recption1</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Desk1, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.651,0.6246,-1.1653</collidercenter>
+			<collidersize>3.2834,1.2667,3.4503</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>79b6595d-57b9-4deb-8096-8fbe33e4e0a4</id>
+			<name>CrossHallway_Ceilling_1</name>
+			<parentid>97d69fbf-7352-4daf-8c15-7ebfe81b62fa</parentid>
+			<worldposition>0,5.68,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,5.68,0,0,1,0,0,0,0,1</transform>
+			<mesh>CrossHallway_Ceilling</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadCeilling, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>bdbf7817-b94d-4985-b1d5-848a8914be19</id>
+			<name>PhotoFrame</name>
+			<parentid>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</parentid>
+			<worldposition>-33.1965,14.7603,47.0711</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-33.1965,0,1,0,14.7603,0,0,1,47.0711,0,0,0,1</transform>
+			<mesh>PhotoFrame</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>PhotoUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>ba648427-4422-44d3-9ff5-5bc4a0f9241b</id>
+			<name>Functional</name>
 			<parentid />
 			<worldposition>0,0,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
@@ -11,18 +2374,37 @@
 			<mesh />
 			<materialname />
 			<materialparams />
-			<behaviourname>SoundTrigger</behaviourname>
-			<behaviourparams>10,dialogue_1_1,2</behaviourparams>
+			<behaviourname />
+			<behaviourparams />
 			<collidercenter />
 			<collidersize />
+			<usegravity />
+			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>b71a3fd0-db06-47ca-9398-c67b8c1b2e2c</id>
-			<name>PlayerSpawn</name>
-			<parentid />
-			<worldposition>0,3,0</worldposition>
+			<id>abd013b4-2808-4661-b8c3-2fd83aa61b1a</id>
+			<name>Reception2_Guide</name>
+			<parentid>6441834c-1ef4-4320-8991-5f5a7b1865e9</parentid>
+			<worldposition>-83.2476,28.7586,-13.74</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,3,0,0,1,0,0,0,0,1</transform>
+			<transform>1,0,0,-83.2476,0,1,0,28.7586,0,0,1,-13.74,0,0,0,1</transform>
+			<mesh>Reception2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Desk2blue, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.2232,0.4849,-0.0077</collidercenter>
+			<collidersize>2.0354,0.9699,4.7998</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>8eea01c6-0d0e-42e0-afab-c9a1fd86397c</id>
+			<name>CrossHallway</name>
+			<parentid>a08f5629-e03d-44a4-a143-90fceb876177</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
 			<mesh />
 			<materialname />
 			<materialparams />
@@ -30,22 +2412,360 @@
 			<behaviourparams />
 			<collidercenter />
 			<collidersize />
+			<usegravity />
+			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>310467fc-ab2a-48af-88cc-ee2fd6ccd27e</id>
-			<name>Cube</name>
+			<id>c60e1a56-610b-48ec-95cc-3485b5d2a0f6</id>
+			<name>Props</name>
+			<parentid>528b2edc-c89c-4925-a143-5ac566935190</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>094bc592-95f7-4727-b7e9-63cd04150c4e</id>
+			<name>Props</name>
+			<parentid>a08f5629-e03d-44a4-a143-90fceb876177</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>33545555-475d-4f1c-96b2-02dfaea56934</id>
+			<name>Reception2_1</name>
+			<parentid>6441834c-1ef4-4320-8991-5f5a7b1865e9</parentid>
+			<worldposition>-83.2476,28.7586,-33.6346</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-83.2476,0,1,0,28.7586,0,0,1,-33.6346,0,0,0,1</transform>
+			<mesh>Reception2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Desk2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.2232,0.4849,-0.0077</collidercenter>
+			<collidersize>2.0354,0.9699,4.7998</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>1f0c41a8-e9d7-400b-a4f6-b84ac9b54fd3</id>
+			<name>Props</name>
 			<parentid />
 			<worldposition>0,0,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>30,0,0,0,0,1,0,0,0,0,30,0,0,0,0,1</transform>
-			<mesh>Cube</mesh>
-			<materialname>TextureMaterial</materialname>
-			<materialparams>blank, 1, 0.6413793, 0, 10</materialparams>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
 			<behaviourname />
 			<behaviourparams />
-			<collidercenter>0,0,0</collidercenter>
-			<collidersize>1,1,1</collidersize>
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>0d664efc-e421-47fb-b52e-46a15367c57a</id>
+			<name>CrossHallway</name>
+			<parentid>a5ccee7c-a44c-4fca-ac99-b0a9c3c4c2c7</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>01b92861-3b0c-4371-81bd-40becf933871</id>
+			<name>Reception2_2</name>
+			<parentid>6441834c-1ef4-4320-8991-5f5a7b1865e9</parentid>
+			<worldposition>-83.2476,28.7586,-27</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-83.2476,0,1,0,28.7586,0,0,1,-27,0,0,0,1</transform>
+			<mesh>Reception2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Desk2level2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.2232,0.4849,-0.0077</collidercenter>
+			<collidersize>2.0354,0.9699,4.7998</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>bd8db89e-24b9-422e-aef3-47c13da43b19</id>
+			<name>Reception2_3</name>
+			<parentid>6441834c-1ef4-4320-8991-5f5a7b1865e9</parentid>
+			<worldposition>-83.2476,28.7586,-20.14</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-83.2476,0,1,0,28.7586,0,0,1,-20.14,0,0,0,1</transform>
+			<mesh>Reception2</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Desk2level3, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0.2232,0.4849,-0.0077</collidercenter>
+			<collidersize>2.0354,0.9699,4.7998</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>610c3d05-d6e4-440f-a558-98baf7ec40d4</id>
+			<name>Props</name>
+			<parentid>a5ccee7c-a44c-4fca-ac99-b0a9c3c4c2c7</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>a08f5629-e03d-44a4-a143-90fceb876177</id>
+			<name>Medium</name>
+			<parentid />
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>a5ccee7c-a44c-4fca-ac99-b0a9c3c4c2c7</id>
+			<name>High</name>
+			<parentid />
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>96f1d5e9-e346-4a6e-be25-e9b78c7a898a</id>
+			<name>PlayerSpawn</name>
+			<parentid />
+			<worldposition>-0.27,0.53,-30.31</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-0.27,0,1,0,0.53,0,0,1,-30.31,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>117496a1-e6bd-4835-8b8d-41f21e4f83c4</id>
+			<name>Guide</name>
+			<parentid>a08f5629-e03d-44a4-a143-90fceb876177</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>33d60175-54f0-48b8-95bb-c1bddba8e3a5</id>
+			<name>Guide</name>
+			<parentid>528b2edc-c89c-4925-a143-5ac566935190</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>3d6fef0f-ce3d-4c87-a058-a2dc03e2a32f</id>
+			<name>Guide</name>
+			<parentid>a5ccee7c-a44c-4fca-ac99-b0a9c3c4c2c7</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>6441834c-1ef4-4320-8991-5f5a7b1865e9</id>
+			<name>NeedsFix</name>
+			<parentid />
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>b8a50d10-00a0-4752-a046-dbe084554ad6</id>
+			<name>HideScreen_2</name>
+			<parentid>094bc592-95f7-4727-b7e9-63cd04150c4e</parentid>
+			<worldposition>-108.33,5.6454,8.3795</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-108.33,0,1,0,5.6454,0,0,1,8.3795,0,0,0,1</transform>
+			<mesh>Screen</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Screen 2, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>-0.0005,1.593,0.0335</collidercenter>
+			<collidersize>3.5832,3.1912,0.4246</collidersize>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>528b2edc-c89c-4925-a143-5ac566935190</id>
+			<name>Normal</name>
+			<parentid />
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>97d69fbf-7352-4daf-8c15-7ebfe81b62fa</id>
+			<name>CrossHallway</name>
+			<parentid>528b2edc-c89c-4925-a143-5ac566935190</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>e69b1961-da4e-47e4-94f4-87cb2ccfcb51</id>
+			<name>Props</name>
+			<parentid>4df451b1-db82-4d6c-9a9c-2759c3b4cb51</parentid>
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>4df451b1-db82-4d6c-9a9c-2759c3b4cb51</id>
+			<name>Guide</name>
+			<parentid />
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+			<usegravity />
+			<iskinematic />
 		</gameobject>
 	</gameobjects>
-	<lights />
+	<lights>
+		<light>
+			<name>Directional light</name>
+			<position>15.1, -19.2, -73.4</position>
+			<rotation>50.0, 330.0, 0.0</rotation>
+			<type>Directional</type>
+			<color>1.0, 1.0, 1.0, 1.0</color>
+			<range>10</range>
+			<intensity>1</intensity>
+			<coneAngle>30</coneAngle>
+		</light>
+	</lights>
 </level>
