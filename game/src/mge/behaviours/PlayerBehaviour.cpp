@@ -21,8 +21,11 @@
 #include "mge/core/Timer.hpp"
 #include "mge/materials/ColorMaterial.hpp"
 
-#define WALLRUN_GRAVITY -0.05f
-#define NORMAL_GRAVITY -0.35f
+//#define WALLRUN_GRAVITY -0.05f
+//#define NORMAL_GRAVITY -0.35f
+
+#define WALLRUN_GRAVITY -3.0f
+#define NORMAL_GRAVITY -9.8f
 
 
 #define HARD_INERTIA  0.75f
@@ -33,14 +36,15 @@
 #define RUN_MAXVELOCITY 15.0f
 #define WALK_MAXVELOCITY 8.0f
 #define AIR_CONTROLL  0.1f
+#define AIR_MAXVELOCITY 18.5f
 
 
 #define GROUND_JUMP_FORCE 7.5f
 
 
-#define WALLJUMP_NORMALFORCE 7.5f
-#define WALLJUMP_UPFORCE 5.0f
-#define WALLJUMP_FORWARDFORCE 10.0f
+#define WALLJUMP_NORMALFORCE 25.0f
+#define WALLJUMP_UPFORCE 11.0f
+#define WALLJUMP_FORWARDFORCE 30.0f
 
 
 #define ROTATE_SPEED 6.0f
@@ -50,7 +54,7 @@
 #define SLOW_FEEDBACK_TIMER 11.0f
 
 
-#define DEATH_HEIGHT -10.0f
+#define DEATH_HEIGHT -40.0f
 #define RESPAWN_TIME 4.0f
 
 bool PlayerBehaviour::IsMoving()
@@ -68,10 +72,8 @@ PlayerBehaviour::PlayerBehaviour(Camera* pCamera) : AbstractBehaviour()
 
 void PlayerBehaviour::Initialize()
 {
-	SoundEngine::PlayMusic("track_1");
-
 	_lastPosition = _owner->getPosition();
-	_spawnPos = _owner->getLocalPosition();
+	SpawnPos = _owner->getPosition();
 
 	f32 mass = 65.0f;
 	f32 diameter = 2.0f;
@@ -172,6 +174,7 @@ void PlayerBehaviour::Initialize()
 	Level::CurrentWorld->add(test);
 	test->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
 	test->setMaterial(new ColorMaterial(glm::vec3(1, 0, 1)));
+	test->scale(glm::vec3(0.1f, 0.1f, 0.1f));
 }
 
 PlayerBehaviour::~PlayerBehaviour()
@@ -227,7 +230,6 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	neSensor* sensor;
 
 	std::vector<glm::vec3> wallNormals;
-
 	while (sensor = pController->GetRigidBody()->GetNextSensor())
 	{
 		if (sensor->GetUserData() == 'g' && sensor->GetDetectDepth() > 0.0f)
@@ -241,7 +243,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		}
 		else if (sensor->GetUserData() == 'c' && sensor->GetDetectDepth() > 0.0f)
 		{
-			_physicsVelocity.y = -0.1f;
+ 			_physicsVelocity.y = 0.0f;
 		}
 		else if (sensor->GetUserData() == 'w' && sensor->GetDetectDepth() > 0.0f)
 		{
@@ -259,7 +261,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir));
 
 			if (!Timer::IsPaused() && !_holdingShoot && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left) && sensor->GetDetectDepth() > 0.0f) {
-				GameObject* object = (GameObject*)sensor->GetDetectAnimatedBody()->GetUserData();
+				GameObject* object = (GameObject*)sensor->GetDetectRigidBody()->GetUserData();
 				delete (object);
 			}
 
@@ -369,9 +371,9 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 
 	//TODO Do not apply Walk_MAxvelocity when in air but Air_MAXVELCOITY
 	//Clamp the moveVelocity
-	if (glm::length2(_moveVelocity) > (_walking ? WALK_MAXVELOCITY * WALK_MAXVELOCITY : RUN_MAXVELOCITY * RUN_MAXVELOCITY))
+	if (glm::length2(_moveVelocity) > (_grounded ? ((_walking && !_walled) ? WALK_MAXVELOCITY * WALK_MAXVELOCITY : RUN_MAXVELOCITY * RUN_MAXVELOCITY) : AIR_MAXVELOCITY * AIR_MAXVELOCITY))
 	{
-		_moveVelocity = glm::normalize(_moveVelocity) * (_walking ? WALK_MAXVELOCITY : RUN_MAXVELOCITY);
+		_moveVelocity = glm::normalize(_moveVelocity) * ((_grounded && !_walled) ? (_walking ? WALK_MAXVELOCITY : RUN_MAXVELOCITY) : AIR_MAXVELOCITY);
 	}
 
 
@@ -399,11 +401,11 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	//TODO Apply deltatime to gravity otherwise slowmotion and pause wont work properly
 	if (_walled && !_grounded && _falling)
 	{
-		_physicsVelocity += glm::vec3(0, WALLRUN_GRAVITY, 0);
+		_physicsVelocity += glm::vec3(0, WALLRUN_GRAVITY, 0) * pStep;
 	}
 	else if(!_grounded)
 	{
-		_physicsVelocity += glm::vec3(0, NORMAL_GRAVITY, 0);
+		_physicsVelocity += glm::vec3(0, NORMAL_GRAVITY, 0) * pStep;
 	}
 	else if (_grounded && _falling)
 	{
@@ -445,7 +447,8 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			SoundEngine::PlayVoice("fall_feedback");
 			_physicsVelocity = glm::vec3(0,0,0);
 			_moveVelocity = glm::vec3(0,0,0);
-			pController->GetRigidBody()->SetPos(Utility::glmToNe(_spawnPos));
+			pController->GetRigidBody()->SetVelocity(Utility::glmToNe(glm::vec3(0,0,0)));
+			pController->GetRigidBody()->SetPos(Utility::glmToNe(SpawnPos));
 			_respawnTimer = 0.0f;
 			_dead = false;
 		}

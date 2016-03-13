@@ -11,6 +11,7 @@ class Turret : public AbstractBehaviour
 {
     public:
 		Turret(GameObject * pTarget, float pRadius);
+		Turret(std::string params);
         virtual ~Turret();
 
         virtual void update( float step );

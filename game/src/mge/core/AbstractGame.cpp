@@ -107,7 +107,11 @@ void AbstractGame::run()
 		glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
 
         _update();
-		_world->getPhysics()->Advance(Timer::deltaTime());
+
+		if(Timer::deltaTime() > 0.0f) {
+			_world->getPhysics()->Advance(Timer::deltaTime());
+		}
+
         _render();
 
         //swap colorbuffer to screen

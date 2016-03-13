@@ -1,6 +1,5 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-mtllib CrossHallway_Ceilling.mtl
 g CrossHallway_Ceilling
 v -6.000000 0.157753 6.000000
 v -6.000000 0.157753 -6.000000
@@ -51,8 +50,6 @@ vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 s 1
-g CrossHallway_Ceilling
-usemtl lambert8SG
 f 1/1/1 5/2/2 2/4/3
 f 2/4/3 5/2/2 6/3/4
 s 2

@@ -5,6 +5,8 @@
 #include <iostream>
 #include <cmath>
 #include "mge/behaviours/PlayerBehaviour.hpp"
+#include "mge/core/Level.hpp"
+
 using namespace std;
 
 ArmBehaviour::ArmBehaviour(bool pCos): AbstractBehaviour()
@@ -69,8 +71,21 @@ void ArmBehaviour::update(float step)
 		_owner->rotate(-step, glm::vec3(0, 1, 0));
 	}
 
+	//HACK Level loading
+
+	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Num1)) {
+		Level::Load("Level_01.xml", Level::CurrentWorld);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2)) {
+		Level::Load("Level_02.xml", Level::CurrentWorld);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3)) {
+		Level::Load("Level_03.xml", Level::CurrentWorld);
+	}
+
 	//std::cout << "Pos: " << _owner->getLocalPosition() << " Rot: " << _owner->getRotation() << std::endl;
 
+	/*
 	if (((PlayerBehaviour*)_owner->getParent()->getBehaviour())->IsMoving())
 	{
 		_timer += step;
@@ -91,4 +106,5 @@ void ArmBehaviour::update(float step)
 			_owner->rotate(sin(_timer * 7.5f) * 0.1f, glm::vec3(1, 0, 0));
 		}
 	}
+	*/
 }
