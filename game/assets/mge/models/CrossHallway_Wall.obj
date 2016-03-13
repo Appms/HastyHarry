@@ -1,6 +1,5 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-mtllib CrossHallway_Wall.mtl
 g CrossHallway_Wall
 v -0.315710 -1.651442 0.449260
 v -0.410473 -1.651442 0.449260
@@ -623,8 +622,6 @@ vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 s 1
-g CrossHallway_Wall
-usemtl Hallway_Wall:lambert7SG
 f 1/1/1 12/2/2 3/4/3
 f 3/4/3 12/2/2 9/3/4
 s 2

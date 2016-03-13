@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level>
+	<gameobjects>
+		<gameobject>
+			<id>80a15730-0170-4a13-b128-1728154530cf</id>
+			<name>SoundTrigger</name>
+			<parentid />
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>SoundTrigger</behaviourname>
+			<behaviourparams>10,dialogue_1_1,2</behaviourparams>
+			<collidercenter />
+			<collidersize />
+		</gameobject>
+		<gameobject>
+			<id>b71a3fd0-db06-47ca-9398-c67b8c1b2e2c</id>
+			<name>PlayerSpawn</name>
+			<parentid />
+			<worldposition>0,3,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,3,0,0,1,0,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter />
+			<collidersize />
+		</gameobject>
+		<gameobject>
+			<id>310467fc-ab2a-48af-88cc-ee2fd6ccd27e</id>
+			<name>Cube</name>
+			<parentid />
+			<worldposition>0,0,0</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>30,0,0,0,0,1,0,0,0,0,30,0,0,0,0,1</transform>
+			<mesh>Cube</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>blank, 1, 0.6413793, 0, 10</materialparams>
+			<behaviourname />
+			<behaviourparams />
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>1,1,1</collidersize>
+		</gameobject>
+	</gameobjects>
+	<lights />
+</level>

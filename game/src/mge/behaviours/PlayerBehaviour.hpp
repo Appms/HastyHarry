@@ -20,6 +20,9 @@ public:
 	void PlayerController(neRigidBodyController* pController, float pStep);
 	void AddEnemy(GameObject* pEnemy) { _enemies.push_back(pEnemy); };
 	bool IsMoving();
+
+	glm::vec3 SpawnPos;
+
 private:
 	float _angleY;
 
@@ -34,8 +37,6 @@ private:
 	glm::vec3 _moveVelocity;
 	glm::vec3 _jumpVelocity;
 	glm::vec3 _physicsVelocity;
-
-	glm::vec3 _spawnPos;
 
 	glm::vec3 _lastPosition;
 	float _slowFeedbackTimer;
