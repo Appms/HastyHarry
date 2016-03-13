@@ -188,9 +188,6 @@ void GameObject::_updatePhysicsBody() {
 		_rigidbody->SetPos(pos);
 		_rigidbody->SetRotation(rot);
 
-		//CollisionCallback callbackInstance;
-		//_rigidbody->AddController(&callbackInstance, 0);
-
 		break;
 	case GameObject::ANIMATEDBODY:
 		if (_animatedbody != NULL) _world->getPhysics()->FreeAnimatedBody(_animatedbody);
@@ -346,7 +343,7 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 					scale.z * (float)t.rot[2][0], scale.z * (float)t.rot[2][1], scale.z * (float)t.rot[2][2], 0.0f,
 					(float)t.pos[0], (float)t.pos[1], (float)t.pos[2], 1.0f);
 
-				setLocalPosition(glm::vec3(getLocalPosition().x + ColliderCenter.x, getLocalPosition().y - ColliderCenter.y, getLocalPosition().z - ColliderCenter.z));
+				translate(-(ColliderCenter + glm::vec3(pParentTransform[3])));
 			}
 			break;
 		case GameObject::ANIMATEDBODY:

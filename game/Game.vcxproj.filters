@@ -379,5 +379,8 @@
     <Xml Include="assets\mge\levels\Level_03.xml">
       <Filter>Archivos de recursos\mge\assets\levels</Filter>
     </Xml>
+    <Xml Include="assets\mge\levels\TestScene.xml">
+      <Filter>Archivos de recursos\mge\assets\levels</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

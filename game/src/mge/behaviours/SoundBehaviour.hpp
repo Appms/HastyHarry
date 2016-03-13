@@ -1,12 +1,14 @@
-#ifndef KEYSBEHAVIOUR_H
-#define KEYSBEHAVIOUR_H
+#ifndef SOUNDBEHAVIOUR_H
+#define SOUNDBEHAVIOUR_H
 
 #include <glm.hpp>
 #include "mge/behaviours/AbstractBehaviour.hpp"
 #include "SFML/Audio.hpp"
 
 class Sound;
-
+/*
+* Plays a 3D sound.
+*/
 class SoundBehaviour : public AbstractBehaviour
 {
 	public:
@@ -19,10 +21,9 @@ class SoundBehaviour : public AbstractBehaviour
 		float GetCreationTime();
 		bool IsFinished();
 
-
     private:
 		sf::Sound _sound;
 		float _creationTime;
 };	
 
-#endif // KEYSBEHAVIOUR_H
+#endif // SOUNDBEHAVIOUR_H

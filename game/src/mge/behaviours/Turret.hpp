@@ -1,11 +1,11 @@
-#ifndef Turret_H
-#define Turret_H
+#ifndef TURRET_H
+#define TURRET_H
 
 #include <glm.hpp>
 #include "mge/behaviours/AbstractBehaviour.hpp"
 
 /**
- * Keeps the owner looking at the given target.
+ * Looks at the player when in range and shoots every few seconds.
  */
 class Turret : public AbstractBehaviour
 {
@@ -22,4 +22,4 @@ class Turret : public AbstractBehaviour
 		float _timer;
 };
 
-#endif // LookAt_H
+#endif // TURRET_H

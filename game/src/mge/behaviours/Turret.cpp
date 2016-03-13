@@ -1,21 +1,15 @@
-#include <glm.hpp>
 #include "mge/behaviours/Turret.hpp"
 #include "mge/core/GameObject.hpp"
-#include "mge/core/Timer.hpp"
 #include "mge/config.hpp"
+
 #include "mge/materials/AbstractMaterial.hpp"
 #include "mge/core/Mesh.hpp"
 #include "mge/materials/TextureMaterial.hpp"
-#include "mge\core\Level.hpp"
+#include "mge/core/Level.hpp"
 #include "mge/core/World.hpp"
-#include "MovingBehaviour.hpp"
+#include "mge/behaviours/MovingBehaviour.hpp"
 
-#include <iostream>
-using namespace std;
-
-Turret::Turret(GameObject * pTarget, float pRadius): AbstractBehaviour(), _target(pTarget), _radius(pRadius)
-{
-}
+Turret::Turret(GameObject * pTarget, float pRadius): AbstractBehaviour(), _target(pTarget), _radius(pRadius) {}
 
 Turret::Turret(std::string params) : AbstractBehaviour()
 {
@@ -28,9 +22,6 @@ Turret::~Turret()
 	_target = NULL;
 }
 
-/**
- * Looks at the given target
- */
 void Turret::update( float step )
 {
 
