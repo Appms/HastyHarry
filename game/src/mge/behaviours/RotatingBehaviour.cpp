@@ -1,3 +1,5 @@
+#include <string>
+
 #include "mge/behaviours/RotatingBehaviour.hpp"
 #include "mge/core/GameObject.hpp"
 

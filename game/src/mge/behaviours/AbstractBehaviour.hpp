@@ -25,6 +25,8 @@ class AbstractBehaviour
 
         //behaviour should be able to update itself every step and MUST be implemented
 		virtual void update(float pStep) = 0;
+
+		//some behaviours are able to be triggered when the player is close enough
 		virtual void trigger(GameObject* pPlayer) { };
 
     protected:

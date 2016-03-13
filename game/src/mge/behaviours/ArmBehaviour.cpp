@@ -1,25 +1,20 @@
-#include <glm.hpp>
-#include "mge/behaviours/ArmBehaviour.hpp"
-#include "mge/core/GameObject.hpp"
-#include <SFML/window.hpp>
 #include <iostream>
 #include <cmath>
+#include <glm.hpp>
+#include <SFML/window.hpp>
+
+#include "mge/behaviours/ArmBehaviour.hpp"
+#include "mge/core/GameObject.hpp"
 #include "mge/behaviours/PlayerBehaviour.hpp"
 #include "mge/core/Level.hpp"
 
-using namespace std;
+ArmBehaviour::ArmBehaviour(bool pCos): AbstractBehaviour(), _cos(pCos){}
 
-ArmBehaviour::ArmBehaviour(bool pCos): AbstractBehaviour()
-{
-	_cos = pCos;
-}
-
-ArmBehaviour::~ArmBehaviour()
-{
-}
+ArmBehaviour::~ArmBehaviour(){}
 
 void ArmBehaviour::update(float step)
 {
+	//Positioning of the arms at runtime.
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
 		glm::vec3 pos = _owner->getLocalPosition();
 		pos.z -= step;
@@ -51,7 +46,7 @@ void ArmBehaviour::update(float step)
 		_owner->setLocalPosition(pos);
 	}
 
-
+	//Rotation of the arms at runtime.
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad8)) {
 		_owner->rotate(step, glm::vec3(1, 0, 0));
 	}
@@ -83,8 +78,10 @@ void ArmBehaviour::update(float step)
 		Level::Load("Level_03.xml", Level::CurrentWorld);
 	}
 
+	//Output position and rotation.
 	//std::cout << "Pos: " << _owner->getLocalPosition() << " Rot: " << _owner->getRotation() << std::endl;
 
+	//Move and rotate the arms while running.
 	/*
 	if (((PlayerBehaviour*)_owner->getParent()->getBehaviour())->IsMoving())
 	{

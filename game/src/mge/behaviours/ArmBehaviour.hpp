@@ -2,8 +2,12 @@
 #define ARMBEHAVIOUR_H
 
 #include <glm.hpp>
+
 #include "mge/behaviours/AbstractBehaviour.hpp"
 
+/**
+* Class in charge of animating the player's arm through code.
+*/
 class ArmBehaviour : public AbstractBehaviour
 {
     public:
@@ -17,4 +21,4 @@ private:
 	bool _cos;
 };
 
-#endif // LookAt_H
+#endif // ARMBEHAVIOUR_H

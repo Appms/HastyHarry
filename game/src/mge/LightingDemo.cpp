@@ -71,13 +71,14 @@ void LightingDemo::_initializeScene()
 	std::vector<glm::vec3> waypoints;
 	waypoints.push_back(glm::vec3(0, 0, 10));
 	waypoints.push_back(glm::vec3(0, 0, 0));
+	waypoints.push_back(glm::vec3(0, 0, -10));
 
 	GameObject* butterfly = new GameObject("Butterfly", glm::vec3(0, 0, -10), GameObject::PhysicsType::ANIMATEDBODY);
 	_world->add(butterfly);
 	butterfly->setMesh(planeMeshDefault);
 	butterfly->setMaterial(textureMaterial);
 	butterfly->setBehaviour(new MovingBehaviour(glm::vec3(0, 0, -10), glm::vec3(0, 0, -10), 1.0f, false));
-	butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, glm::vec3(0, 0, -10), (MovingBehaviour*)butterfly->getBehaviour(), waypoints));*/
+	butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, (MovingBehaviour*)butterfly->getBehaviour(), waypoints));*/
 
 	Level::Load("TestScene.xml", _world);
 

@@ -21,16 +21,12 @@
 #include "mge/core/Timer.hpp"
 #include "mge/materials/ColorMaterial.hpp"
 
-//#define WALLRUN_GRAVITY -0.05f
-//#define NORMAL_GRAVITY -0.35f
-
+//Constants needed fot the player controller
 #define WALLRUN_GRAVITY -3.0f
 #define NORMAL_GRAVITY -9.8f
 
-
 #define HARD_INERTIA  0.75f
 #define SOFT_INERTIA 0.9f
-
 
 #define MOVE_FORCE 240.0f
 #define RUN_MAXVELOCITY 15.0f
@@ -38,36 +34,30 @@
 #define AIR_CONTROLL  0.1f
 #define AIR_MAXVELOCITY 18.5f
 
-
 #define GROUND_JUMP_FORCE 7.5f
-
 
 #define WALLJUMP_NORMALFORCE 25.0f
 #define WALLJUMP_UPFORCE 11.0f
 #define WALLJUMP_FORWARDFORCE 30.0f
 
-
 #define ROTATE_SPEED 6.0f
-
 
 #define SLOW_FEEDBACK_RADIUS 4.0f
 #define SLOW_FEEDBACK_TIMER 11.0f
 
-
 #define DEATH_HEIGHT -40.0f
 #define RESPAWN_TIME 4.0f
-
-bool PlayerBehaviour::IsMoving()
-{
-	return _grounded && _moving;
-}
 
 PlayerBehaviour::PlayerBehaviour(Camera* pCamera) : AbstractBehaviour()
 {
 	_camera = pCamera;
-
 	_prevMousePos = sf::Mouse::getPosition();
-	
+}
+
+PlayerBehaviour::~PlayerBehaviour()
+{
+	_enemies.clear();
+	delete _raycastCube;
 }
 
 void PlayerBehaviour::Initialize()
@@ -170,17 +160,11 @@ void PlayerBehaviour::Initialize()
 	//Set audio listener volume
 	sf::Listener::setGlobalVolume(50.0f);
 
-	test = new GameObject("");
-	Level::CurrentWorld->add(test);
-	test->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
-	test->setMaterial(new ColorMaterial(glm::vec3(1, 0, 1)));
-	test->scale(glm::vec3(0.1f, 0.1f, 0.1f));
-}
-
-PlayerBehaviour::~PlayerBehaviour()
-{
-	_enemies.clear();
-	delete test;
+	_raycastCube = new GameObject("");
+	Level::CurrentWorld->add(_raycastCube);
+	_raycastCube->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+	_raycastCube->setMaterial(new ColorMaterial(glm::vec3(1, 0, 1)));
+	_raycastCube->scale(glm::vec3(0.1f, 0.1f, 0.1f));
 }
 
 void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float pStep)
@@ -202,7 +186,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 
 	pController->GetRigidBody()->SetRotation(rotationMatrixY);
 
-	/*
+	//Camera rotation locked
 	glm::vec3 camFor = _camera->getForwardVector() * -1.f;
 	glm::vec3 bodyFor = _owner->getForwardVector();
 
@@ -220,10 +204,6 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		}
 		else if (-_mouseDelta.y > 0.0f) _camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
 	}
-	*/
-
-	//TODO Fix the rotation limit
-	_camera->rotate(glm::radians(-_mouseDelta.y), glm::vec3(1, 0, 0));
 
 	//Sensor reading
 	pController->GetRigidBody()->BeginIterateSensor();
@@ -253,7 +233,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		}
 		else if (sensor->GetUserData() == 'r')
 		{
-			test->setLocalPosition(Utility::neToGlm(sensor->GetDetectContactPoint()));
+			_raycastCube->setLocalPosition(Utility::neToGlm(sensor->GetDetectContactPoint()));
 			
 			glm::vec3 vecDir = -_camera->getLocalForwardVector();
 			vecDir = glm::normalize(vecDir) * 100.0f;

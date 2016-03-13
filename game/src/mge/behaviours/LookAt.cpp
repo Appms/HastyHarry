@@ -2,9 +2,6 @@
 #include "mge/behaviours/LookAt.hpp"
 #include "mge/core/GameObject.hpp"
 
-#include <iostream>
-using namespace std;
-
 LookAt::LookAt(GameObject * pTarget): AbstractBehaviour(), _target(pTarget)
 {
 }
@@ -14,13 +11,9 @@ LookAt::~LookAt()
 	_target = NULL;
 }
 
-/**
- * Looks at the given target
- */
 void LookAt::update( float step )
 {
     //two ways of doing the same thing:
-
 
     //Through GLM
     /*_owner->setTransform(
