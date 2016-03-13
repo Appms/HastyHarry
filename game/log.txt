@@ -1,0 +1,45 @@
+Starting Game
+Initializing engine...
+
+Initializing window...
+Window initialized.
+
+Context info:
+----------------------------------
+----------------------------------
+
+Initializing GLEW...
+Initialized GLEW, status (1 == OK, 0 == FAILED):1
+
+Initializing renderer...
+Renderer done.
+
+Initializing world...
+World initialized.
+
+Loading test.obj...752
+802
+Tangents calculated!
+Mesh loaded and buffered:802 triangles.
+Texture test.png with id 1 loaded.
+Caching texture.
+
+Program created with id:1
+Reading shader file... assets/mge/shaders/Phong.vs
+Compiling shader... 
+Shader compiled ok.
+Reading shader file... assets/mge/shaders/Phong.fs
+Compiling shader... 
+Shader compiled ok.
+Program linked ok.
+
+
+Engine initialized.
+
+Initializing HUD
+HUD initialized.
+
+GC running on:root
+GC running on:Test
+GC running on:camera
+GC running on:Light
