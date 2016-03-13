@@ -1,6 +1,5 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-mtllib Hallway_Floor.mtl
 g Hallway_Floor
 v -5.473110 -0.157753 -3.500000
 v -5.473110 -0.157753 3.500000
@@ -51,8 +50,6 @@ vn 1.000000 0.000000 0.000000
 vn 1.000000 0.000000 0.000000
 vn 1.000000 0.000000 0.000000
 s 1
-g Hallway_Floor
-usemtl lambert9SG
 f 1/1/1 4/13/2 6/4/3
 f 6/4/3 4/13/2 5/9/4
 s 2

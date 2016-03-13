@@ -108,6 +108,16 @@ void GameObject::setMeshWithCollider(Mesh* pMesh)
 	_updatePhysicsBody();
 }
 
+void GameObject::setPhysicsType(PhysicsType type)
+{
+	_physicsType = type;
+}
+
+void GameObject::setColliderType(ColliderType type)
+{
+	_colliderType = type;
+}
+
 void GameObject::_updatePhysicsBody() {
 
 	neGeometry* geometry;
@@ -328,13 +338,15 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 		case GameObject::RIGIDBODY:
 			if (_rigidbody != NULL) {
 				neT3 t = _rigidbody->GetTransform();
-
+	
 				glm::vec3 scale = getScale();
 
 				_transform = glm::mat4(scale.x * (float)t.rot[0][0], scale.x * (float)t.rot[0][1], scale.x * (float)t.rot[0][2], 0.0f,
 					scale.y * (float)t.rot[1][0], scale.y * (float)t.rot[1][1], scale.y * (float)t.rot[1][2], 0.0f,
 					scale.z * (float)t.rot[2][0], scale.z * (float)t.rot[2][1], scale.z * (float)t.rot[2][2], 0.0f,
 					(float)t.pos[0], (float)t.pos[1], (float)t.pos[2], 1.0f);
+
+				setLocalPosition(glm::vec3(getLocalPosition().x + ColliderCenter.x, getLocalPosition().y - ColliderCenter.y, getLocalPosition().z - ColliderCenter.z));
 			}
 			break;
 		case GameObject::ANIMATEDBODY:
@@ -343,7 +355,7 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 				//this->setLocalPosition(this->getLocalPosition() - glm::vec3(1.0f, 0, 0));
 
 				neV3 pos = _animatedbody->GetPos();
-				pos.Set(_transform[3][0] + pParentTransform[3][0], _transform[3][1] + pParentTransform[3][1], _transform[3][2] + pParentTransform[3][2]);
+				pos.Set(_transform[3][0] + pParentTransform[3][0] + ColliderCenter.x, _transform[3][1] + pParentTransform[3][1] + ColliderCenter.y, _transform[3][2] + pParentTransform[3][2] + ColliderCenter.z);
 				_animatedbody->SetPos(pos);
 				
 				//this->rotate(0.01f, glm::vec3(0, 1, 0));

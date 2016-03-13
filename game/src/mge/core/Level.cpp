@@ -18,7 +18,10 @@
 #include "mge/core/Timer.hpp"
 #include "mge/behaviours/ArmBehaviour.hpp"
 #include "mge/behaviours/CollectTrigger.hpp"
-
+#include "mge/behaviours/MovingBehaviour.hpp"
+#include "mge/behaviours/Turret.hpp"
+#include <algorithm>
+#include <iostream>
 
 std::vector<Mesh*> Level::_loadedMeshes;
 std::vector<std::string> Level::_loadedMeshNames;
@@ -98,7 +101,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	CurrentPlayer->setParent(pWorld);
 	CurrentPlayer->setBehaviour(new PlayerBehaviour(camera));
 	((PlayerBehaviour *)CurrentPlayer->getBehaviour())->Initialize();
-
+	/*
 	GameObject* LeftArm = new GameObject("RightArm", glm::vec3(-0.8, 0.75, 0));
 	LeftArm->setParent(CurrentPlayer);
 	LeftArm->setBehaviour(new ArmBehaviour(false));
@@ -110,12 +113,22 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	RightArm->setBehaviour(new ArmBehaviour(true));
 	RightArm->setMesh(Mesh::load(config::MGE_MODEL_PATH + "LeftArm.obj"));
 	RightArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1), glm::vec3(0, 0, 0), 10.0f));
+	*/
 
+	/*
 	GameObject* collectable = new GameObject("Collectable", glm::vec3(2, 1, 2));
 	collectable->setParent(CurrentWorld);
 	collectable->setBehaviour(new CollectTrigger());
 	collectable->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
 	collectable->setMaterial(new ColorMaterial(glm::vec3(1, 1, 0)));
+
+	
+	GameObject* turret = new GameObject("Turret", glm::vec3(6, 2, 6));
+	turret->setParent(CurrentWorld);
+	turret->setBehaviour(new Turret(Level::CurrentPlayer, 20.0f));
+	turret->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
+	turret->setMaterial(new ColorMaterial(glm::vec3(0, 1, 1)));
+	*/
 
 	string matName = "";
 	string behName = "";
@@ -123,9 +136,13 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	float triggerRadius;
 
 	glm::vec3 collSize, collCenter, worldPos;
+	float collRadius, collHeight;
 	neQ worldRot;
 
 	bool foundCollider = false;
+	bool isKinematic, useGravity;
+	float mass;
+	string collType;
 
     std::cout << "Level Loader: Loading level \""+pLevelName+"\"..." << std::endl;
     //_loadedMaterials.push_back(new PhongMaterial (Texture::load(config::MGE_TEXTURE_PATH+"bricks.jpg"), glm::vec3(0.2f,0.2f,0.2f), glm::vec3(0.8f,0.8f,0.8f), glm::vec3(0.1f,0.1f,0.1f), 2.0f));
@@ -196,9 +213,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 							if (0 == strcmp(go->getName().c_str(), "PlayerSpawn"))
 							{
-								glm::vec3 asd = go->getLocalPosition();
+								((PlayerBehaviour *)CurrentPlayer->getBehaviour())->SpawnPos = go->getPosition();
 								CurrentPlayer->getRigidBody()->SetPos(Utility::glmToNe(go->getLocalPosition()));
-								//Curre->getRigidBody()->SetPos(glmToNe(_resetPos)); (go->getLocalPosition());
 							}
 						}
 						else if (0 == strcmp(part->Value(), "mesh"))
@@ -237,13 +253,33 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						}
 						else if (0 == strcmp(part->Value(), "behaviourparams"))
 						{
-							if (0 == behName.compare("RotatingBehaviour"))
+							if (0 == behName.compare("SoundTrigger"))
+							{
+								go->setBehaviour(new SoundTrigger(part->GetText()));
+							}
+							else if (0 == behName.compare("RotateTrigger"))
+							{
+								//go->setBehaviour(new SoundTrigger(part->GetText()));
+							}
+							else if (0 == behName.compare("MoveTrigger"))
+							{
+								//go->setBehaviour(new SoundTrigger(part->GetText()));
+							}
+							else if (0 == behName.compare("TextTrigger"))
+							{
+								//go->setBehaviour(new CollectTrigger());s
+							}
+							else if (0 == behName.compare("MovingBehaviour"))
+							{
+								go->setBehaviour(new MovingBehaviour(part->GetText()));
+							}
+							else if (0 == behName.compare("RotatingBehaviour"))
 							{
 								go->setBehaviour(new RotatingBehaviour(part->GetText()));
 							}
-							else if (0 == behName.compare("SoundTrigger"))
+							else if (0 == behName.compare("TurretBehaviour"))
 							{
-								go->setBehaviour(new SoundTrigger(part->GetText()));
+								go->setBehaviour(new Turret(part->GetText()));
 							}
 							else if (0 != behName.compare(""))
 							{
@@ -326,7 +362,20 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 								foundCollider = true;
 								std::string pos = part->GetText();
 								std::vector<std::string> mat = Utility::Split(pos, ',');
-								collSize = glm::vec3(atof(mat[0].c_str()), atof(mat[1].c_str()), atof(mat[2].c_str()));
+
+								if (0 == strcmp(collType.c_str(), "Box"))
+								{
+									collSize = glm::vec3(atof(mat[0].c_str()), atof(mat[1].c_str()), atof(mat[2].c_str()));
+								}
+								else if (0 == strcmp(collType.c_str(), "Sphere"))
+								{
+									collRadius = atof(mat[0].c_str());
+								}
+								else if (0 == strcmp(collType.c_str(), "Cylinder"))
+								{
+									collRadius = atof(mat[0].c_str());
+									collHeight = atof(mat[1].c_str());
+								}
 							}
 						}
 						else if (0 == strcmp(part->Value(), "collidercenter"))
@@ -341,11 +390,29 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						}
 						else if (0 == strcmp(part->Value(), "mass"))
 						{
-							//TODO Add the mass to the level loading
+							mass = atof(part->GetText());
 						}
 						else if (0 == strcmp(part->Value(), "iskinematic"))
 						{
-							//TODO Add distinction of Rigid and ANimated bodys when loading
+							if (0 == strcmp(part->GetText(), "True"))
+							{
+								isKinematic = true;
+							}
+							else if (0 == strcmp(part->GetText(), "False"))
+							{
+								isKinematic = false;
+							}
+						}
+						else if (0 == strcmp(part->Value(), "usegravity"))
+						{
+							if (0 == strcmp(part->GetText(), "True"))
+							{
+								useGravity = true;
+							}
+							else if (0 == strcmp(part->GetText(), "False"))
+							{
+								useGravity = false;
+							}
 						}
 						else if (0 == strcmp(part->Value(), "worldposition"))
 						{
@@ -364,21 +431,90 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 				if (foundCollider)
 				{
-					//TODO Export physics material propeertys
-					neAnimatedBody* body = pWorld->getPhysics()->CreateAnimatedBody();
-					neGeometry* geometry = body->AddGeometry();
-					geometry->SetBoxSize(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z);
-					body->UpdateBoundingInfo();
-					body->SetUserData((u32)go);
+					go->ColliderCenter = collCenter;
 					
-					neV3 nPos;
-					glm::mat4 m = go->getTransform();
+					if (isKinematic)
+					{
+						go->setColliderType(GameObject::ColliderType::CUBE);
+						go->setPhysicsType(GameObject::PhysicsType::ANIMATEDBODY);
+						neAnimatedBody* body = pWorld->getPhysics()->CreateAnimatedBody();
+						neGeometry* geometry = body->AddGeometry();
 
-					nPos.Set(worldPos.x + collCenter.x, worldPos.y + collCenter.y, worldPos.z + collCenter.z);
-					body->SetPos(nPos);
-					body->SetRotation(worldRot);
+						if (0 == strcmp(collType.c_str(), "Box"))
+						{
+							geometry->SetBoxSize(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z);
+						}
+						else if (0 == strcmp(collType.c_str(), "Sphere"))
+						{
+							geometry->SetSphereDiameter(collRadius * 2.0f);
+						}
+						else if (0 == strcmp(collType.c_str(), "Cylinder"))
+						{
+							geometry->SetCylinder(collRadius * 2.0f, collHeight);
+						}
+						else
+						{
+							std::cout << "Error: Invalid collider type \"" << collType << "\"" << std::endl;
+						}
+						
+						body->UpdateBoundingInfo();
+						body->SetUserData((u32)go);
+					
+						neV3 nPos;
+						glm::mat4 m = go->getTransform();
 
-					go->setAnimatedBody(body);
+						nPos.Set(worldPos.x + collCenter.x, worldPos.y + collCenter.y, worldPos.z + collCenter.z);
+						body->SetPos(nPos);
+						body->SetRotation(worldRot);
+
+						go->setAnimatedBody(body);
+					}
+					else
+					{
+						go->setColliderType (GameObject::ColliderType::CUBE);
+						go->setPhysicsType (GameObject::PhysicsType::RIGIDBODY);
+						neRigidBody* body = pWorld->getPhysics()->CreateRigidBody();
+						neGeometry* geometry = body->AddGeometry();
+
+						if (0 == strcmp(collType.c_str(), "Box"))
+						{
+							geometry->SetBoxSize(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z);
+							body->SetInertiaTensor(neBoxInertiaTensor(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z, mass));
+
+						}
+						else if (0 == strcmp(collType.c_str(), "Sphere"))
+						{
+							geometry->SetSphereDiameter(collRadius * 2.0f);
+							body->SetInertiaTensor(neSphereInertiaTensor(collRadius * 2.0f, mass));
+						}
+						else if (0 == strcmp(collType.c_str(), "Cylinder"))
+						{
+							geometry->SetCylinder(collRadius * 2.0f, collHeight);
+							body->SetInertiaTensor(neCylinderInertiaTensor(collRadius * 2.0f, collHeight, mass));
+						}
+						else
+						{
+							std::cout << "Error: Invalid collider type \"" << collType << "\"" << std::endl;
+						}
+
+						body->SetMass(mass);
+						
+						body->GravityEnable(useGravity);
+						
+						body->UpdateBoundingInfo();
+						body->SetUserData((u32)go);
+
+						neV3 nPos;
+						glm::mat4 m = go->getTransform();
+
+						nPos.Set(worldPos.x + collCenter.x, worldPos.y + collCenter.y, worldPos.z + collCenter.z);
+						body->SetPos(nPos);
+						body->SetRotation(worldRot);
+
+						go->setRigidBody(body);
+					}
+					//TODO Export physics material propeertys
+					
 
 					//This code shows colliders
 					/*
@@ -389,7 +525,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 					test->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
 					test->setMaterial(new ColorMaterial(glm::vec3(1,0,1)));
 					test->scale(1.0f / test->getScale());
-					test->scale(collSize * 1.1f);
+					test->scale(glm::vec3(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z));
 					*/
 				}
 			}
@@ -429,5 +565,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 
 	Timer::UnPause();
 	std::cout << "Level Loader: \"" + pLevelName + "\" loaded successfully!" << std::endl;
+
+	SoundEngine::PlayMusic("track_1");
+
 	return true;
 }

@@ -1,4 +1,5 @@
 #include "mge/core/Timer.hpp"
+#include <iostream>
 
 sf::Clock Timer::_clock;
 float Timer::_currentTime = 0.0f;
@@ -48,5 +49,9 @@ bool Timer::IsPaused()
 
 float Timer::deltaTime()
 {
+	//HACK This should fix some weird stuff
+	if (_deltaTime > 3.0f)
+		return 0.0f;
+	
 	return _paused ? 0.0f : (Slowmotion ? _deltaTime * _slowmotionFactor : _deltaTime);
 }

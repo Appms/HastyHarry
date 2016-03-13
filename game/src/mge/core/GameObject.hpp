@@ -115,6 +115,11 @@ class GameObject
 		glm::vec3 getLocalForwardVector();
 		glm::vec3 getRightVector();
 		glm::vec3 getUpVector();
+
+		void setPhysicsType(PhysicsType type);
+		void setColliderType(ColliderType type);
+
+		glm::vec3 ColliderCenter;
 	protected:
 		std::string _name;
 		glm::mat4 _transform;
