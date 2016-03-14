@@ -24,7 +24,6 @@ Turret::~Turret()
 
 void Turret::update( float step )
 {
-
 	if (glm::distance(_owner->getWorldPosition(), _target->getWorldPosition()) < _radius) {
 		glm::vec3 forward = glm::normalize(_owner->getLocalPosition() - _target->getLocalPosition());
 		glm::vec3 right = glm::normalize(glm::cross(glm::vec3(0, 1, 0), forward));
