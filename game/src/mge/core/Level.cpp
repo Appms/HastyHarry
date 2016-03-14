@@ -268,11 +268,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("TextTrigger"))
 							{
-								//go->setBehaviour(new CollectTrigger());s
+								//go->setBehaviour(new CollectTrigger());
 							}
 							else if (0 == behName.compare("EndTrigger"))
 							{
-								//go->setBehaviour(new CollectTrigger());s
+								//go->setBehaviour(new CollectTrigger());
 							}
 							else if (0 == behName.compare("MovingBehaviour"))
 							{

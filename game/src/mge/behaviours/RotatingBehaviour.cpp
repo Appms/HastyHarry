@@ -2,6 +2,9 @@
 
 #include "mge/behaviours/RotatingBehaviour.hpp"
 #include "mge/core/GameObject.hpp"
+#include "mge/util/Utility.hpp"
+
+#include <vector>
 
 RotatingBehaviour::RotatingBehaviour(float anglePerSec) :AbstractBehaviour()
 {
@@ -10,7 +13,9 @@ RotatingBehaviour::RotatingBehaviour(float anglePerSec) :AbstractBehaviour()
 
 RotatingBehaviour::RotatingBehaviour(std::string params) : AbstractBehaviour()
 {
-	_anglePerSec = atof(params.c_str());
+	std::vector<std::string> str = Utility::Split(params, ',');
+	_axis = glm::vec3(atof(str[0].c_str()), atof(str[1].c_str()), atof(str[2].c_str()));
+	_anglePerSec = atof(str[3].c_str());
 }
 
 RotatingBehaviour::~RotatingBehaviour()
@@ -20,5 +25,5 @@ RotatingBehaviour::~RotatingBehaviour()
 
 void RotatingBehaviour::update(float step)
 {
-	_owner->rotate(step * glm::radians(_anglePerSec), glm::vec3(1.0f, 1.0f, 0.0f)); // rotates 45° per second
+	_owner->rotate(step * glm::radians(_anglePerSec), _axis);
 }
