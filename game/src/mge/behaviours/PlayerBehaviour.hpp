@@ -50,7 +50,6 @@ class PlayerBehaviour : public AbstractBehaviour
 		bool _dead;
 		float _respawnTimer;
 
-		//TODO This Audio is a little hacky
 
 		//TODO Add switches
 		std::vector<GameObject*> _enemies;

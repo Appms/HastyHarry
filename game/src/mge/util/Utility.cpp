@@ -37,3 +37,8 @@ glm::vec3 Utility::neToGlm(neV3 v)
 {
 	return glm::vec3(v[0], v[1], v[2]);
 }
+
+glm::vec3 Utility::StrToVec(std::string s1, std::string s2, std::string s3)
+{
+	return glm::vec3(atof(s1.c_str()), atof(s2.c_str()), atof(s3.c_str()));
+}
