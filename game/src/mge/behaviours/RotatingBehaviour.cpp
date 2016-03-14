@@ -6,8 +6,9 @@
 
 #include <vector>
 
-RotatingBehaviour::RotatingBehaviour(float anglePerSec) :AbstractBehaviour()
+RotatingBehaviour::RotatingBehaviour(glm::vec3 pAxis, float anglePerSec) :AbstractBehaviour()
 {
+	_axis = pAxis;
 	_anglePerSec = anglePerSec;
 }
 

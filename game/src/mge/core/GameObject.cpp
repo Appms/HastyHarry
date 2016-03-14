@@ -70,6 +70,7 @@ std::string GameObject::getName() const
 void GameObject::setTransform (const glm::mat4& pTransform)
 {
     _transform = pTransform;
+	_worldTransform = _parent->getTransform() * _transform;
 }
 
 glm::mat4& GameObject::getTransform()

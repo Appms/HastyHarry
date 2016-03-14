@@ -155,10 +155,13 @@
     <ClInclude Include="src\mge\behaviours\ArmBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\Butterfly.hpp" />
     <ClInclude Include="src\mge\behaviours\CollectTrigger.hpp" />
+    <ClInclude Include="src\mge\behaviours\EndTrigger.hpp" />
     <ClInclude Include="src\mge\behaviours\KeysBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\LookAt.hpp" />
+    <ClInclude Include="src\mge\behaviours\MoveTrigger.hpp" />
     <ClInclude Include="src\mge\behaviours\MovingBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\PlayerBehaviour.hpp" />
+    <ClInclude Include="src\mge\behaviours\RotateTrigger.hpp" />
     <ClInclude Include="src\mge\behaviours\RotatingBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundTrigger.hpp" />
@@ -197,10 +200,13 @@
     <ClCompile Include="src\mge\behaviours\ArmBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\Butterfly.cpp" />
     <ClCompile Include="src\mge\behaviours\CollectTrigger.cpp" />
+    <ClCompile Include="src\mge\behaviours\EndTrigger.cpp" />
     <ClCompile Include="src\mge\behaviours\KeysBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\LookAt.cpp" />
+    <ClCompile Include="src\mge\behaviours\MoveTrigger.cpp" />
     <ClCompile Include="src\mge\behaviours\MovingBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\PlayerBehaviour.cpp" />
+    <ClCompile Include="src\mge\behaviours\RotateTrigger.cpp" />
     <ClCompile Include="src\mge\behaviours\RotatingBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundTrigger.cpp" />

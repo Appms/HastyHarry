@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level>
+	<gameobjects>
+		<gameobject>
+			<id>92de26b9-3c12-453a-9cdb-84c1fc5c64ef</id>
+			<name>TurretCamera</name>
+			<parentid>cc72d080-a67c-4363-a214-fd9b18f2c9a2</parentid>
+			<worldposition>-17.814,3.45,-35.29</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh>TurretCamera</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Camera Turrets, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>TurretBehaviour</behaviourname>
+			<behaviourparams>5</behaviourparams>
+			<collidercenter>-0.0049,0.1657,0.1885</collidercenter>
+			<collidersize>0.3,0.4034,0.7315</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>e6b85de7-c7cc-4141-afee-32b2bd8e1481</id>
+			<name>TurretHolder</name>
+			<parentid>cc72d080-a67c-4363-a214-fd9b18f2c9a2</parentid>
+			<worldposition>-17.814,3.45,-35.29</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
+			<mesh>TurretHolder</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Camera Turrets, 0.8, 0.8, 0.8, 10</materialparams>
+			<collidercenter>-0.0049,-0.1849,-0.1682</collidercenter>
+			<collidersize>0.3241,0.3482,0.3981</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>cc72d080-a67c-4363-a214-fd9b18f2c9a2</id>
+			<name>Turret</name>
+			<parentid />
+			<worldposition>-17.814,3.45,-35.29</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-17.814,0,1,0,3.45,0,0,1,-35.29,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>4dfa30b5-fdd4-4d4d-945c-ff489d0e81e3</id>
+			<name>CrossHallway_Floor_1 (1)</name>
+			<parentid />
+			<worldposition>-14.5,0,-29.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-14.5,0,1,0,0,0,0,1,-29.66,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>ba76d17c-8dda-4921-8613-16c40512a463</id>
+			<name>CrossHallway_Floor_1</name>
+			<parentid />
+			<worldposition>0,0,-29.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,-29.66,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>c2148477-80e2-4bb1-928c-6f321ec5dc51</id>
+			<name>PlayerSpawn</name>
+			<parentid />
+			<worldposition>-0.27,0.53,-30.31</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-0.27,0,1,0,0.53,0,0,1,-30.31,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+	</gameobjects>
+	<lights />
+</level>

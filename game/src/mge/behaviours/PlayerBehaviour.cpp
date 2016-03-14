@@ -158,7 +158,7 @@ void PlayerBehaviour::Initialize()
 	_camera->setLocalPosition(glm::vec3(0, 0.8, 0));
 
 	//Set audio listener volume
-	sf::Listener::setGlobalVolume(50.0f);
+	sf::Listener::setGlobalVolume(100.0f);
 
 	_raycastCube = new GameObject("");
 	Level::CurrentWorld->add(_raycastCube);
@@ -174,6 +174,8 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	_moving = false;
 	_grounded = false;
 	_walled = false;
+
+	//_owner->setParent(Level::CurrentWorld);
 
 	_mouseDelta = _mouseDelta * pStep * ROTATE_SPEED;
 
@@ -220,6 +222,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			}
 			
 			_grounded = true;
+			//_owner->setParent((GameObject*)sensor->GetDetectAnimatedBody()->GetUserData());
 		}
 		else if (sensor->GetUserData() == 'c' && sensor->GetDetectDepth() > 0.0f)
 		{

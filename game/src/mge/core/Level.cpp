@@ -11,6 +11,9 @@
 #include "mge/behaviours/RotatingBehaviour.hpp"
 #include "mge/behaviours/PlayerBehaviour.hpp"
 #include "mge/behaviours/SoundTrigger.hpp"
+#include "mge/behaviours/MoveTrigger.hpp"
+#include "mge/behaviours/RotateTrigger.hpp"
+#include "mge/behaviours/EndTrigger.hpp"
 #include "mge/core/Camera.hpp"
 #include <map>
 #include "..\..\include\tokamak.h"
@@ -87,6 +90,8 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 {
 	Timer::Pause();
 	Unload();
+
+	SoundEngine::Init("AudioConfig.xml");
 
 	CurrentWorld = pWorld;
 	CurrentWorld->initPhysics();
@@ -260,11 +265,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("RotateTrigger"))
 							{
-								//go->setBehaviour(new SoundTrigger(part->GetText()));
+								go->setBehaviour(new RotateTrigger(part->GetText()));
 							}
 							else if (0 == behName.compare("MoveTrigger"))
 							{
-								//go->setBehaviour(new SoundTrigger(part->GetText()));
+								go->setBehaviour(new MoveTrigger(go->getWorldPosition(), part->GetText()));
 							}
 							else if (0 == behName.compare("TextTrigger"))
 							{
@@ -272,11 +277,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("EndTrigger"))
 							{
-								//go->setBehaviour(new CollectTrigger());
+								go->setBehaviour(new EndTrigger(part->GetText()));
 							}
 							else if (0 == behName.compare("MovingBehaviour"))
 							{
-								go->setBehaviour(new MovingBehaviour(part->GetText()));
+								go->setBehaviour(new MovingBehaviour(go->getWorldPosition(), part->GetText()));
 							}
 							else if (0 == behName.compare("RotatingBehaviour"))
 							{

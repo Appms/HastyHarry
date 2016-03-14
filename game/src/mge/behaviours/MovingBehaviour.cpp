@@ -8,10 +8,10 @@ MovingBehaviour::MovingBehaviour(glm::vec3 pOrigin, glm::vec3 pEnd, float pSpeed
 _originPosition(pOrigin), _endPosition(pEnd), _speed(pSpeed), _loop(pLoop) {}
 
 
-MovingBehaviour::MovingBehaviour(std::string params) : AbstractBehaviour()
+MovingBehaviour::MovingBehaviour(glm::vec3 pStart, std::string params) : AbstractBehaviour()
 {
 	std::vector<std::string> str = Utility::Split(params, ',');
-	_originPosition = _owner->getWorldPosition();
+	_originPosition = pStart;
 	_endPosition = _originPosition + Utility::StrToVec(str[0], str[1], str[2]);
 	_speed = atof(str[3].c_str());
 	
