@@ -7,6 +7,7 @@
 #include "mge/core/World.hpp"
 #include "mge/materials/AbstractMaterial.hpp"
 #include "mge/materials/PhongMaterial.hpp"
+#include "mge/materials/TextureMaterial.hpp"
 #include "mge/materials/ColorMaterial.hpp"
 #include "mge/behaviours/RotatingBehaviour.hpp"
 #include "mge/behaviours/PlayerBehaviour.hpp"
@@ -17,6 +18,8 @@
 #include "mge/behaviours/MoveSwitch.hpp"
 #include "mge/behaviours/RotateSwitch.hpp"
 #include "mge/behaviours/DeleteSwitch.hpp"
+#include "mge/behaviours/Butterfly.hpp"
+#include "mge/behaviours/LookAt.hpp"
 #include "mge/core/Camera.hpp"
 #include <map>
 #include "..\..\include\tokamak.h"
@@ -34,6 +37,7 @@ std::vector<std::string> Level::_loadedMeshNames;
 std::vector<AbstractMaterial*> Level::_loadedMaterials;
 std::vector<std::string> Level::_loadedMaterialsNames;
 std::vector<GameObject*> Level::_loadedGameObjects;
+std::vector<glm::vec3> Level::_butterflyPositions;
 
 World* Level::CurrentWorld;
 GameObject* Level::CurrentPlayer;
@@ -79,6 +83,8 @@ void Level::Unload()
 	}
 
 	_loadedGameObjects.clear();
+
+	_butterflyPositions.clear();
 
 	delete CurrentPlayer;
 	if(CurrentWorld != NULL) CurrentWorld->killPhysics();
@@ -296,7 +302,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("ButterflyBehaviour"))
 							{
-								//go->setBehaviour(new Turret(part->GetText()));
+								_butterflyPositions.push_back(go->getWorldPosition());
 							}
 							else if (0 == behName.compare("CollectableTrigger"))
 							{
@@ -569,6 +575,18 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 				}
 			}
 		}
+	}
+
+	Mesh* planeMeshDefault = Mesh::load(config::MGE_MODEL_PATH + "plane_small.obj");
+	AbstractMaterial* textureMaterial = new TextureMaterial(Texture::load(config::MGE_TEXTURE_PATH + "BottleUV.png"));
+
+	if (_butterflyPositions.size() > 0) {
+		GameObject* butterfly = new GameObject("Butterfly", _butterflyPositions.back(), GameObject::PhysicsType::ANIMATEDBODY);
+		CurrentWorld->add(butterfly);
+		butterfly->setMesh(planeMeshDefault);
+		butterfly->setMaterial(textureMaterial);
+		butterfly->setBehaviour(new MovingBehaviour(_butterflyPositions.back(), _butterflyPositions.back(), 1.0f, false));
+		butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 2.0f, (MovingBehaviour*)butterfly->getBehaviour(), _butterflyPositions));
 	}
 
 	std::cout << "Level Loader: Setting up Hierarchy..." << std::endl;

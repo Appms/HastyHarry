@@ -16,12 +16,16 @@ class MovingBehaviour : public AbstractBehaviour
 
 		void updateValues(glm::vec3 pOrigin, glm::vec3 pEnd, float pSpeed, bool pLoop = false);
 		virtual void update(float step);
+
+		void setDestroyFlag();
 	private:
 		glm::vec3 _originPosition;
 		glm::vec3 _endPosition;
 		float _speed;
 		bool _loop;
 		bool _dead;
+
+		bool _destroyAtEnd;
 };
 
 #endif // MOVINGBEHAVIOUR_H

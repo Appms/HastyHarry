@@ -27,7 +27,7 @@ void Butterfly::update( float step )
 
 	if (_active) {
 		if (glm::distance(_owner->getWorldPosition(), _target->getWorldPosition()) < _radius) {
-			_movement->updateValues(_owner->getWorldPosition(), _waypoints.back(), 1.0f, false);
+			_movement->updateValues(_owner->getWorldPosition(), _waypoints.back(), 10.0f, false);
 			_currentObjective = _waypoints.back();
 			_waypoints.pop_back();
 

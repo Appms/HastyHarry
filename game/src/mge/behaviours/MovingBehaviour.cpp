@@ -34,6 +34,8 @@ void MovingBehaviour::updateValues(glm::vec3 pOrigin, glm::vec3 pEnd, float pSpe
 	_loop = pLoop;
 }
 
+void MovingBehaviour::setDestroyFlag() { _destroyAtEnd = true; }
+
 void MovingBehaviour::update(float step)
 {
 	if (glm::distance(_owner->getWorldPosition(), _originPosition) < glm::distance(_endPosition, _originPosition))
@@ -48,5 +50,6 @@ void MovingBehaviour::update(float step)
 			_endPosition = _originPosition;
 			_originPosition = aux;
 		}
+		else if (_destroyAtEnd) delete _owner;
 	}
 }
