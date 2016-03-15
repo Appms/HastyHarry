@@ -50,7 +50,7 @@ RotateTrigger::~RotateTrigger()
 
 void RotateTrigger::trigger()
 {
-	_parent->setBehaviour(new RotatingBehaviour(_axis, _anglePerSec));
+	if (_parent) _parent->setBehaviour(new RotatingBehaviour(_axis, _anglePerSec));
 }
 
 

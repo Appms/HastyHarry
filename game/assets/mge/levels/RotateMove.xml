@@ -2,62 +2,12 @@
 <level>
 	<gameobjects>
 		<gameobject>
-			<id>92de26b9-3c12-453a-9cdb-84c1fc5c64ef</id>
-			<name>TurretCamera</name>
-			<parentid>cc72d080-a67c-4363-a214-fd9b18f2c9a2</parentid>
-			<worldposition>-17.814,3.45,-35.29</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh>TurretCamera</mesh>
-			<materialname>TextureMaterial</materialname>
-			<materialparams>Camera Turrets, 0.8, 0.8, 0.8, 10</materialparams>
-			<behaviourname>TurretBehaviour</behaviourname>
-			<behaviourparams>5</behaviourparams>
-			<collidercenter>-0.0049,0.1657,0.1885</collidercenter>
-			<collidersize>0.3,0.4034,0.7315</collidersize>
-			<mass>1</mass>
-			<usegravity>False</usegravity>
-			<iskinematic>True</iskinematic>
-		</gameobject>
-		<gameobject>
-			<id>e6b85de7-c7cc-4141-afee-32b2bd8e1481</id>
-			<name>TurretHolder</name>
-			<parentid>cc72d080-a67c-4363-a214-fd9b18f2c9a2</parentid>
-			<worldposition>-17.814,3.45,-35.29</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh>TurretHolder</mesh>
-			<materialname>TextureMaterial</materialname>
-			<materialparams>Camera Turrets, 0.8, 0.8, 0.8, 10</materialparams>
-			<collidercenter>-0.0049,-0.1849,-0.1682</collidercenter>
-			<collidersize>0.3241,0.3482,0.3981</collidersize>
-			<mass>1</mass>
-			<usegravity>False</usegravity>
-			<iskinematic>True</iskinematic>
-		</gameobject>
-		<gameobject>
-			<id>cc72d080-a67c-4363-a214-fd9b18f2c9a2</id>
-			<name>Turret</name>
+			<id>fb2538e5-6d4f-47b8-aa97-614519dfa64b</id>
+			<name>CrossHallway_Floor_1</name>
 			<parentid />
-			<worldposition>-17.814,3.45,-35.29</worldposition>
+			<worldposition>0,0,-29.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-17.814,0,1,0,3.45,0,0,1,-35.29,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>4dfa30b5-fdd4-4d4d-945c-ff489d0e81e3</id>
-			<name>CrossHallway_Floor_1 (1)</name>
-			<parentid />
-			<worldposition>-14.5,0,-29.66</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-14.5,0,1,0,0,0,0,1,-29.66,0,0,0,1</transform>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,-29.66,0,0,0,1</transform>
 			<mesh>CrossHallway_Floor</mesh>
 			<materialname>TextureMaterial</materialname>
 			<materialparams>CrossroadFloorUV, 0.8, 0.8, 0.8, 10</materialparams>
@@ -68,12 +18,12 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>ba76d17c-8dda-4921-8613-16c40512a463</id>
-			<name>CrossHallway_Floor_1</name>
+			<id>955c3b1e-328c-4262-9d57-a90d74592521</id>
+			<name>CrossHallway_Floor_1 (1)</name>
 			<parentid />
-			<worldposition>0,0,-29.66</worldposition>
+			<worldposition>-14.5,0,-29.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,-29.66,0,0,0,1</transform>
+			<transform>1,0,0,-14.5,0,1,0,0,0,0,1,-29.66,0,0,0,1</transform>
 			<mesh>CrossHallway_Floor</mesh>
 			<materialname>TextureMaterial</materialname>
 			<materialparams>CrossroadFloorUV, 0.8, 0.8, 0.8, 10</materialparams>
@@ -98,6 +48,60 @@
 			<mass />
 			<usegravity />
 			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>adb81901-23ea-4663-a0af-ebcd663b1411</id>
+			<name>DeleteSwitch</name>
+			<parentid />
+			<worldposition>-14.5537,0.1578,-33.1322</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-14.5537,0,1,0,0.1578,0,0,1,-33.1322,0,0,0,1</transform>
+			<mesh>HeartMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Heart Monitor, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>DeleteSwitch</behaviourname>
+			<behaviourparams>955c3b1e-328c-4262-9d57-a90d74592521</behaviourparams>
+			<collidercenter>0,0.2613,-0.0377</collidercenter>
+			<collidersize>0.5055,0.5239,0.3928</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>0ff9f313-e6b0-46f4-ba97-4392e6adf75e</id>
+			<name>RotateSwitch</name>
+			<parentid />
+			<worldposition>-14.4338,0.1578,-26.0336</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-14.4338,0,1,0,0.1578,0,0,1,-26.0336,0,0,0,1</transform>
+			<mesh>HeartMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Heart Monitor, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>RotateSwitch</behaviourname>
+			<behaviourparams>955c3b1e-328c-4262-9d57-a90d74592521,0,1,0,10</behaviourparams>
+			<collidercenter>0,0.2613,-0.0377</collidercenter>
+			<collidersize>0.5055,0.5239,0.3928</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>5e42b279-4e88-4c82-9250-6ee1b33467aa</id>
+			<name>MoveSwitch</name>
+			<parentid />
+			<worldposition>-14.4853,0.1578,-29.5972</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-14.4853,0,1,0,0.1578,0,0,1,-29.5972,0,0,0,1</transform>
+			<mesh>HeartMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Heart Monitor, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>MoveSwitch</behaviourname>
+			<behaviourparams>955c3b1e-328c-4262-9d57-a90d74592521,0,-10,0,3,True</behaviourparams>
+			<collidercenter>0,0.2613,-0.0377</collidercenter>
+			<collidersize>0.5055,0.5239,0.3928</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
 		</gameobject>
 	</gameobjects>
 	<lights />

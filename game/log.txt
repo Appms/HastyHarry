@@ -32,11 +32,11 @@ Shader compiled ok.
 Program linked ok.
 
 Level Loader: Loading level "RotateMove.xml"...
-Loading assets/mge/models/TurretCamera.obj...454
-354
+Loading assets/mge/models/CrossHallway_Floor.obj...24
+12
 Tangents calculated!
-Mesh loaded and buffered:354 triangles.
-Texture assets/mge/textures/Camera Turrets.png with id 1 loaded.
+Mesh loaded and buffered:12 triangles.
+Texture assets/mge/textures/CrossroadFloorUV.png with id 1 loaded.
 Caching texture.
 
 Program created with id:4
@@ -48,15 +48,11 @@ Compiling shader...
 Shader compiled ok.
 Program linked ok.
 
-Loading assets/mge/models/TurretHolder.obj...78
-42
+Loading assets/mge/models/HeartMonitor.obj...184
+92
 Tangents calculated!
-Mesh loaded and buffered:42 triangles.
-Loading assets/mge/models/CrossHallway_Floor.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadFloorUV.png with id 2 loaded.
+Mesh loaded and buffered:92 triangles.
+Texture assets/mge/textures/Heart Monitor.png with id 2 loaded.
 Caching texture.
 Level Loader: Setting up Hierarchy...
 Level Loader: "RotateMove.xml" loaded successfully!
@@ -66,39 +62,4 @@ Engine initialized.
 Initializing HUD
 HUD initialized.
 
-Loading assets/mge/models/Syringe.obj...433
-410
-Tangents calculated!
-Mesh loaded and buffered:410 triangles.
-Texture assets/mge/textures/SyringUV.png with id 4 loaded.
-Caching texture.
-
-Program created with id:7
-Reading shader file... assets/mge/shaders/texture.vs
-Compiling shader... 
-Shader compiled ok.
-Reading shader file... assets/mge/shaders/texture.fs
-Compiling shader... 
-Shader compiled ok.
-Program linked ok.
-
-Loading assets/mge/models/Syringe.obj...433
-410
-Tangents calculated!
-Mesh loaded and buffered:410 triangles.
-Loading assets/mge/models/Syringe.obj...433
-410
-Tangents calculated!
-Mesh loaded and buffered:410 triangles.
-Loading assets/mge/models/Syringe.obj...433
-410
-Tangents calculated!
-Mesh loaded and buffered:410 triangles.
-Loading assets/mge/models/Syringe.obj...433
-410
-Tangents calculated!
-Mesh loaded and buffered:410 triangles.
-Loading assets/mge/models/Syringe.obj...433
-410
-Tangents calculated!
-Mesh loaded and buffered:410 triangles.
+GC running on:CrossHallway_Floor_1 (1)

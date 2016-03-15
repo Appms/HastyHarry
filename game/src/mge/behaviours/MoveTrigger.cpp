@@ -43,9 +43,15 @@ MoveTrigger::MoveTrigger(glm::vec3 pStart, std::string params) : TriggerBehaviou
 
 	_endPosition = _originPosition + Utility::StrToVec(str[2], str[3], str[4]);
 	_speed = atof(str[5].c_str());
-	_loop = atof(str[6].c_str());
 
-	
+	if (0 == strcmp(str[6].c_str(), "True"))
+	{
+		_loop = true;
+	}
+	else if (0 == strcmp(str[6].c_str(), "False"))
+	{
+		_loop = false;
+	}
 }
 
 MoveTrigger::~MoveTrigger()
@@ -55,7 +61,7 @@ MoveTrigger::~MoveTrigger()
 
 void MoveTrigger::trigger()
 {
-	_parent->setBehaviour(new MovingBehaviour(_originPosition, _endPosition, _speed, _loop));
+	if (_parent) _parent->setBehaviour(new MovingBehaviour(_originPosition, _endPosition, _speed, _loop));
 }
 
 

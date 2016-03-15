@@ -14,6 +14,9 @@
 #include "mge/behaviours/MoveTrigger.hpp"
 #include "mge/behaviours/RotateTrigger.hpp"
 #include "mge/behaviours/EndTrigger.hpp"
+#include "mge/behaviours/MoveSwitch.hpp"
+#include "mge/behaviours/RotateSwitch.hpp"
+#include "mge/behaviours/DeleteSwitch.hpp"
 #include "mge/core/Camera.hpp"
 #include <map>
 #include "..\..\include\tokamak.h"
@@ -301,15 +304,15 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("DeleteSwitch"))
 							{
-								//go->setBehaviour(new Turret(part->GetText()));
+								go->setBehaviour(new DeleteSwitch(part->GetText()));
 							}
 							else if (0 == behName.compare("MoveSwitch"))
 							{
-								//go->setBehaviour(new Turret(part->GetText()));
+								go->setBehaviour(new MoveSwitch(go->getWorldPosition(), part->GetText()));
 							}
 							else if (0 == behName.compare("RotateSwitch"))
 							{
-								//go->setBehaviour(new Turret(part->GetText()));
+								go->setBehaviour(new RotateSwitch(part->GetText()));
 							}
 							else if (0 != behName.compare(""))
 							{

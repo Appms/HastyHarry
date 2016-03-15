@@ -253,6 +253,8 @@ AbstractBehaviour * GameObject::getBehaviour(int index) const
 	return _behaviours[index];
 }
 
+int GameObject::BehaviourCount() { return _behaviours.size(); }
+
 void GameObject::setParent (GameObject* pParent) {
     //remove from previous parent
     if (_parent != NULL) {
