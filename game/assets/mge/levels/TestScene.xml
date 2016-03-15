@@ -2,9 +2,9 @@
 <level>
 	<gameobjects>
 		<gameobject>
-			<id>fb2b2b1f-616d-420d-bf69-4c55db26c525</id>
+			<id>90df5dc5-76c9-46e6-a7fd-4375cacb1775</id>
 			<name>Trash3_Guide</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-22.9308,44.7871,-27.36</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-22.9308,0,1,0,44.7871,0,0,1,-27.36,0,0,0,1</transform>
@@ -20,9 +20,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>3cce86d2-a641-471a-a6aa-6c2a0132039a</id>
+			<id>e4ece995-ffc7-4dfa-83e7-6534e010b233</id>
 			<name>Bed_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-32.5,0.4038,-11.2549</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-32.5,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
@@ -38,9 +38,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>74c0cbb8-5c90-40b9-b3ba-6e5ae781e520</id>
+			<id>7a71f472-4d9b-4f27-aad6-e7f2f0654640</id>
 			<name>BeerBottle (1)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-10.21,1.12,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-10.21,0,1,0,1.12,0,0,1,-31.66,0,0,0,1</transform>
@@ -56,9 +56,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>f535a69c-4ae9-4ea8-aed1-9554fbfba01c</id>
+			<id>adbb77f6-1510-435a-91a9-e8f950ecb76e</id>
 			<name>BeerBottle</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-9.42,1.12,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-9.42,0,1,0,1.12,0,0,1,-31.66,0,0,0,1</transform>
@@ -74,9 +74,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>ac53672e-976a-45b1-818b-ced729c42121</id>
+			<id>7fce5721-62c3-4b9a-96f1-da5f4f42d0ed</id>
 			<name>BeerBottle (18)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-9.53,2.6,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-9.53,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
@@ -92,9 +92,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>d8b2c3f6-03c9-4f6e-99e5-74bc2805cc4e</id>
+			<id>23322ff2-d39b-4eaa-9f94-d63531d9bcbd</id>
 			<name>Plants3_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-37.68,10.3611,43.1272</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-37.68,0,1,0,10.3611,0,0,1,43.1272,0,0,0,1</transform>
@@ -110,9 +110,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>3d9cbe5f-5edc-42e4-a48f-9179a73900a2</id>
+			<id>7fff1fe2-db8f-4b7e-a829-60a5ee6de708</id>
 			<name>HospitalChair_Guide_2</name>
-			<parentid>7b8b4e6a-e76f-425f-9520-3f9177d276bf</parentid>
+			<parentid>2cefe818-de58-429f-9e57-2bc725523d6d</parentid>
 			<worldposition>-28.995,19.0203,53.5836</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-28.995,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
@@ -128,9 +128,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>53b2b0d4-6e3d-4bdb-a578-19cfa1ead9f9</id>
+			<id>32266444-6b89-4394-bca7-fae43804c71d</id>
 			<name>Keyboard_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-76.9491,26.2216,-33.8778</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-76.9491,0,1,0,26.2216,0,0,1,-33.8778,0,0,0,1</transform>
@@ -146,9 +146,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>86e4dd6c-4921-4375-b1a6-940799143ce4</id>
+			<id>77ee6f88-9ca4-4902-adc5-ffa0070df4f9</id>
 			<name>CrossHallway_Ceilling_2</name>
-			<parentid>42b8a37e-dd39-4e81-86c2-dac096cb49bb</parentid>
+			<parentid>e53740ea-fb67-4a90-bf0b-3a0a71581e98</parentid>
 			<worldposition>-0.004,5.682,-15</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-0.004,0,1,0,5.682,0,0,1,-15,0,0,0,1</transform>
@@ -164,9 +164,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>46209955-e811-434a-a816-f0a785a5f9f0</id>
+			<id>898a26d8-4b57-4e01-b821-4e04c7e20bae</id>
 			<name>Cabinet_Guide</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-20.532,-1.9327,-26.54</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-20.532,0,1,0,-1.9327,0,0,1,-26.54,0,0,0,1</transform>
@@ -182,9 +182,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>f288cc35-a107-41a5-a26e-515d033baae9</id>
+			<id>a1711a0e-1dc1-4b16-bd87-f4e9630181a0</id>
 			<name>Trash3_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-22.9308,44.7871,-24.935</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-22.9308,0,1,0,44.7871,0,0,1,-24.935,0,0,0,1</transform>
@@ -200,9 +200,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>3088e112-12ea-4179-b373-23d668391145</id>
+			<id>23ad5898-d2de-4ae8-b1d4-061e1072dbdf</id>
 			<name>BeerBottle (3)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-11.55,1.12,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-11.55,0,1,0,1.12,0,0,1,-31.66,0,0,0,1</transform>
@@ -218,9 +218,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>0fbf58cb-a984-437a-af3e-55165e31c9bc</id>
+			<id>01889a48-9e3a-48b2-8dde-5f26178a28ec</id>
 			<name>Bed_Guide_2</name>
-			<parentid>7b8b4e6a-e76f-425f-9520-3f9177d276bf</parentid>
+			<parentid>2cefe818-de58-429f-9e57-2bc725523d6d</parentid>
 			<worldposition>-40.32,0.4038,-11.2549</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-40.32,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
@@ -236,9 +236,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>da5319ff-ba82-4e29-992f-620db11c8640</id>
+			<id>085bf88c-84c0-4d14-be71-7e14e56fcff9</id>
 			<name>Trash1_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-34.4624,40.7163,-26.1047</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-34.4624,0,1,0,40.7163,0,0,1,-26.1047,0,0,0,1</transform>
@@ -254,9 +254,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>e0309d96-4c72-411c-bb49-36b8c39de8eb</id>
+			<id>8f78366f-fcbe-4461-b76e-102747ae4a76</id>
 			<name>Closet_Guide_2</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-28.84,-1.4996,-3.7433</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-28.84,0,1,0,-1.4996,0,0,1,-3.7433,0,0,0,1</transform>
@@ -272,9 +272,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>06b1c13b-9ff6-41ca-ba0e-1e96ae6d2449</id>
+			<id>7d387d69-c769-4cc5-8ccc-fc2ca377c21f</id>
 			<name>CrossHallway_Floor_3 (1)</name>
-			<parentid>8dc35bbf-5443-430a-98c3-e1c8d6ce346a</parentid>
+			<parentid>6c3109d9-fc35-49cb-8c44-e921f358e116</parentid>
 			<worldposition>-12,0,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-12,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
@@ -290,9 +290,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>4d8425e7-75c8-40af-9da7-742b4f9e8c75</id>
+			<id>e73b1431-e824-4607-a21e-5d68a09b8933</id>
 			<name>Trash2_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-27.4867,43.3757,-26.479</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-27.4867,0,1,0,43.3757,0,0,1,-26.479,0,0,0,1</transform>
@@ -308,9 +308,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>30d461d0-5269-403c-a95a-a10b71b1bdd4</id>
+			<id>011715bc-f441-4cd3-b9d2-f373e3c9bd0c</id>
 			<name>Plants2_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-39.778,11.573,41.2382</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-39.778,0,1,0,11.573,0,0,1,41.2382,0,0,0,1</transform>
@@ -326,9 +326,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>6f902dd7-411b-442f-8de3-d42a75133a4e</id>
+			<id>f2aa26da-b2bf-4836-abb9-0e072933539e</id>
 			<name>CrossHallway_Floor_3</name>
-			<parentid>8dc35bbf-5443-430a-98c3-e1c8d6ce346a</parentid>
+			<parentid>6c3109d9-fc35-49cb-8c44-e921f358e116</parentid>
 			<worldposition>0,0,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
@@ -344,9 +344,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>c38c5c06-437f-46a3-92b7-ccf557596313</id>
+			<id>5c673bb8-3406-4a31-a2cd-cd4225d9c644</id>
 			<name>Monitor_holder</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-99.4373,12.1762,25.9573</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-99.4373,0,1,0,12.1762,0,0,1,25.9573,0,0,0,1</transform>
@@ -362,9 +362,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>04800ba4-5bcf-483c-9c32-a596b703c26c</id>
+			<id>94f73d77-e579-4d4f-bca4-000b3a5f4ebb</id>
 			<name>Plants3_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-41.4227,10.3611,43.1272</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-41.4227,0,1,0,10.3611,0,0,1,43.1272,0,0,0,1</transform>
@@ -380,9 +380,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>87696f94-b3e5-482e-86a7-2d9e3b4158a2</id>
+			<id>1e263f69-8a34-4c2d-9b77-4ab76cb145b5</id>
 			<name>Plants3_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-39.72,10.3611,43.1272</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-39.72,0,1,0,10.3611,0,0,1,43.1272,0,0,0,1</transform>
@@ -398,9 +398,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>98f790b9-3595-498a-9b0e-0917649c8c59</id>
+			<id>238a583b-3951-4abc-962b-db8ea79ee533</id>
 			<name>Trash1_Guide</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-34.4624,40.7163,-31.12</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-34.4624,0,1,0,40.7163,0,0,1,-31.12,0,0,0,1</transform>
@@ -416,9 +416,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>3e8662c1-1c86-4139-8ee5-00e7662d64bb</id>
+			<id>23312356-6f6a-45bf-8aa1-6f4c602f542f</id>
 			<name>Plants1_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-41.1867,13.8388,39.9515</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-41.1867,0,1,0,13.8388,0,0,1,39.9515,0,0,0,1</transform>
@@ -434,9 +434,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>cde62ce5-a43d-419c-b3cf-5abe870f53dd</id>
+			<id>74ac65f0-90a4-42bf-82e0-c73ec4994ae6</id>
 			<name>Closet_Guide_1</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-26.44,-1.4996,-3.7433</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-26.44,0,1,0,-1.4996,0,0,1,-3.7433,0,0,0,1</transform>
@@ -452,9 +452,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>2720005f-d7f0-4187-881d-ba014c4709ce</id>
+			<id>0f92cf92-8e3f-4746-a294-a752470ec1ed</id>
 			<name>Wetfloor_Sign_WetFloot_Guide</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-0.211,54.3551,-1.7654</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-0.211,0,1,0,54.3551,0,0,1,-1.7654,0,0,0,1</transform>
@@ -470,12 +470,12 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>56308c50-7e8b-4280-8208-d0abb5e7cf88</id>
+			<id>619e57d0-e44d-4e91-a6c5-0ba00a21eb8c</id>
 			<name>HospitalChair_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
-			<worldposition>-45.18,0.202,-34.39</worldposition>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
+			<worldposition>-45.18,0.16,-34.39</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-45.18,0,1,0,0.202,0,0,1,-34.39,0,0,0,1</transform>
+			<transform>1,0,0,-45.18,0,1,0,0.16,0,0,1,-34.39,0,0,0,1</transform>
 			<mesh>HospitalChair</mesh>
 			<materialname>TextureMaterial</materialname>
 			<materialparams>Random Chair 1, 0.8, 0.8, 0.8, 10</materialparams>
@@ -488,9 +488,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>f49a885a-6681-45ec-9c31-ca28db1a05b3</id>
+			<id>22756229-88e8-4797-9f22-645590b86877</id>
 			<name>BeerBottle (11)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-11.53,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-11.53,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -506,9 +506,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>49f0374b-c2ab-48d9-9d56-7d8933323ce9</id>
+			<id>01747c59-437f-47ab-9303-6274879d10f2</id>
 			<name>BeerBottle (10)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-10.92,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-10.92,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -524,9 +524,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>2e30b35d-d6f8-42a1-beb4-9810a9e8ac25</id>
+			<id>887d86d3-989d-4315-be5e-969245c6bc41</id>
 			<name>Medicine_Cabinet_2</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-110.0241,8.68,25.41</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-110.0241,0,1,0,8.68,0,0,1,25.41,0,0,0,1</transform>
@@ -542,9 +542,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>3e3535a8-5997-4217-b825-87368a7d3a3e</id>
+			<id>5e480b77-8569-477e-80b7-e62f2c3f0a34</id>
 			<name>Medicine_Cabinet_1</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-116.4271,10.206,23.84</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-116.4271,0,1,0,10.206,0,0,1,23.84,0,0,0,1</transform>
@@ -560,9 +560,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>f200b071-d917-4d62-a42f-35fcde9d5dfa</id>
+			<id>75f6d548-c609-4acf-9aad-b65e69d77550</id>
 			<name>Cabinet_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-4.73,0.12,-32</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-4.73,0,1,0,0.12,0,0,1,-32,0,0,0,1</transform>
@@ -578,9 +578,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>040358d9-0548-4073-ac3d-a3fdf5804e11</id>
+			<id>628ea8df-1d6b-478a-b16f-f94886e16604</id>
 			<name>Syringe</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-85.8122,6.9669,8.945</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-85.8122,0,1,0,6.9669,0,0,1,8.945,0,0,0,1</transform>
@@ -596,9 +596,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>bc29ccd1-12bc-40a8-9855-897227ba10cc</id>
+			<id>d60b55a7-6e77-4ce7-b2e3-670a922c61a0</id>
 			<name>CrossHallway_Wall_2</name>
-			<parentid>42b8a37e-dd39-4e81-86c2-dac096cb49bb</parentid>
+			<parentid>e53740ea-fb67-4a90-bf0b-3a0a71581e98</parentid>
 			<worldposition>6.27,2.84,-15</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,6.27,0,1,0,2.84,0,0,1,-15,0,0,0,1</transform>
@@ -614,9 +614,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>88c54009-1848-467b-920b-84f47cf2d20a</id>
+			<id>00460f4e-c543-4a05-acd5-3072046d911a</id>
 			<name>Plants1_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-37.14,13.8388,39.9515</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-37.14,0,1,0,13.8388,0,0,1,39.9515,0,0,0,1</transform>
@@ -632,9 +632,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>3b646b81-5bfc-4d41-9298-4004e0928d33</id>
+			<id>fd312e61-2c5d-404c-8465-92340dbce387</id>
 			<name>BeerBottle (17)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-10.26,2.6,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-10.26,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
@@ -650,9 +650,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>2116f613-3458-4121-bc46-14ec95713cf9</id>
+			<id>056eeba2-ab8a-49dd-af2e-07e5de039df3</id>
 			<name>Infuus2_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-24.82,14.9091,49.5585</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-24.82,0,1,0,14.9091,0,0,1,49.5585,0,0,0,1</transform>
@@ -668,9 +668,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>8838eb98-cd87-4960-8782-ffb4beed80f8</id>
+			<id>fb180416-cfb2-4960-9bf8-bbdb972fe180</id>
 			<name>Table_Guide</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-98.8528,33.1186,3.32</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-98.8528,0,1,0,33.1186,0,0,1,3.32,0,0,0,1</transform>
@@ -686,12 +686,12 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>bbffdb00-ac42-4116-8e20-4a16040e6a51</id>
+			<id>1ede08af-f973-4ce1-b348-691c99907e77</id>
 			<name>Waiting_Chairs_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
-			<worldposition>-42.8,0.2,-34.455</worldposition>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
+			<worldposition>-42.8,0.16,-34.455</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-42.8,0,1,0,0.2,0,0,1,-34.455,0,0,0,1</transform>
+			<transform>1,0,0,-42.8,0,1,0,0.16,0,0,1,-34.455,0,0,0,1</transform>
 			<mesh>Waiting_Chairs</mesh>
 			<materialname>TextureMaterial</materialname>
 			<materialparams>Waiting Chairs 3, 0.8, 0.8, 0.8, 10</materialparams>
@@ -704,9 +704,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>ad83ef79-773c-4c80-b5d8-e15a32c1cb18</id>
+			<id>317ad80b-d66b-4c96-980e-d720f576eca4</id>
 			<name>BeerBottle (7)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-9.71,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-9.71,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -722,9 +722,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>1fef570a-881e-40ec-ab0a-439cb9e1537e</id>
+			<id>33509af0-36a3-4705-8119-0da01d1a1ce0</id>
 			<name>Trash2_Guide</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-27.4867,43.3757,-28.724</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-27.4867,0,1,0,43.3757,0,0,1,-28.724,0,0,0,1</transform>
@@ -740,9 +740,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>23636aac-e835-49d6-b3cf-b55b83da3f41</id>
+			<id>3d91a74e-c449-450c-961e-2dd32a86d8d8</id>
 			<name>BeerBottle (16)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-11.21,2.6,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-11.21,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
@@ -758,9 +758,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>540811d1-0de6-4a66-b890-5ef509088f1d</id>
+			<id>bbec2d33-3cdd-4144-84c5-0faad040b1ce</id>
 			<name>Document1</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-111.915,23.6701,54.4004</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-111.915,0,1,0,23.6701,0,0,1,54.4004,0,0,0,1</transform>
@@ -776,9 +776,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>401d9d8f-74a8-4d49-8248-8bdc927052a5</id>
+			<id>c94d714a-5e2d-4389-819e-fd8dfe7933c6</id>
 			<name>Closet_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-23.69,-1.4996,-3.7433</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-23.69,0,1,0,-1.4996,0,0,1,-3.7433,0,0,0,1</transform>
@@ -794,9 +794,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>d001c72f-0288-4d2b-89de-29c104af51a3</id>
+			<id>fc8457d6-f695-49ee-b411-2a02528e136d</id>
 			<name>Hallway_Wall_3</name>
-			<parentid>a4ae1499-20ec-4bd2-8d39-fd4d3b9c6301</parentid>
+			<parentid>d980f6b0-713d-417c-9d51-62a226bcc6e1</parentid>
 			<worldposition>20.74,2.84,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,5.74,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
@@ -812,9 +812,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>bb0fc4bb-a06d-4180-8b99-31d790f8e401</id>
+			<id>b1ed3820-dec3-4b4c-b625-7a21bb26b7bf</id>
 			<name>Hallway_Ceilling_3</name>
-			<parentid>a4ae1499-20ec-4bd2-8d39-fd4d3b9c6301</parentid>
+			<parentid>d980f6b0-713d-417c-9d51-62a226bcc6e1</parentid>
 			<worldposition>15,5.62,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,5.62,0,0,1,0,0,0,0,1</transform>
@@ -830,9 +830,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>857f8986-73e7-4366-a2f6-4a68c81eb02d</id>
+			<id>7548991c-17cf-4c1c-96f9-b24daf2a3fa3</id>
 			<name>Hallway_Wall_3</name>
-			<parentid>a4ae1499-20ec-4bd2-8d39-fd4d3b9c6301</parentid>
+			<parentid>d980f6b0-713d-417c-9d51-62a226bcc6e1</parentid>
 			<worldposition>9.27,2.84,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-5.73,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
@@ -848,9 +848,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>a8a3f28b-2197-4488-bedb-9f6c891b32dd</id>
+			<id>4b8d8da5-4c1f-4071-b714-72983548e014</id>
 			<name>Hallway_Floor_3</name>
-			<parentid>a4ae1499-20ec-4bd2-8d39-fd4d3b9c6301</parentid>
+			<parentid>d980f6b0-713d-417c-9d51-62a226bcc6e1</parentid>
 			<worldposition>15,0,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
@@ -866,9 +866,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>a4ae1499-20ec-4bd2-8d39-fd4d3b9c6301</id>
+			<id>d980f6b0-713d-417c-9d51-62a226bcc6e1</id>
 			<name>Hallway</name>
-			<parentid>af17829c-5010-4ad8-8b38-b32ee16687ba</parentid>
+			<parentid>a85547ca-4d9a-44c6-9765-49ef5acd8267</parentid>
 			<worldposition>15,0,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,15,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
@@ -884,9 +884,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>65953302-ba8b-4068-8ab5-fb3e19904699</id>
+			<id>c7138741-9ecd-4d7c-8420-c90eb7e28e81</id>
 			<name>Infuus1_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-28.64,16.1215,51.8743</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-28.64,0,1,0,16.1215,0,0,1,51.8743,0,0,0,1</transform>
@@ -902,12 +902,12 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>eaa4b536-1901-455f-983a-5cfe83925cf4</id>
+			<id>fb20c076-a93b-4018-b344-b6b4d83324d6</id>
 			<name>HideScreen_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
-			<worldposition>-38.08,0.38,-34.85</worldposition>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
+			<worldposition>-38.08,0.18,-34.85</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-38.08,0,1,0,0.38,0,0,1,-34.85,0,0,0,1</transform>
+			<transform>1,0,0,-38.08,0,1,0,0.18,0,0,1,-34.85,0,0,0,1</transform>
 			<mesh>Screen</mesh>
 			<materialname>TextureMaterial</materialname>
 			<materialparams>Screen 3, 0.8, 0.8, 0.8, 10</materialparams>
@@ -920,9 +920,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>efbe8c24-f047-4fab-88a2-272da7960eb3</id>
+			<id>d228cdad-a608-4276-b48b-a3751e79ba04</id>
 			<name>Keyboard_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-76.9491,26.2216,-30.719</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-76.9491,0,1,0,26.2216,0,0,1,-30.719,0,0,0,1</transform>
@@ -938,9 +938,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>5e7835a4-2a3f-49e0-a801-7f24e706f70c</id>
+			<id>0625e8b2-0fe8-4e5f-86db-7df9fbc44c51</id>
 			<name>BeerBottle (2)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-10.91,1.12,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-10.91,0,1,0,1.12,0,0,1,-31.66,0,0,0,1</transform>
@@ -956,9 +956,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>43e67ba8-f1c1-48b0-b7e5-bb8fa10ee1b7</id>
+			<id>3037bdf0-377f-42c0-923e-23b0d2d81597</id>
 			<name>Trash2_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-27.4867,43.3757,-25.4448</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-27.4867,0,1,0,43.3757,0,0,1,-25.4448,0,0,0,1</transform>
@@ -974,9 +974,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>0a27a591-da89-45b7-ae20-254a24872a6e</id>
+			<id>45f29698-036e-4798-a71e-5b6ec3d2001e</id>
 			<name>TurretCamera</name>
-			<parentid>f2c80e0a-2e37-4502-8c9c-2a04140dca92</parentid>
+			<parentid>0206b67a-df44-47c6-a12a-b1d807174185</parentid>
 			<worldposition>-11.13,0,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
@@ -992,9 +992,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>df84de48-31a8-4777-8a82-d5acdcf2339c</id>
+			<id>66edbf28-ad6c-4d49-a6f1-0a2219328702</id>
 			<name>TurretHolder</name>
-			<parentid>f2c80e0a-2e37-4502-8c9c-2a04140dca92</parentid>
+			<parentid>0206b67a-df44-47c6-a12a-b1d807174185</parentid>
 			<worldposition>-11.13,0,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
@@ -1010,9 +1010,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>f2c80e0a-2e37-4502-8c9c-2a04140dca92</id>
+			<id>0206b67a-df44-47c6-a12a-b1d807174185</id>
 			<name>Turret</name>
-			<parentid>6c129f96-4024-44be-ab99-9a093fe8ff05</parentid>
+			<parentid>f4c5db19-1688-4653-bc61-cccbb7cec1b8</parentid>
 			<worldposition>-11.13,0,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-11.13,0,1,0,0,0,0,1,0,0,0,0,1</transform>
@@ -1028,9 +1028,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>d1bf72b7-3f66-4b2c-a55d-3910fd8d30d7</id>
+			<id>077db98a-c39f-4846-ba47-ddc99bf3e42e</id>
 			<name>Infuus1_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-26.96,16.1215,51.8743</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-26.96,0,1,0,16.1215,0,0,1,51.8743,0,0,0,1</transform>
@@ -1046,9 +1046,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>efbbf302-bd53-47b7-b5fb-07467e7d201d</id>
+			<id>8dbf492c-be9b-4a25-821f-283e0826bbb1</id>
 			<name>Standing_Lamp</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-87.4652,7.7841,14.4539</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-87.4652,0,1,0,7.7841,0,0,1,14.4539,0,0,0,1</transform>
@@ -1064,9 +1064,27 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>2dccb3b3-74b8-4ee3-80fa-7688b26b7b4d</id>
+			<id>ab7591ed-f7bb-4366-a774-afb18bcac417</id>
+			<name>Collectable</name>
+			<parentid />
+			<worldposition>35.1874,-40.4176,-144.5566</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,35.1874,0,1,0,-40.4176,0,0,1,-144.5566,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>CollectableTrigger</behaviourname>
+			<behaviourparams>100,0.5</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>3e1179f7-af3f-48ef-a302-d958b6c03c55</id>
 			<name>Waiting_Chairs_2</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-13.478,41.888,-27.3507</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-13.478,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
@@ -1082,9 +1100,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>5d722f17-98a1-4663-aca0-0a4e47659aef</id>
+			<id>90a69de2-3d19-4c42-a78f-554db0977037</id>
 			<name>BeerBottle (8)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-9.98,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-9.98,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -1100,9 +1118,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>649793ab-7058-40b1-926f-21c9f1271062</id>
+			<id>fd65f663-c1be-4251-9fa0-5db7cc452e20</id>
 			<name>Recption1_Guide</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-99.3483,33.7997,-5.5</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-99.3483,0,1,0,33.7997,0,0,1,-5.5,0,0,0,1</transform>
@@ -1118,9 +1136,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>de2696f8-28e6-459b-b308-ccfac5945b70</id>
+			<id>0378c7f1-d3bd-44b4-a3be-0108f5b07fe7</id>
 			<name>CrossHallway_Floor_2</name>
-			<parentid>42b8a37e-dd39-4e81-86c2-dac096cb49bb</parentid>
+			<parentid>e53740ea-fb67-4a90-bf0b-3a0a71581e98</parentid>
 			<worldposition>0,0,-15</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,0,0,0,1,-15,0,0,0,1</transform>
@@ -1136,9 +1154,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>7c872ad9-e1d5-4e91-a212-e1434b3b95d7</id>
+			<id>59441b91-e902-4002-9952-7c4477304b7b</id>
 			<name>Trash3_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-22.9308,44.7871,-23.7866</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-22.9308,0,1,0,44.7871,0,0,1,-23.7866,0,0,0,1</transform>
@@ -1154,9 +1172,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>d293d739-59f3-496b-ae7e-934dff7e27d3</id>
+			<id>8fcfe5ba-c625-4c11-9f9c-2a8d87f3ab65</id>
 			<name>ExitSign</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-13.3065,0.4299,-5.5062</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-13.3065,0,1,0,0.4299,0,0,1,-5.5062,0,0,0,1</transform>
@@ -1172,9 +1190,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>34b91745-f9f7-429b-8d95-5882dfdfe160</id>
+			<id>05d3dd75-218d-41ad-8855-7a51e472c911</id>
 			<name>ComputerMonitor_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-78.1826,29.5567,-29.79</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-78.1826,0,1,0,29.5567,0,0,1,-29.79,0,0,0,1</transform>
@@ -1190,9 +1208,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>0aa8f6ec-3dbe-4f0d-a773-fa91ad23ca96</id>
+			<id>443bc23f-698e-4129-9d3a-f2de93189728</id>
 			<name>Reception1_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-99.3483,33.7997,-15.05</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-99.3483,0,1,0,33.7997,0,0,1,-15.05,0,0,0,1</transform>
@@ -1208,9 +1226,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>92f2fff6-0dff-4894-b84b-eb43a750a0dd</id>
+			<id>443814b6-b74b-4a7f-aba3-cf748d334110</id>
 			<name>Trash2_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-27.4867,43.3757,-27.591</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-27.4867,0,1,0,43.3757,0,0,1,-27.591,0,0,0,1</transform>
@@ -1226,9 +1244,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>c98509f9-9469-4561-916e-fe35dc01dd79</id>
+			<id>c652dbdb-45c4-4ab9-ad41-e441d1149f53</id>
 			<name>Waiting_Chairs_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-15.45,41.888,-27.3507</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-15.45,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
@@ -1244,9 +1262,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>5ad7422d-bc23-4b1a-98d4-1acbe5bab8dc</id>
+			<id>615a8432-eec0-4df3-bcb2-f1e87c43341a</id>
 			<name>Bed_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-28.59,0.4038,-11.2549</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-28.59,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
@@ -1262,27 +1280,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>8fc2b914-efbd-4d84-b432-7be9d8febd2d</id>
-			<name>Closet_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
-			<worldposition>-19.02,0.29,-33.65</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-19.02,0,1,0,0.29,0,0,1,-33.65,0,0,0,1</transform>
-			<mesh>Closet</mesh>
-			<materialname>TextureMaterial</materialname>
-			<materialparams>Closet 1, 0.8, 0.8, 0.8, 10</materialparams>
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter>0,1.317,0.0354</collidercenter>
-			<collidersize>2.157,2.6296,0.6647</collidersize>
-			<mass>1</mass>
-			<usegravity>True</usegravity>
-			<iskinematic>False</iskinematic>
-		</gameobject>
-		<gameobject>
-			<id>d7336285-1ce3-43c2-bd26-0b6bc19c0501</id>
+			<id>a900e363-d18a-4c00-8a72-0c67300f6574</id>
 			<name>Pills</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-92.8628,9.5446,22.1546</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-92.8628,0,1,0,9.5446,0,0,1,22.1546,0,0,0,1</transform>
@@ -1298,9 +1298,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>261d8c57-e214-45c9-8055-ef2d6a2310c7</id>
+			<id>ca9df61e-f36d-4224-9d53-4130da33498e</id>
 			<name>BeerBottle (5)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-10.27,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-10.27,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -1316,9 +1316,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>2babd313-5317-480d-bce5-a8d2e5f5a944</id>
+			<id>bdfd16ba-8e17-4318-923a-e59088372c50</id>
 			<name>ComputerMonitor_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-78.1826,29.5567,-31.303</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-78.1826,0,1,0,29.5567,0,0,1,-31.303,0,0,0,1</transform>
@@ -1334,9 +1334,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>e97116f7-0dfe-4adc-8346-c72f2e5fbdd3</id>
+			<id>5f364da9-24bf-4b53-a849-86d5f31f4f08</id>
 			<name>CrossHallway_Wall_3</name>
-			<parentid>8dc35bbf-5443-430a-98c3-e1c8d6ce346a</parentid>
+			<parentid>6c3109d9-fc35-49cb-8c44-e921f358e116</parentid>
 			<worldposition>6.27,2.84,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,6.27,0,1,0,2.84,0,0,1,-30,0,0,0,1</transform>
@@ -1352,9 +1352,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>2711f635-c30d-4da9-9edb-de6d5671bcf9</id>
+			<id>85c9b3f5-c2d5-4872-b704-f536e00dfd42</id>
 			<name>Plants2_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-41.6625,11.573,41.2382</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-41.6625,0,1,0,11.573,0,0,1,41.2382,0,0,0,1</transform>
@@ -1370,9 +1370,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>dc9c2a0c-1939-4092-bbbc-9a346db92a12</id>
+			<id>d541a695-425a-41ae-bd1e-ed250481e98c</id>
 			<name>Infuus2_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-20.6162,14.9091,49.5585</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-20.6162,0,1,0,14.9091,0,0,1,49.5585,0,0,0,1</transform>
@@ -1388,9 +1388,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>1b8c0938-f25b-41fb-961a-1c2f438f52bc</id>
+			<id>8dda1748-4007-483e-9975-698f48387ee1</id>
 			<name>CleaningUtility</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-126.1284,18.4017,44.4688</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-126.1284,0,1,0,18.4017,0,0,1,44.4688,0,0,0,1</transform>
@@ -1406,9 +1406,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>0696e2eb-6b2c-4826-8c0a-7d6e804d3c8e</id>
+			<id>f465a394-f677-4f85-9d93-a4b416025bd6</id>
 			<name>BeerBottle (14)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-10.63,2.6,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-10.63,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
@@ -1424,9 +1424,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>cb6c18b2-9907-4bc2-9bbd-3feb87b5014a</id>
+			<id>a7219838-c661-43f2-b195-70d734155997</id>
 			<name>CrossHallway_Floor_3 (2)</name>
-			<parentid>8dc35bbf-5443-430a-98c3-e1c8d6ce346a</parentid>
+			<parentid>6c3109d9-fc35-49cb-8c44-e921f358e116</parentid>
 			<worldposition>-24,0,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-24,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
@@ -1442,9 +1442,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>11b3f3d7-864f-431b-8e98-e7d9b83321a2</id>
+			<id>6ee90755-95a9-4898-ab2c-dd1c6306541f</id>
 			<name>Table</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-98.8528,33.1186,2.026</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-98.8528,0,1,0,33.1186,0,0,1,2.026,0,0,0,1</transform>
@@ -1460,9 +1460,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>88e2fb7b-fcee-4740-a341-8c2abcd852cc</id>
+			<id>eb7e39bd-fd6c-41d1-957c-fbf2454f2259</id>
 			<name>Bed_Guide_3</name>
-			<parentid>0e76d191-c48f-41eb-b5a8-6c2953cd9f11</parentid>
+			<parentid>13d585e5-8e66-4acc-9b3d-39a10505b8c7</parentid>
 			<worldposition>-44.4,0.4038,-11.2549</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-44.4,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
@@ -1478,9 +1478,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>e40ea876-067f-4790-9f09-8308db7f12c9</id>
+			<id>cf97af29-440c-4974-96de-d6b21ada21b7</id>
 			<name>Waiting_Chairs_Guide_1</name>
-			<parentid>56b60dcd-8580-409b-bf54-ea6e2d67ba45</parentid>
+			<parentid>8b4186ef-b55a-4c2d-ac73-df226d470f7b</parentid>
 			<worldposition>-9.226,41.888,-27.3507</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-9.226,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
@@ -1496,9 +1496,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>b59b524c-76f2-4098-8445-3854d828aa78</id>
+			<id>c1e256c5-13e0-4dd8-b7f8-0edb3272b6ca</id>
 			<name>Trolley</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-94.1183,4.1149,10.4511</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-94.1183,0,1,0,4.1149,0,0,1,10.4511,0,0,0,1</transform>
@@ -1514,9 +1514,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>90e4c815-0f6c-4b0f-a08a-d267eb74a0f3</id>
+			<id>c928c28a-e1b3-4c7f-aee4-53d442a7fbac</id>
 			<name>BeerBottle (4)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-11.18,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-11.18,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -1532,9 +1532,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>78f5a196-5120-4ac9-8e8a-ae43ef1f7ad8</id>
+			<id>7fced9cc-9f8f-47a2-a949-726ad91ca1d6</id>
 			<name>Wetfloor_Sign_Syringes_Guide</name>
-			<parentid>19c4a31c-1539-456b-b26c-59eaeb145c1e</parentid>
+			<parentid>0a2d79a3-b9cf-4c1d-8c80-182c6b56c4ff</parentid>
 			<worldposition>-2.011,54.3551,-1.7654</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-2.011,0,1,0,54.3551,0,0,1,-1.7654,0,0,0,1</transform>
@@ -1550,9 +1550,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>cacd641b-49ff-4e7c-9a5d-d49a35acabdb</id>
+			<id>fb2538e5-6d4f-47b8-aa97-614519dfa64b</id>
 			<name>CrossHallway_Floor_1</name>
-			<parentid>19e8f030-9dc8-47d2-81ec-51308c8dc04b</parentid>
+			<parentid>f2b2bbb7-b50a-4add-bbc7-0d1e6df880e1</parentid>
 			<worldposition>0,0,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
@@ -1568,9 +1568,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>2e6d27c0-4672-4e64-94dc-ac0dad5564a4</id>
+			<id>ba33b89a-74a1-4ba4-9986-252064988dd4</id>
 			<name>Keyboard_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-76.9491,26.2216,-32.244</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-76.9491,0,1,0,26.2216,0,0,1,-32.244,0,0,0,1</transform>
@@ -1586,9 +1586,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>eb1f91cd-1787-411f-895a-3c2face486b8</id>
+			<id>7af9490c-ba7a-4171-a7d5-53fc11cff293</id>
 			<name>CrossHallway_Ceilling_3</name>
-			<parentid>8dc35bbf-5443-430a-98c3-e1c8d6ce346a</parentid>
+			<parentid>6c3109d9-fc35-49cb-8c44-e921f358e116</parentid>
 			<worldposition>0,5.68,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,5.68,0,0,1,-30,0,0,0,1</transform>
@@ -1604,9 +1604,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>bcf1a02d-ab17-4c96-9852-78e979b37d07</id>
+			<id>339a847c-75b4-4542-bf5c-d9eba44834b1</id>
 			<name>HospitalChair_Guide_3</name>
-			<parentid>0e76d191-c48f-41eb-b5a8-6c2953cd9f11</parentid>
+			<parentid>13d585e5-8e66-4acc-9b3d-39a10505b8c7</parentid>
 			<worldposition>-29.995,19.0203,53.5836</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-29.995,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
@@ -1622,9 +1622,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>54b01fac-8822-4f94-a2c4-4aeb997d1d79</id>
+			<id>872ec2ab-0cbf-4dc3-b41f-96deb0a76655</id>
 			<name>Infuus2_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-22.47,14.9091,49.5585</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-22.47,0,1,0,14.9091,0,0,1,49.5585,0,0,0,1</transform>
@@ -1640,9 +1640,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>79666997-edd8-4acb-ae60-3ce2f9ea60ce</id>
+			<id>e30840d2-9169-459c-abd3-c77260dcead9</id>
 			<name>Hallway_Wall_2</name>
-			<parentid>9181c79a-e84d-46f7-8d6d-fb230d35cc01</parentid>
+			<parentid>37db998b-bfdc-4036-8c45-c10b2d9e40b9</parentid>
 			<worldposition>20.74,2.84,-15</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,5.74,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
@@ -1658,9 +1658,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>bcf32b61-bd4d-4501-8aa4-411f06903a8e</id>
+			<id>e8dd2368-12fd-446b-84e4-9e53431f64b2</id>
 			<name>Hallway_Ceilling_2</name>
-			<parentid>9181c79a-e84d-46f7-8d6d-fb230d35cc01</parentid>
+			<parentid>37db998b-bfdc-4036-8c45-c10b2d9e40b9</parentid>
 			<worldposition>15,5.62,-15</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,5.62,0,0,1,0,0,0,0,1</transform>
@@ -1676,9 +1676,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>8d6a6637-1565-43e8-997c-6110f8058126</id>
+			<id>bde0f5d8-dd1c-4a33-9957-d7391c296f25</id>
 			<name>Hallway_Wall_2</name>
-			<parentid>9181c79a-e84d-46f7-8d6d-fb230d35cc01</parentid>
+			<parentid>37db998b-bfdc-4036-8c45-c10b2d9e40b9</parentid>
 			<worldposition>9.27,2.84,-15</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-5.73,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
@@ -1694,9 +1694,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>c75286e5-3861-450e-a81d-0261b50fb24d</id>
+			<id>63b7011b-0f42-4f0a-8bc5-00cd6adb8b1f</id>
 			<name>Hallway_Floor_2</name>
-			<parentid>9181c79a-e84d-46f7-8d6d-fb230d35cc01</parentid>
+			<parentid>37db998b-bfdc-4036-8c45-c10b2d9e40b9</parentid>
 			<worldposition>15,0,-15</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
@@ -1712,9 +1712,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>9181c79a-e84d-46f7-8d6d-fb230d35cc01</id>
+			<id>37db998b-bfdc-4036-8c45-c10b2d9e40b9</id>
 			<name>Hallway</name>
-			<parentid>ca3462ee-3a57-46e4-a884-38cff137d4e0</parentid>
+			<parentid>f2ef7811-77e5-4e9a-8d08-2da3fe7a1a90</parentid>
 			<worldposition>15,0,-15</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,15,0,1,0,0,0,0,1,-15,0,0,0,1</transform>
@@ -1730,9 +1730,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>e13bf91e-01e3-4055-955b-82c7bc2b7a0b</id>
+			<id>4b069bc4-3e55-4537-9538-7d5a6162e4d0</id>
 			<name>Infuus1_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-25.2793,16.1215,51.8743</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-25.2793,0,1,0,16.1215,0,0,1,51.8743,0,0,0,1</transform>
@@ -1748,12 +1748,12 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>58c8b1a1-c2b1-435a-aace-165142ac17bc</id>
+			<id>e2473d41-2a6d-4cce-86f9-39c33c5c9f8a</id>
 			<name>Bed_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
-			<worldposition>-26.41,0.4038,-32.64</worldposition>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
+			<worldposition>-26.41,0.14,-32.64</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-26.41,0,1,0,0.4038,0,0,1,-32.64,0,0,0,1</transform>
+			<transform>1,0,0,-26.41,0,1,0,0.14,0,0,1,-32.64,0,0,0,1</transform>
 			<mesh>Bed</mesh>
 			<materialname>TextureMaterial</materialname>
 			<materialparams>Hospital Bed 1, 0.8, 0.8, 0.8, 10</materialparams>
@@ -1766,9 +1766,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>e88de71d-8157-44be-804f-7ad47c2560af</id>
+			<id>c267ea54-9209-4b1c-8ae9-ffbc0911511b</id>
 			<name>Trash3_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-22.9308,44.7871,-26.211</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-22.9308,0,1,0,44.7871,0,0,1,-26.211,0,0,0,1</transform>
@@ -1784,9 +1784,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>0f0e8909-4a14-4e9e-bf71-85f3b98d174d</id>
+			<id>2336863d-9a6a-420c-a65b-ab7772eabe80</id>
 			<name>Waiting_Chairs_Guide_2</name>
-			<parentid>7b8b4e6a-e76f-425f-9520-3f9177d276bf</parentid>
+			<parentid>2cefe818-de58-429f-9e57-2bc725523d6d</parentid>
 			<worldposition>-7.177,41.888,-27.3507</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-7.177,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
@@ -1802,9 +1802,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>337e8d3f-f6a4-4447-b219-32f3eb0423b2</id>
+			<id>05ee7f86-acf9-46d1-9433-3093196eacef</id>
 			<name>ComputerMonitor_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-78.1826,29.5567,-32.909</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-78.1826,0,1,0,29.5567,0,0,1,-32.909,0,0,0,1</transform>
@@ -1820,9 +1820,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>50fe6932-0b38-46c1-8e07-3c1ad1aa5704</id>
+			<id>6cbdd2ef-120e-4505-af9c-0bfb00314c18</id>
 			<name>Plants1_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-39.19,13.8388,39.9515</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-39.19,0,1,0,13.8388,0,0,1,39.9515,0,0,0,1</transform>
@@ -1838,9 +1838,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>74fc727e-981c-42ae-91be-82ae20f3bde7</id>
+			<id>b316393c-7700-4ed2-9bfa-2a9a28cb59b7</id>
 			<name>HospitalChair_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-26.367,19.0203,53.5836</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-26.367,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
@@ -1856,9 +1856,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>cbc5c43f-bd2c-4545-ab29-4ba1e0eea758</id>
+			<id>e3920f23-4194-4bb3-b640-cd147e27b7cf</id>
 			<name>HeartMonitor</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-18.039,1.307,-5.0715</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-18.039,0,1,0,1.307,0,0,1,-5.0715,0,0,0,1</transform>
@@ -1874,9 +1874,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>9d9944fb-0277-4606-a464-240cbfaf84d5</id>
+			<id>74eab2c9-7629-4763-b934-6456dfd294a7</id>
 			<name>BeerBottle (6)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-9.35,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-9.35,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -1892,9 +1892,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>fa41cc21-e88c-427f-b375-b0d676f9c745</id>
+			<id>fca5ae07-580a-46e5-983a-9162245d4b9a</id>
 			<name>Reception1_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-99.3483,33.7997,-10.65</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-99.3483,0,1,0,33.7997,0,0,1,-10.65,0,0,0,1</transform>
@@ -1910,9 +1910,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>fdf7a130-97e9-41da-b53a-37ce1d4cc6cd</id>
+			<id>a5f361d2-5e04-4eac-b232-ff97a1ac9e9f</id>
 			<name>Tire</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-52.4831,46.7389,0.7943</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-52.4831,0,1,0,46.7389,0,0,1,0.7943,0,0,0,1</transform>
@@ -1928,9 +1928,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>9ce4f010-69c3-4025-b16a-f2b1f8c29915</id>
+			<id>c6dc24ae-8426-4f25-a9f8-4d1752ed0c2e</id>
 			<name>HospitalChair_Guide_1</name>
-			<parentid>56b60dcd-8580-409b-bf54-ea6e2d67ba45</parentid>
+			<parentid>8b4186ef-b55a-4c2d-ac73-df226d470f7b</parentid>
 			<worldposition>-28.171,19.0203,53.5836</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-28.171,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
@@ -1946,9 +1946,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>1f3a76d6-1350-42a8-bb96-7174bc253500</id>
+			<id>83adea66-8df0-4d7e-89fb-fc63a857fb3e</id>
 			<name>Trash1_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-34.4624,40.7163,-29.62</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-34.4624,0,1,0,40.7163,0,0,1,-29.62,0,0,0,1</transform>
@@ -1964,9 +1964,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>256140a4-b56b-4837-9ca6-9b5b340ba5c4</id>
+			<id>ec32db75-6e25-4dc6-ac13-afba8eec930f</id>
 			<name>Trash1_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-34.4624,40.7163,-27.57</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-34.4624,0,1,0,40.7163,0,0,1,-27.57,0,0,0,1</transform>
@@ -1982,9 +1982,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>ab4e983d-bda3-48fd-8b95-64a212fc9fb8</id>
+			<id>ccf05c51-70e1-4e0c-a5ad-672b3a6a77c8</id>
 			<name>Hallway_Ceilling_1</name>
-			<parentid>55fc7cfc-d8f7-4b5a-9bba-6cf3af01c358</parentid>
+			<parentid>6724abf3-dae0-4401-b9a1-6c3bdfbce9fe</parentid>
 			<worldposition>15,5.62,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,5.62,0,0,1,0,0,0,0,1</transform>
@@ -2000,9 +2000,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>325b5652-acbe-4c7d-a649-88b75ad4e58c</id>
+			<id>dc2fb8d9-f0bd-4955-8fd8-743e5e8d12a7</id>
 			<name>Hallway_Wall_1</name>
-			<parentid>55fc7cfc-d8f7-4b5a-9bba-6cf3af01c358</parentid>
+			<parentid>6724abf3-dae0-4401-b9a1-6c3bdfbce9fe</parentid>
 			<worldposition>20.74,2.84,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,5.74,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
@@ -2018,9 +2018,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>3633ea40-cf0e-42e8-98da-632989f87d26</id>
+			<id>7987fad7-58c7-4f1c-929d-9b9144c03f32</id>
 			<name>Hallway_Wall_1</name>
-			<parentid>55fc7cfc-d8f7-4b5a-9bba-6cf3af01c358</parentid>
+			<parentid>6724abf3-dae0-4401-b9a1-6c3bdfbce9fe</parentid>
 			<worldposition>9.27,2.84,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-5.73,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
@@ -2036,9 +2036,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>901e7658-24a7-47d3-ae49-dc1edfaed2e8</id>
+			<id>b22b9a0a-8478-48ca-ab48-431d6cac4b90</id>
 			<name>Hallway_Floor_1</name>
-			<parentid>55fc7cfc-d8f7-4b5a-9bba-6cf3af01c358</parentid>
+			<parentid>6724abf3-dae0-4401-b9a1-6c3bdfbce9fe</parentid>
 			<worldposition>15,0,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
@@ -2054,9 +2054,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>55fc7cfc-d8f7-4b5a-9bba-6cf3af01c358</id>
+			<id>6724abf3-dae0-4401-b9a1-6c3bdfbce9fe</id>
 			<name>Hallway</name>
-			<parentid>e530a410-9b5b-4e02-9b8a-1023fe53bab9</parentid>
+			<parentid>8d00b0ad-9707-42e7-af16-31a96b1599e9</parentid>
 			<worldposition>15,0,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,15,0,1,0,0,0,0,1,0,0,0,0,1</transform>
@@ -2072,9 +2072,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>1b4ce3bf-4663-4e3a-b129-822ad62a1ebd</id>
+			<id>2b36e2db-304a-4cc7-bc4a-92fda75ec94a</id>
 			<name>BeerBottle (9)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-10.62,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-10.62,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -2090,9 +2090,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>c987129b-b04b-4244-9969-4bc0b3939bbc</id>
+			<id>b20b0a4f-3f7f-4a7f-be25-888cdbab631e</id>
 			<name>BeerBottle (12)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-11.84,1.77,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-11.84,0,1,0,1.77,0,0,1,-31.66,0,0,0,1</transform>
@@ -2108,9 +2108,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>60e9c86d-f533-4b81-9989-420360151b10</id>
+			<id>8ca137ae-3dad-4215-ace0-9ec0b40a96cc</id>
 			<name>Cabinet_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-19.84,-1.9327,-26.54</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-19.84,0,1,0,-1.9327,0,0,1,-26.54,0,0,0,1</transform>
@@ -2126,9 +2126,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>3f8a07e4-7807-4400-84e2-f92cccb3b431</id>
+			<id>932db331-6662-4134-99b2-07ec4d4011b2</id>
 			<name>Wetfloor_Sign_Syringes</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-2.9123,54.3551,-1.7654</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-2.9123,0,1,0,54.3551,0,0,1,-1.7654,0,0,0,1</transform>
@@ -2144,9 +2144,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>c78d8536-f332-4220-a91c-c78c8ab2fc99</id>
+			<id>b12b9eb9-3089-4394-8726-d9904363b9d7</id>
 			<name>Document2</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-107.9273,18.9374,47.7554</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-107.9273,0,1,0,18.9374,0,0,1,47.7554,0,0,0,1</transform>
@@ -2162,9 +2162,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>2e5caf3f-695d-4d57-933e-c1e05d08a04b</id>
+			<id>6ff37351-02f6-48e5-b795-88de6ea24cb5</id>
 			<name>Cabinet_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-19.076,-1.9327,-26.54</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-19.076,0,1,0,-1.9327,0,0,1,-26.54,0,0,0,1</transform>
@@ -2180,9 +2180,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>6eb942ed-7abc-41dc-a618-735443ff33fb</id>
+			<id>9318a591-cec0-4736-8774-5ade5e7acfdc</id>
 			<name>Mop</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-123.8431,17.1506,45.3564</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-123.8431,0,1,0,17.1506,0,0,1,45.3564,0,0,0,1</transform>
@@ -2198,9 +2198,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>be68cc9e-abca-4160-8e6e-22dcf4b14478</id>
+			<id>1964ee2e-d4c1-4a29-a694-7b36ed820e9c</id>
 			<name>Magazines</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-97.142,32.959,-0.49</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-97.142,0,1,0,32.959,0,0,1,-0.49,0,0,0,1</transform>
@@ -2216,9 +2216,9 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>03174b6c-deb3-4c32-8b7e-a4897d2e634e</id>
+			<id>50990f44-700a-4d47-9ba2-7b84570cf608</id>
 			<name>CrossHallway_Wall_1</name>
-			<parentid>19e8f030-9dc8-47d2-81ec-51308c8dc04b</parentid>
+			<parentid>f2b2bbb7-b50a-4add-bbc7-0d1e6df880e1</parentid>
 			<worldposition>6.27,2.84,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,6.27,0,1,0,2.84,0,0,1,0,0,0,0,1</transform>
@@ -2234,9 +2234,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>dbbe4396-1b7f-4b35-a92b-0d4a1035b4a3</id>
+			<id>4a959d0d-e557-46f2-8fec-37c18e03b60e</id>
 			<name>CrossHallway_Floor_3 (3)</name>
-			<parentid>8dc35bbf-5443-430a-98c3-e1c8d6ce346a</parentid>
+			<parentid>6c3109d9-fc35-49cb-8c44-e921f358e116</parentid>
 			<worldposition>-36,0,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-36,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
@@ -2252,9 +2252,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>4f800173-29eb-45f3-a8e3-3f35e7d7997f</id>
+			<id>f4f9bb76-8051-4875-834b-a0ebd5f03cff</id>
 			<name>BeerBottle (13)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-11.6,2.6,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-11.6,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
@@ -2270,9 +2270,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>fd5968e1-b4d7-4676-878d-72329dd0a5cb</id>
+			<id>5b4d5332-7b5d-4a26-b622-c19d90037ac2</id>
 			<name>Plants2_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-37.752,11.573,41.2382</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-37.752,0,1,0,11.573,0,0,1,41.2382,0,0,0,1</transform>
@@ -2288,9 +2288,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>4318ac9d-0c3a-4330-91f6-c9331b69e548</id>
+			<id>dd656cf5-56bc-417a-9f64-c8942c573611</id>
 			<name>BeerBottle (15)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-9.85,2.6,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-9.85,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
@@ -2306,9 +2306,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>e4225c73-6c0e-4b95-a7a4-21fe2fc9f7cb</id>
+			<id>017562f7-94ae-4cff-9917-9966deaba77e</id>
 			<name>Closet_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
+			<parentid>3cd28949-849f-45b1-b503-acdea266d027</parentid>
 			<worldposition>-21.22,-1.4996,-3.7433</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-21.22,0,1,0,-1.4996,0,0,1,-3.7433,0,0,0,1</transform>
@@ -2324,9 +2324,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>be1ee418-ef5f-496d-94b8-77e3acaef2db</id>
+			<id>b0aedbd8-9955-44ef-afdc-d18de91588b3</id>
 			<name>HospitalChair_3</name>
-			<parentid>344d1138-4465-40e0-89ff-3f40b1baa8bc</parentid>
+			<parentid>8ecbdc69-71ef-4e1d-b430-2cab4090c31c</parentid>
 			<worldposition>-27.204,19.0203,53.5836</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-27.204,0,1,0,19.0203,0,0,1,53.5836,0,0,0,1</transform>
@@ -2342,9 +2342,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>da93334d-29d2-4a9a-804b-8dfeecd1031e</id>
+			<id>45afe9b7-25bb-4287-8cac-36e43673f4ae</id>
 			<name>BeerBottle (19)</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-9.53,2.6,-31.66</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-9.53,0,1,0,2.6,0,0,1,-31.66,0,0,0,1</transform>
@@ -2360,9 +2360,9 @@
 			<iskinematic>False</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>911d5292-ebbd-4818-8ea1-7bedf7c94200</id>
+			<id>992798fb-c532-456a-a94b-fd2aabb55b05</id>
 			<name>Waiting_Chairs_Guide_3</name>
-			<parentid>0e76d191-c48f-41eb-b5a8-6c2953cd9f11</parentid>
+			<parentid>13d585e5-8e66-4acc-9b3d-39a10505b8c7</parentid>
 			<worldposition>-5.045,41.888,-27.3507</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-5.045,0,1,0,41.888,0,0,1,-27.3507,0,0,0,1</transform>
@@ -2378,9 +2378,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>6a0989b8-ec8f-46e3-a311-e7ba3a3d06bf</id>
+			<id>4d85674b-29a3-4aa6-9ee7-e4d0ad19f581</id>
 			<name>CrossHallway_Floor_3 (4)</name>
-			<parentid>8dc35bbf-5443-430a-98c3-e1c8d6ce346a</parentid>
+			<parentid>6c3109d9-fc35-49cb-8c44-e921f358e116</parentid>
 			<worldposition>-48,0,-30</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-48,0,1,0,0,0,0,1,-30,0,0,0,1</transform>
@@ -2396,9 +2396,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>1daccda0-b528-4e94-b401-647950d75f69</id>
+			<id>6366f987-9983-4468-aeb2-7d9985155141</id>
 			<name>HideScreen_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
 			<worldposition>-112.6279,5.6454,8.3795</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-112.6279,0,1,0,5.6454,0,0,1,8.3795,0,0,0,1</transform>
@@ -2414,9 +2414,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>02d7d21a-4ad8-44c6-b293-68588461191d</id>
+			<id>676ffee7-211e-429a-9a59-747dbe38410a</id>
 			<name>Bed_Guide_1</name>
-			<parentid>56b60dcd-8580-409b-bf54-ea6e2d67ba45</parentid>
+			<parentid>8b4186ef-b55a-4c2d-ac73-df226d470f7b</parentid>
 			<worldposition>-36.53,0.4038,-11.2549</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-36.53,0,1,0,0.4038,0,0,1,-11.2549,0,0,0,1</transform>
@@ -2432,9 +2432,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>c1f6ec36-1f7a-4a52-9b9a-9c2c34d5c6d2</id>
+			<id>578690ab-7c07-4e7c-bcaa-dd48f08b66b9</id>
 			<name>Wetfloor_Sign_WetFloor</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-1.088,54.3551,-1.7654</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-1.088,0,1,0,54.3551,0,0,1,-1.7654,0,0,0,1</transform>
@@ -2450,12 +2450,12 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>0cea739b-30a7-40e2-8006-93c03f16de3d</id>
+			<id>c76a9ba8-147c-4428-807f-a0fe08dda90b</id>
 			<name>Reception1_1</name>
-			<parentid>c932330b-f286-4bf1-908f-217117bd5e61</parentid>
-			<worldposition>-33.1,0.4,-32.3</worldposition>
+			<parentid>71bbf096-bf05-414b-b9b8-3ee023b294b1</parentid>
+			<worldposition>-33.1,0.2,-32.3</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-33.1,0,1,0,0.4,0,0,1,-32.3,0,0,0,1</transform>
+			<transform>1,0,0,-33.1,0,1,0,0.2,0,0,1,-32.3,0,0,0,1</transform>
 			<mesh>Recption1</mesh>
 			<materialname>TextureMaterial</materialname>
 			<materialparams>Desk1, 0.8, 0.8, 0.8, 10</materialparams>
@@ -2468,9 +2468,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>0905316f-fc9f-4fac-875f-f3abc39e272d</id>
+			<id>819e7e2d-44fa-44ae-9922-04002c8df577</id>
 			<name>CrossHallway_Ceilling_1</name>
-			<parentid>19e8f030-9dc8-47d2-81ec-51308c8dc04b</parentid>
+			<parentid>f2b2bbb7-b50a-4add-bbc7-0d1e6df880e1</parentid>
 			<worldposition>0,5.68,0</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,0,0,1,0,5.68,0,0,1,0,0,0,0,1</transform>
@@ -2486,9 +2486,9 @@
 			<iskinematic>True</iskinematic>
 		</gameobject>
 		<gameobject>
-			<id>9cc784cf-a9d4-4325-97f9-dd5894dd4b49</id>
+			<id>8aa7ad9c-78aa-4d71-bcb6-9b88b44fd77d</id>
 			<name>PhotoFrame</name>
-			<parentid>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</parentid>
+			<parentid>0cc1de04-fdf2-48b8-a97a-cb58c26337e5</parentid>
 			<worldposition>-33.1965,14.7603,47.0711</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
 			<transform>1,0,0,-33.1965,0,1,0,14.7603,0,0,1,47.0711,0,0,0,1</transform>
@@ -2504,430 +2504,16 @@
 			<iskinematic />
 		</gameobject>
 		<gameobject>
-			<id>6c129f96-4024-44be-ab99-9a093fe8ff05</id>
-			<name>Functional</name>
+			<id>5e42b279-4e88-4c82-9250-6ee1b33467aa</id>
+			<name>RotateTrigger</name>
 			<parentid />
-			<worldposition>0,0,0</worldposition>
+			<worldposition>-18.039,1.307,-5.0715</worldposition>
 			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>72e3a43d-b77f-4076-98d1-f64441933b78</id>
-			<name>Reception2_Guide</name>
-			<parentid>ead8696f-d281-4135-a755-ce663161ba1c</parentid>
-			<worldposition>-83.2476,28.7586,-13.74</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-83.2476,0,1,0,28.7586,0,0,1,-13.74,0,0,0,1</transform>
-			<mesh>Reception2</mesh>
+			<transform>1,0,0,-18.039,0,1,0,1.307,0,0,1,-5.0715,0,0,0,1</transform>
+			<mesh>HeartMonitor</mesh>
 			<materialname>TextureMaterial</materialname>
-			<materialparams>Desk2blue, 0.8, 0.8, 0.8, 10</materialparams>
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter>0.2232,0.4849,-0.0077</collidercenter>
-			<collidersize>2.0354,0.9699,4.7998</collidersize>
-			<mass>1</mass>
-			<usegravity>False</usegravity>
-			<iskinematic>True</iskinematic>
-		</gameobject>
-		<gameobject>
-			<id>42b8a37e-dd39-4e81-86c2-dac096cb49bb</id>
-			<name>CrossHallway</name>
-			<parentid>ca3462ee-3a57-46e4-a884-38cff137d4e0</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>c932330b-f286-4bf1-908f-217117bd5e61</id>
-			<name>Props</name>
-			<parentid>e530a410-9b5b-4e02-9b8a-1023fe53bab9</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>dfa042fc-b7b8-4f63-b02c-a793db34bab8</id>
-			<name>Props</name>
-			<parentid>ca3462ee-3a57-46e4-a884-38cff137d4e0</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>3f2fe33e-100a-4253-8547-528b1d7fecc1</id>
-			<name>Reception2_1</name>
-			<parentid>ead8696f-d281-4135-a755-ce663161ba1c</parentid>
-			<worldposition>-83.2476,28.7586,-33.6346</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-83.2476,0,1,0,28.7586,0,0,1,-33.6346,0,0,0,1</transform>
-			<mesh>Reception2</mesh>
-			<materialname>TextureMaterial</materialname>
-			<materialparams>Desk2, 0.8, 0.8, 0.8, 10</materialparams>
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter>0.2232,0.4849,-0.0077</collidercenter>
-			<collidersize>2.0354,0.9699,4.7998</collidersize>
-			<mass>1</mass>
-			<usegravity>False</usegravity>
-			<iskinematic>True</iskinematic>
-		</gameobject>
-		<gameobject>
-			<id>2f06c6a8-b4be-4b93-a3ff-42a5608cddf7</id>
-			<name>Props</name>
-			<parentid />
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>8dc35bbf-5443-430a-98c3-e1c8d6ce346a</id>
-			<name>CrossHallway</name>
-			<parentid>af17829c-5010-4ad8-8b38-b32ee16687ba</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>18af53c0-3e46-429f-a0d7-fcf50392525c</id>
-			<name>Reception2_2</name>
-			<parentid>ead8696f-d281-4135-a755-ce663161ba1c</parentid>
-			<worldposition>-83.2476,28.7586,-27</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-83.2476,0,1,0,28.7586,0,0,1,-27,0,0,0,1</transform>
-			<mesh>Reception2</mesh>
-			<materialname>TextureMaterial</materialname>
-			<materialparams>Desk2level2, 0.8, 0.8, 0.8, 10</materialparams>
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter>0.2232,0.4849,-0.0077</collidercenter>
-			<collidersize>2.0354,0.9699,4.7998</collidersize>
-			<mass>1</mass>
-			<usegravity>False</usegravity>
-			<iskinematic>True</iskinematic>
-		</gameobject>
-		<gameobject>
-			<id>aff919e0-6fe1-4c48-8533-25afb89b186f</id>
-			<name>Reception2_3</name>
-			<parentid>ead8696f-d281-4135-a755-ce663161ba1c</parentid>
-			<worldposition>-83.2476,28.7586,-20.14</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-83.2476,0,1,0,28.7586,0,0,1,-20.14,0,0,0,1</transform>
-			<mesh>Reception2</mesh>
-			<materialname>TextureMaterial</materialname>
-			<materialparams>Desk2level3, 0.8, 0.8, 0.8, 10</materialparams>
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter>0.2232,0.4849,-0.0077</collidercenter>
-			<collidersize>2.0354,0.9699,4.7998</collidersize>
-			<mass>1</mass>
-			<usegravity>False</usegravity>
-			<iskinematic>True</iskinematic>
-		</gameobject>
-		<gameobject>
-			<id>344d1138-4465-40e0-89ff-3f40b1baa8bc</id>
-			<name>Props</name>
-			<parentid>af17829c-5010-4ad8-8b38-b32ee16687ba</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>ca3462ee-3a57-46e4-a884-38cff137d4e0</id>
-			<name>Medium</name>
-			<parentid />
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>af17829c-5010-4ad8-8b38-b32ee16687ba</id>
-			<name>High</name>
-			<parentid />
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>af82230f-ca33-4940-8777-db00dc27234b</id>
-			<name>PlayerSpawn</name>
-			<parentid />
-			<worldposition>-0.27,0.53,-30.31</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-0.27,0,1,0,0.53,0,0,1,-30.31,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>7b8b4e6a-e76f-425f-9520-3f9177d276bf</id>
-			<name>Guide</name>
-			<parentid>ca3462ee-3a57-46e4-a884-38cff137d4e0</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>56b60dcd-8580-409b-bf54-ea6e2d67ba45</id>
-			<name>Guide</name>
-			<parentid>e530a410-9b5b-4e02-9b8a-1023fe53bab9</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>0e76d191-c48f-41eb-b5a8-6c2953cd9f11</id>
-			<name>Guide</name>
-			<parentid>af17829c-5010-4ad8-8b38-b32ee16687ba</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>ead8696f-d281-4135-a755-ce663161ba1c</id>
-			<name>NeedsFix</name>
-			<parentid />
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>ead1dc50-f01c-420f-9a2a-923e63c61cf7</id>
-			<name>HideScreen_2</name>
-			<parentid>dfa042fc-b7b8-4f63-b02c-a793db34bab8</parentid>
-			<worldposition>-108.33,5.6454,8.3795</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,-108.33,0,1,0,5.6454,0,0,1,8.3795,0,0,0,1</transform>
-			<mesh>Screen</mesh>
-			<materialname>TextureMaterial</materialname>
-			<materialparams>Screen 2, 0.8, 0.8, 0.8, 10</materialparams>
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter>-0.0005,1.593,0.0335</collidercenter>
-			<collidersize>3.5832,3.1912,0.4246</collidersize>
-			<mass>1</mass>
-			<usegravity>False</usegravity>
-			<iskinematic>True</iskinematic>
-		</gameobject>
-		<gameobject>
-			<id>e530a410-9b5b-4e02-9b8a-1023fe53bab9</id>
-			<name>Normal</name>
-			<parentid />
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>19e8f030-9dc8-47d2-81ec-51308c8dc04b</id>
-			<name>CrossHallway</name>
-			<parentid>e530a410-9b5b-4e02-9b8a-1023fe53bab9</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>19c4a31c-1539-456b-b26c-59eaeb145c1e</id>
-			<name>Props</name>
-			<parentid>d118233d-cf54-4ed4-9150-45a0457dd4fc</parentid>
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
-		</gameobject>
-		<gameobject>
-			<id>d118233d-cf54-4ed4-9150-45a0457dd4fc</id>
-			<name>Guide</name>
-			<parentid />
-			<worldposition>0,0,0</worldposition>
-			<worldrotation>0,0,0,1</worldrotation>
-			<transform>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</transform>
-			<mesh />
-			<materialname />
-			<materialparams />
-			<behaviourname />
-			<behaviourparams />
-			<collidercenter />
-			<collidersize />
-			<mass />
-			<usegravity />
-			<iskinematic />
+			<materialparams>Heart Monitor, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>RotateSwitch</behaviourname>
 		</gameobject>
 	</gameobjects>
-	<lights>
-		<light>
-			<name>Directional light</name>
-			<position>15.1, -19.2, -73.4</position>
-			<rotation>50.0, 330.0, 0.0</rotation>
-			<type>Directional</type>
-			<color>1.0, 1.0, 1.0, 1.0</color>
-			<range>10</range>
-			<intensity>1</intensity>
-			<coneAngle>30</coneAngle>
-		</light>
-	</lights>
 </level>

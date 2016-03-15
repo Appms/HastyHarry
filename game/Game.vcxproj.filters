@@ -189,6 +189,27 @@
     <ClInclude Include="src\mge\behaviours\TestBehaviour.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\behaviours\MoveTrigger.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\RotateTrigger.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\EndTrigger.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\SwitchBehaviour.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\MoveSwitch.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\RotateSwitch.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mge\behaviours\DeleteSwitch.hpp">
+      <Filter>Archivos de encabezado\mge\behaviours</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -306,6 +327,27 @@
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
     <ClCompile Include="src\mge\behaviours\TestBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\MoveTrigger.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\RotateTrigger.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\EndTrigger.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\SwitchBehaviour.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\MoveSwitch.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\RotateSwitch.cpp">
+      <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\behaviours\DeleteSwitch.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
     </ClCompile>
   </ItemGroup>

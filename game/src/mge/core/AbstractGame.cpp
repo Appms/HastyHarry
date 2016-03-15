@@ -30,11 +30,7 @@ void AbstractGame::initialize() {
     _initializeRenderer();
     _initializeWorld();
 
-	SoundEngine::Init("AudioConfig.xml");
-
     _initializeScene();
-	
-	
 
     cout << endl << "Engine initialized." << endl << endl;
 }

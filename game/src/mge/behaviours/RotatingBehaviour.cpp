@@ -6,15 +6,16 @@
 
 #include <vector>
 
-RotatingBehaviour::RotatingBehaviour(float anglePerSec) :AbstractBehaviour()
+RotatingBehaviour::RotatingBehaviour(glm::vec3 pAxis, float anglePerSec) :AbstractBehaviour()
 {
+	_axis = pAxis;
 	_anglePerSec = anglePerSec;
 }
 
 RotatingBehaviour::RotatingBehaviour(std::string params) : AbstractBehaviour()
 {
 	std::vector<std::string> str = Utility::Split(params, ',');
-	_axis = glm::vec3(atof(str[0].c_str()), atof(str[1].c_str()), atof(str[2].c_str()));
+	_axis = glm::normalize(glm::vec3(atof(str[0].c_str()), atof(str[1].c_str()), atof(str[2].c_str())));
 	_anglePerSec = atof(str[3].c_str());
 }
 

@@ -1,3 +1,5 @@
+#include <typeinfo>
+
 #include "mge/behaviours/PlayerBehaviour.hpp"
 #include "mge/behaviours/SoundBehaviour.hpp"
 #include "mge/core/GameObject.hpp"
@@ -20,6 +22,10 @@
 #include "mge/core/Level.hpp"
 #include "mge/core/Timer.hpp"
 #include "mge/materials/ColorMaterial.hpp"
+
+#include "mge/behaviours/MoveSwitch.hpp"
+#include "mge/behaviours/RotateSwitch.hpp"
+#include "mge/behaviours/DeleteSwitch.hpp"
 
 //Constants needed fot the player controller
 #define WALLRUN_GRAVITY -3.0f
@@ -158,7 +164,7 @@ void PlayerBehaviour::Initialize()
 	_camera->setLocalPosition(glm::vec3(0, 0.8, 0));
 
 	//Set audio listener volume
-	sf::Listener::setGlobalVolume(50.0f);
+	sf::Listener::setGlobalVolume(100.0f);
 
 	_raycastCube = new GameObject("");
 	Level::CurrentWorld->add(_raycastCube);
@@ -174,6 +180,8 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	_moving = false;
 	_grounded = false;
 	_walled = false;
+
+	//_owner->setParent(Level::CurrentWorld);
 
 	_mouseDelta = _mouseDelta * pStep * ROTATE_SPEED;
 
@@ -220,6 +228,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			}
 			
 			_grounded = true;
+			//_owner->setParent((GameObject*)sensor->GetDetectAnimatedBody()->GetUserData());
 		}
 		else if (sensor->GetUserData() == 'c' && sensor->GetDetectDepth() > 0.0f)
 		{
@@ -241,8 +250,33 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			sensor->SetLineSensor(Utility::glmToNe(_camera->getLocalPosition()), Utility::glmToNe(vecDir));
 
 			if (!Timer::IsPaused() && !_holdingShoot && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left) && sensor->GetDetectDepth() > 0.0f) {
-				GameObject* object = (GameObject*)sensor->GetDetectRigidBody()->GetUserData();
-				delete (object);
+				GameObject* object = (GameObject*)sensor->GetDetectAnimatedBody()->GetUserData();
+				
+				for (int i = 0; i < object->BehaviourCount(); i++)
+				{
+					MoveSwitch* moveS = dynamic_cast<MoveSwitch*>(object->getBehaviour(i));
+					if (moveS) {
+						moveS->trigger();
+					}
+
+					RotateSwitch* rotateS = dynamic_cast<RotateSwitch*>(object->getBehaviour(i));
+					if (rotateS) {
+						rotateS->trigger();
+					}
+
+					DeleteSwitch* deleteS = dynamic_cast<DeleteSwitch*>(object->getBehaviour(i));
+					if (deleteS) {
+						deleteS->trigger();
+					}
+
+					//object->getBehaviour(i)->trigger(Level::CurrentPlayer);
+					//const char * s = "MoveSwitch";
+					//const char * b = typeid(object->getBehaviour(i)).name();
+					//if (strcmp(s, b)) {
+						//object->getBehaviour(i)->trigger(Level::CurrentPlayer);
+					//}
+				}
+				//delete (object);
 			}
 
 			_holdingShoot = sf::Mouse::isButtonPressed(sf::Mouse::Button::Left);

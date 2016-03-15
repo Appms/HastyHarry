@@ -1,5 +1,6 @@
 #ifndef LEVEL_HPP
 #define LEVEL_HPP
+#include <glm.hpp>
 #include <string>
 #include <vector>
 
@@ -33,6 +34,7 @@ class Level
 		static std::vector<AbstractMaterial*> _loadedMaterials;
 		static std::vector<std::string> _loadedMaterialsNames;
 		static std::vector<GameObject*> _loadedGameObjects;
+		static std::vector<glm::vec3> _butterflyPositions;
 };
 
 #endif // LEVEL_HPP

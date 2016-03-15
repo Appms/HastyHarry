@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level>
+	<gameobjects>
+		<gameobject>
+			<id>41ed4dc2-c8d1-43bf-ba46-beafe2d50a83</id>
+			<name>Butterfly Waypoint (7)</name>
+			<parentid />
+			<worldposition>-18.31,1.26,-29.15</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-18.31,0,1,0,1.26,0,0,1,-29.15,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>ButterflyBehaviour</behaviourname>
+			<behaviourparams>7</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>ae60f8e8-8003-4585-a82a-34d8d506ceb6</id>
+			<name>Butterfly Waypoint (6)</name>
+			<parentid />
+			<worldposition>-6.99,3.48,-30.09</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-6.99,0,1,0,3.48,0,0,1,-30.09,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>ButterflyBehaviour</behaviourname>
+			<behaviourparams>6</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>212461ee-6b42-4ce4-9f74-1e5a6a371262</id>
+			<name>Butterfly Waypoint (5)</name>
+			<parentid />
+			<worldposition>-3.31,1.19,-26.27</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-3.31,0,1,0,1.19,0,0,1,-26.27,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>ButterflyBehaviour</behaviourname>
+			<behaviourparams>5</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>170a0bb0-b95b-46ed-9ce6-fd79e4368ab4</id>
+			<name>Butterfly Waypoint (4)</name>
+			<parentid />
+			<worldposition>-0.15,1.19,-30.2</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-0.15,0,1,0,1.19,0,0,1,-30.2,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>ButterflyBehaviour</behaviourname>
+			<behaviourparams>4</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>0dfd3485-9942-49d7-8886-f76866af1244</id>
+			<name>Butterfly Waypoint (3)</name>
+			<parentid />
+			<worldposition>1.63,1.19,-33.27</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,1.63,0,1,0,1.19,0,0,1,-33.27,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>ButterflyBehaviour</behaviourname>
+			<behaviourparams>3</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>3c14076e-2430-4e51-ba03-4c8c2b6a9067</id>
+			<name>Butterfly Waypoint (2)</name>
+			<parentid />
+			<worldposition>4.57,1.19,-30.6</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,4.57,0,1,0,1.19,0,0,1,-30.6,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>ButterflyBehaviour</behaviourname>
+			<behaviourparams>2</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>fe5833e6-9984-4363-af42-7e12429b47fd</id>
+			<name>Butterfly Waypoint (1)</name>
+			<parentid />
+			<worldposition>4.57,2.48,-27.99</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,4.57,0,1,0,2.48,0,0,1,-27.99,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>ButterflyBehaviour</behaviourname>
+			<behaviourparams>1</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>75fd2b43-80e9-42d6-8e1e-fb0affd29836</id>
+			<name>Butterfly Waypoint</name>
+			<parentid />
+			<worldposition>4,1,-25</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,4,0,1,0,1,0,0,1,-25,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<behaviourname>ButterflyBehaviour</behaviourname>
+			<behaviourparams>0</behaviourparams>
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>c508b9eb-13d1-4e38-8125-a639aceea7d1</id>
+			<name>CrossHallway_Floor_1</name>
+			<parentid />
+			<worldposition>0,0,-29.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,0,0,1,0,0,0,0,1,-29.66,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>50ef7f04-c0c2-4fa1-b7aa-943e0c36e517</id>
+			<name>CrossHallway_Floor_1 (1)</name>
+			<parentid />
+			<worldposition>-14.5,0,-29.66</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-14.5,0,1,0,0,0,0,1,-29.66,0,0,0,1</transform>
+			<mesh>CrossHallway_Floor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>CrossroadFloorUV, 0.8, 0.8, 0.8, 10</materialparams>
+			<collidercenter>0,0,0</collidercenter>
+			<collidersize>12,0.3155,12</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>151d8a64-ef13-4e47-a139-e735b363b2a0</id>
+			<name>PlayerSpawn</name>
+			<parentid />
+			<worldposition>-0.27,0.53,-30.31</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-0.27,0,1,0,0.53,0,0,1,-30.31,0,0,0,1</transform>
+			<mesh />
+			<materialname />
+			<materialparams />
+			<collidercenter />
+			<collidersize />
+			<mass />
+			<usegravity />
+			<iskinematic />
+		</gameobject>
+		<gameobject>
+			<id>0e7e4d9e-0a91-4280-942b-1a1c3714fba8</id>
+			<name>RotateSwitch</name>
+			<parentid />
+			<worldposition>-14.4338,0.1578,-26.0336</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-14.4338,0,1,0,0.1578,0,0,1,-26.0336,0,0,0,1</transform>
+			<mesh>HeartMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Heart Monitor, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>RotateSwitch</behaviourname>
+			<behaviourparams>50ef7f04-c0c2-4fa1-b7aa-943e0c36e517,0,1,0,10</behaviourparams>
+			<collidercenter>0,0.2613,-0.0377</collidercenter>
+			<collidersize>0.5055,0.5239,0.3928</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>88083ffe-2e6f-4093-a00f-4a29bec58168</id>
+			<name>MoveSwitch</name>
+			<parentid />
+			<worldposition>-14.4853,0.1578,-29.5972</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-14.4853,0,1,0,0.1578,0,0,1,-29.5972,0,0,0,1</transform>
+			<mesh>HeartMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Heart Monitor, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>MoveSwitch</behaviourname>
+			<behaviourparams>50ef7f04-c0c2-4fa1-b7aa-943e0c36e517,0,-10,0,3,True</behaviourparams>
+			<collidercenter>0,0.2613,-0.0377</collidercenter>
+			<collidersize>0.5055,0.5239,0.3928</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+		<gameobject>
+			<id>6af012f3-cf8b-47f5-ab4f-2172d0328cfc</id>
+			<name>DeleteSwitch</name>
+			<parentid />
+			<worldposition>-14.5537,0.1578,-33.1322</worldposition>
+			<worldrotation>0,0,0,1</worldrotation>
+			<transform>1,0,0,-14.5537,0,1,0,0.1578,0,0,1,-33.1322,0,0,0,1</transform>
+			<mesh>HeartMonitor</mesh>
+			<materialname>TextureMaterial</materialname>
+			<materialparams>Heart Monitor, 0.8, 0.8, 0.8, 10</materialparams>
+			<behaviourname>DeleteSwitch</behaviourname>
+			<behaviourparams>50ef7f04-c0c2-4fa1-b7aa-943e0c36e517</behaviourparams>
+			<collidercenter>0,0.2613,-0.0377</collidercenter>
+			<collidersize>0.5055,0.5239,0.3928</collidersize>
+			<mass>1</mass>
+			<usegravity>False</usegravity>
+			<iskinematic>True</iskinematic>
+		</gameobject>
+	</gameobjects>
+	<lights />
+</level>
