@@ -120,6 +120,8 @@ class GameObject
 		void setColliderType(ColliderType type);
 
 		glm::vec3 ColliderCenter;
+
+		int BehaviourCount();
 	protected:
 		std::string _name;
 		glm::mat4 _transform;

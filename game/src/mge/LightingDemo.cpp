@@ -80,7 +80,7 @@ void LightingDemo::_initializeScene()
 	butterfly->setBehaviour(new MovingBehaviour(glm::vec3(0, 0, -10), glm::vec3(0, 0, -10), 1.0f, false));
 	butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, (MovingBehaviour*)butterfly->getBehaviour(), waypoints));*/
 
-	Level::Load("TestScene.xml", _world);
+	Level::Load("AdisScene.xml", _world);
 
 	//Level::Load("Level_03.xml", _world);
 
@@ -98,7 +98,7 @@ void LightingDemo::_render() {
     AbstractGame::_render();
     _updateHud();
 
-    _world->renderDebugInfo();
+    //_world->renderDebugInfo();
 }
 
 void LightingDemo::_updateHud() {

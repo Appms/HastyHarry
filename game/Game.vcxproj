@@ -121,14 +121,17 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../tokamak/src;../game/src;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-system-d.lib;sfml-window-d.lib;opengl32.lib;tokamak_d.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -155,13 +158,20 @@
     <ClInclude Include="src\mge\behaviours\ArmBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\Butterfly.hpp" />
     <ClInclude Include="src\mge\behaviours\CollectTrigger.hpp" />
+    <ClInclude Include="src\mge\behaviours\DeleteSwitch.hpp" />
+    <ClInclude Include="src\mge\behaviours\EndTrigger.hpp" />
     <ClInclude Include="src\mge\behaviours\KeysBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\LookAt.hpp" />
+    <ClInclude Include="src\mge\behaviours\MoveSwitch.hpp" />
+    <ClInclude Include="src\mge\behaviours\MoveTrigger.hpp" />
     <ClInclude Include="src\mge\behaviours\MovingBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\PlayerBehaviour.hpp" />
+    <ClInclude Include="src\mge\behaviours\RotateSwitch.hpp" />
+    <ClInclude Include="src\mge\behaviours\RotateTrigger.hpp" />
     <ClInclude Include="src\mge\behaviours\RotatingBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\SoundTrigger.hpp" />
+    <ClInclude Include="src\mge\behaviours\SwitchBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\TestBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\TriggerBehaviour.hpp" />
     <ClInclude Include="src\mge\behaviours\Turret.hpp" />
@@ -197,13 +207,20 @@
     <ClCompile Include="src\mge\behaviours\ArmBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\Butterfly.cpp" />
     <ClCompile Include="src\mge\behaviours\CollectTrigger.cpp" />
+    <ClCompile Include="src\mge\behaviours\DeleteSwitch.cpp" />
+    <ClCompile Include="src\mge\behaviours\EndTrigger.cpp" />
     <ClCompile Include="src\mge\behaviours\KeysBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\LookAt.cpp" />
+    <ClCompile Include="src\mge\behaviours\MoveSwitch.cpp" />
+    <ClCompile Include="src\mge\behaviours\MoveTrigger.cpp" />
     <ClCompile Include="src\mge\behaviours\MovingBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\PlayerBehaviour.cpp" />
+    <ClCompile Include="src\mge\behaviours\RotateSwitch.cpp" />
+    <ClCompile Include="src\mge\behaviours\RotateTrigger.cpp" />
     <ClCompile Include="src\mge\behaviours\RotatingBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\SoundTrigger.cpp" />
+    <ClCompile Include="src\mge\behaviours\SwitchBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\TestBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\TriggerBehaviour.cpp" />
     <ClCompile Include="src\mge\behaviours\Turret.cpp" />

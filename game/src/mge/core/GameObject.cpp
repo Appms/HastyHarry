@@ -70,6 +70,7 @@ std::string GameObject::getName() const
 void GameObject::setTransform (const glm::mat4& pTransform)
 {
     _transform = pTransform;
+	_worldTransform = _parent->getTransform() * _transform;
 }
 
 glm::mat4& GameObject::getTransform()
@@ -252,6 +253,8 @@ AbstractBehaviour * GameObject::getBehaviour(int index) const
 	return _behaviours[index];
 }
 
+int GameObject::BehaviourCount() { return _behaviours.size(); }
+
 void GameObject::setParent (GameObject* pParent) {
     //remove from previous parent
     if (_parent != NULL) {
@@ -352,13 +355,13 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 				//this->setLocalPosition(this->getLocalPosition() - glm::vec3(1.0f, 0, 0));
 
 				neV3 pos = _animatedbody->GetPos();
-				pos.Set(_transform[3][0] + pParentTransform[3][0] + ColliderCenter.x, _transform[3][1] + pParentTransform[3][1] + ColliderCenter.y, _transform[3][2] + pParentTransform[3][2] + ColliderCenter.z);
+				pos.Set(_worldTransform[3][0] + ColliderCenter.x, _worldTransform[3][1] + ColliderCenter.y, _worldTransform[3][2] + ColliderCenter.z);
 				_animatedbody->SetPos(pos);
 				
 				//this->rotate(0.01f, glm::vec3(0, 1, 0));
 
 				neM3 rot = _animatedbody->GetRotationM3();
-				rot.SetColumns(Utility::glmToNe(glm::vec3(_transform[0])/getScale().x), Utility::glmToNe(glm::vec3(_transform[1])/ getScale().y), Utility::glmToNe(glm::vec3(_transform[2])/ getScale().z));
+				rot.SetColumns(Utility::glmToNe(glm::vec3(_worldTransform[0])/getScale().x), Utility::glmToNe(glm::vec3(_worldTransform[1])/ getScale().y), Utility::glmToNe(glm::vec3(_worldTransform[2])/ getScale().z));
 				_animatedbody->SetRotation(rot);
 			}
 			break;
