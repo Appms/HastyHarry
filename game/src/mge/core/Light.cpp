@@ -8,14 +8,13 @@ const int Light::_maxLights = 10;
 std::vector<Light*> Light::_lights;
 float Light::_ambientCoefficient = 0.0005f;
 
-Light::Light(std::string pName, glm::vec3 pPosition, glm::vec3 pDirection, glm::vec3 pIntensities, float pAttenuation, float pConeAngle, bool pIsDirectional)
-    : GameObject(pName, pPosition), _direction(pDirection), _intensities(pIntensities), _attenuation(pAttenuation), _coneAngle(pConeAngle), _isDirectional(pIsDirectional)
+Light::Light(std::string pName, glm::vec3 pPosition, glm::vec3 pDirection, glm::vec3 pColor, float pIntensity, float pRange, bool pIsDirectional)
+    : GameObject(pName, pPosition), _direction(pDirection), _color(pColor), _intensity(pIntensity), _range(pRange), _isDirectional(pIsDirectional)
 {
     addLight(this);
 }
 
 Light::~Light() { 
-	//TODO Only remove the light form vector
 }
 
 void Light::addLight(Light* pLight)

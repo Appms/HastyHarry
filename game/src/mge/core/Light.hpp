@@ -12,13 +12,15 @@ class Light : public GameObject
             std::string pName = "Light",
             glm::vec3 pPosition = glm::vec3( 0.0f, 0.0f, 0.0f ),
             glm::vec3 pDirection = glm::vec3( 0.0f, 0.0f, 0.0f ),
-            glm::vec3 pIntensities = glm::vec3 ( 1.0f, 1.0f, 1.0f),
-            float pAttenuation = 2.0f,
-            float pConeAngle = 60.0f,
+            glm::vec3 pColor = glm::vec3 ( 1.0f, 1.0f, 1.0f),
+            float pIntensity = 1.0f,
+            float pRange = 10.0f,
             bool pIsDirectional = false
         );
 
 		virtual ~Light();
+
+		static void ClearLights() { _lights.clear(); }
 
 		static float GetAmbientCoefficient() { return _ambientCoefficient; };
 		static float SetAmbientCoefficient(float value) {  _ambientCoefficient = value; };
@@ -27,9 +29,16 @@ class Light : public GameObject
 
         glm::vec4 GetPosition() { return glm::vec4(getLocalPosition(), !_isDirectional); }
         glm::vec3 GetDirection() { return _direction; }
-        glm::vec3 GetInensities() { return _intensities; }
-        float GetAttenuation() { return _attenuation; }
-        float GetConeAngle() {  return _coneAngle; }
+        glm::vec3 GetColor() { return _color; }
+        float GetIntensity() { return _intensity; }
+        float GetRange() {  return _range; }
+
+		void SetDirection(glm::vec3 pDirection) { _direction = pDirection; }
+		void IsDirectional(bool dir) { _isDirectional = dir; }
+		void SetColor(glm::vec3 pColor) { _color = pColor; }
+		void SetIntensity(float pIntensity) { _intensity = pIntensity; }
+		void SetRange(float pRange) { _range = pRange; }
+
     private:
         static const int _maxLights;
         static float _ambientCoefficient;
@@ -38,9 +47,9 @@ class Light : public GameObject
 
         bool _isDirectional;
         glm::vec3 _direction;
-        glm::vec3 _intensities;
-        float _attenuation;
-        float _coneAngle;
+		glm::vec3 _color;
+		float _intensity;
+		float _range;
 };
 
 #endif // LIGHT_H

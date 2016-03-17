@@ -23,14 +23,6 @@ Camera* World::getMainCamera () {
     return _mainCamera;
 }
 
-void World::setLights(Light* pLight) {
-    if (pLight != NULL) _sceneLights = pLight;
-}
-
-Light* World::getLights(int index) {
-    return _sceneLights->GetLight(index);
-}
-
 bool World::initPhysics() {
 	neV3 gravity;		// A vector to store the direction and intensity of gravity
 	neSimulatorSizeInfo sizeInfo;	// SizeInfo stores data about how many objects we are going to model

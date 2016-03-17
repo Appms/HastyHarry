@@ -42,9 +42,6 @@ void MovingBehaviour::update(float step)
 	float d1 = glm::distance(_owner->getWorldPosition(), _originPosition);
 	float d2 = glm::distance(_endPosition, _originPosition);
 
-	printf("PlatformPos: %f %f %f \n", platformPos.x, platformPos.y, platformPos.z);
-	printf("D1: %f D2 %f \n", d1, d2);
-
 	if (d1 < d2)
 		_owner->setTransform(glm::mat4(
 			_owner->getTransform()[0],

@@ -7,6 +7,7 @@
 #include "mge/core/Mesh.hpp"
 #include "mge/core/Light.hpp"
 #include "mge/core/World.hpp"
+#include "mge/util/Utility.hpp"
 
 ShaderProgram* PhongNormalMaterial::_shader = NULL;
 
@@ -35,6 +36,24 @@ PhongNormalMaterial::PhongNormalMaterial(Texture* pDiffuseTexture, Texture* pNor
 {
     //every time we create an instance of colormaterial we check if the corresponding shader has already been loaded
     _lazyInitializeShader();
+}
+
+PhongNormalMaterial::PhongNormalMaterial(std::string params)
+{
+
+	std::vector<std::string> col = Utility::Split(params, ',');
+
+	//TODO save every loaded texture and request existing
+	//TODO Check image type
+
+	_diffuseTexture = Texture::load(config::MGE_TEXTURE_PATH + col[0] + ".png");
+	_normalTexture = Texture::load(config::MGE_TEXTURE_PATH + col[0] + "_NORMAL.png");
+	_Ka = glm::vec3(0.2f, 0.2f, 0.2f);
+	_Kd = glm::vec3(atof(col[1].c_str()), atof(col[2].c_str()), atof(col[3].c_str()));
+	_Ks = glm::vec3(0.1f, 0.1f, 0.1f);
+	_shininess = atof(col[4].c_str());
+
+	_lazyInitializeShader();
 }
 
 void PhongNormalMaterial::_lazyInitializeShader() {
@@ -99,7 +118,7 @@ void PhongNormalMaterial::render(World* pWorld, GameObject* pGameObject, Camera*
 
     //ADD METHODS TO LIGHTS TO ADD DIFFERENT LA,LD,LS
 
-    Light* light = pWorld->getLights(0);
+	Light* light = Light::GetLight(0);
     glUniform4fv(_uLightPosition, 1, glm::value_ptr(light->GetPosition()));
     glUniform3fv(_uLa, 1, glm::value_ptr(glm::vec3(1.0f,1.0f,1.0f)));
     glUniform3fv(_uLd, 1, glm::value_ptr(glm::vec3(1.0f,1.0f,1.0f)));

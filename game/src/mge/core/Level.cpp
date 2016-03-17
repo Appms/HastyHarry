@@ -7,7 +7,9 @@
 #include "mge/core/World.hpp"
 #include "mge/materials/AbstractMaterial.hpp"
 #include "mge/materials/PhongMaterial.hpp"
+#include "mge/materials/PhongNormalMaterial.hpp"
 #include "mge/materials/TextureMaterial.hpp"
+#include "mge/materials/AnimatedTextureMaterial.hpp"
 #include "mge/materials/ColorMaterial.hpp"
 #include "mge/behaviours/RotatingBehaviour.hpp"
 #include "mge/behaviours/PlayerBehaviour.hpp"
@@ -21,6 +23,7 @@
 #include "mge/behaviours/Butterfly.hpp"
 #include "mge/behaviours/LookAt.hpp"
 #include "mge/core/Camera.hpp"
+#include "mge/core/Light.hpp"
 #include <map>
 #include "..\..\include\tokamak.h"
 #include "mge/util/Utility.hpp"
@@ -37,6 +40,7 @@ std::vector<std::string> Level::_loadedMeshNames;
 std::vector<AbstractMaterial*> Level::_loadedMaterials;
 std::vector<std::string> Level::_loadedMaterialsNames;
 std::vector<GameObject*> Level::_loadedGameObjects;
+std::vector<Light*> Level::_loadedLights;
 std::vector<glm::vec3> Level::_butterflyPositions;
 
 World* Level::CurrentWorld;
@@ -84,10 +88,18 @@ void Level::Unload()
 
 	_loadedGameObjects.clear();
 
+	for each (Light* var in _loadedLights)
+	{
+		delete var;
+	}
+
+	_loadedLights.clear();
+
 	_butterflyPositions.clear();
 
 	delete CurrentPlayer;
 	if(CurrentWorld != NULL) CurrentWorld->killPhysics();
+	Light::ClearLights();
 }
 
 std::vector<GameObject*>& Level::GetGameObjects()
@@ -302,7 +314,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("ButterflyBehaviour"))
 							{
-								_butterflyPositions.push_back(go->getWorldPosition());
+								_butterflyPositions.push_back(worldPos);
 							}
 							else if (0 == behName.compare("CollectableTrigger"))
 							{
@@ -382,6 +394,11 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 								_loadedMaterials.push_back(new PhongMaterial(part->GetText()));
 								foundMat = true;
 							}
+							/*if (0 == matName.compare("NormalTextureMaterial"))
+							{
+								_loadedMaterials.push_back(new PhongNormalMaterial(part->GetText()));
+								foundMat = true;
+							}*/
 							else if (0 != matName.compare(""))
 							{
 								std::cout << "Level Loader: Material \"" << matName << "\" not found!" << std::endl;
@@ -577,22 +594,81 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 			{
 				for (TiXmlElement* part = obj->FirstChildElement(); part != NULL; part = part->NextSiblingElement())
 				{
-					//TODO Implement Light import
+					Light* light = new Light("", glm::vec3(0, 0, 0), glm::vec3(0, 0, 0), glm::vec3(0, 0, 0), 0, 0, false);
+					_loadedLights.push_back(light);
+					pWorld->add(light);
+
+					if (part && part->GetText())
+					{
+						if (0 == strcmp(part->Value(), "name"))
+						{
+							light->setName(part->GetText());
+						}
+
+						else if (0 == strcmp(part->Value(), "position"))
+						{
+							std::vector<std::string> pos = Utility::Split(part->GetText() , ',');
+							light->setLocalPosition(glm::vec3(atof(pos[0].c_str()), atof(pos[1].c_str()), atof(pos[2].c_str())));
+						}
+
+						else if (0 == strcmp(part->Value(), "direction"))
+						{
+							std::vector<std::string> dir = Utility::Split(part->GetText(), ',');
+							light->SetDirection(glm::vec3(atof(dir[0].c_str()), atof(dir[1].c_str()), atof(dir[2].c_str())));
+						}
+
+						else if (0 == strcmp(part->Value(), "type"))
+						{
+							if (part->GetText() == "Directional") light->IsDirectional(true);
+							else light->IsDirectional(false);
+						}
+
+						else if (0 == strcmp(part->Value(), "color"))
+						{
+							std::vector<std::string> dir = Utility::Split(part->GetText(), ',');
+							light->SetColor(glm::vec3(atof(dir[0].c_str()), atof(dir[1].c_str()), atof(dir[2].c_str())));
+						}
+
+						else if (0 == strcmp(part->Value(), "range"))
+						{
+							light->SetRange(atof(part->GetText()));
+						}
+
+						else if (0 == strcmp(part->Value(), "intensity"))
+						{
+							light->SetIntensity(atof(part->GetText()));
+						}
+					}
 				}
 			}
 		}
 	}
 
-	Mesh* planeMeshDefault = Mesh::load(config::MGE_MODEL_PATH + "plane_small.obj");
-	AbstractMaterial* textureMaterial = new TextureMaterial(Texture::load(config::MGE_TEXTURE_PATH + "BottleUV.png"));
-
 	if (_butterflyPositions.size() > 0) {
+		Mesh* planeMeshDefault = Mesh::load(config::MGE_MODEL_PATH + "plane_small.obj");
+		Texture* t01 = Texture::load(config::MGE_TEXTURE_PATH + "ButterflySprite001.png");
+		Texture* t02 = Texture::load(config::MGE_TEXTURE_PATH + "ButterflySprite002.png");
+		Texture* t03 = Texture::load(config::MGE_TEXTURE_PATH + "ButterflySprite003.png");
+		Texture* t04 = Texture::load(config::MGE_TEXTURE_PATH + "ButterflySprite004.png");
+		Texture* t05 = Texture::load(config::MGE_TEXTURE_PATH + "ButterflySprite005.png");
+		Texture* t06 = Texture::load(config::MGE_TEXTURE_PATH + "ButterflySprite006.png");
+
+		std::vector<Texture*> butterflySprites;
+		butterflySprites.push_back(t01);
+		butterflySprites.push_back(t02);
+		butterflySprites.push_back(t03);
+		butterflySprites.push_back(t04);
+		butterflySprites.push_back(t05);
+		butterflySprites.push_back(t06);
+
+		AbstractMaterial* textureMaterial = new AnimatedTextureMaterial(butterflySprites);
+
 		GameObject* butterfly = new GameObject("Butterfly", _butterflyPositions.back(), GameObject::PhysicsType::ANIMATEDBODY);
 		CurrentWorld->add(butterfly);
 		butterfly->setMesh(planeMeshDefault);
 		butterfly->setMaterial(textureMaterial);
 		butterfly->setBehaviour(new MovingBehaviour(_butterflyPositions.back(), _butterflyPositions.back(), 1.0f, false));
-		butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 2.0f, (MovingBehaviour*)butterfly->getBehaviour(), _butterflyPositions));
+		butterfly->setBehaviour(new Butterfly(Level::CurrentPlayer, 5.0f, (MovingBehaviour*)butterfly->getBehaviour(), _butterflyPositions));
 	}
 
 	std::cout << "Level Loader: Setting up Hierarchy..." << std::endl;

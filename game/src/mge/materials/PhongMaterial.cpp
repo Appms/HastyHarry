@@ -71,10 +71,10 @@ void PhongMaterial::_lazyInitializeShader() {
         _uProjectionMatrix =_shader->getUniformLocation("projectionMatrix");
         _uNormalMatrix =    _shader->getUniformLocation("normalMatrix");
 
-        _uLightPosition =   _shader->getUniformLocation("Light.Position");
-        _uLa =              _shader->getUniformLocation("Light.La");
-        _uLd =              _shader->getUniformLocation("Light.Ld");
-        _uLs =              _shader->getUniformLocation("Light.Ls");
+        _uLightPosition =   _shader->getUniformLocation("Light[0].Position");
+        _uLa =              _shader->getUniformLocation("Light[0].La");
+        _uLd =              _shader->getUniformLocation("Light[0].Ld");
+        _uLs =              _shader->getUniformLocation("Light[0].Ls");
 
         _uDiffuseTexture =  _shader->getUniformLocation("Material.DiffuseTexture");
         _uKa =              _shader->getUniformLocation("Material.Ka");
@@ -109,7 +109,7 @@ void PhongMaterial::render(World* pWorld, GameObject* pGameObject, Camera* pCame
 
     //ADD METHODS TO LIGHTS TO ADD DIFFERENT LA,LD,LS
 
-    Light* light = pWorld->getLights(0);
+    Light* light = Light::GetLight(0);
     glUniform4fv(_uLightPosition, 1, glm::value_ptr(light->GetPosition()));
     glUniform3fv(_uLa, 1, glm::value_ptr(glm::vec3(1.0f,1.0f,1.0f)));
     glUniform3fv(_uLd, 1, glm::value_ptr(glm::vec3(1.0f,1.0f,1.0f)));

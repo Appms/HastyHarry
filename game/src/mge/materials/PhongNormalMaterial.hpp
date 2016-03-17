@@ -9,7 +9,8 @@ class PhongNormalMaterial : public AbstractMaterial
 {
     public:
         PhongNormalMaterial(Texture* pDiffuseTexture, Texture* pNormalTexture, glm::vec3 pKa = glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3 pKd = glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3 pKs = glm::vec3(1.0f, 1.0f, 1.0f), float pShininess = 1);
-        virtual ~PhongNormalMaterial();
+		PhongNormalMaterial::PhongNormalMaterial(std::string params);
+		virtual ~PhongNormalMaterial();
         virtual void render(World* pWorld, GameObject* pGameObject, Camera* pCamera);
 
         //in rgb values

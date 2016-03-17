@@ -210,6 +210,9 @@
     <ClInclude Include="src\mge\behaviours\DeleteSwitch.hpp">
       <Filter>Archivos de encabezado\mge\behaviours</Filter>
     </ClInclude>
+    <ClInclude Include="src\mge\materials\AnimatedTextureMaterial.hpp">
+      <Filter>Archivos de encabezado\mge\materials</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -349,6 +352,9 @@
     </ClCompile>
     <ClCompile Include="src\mge\behaviours\DeleteSwitch.cpp">
       <Filter>Archivos de código fuente\mge\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mge\materials\AnimatedTextureMaterial.cpp">
+      <Filter>Archivos de código fuente\mge\materials</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

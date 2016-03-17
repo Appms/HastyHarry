@@ -10,7 +10,7 @@ struct LightInfo {
     vec3 Ld;
     vec3 Ls;
 };
-uniform LightInfo Light;
+uniform LightInfo Light[10];
 
 struct MaterialInfo {
     sampler2D DiffuseTexture;
@@ -25,7 +25,7 @@ out vec4 finalColor;
 
 vec3 phong (vec3 N, vec3 L, vec3 V) {
 
-    vec3  ambient  = Material.Ka * Light.La;
+    vec3  ambient  = Material.Ka * Light[0].La;
     vec3  diffuse  = vec3(0.0);
     vec3  specular = vec3(0.0);
 
@@ -35,8 +35,8 @@ vec3 phong (vec3 N, vec3 L, vec3 V) {
       vec3  R       = reflect(-L, N);;
       float RdotV_n = pow(max(0.0, dot(R,V)), Material.Shininess);
 
-      diffuse  = NdotL   * (Light.Ld * Material.Kd);
-      specular = RdotV_n * (Light.Ls * Material.Ks);
+      diffuse  = NdotL   * (Light[0].Ld * Material.Kd);
+      specular = RdotV_n * (Light[0].Ls * Material.Ks);
     }
 
     return (ambient + texture(Material.DiffuseTexture, texCoords0).xyz * diffuse + specular);
@@ -44,7 +44,7 @@ vec3 phong (vec3 N, vec3 L, vec3 V) {
 
 void main( void ) {
     vec3 n = normalize(N);
-    vec3 L = normalize(Light.Position.xyz - eyeCoords);
+    vec3 L = normalize(Light[0].Position.xyz - eyeCoords);
     vec3 V = normalize(-eyeCoords);
 
     finalColor = vec4(phong(n,L,V),1.0);

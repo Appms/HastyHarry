@@ -66,9 +66,9 @@ void MGEDemo::_initializeScene()
     _world->add(camera);
     _world->setMainCamera(camera);
 
-	Light* light = new Light("Light", glm::vec3(3.0f, 3.0f, 3.0f), glm::vec3(-2.0f, -1.0f, -3.0f), glm::vec3(1.0f, 1.0f, 1.0f), 2.0f, 60.0f, false);
-	_world->add(light);
-	_world->setLights(light);
+	//Light* light = new Light("Light", glm::vec3(3.0f, 3.0f, 3.0f), glm::vec3(-2.0f, -1.0f, -3.0f), glm::vec3(1.0f, 1.0f, 1.0f), 2.0f, 60.0f, false);
+	//_world->add(light);
+	//_world->setLights(light);
 }
 
 void MGEDemo::_render() {

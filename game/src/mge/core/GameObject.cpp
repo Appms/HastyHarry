@@ -327,7 +327,6 @@ void GameObject::scale(glm::vec3 pScale)
 void GameObject::rotate(float pAngle, glm::vec3 pAxis)
 {
 	setTransform(glm::rotate(_transform, pAngle, pAxis));
-	std::cout << "Done!";
 }
 
 void GameObject::update(float pStep, const glm::mat4& pParentTransform)

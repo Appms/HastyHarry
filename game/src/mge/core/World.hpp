@@ -16,9 +16,6 @@ class World : public GameObject
 		void setMainCamera (Camera* pCamera);
 		Camera* getMainCamera();
 
-		void setLights (Light* pLight);
-		Light* getLights (int index);
-
 		bool initPhysics();
 		neSimulator* getPhysics();
 		void killPhysics();

@@ -6,6 +6,7 @@
 
 class Mesh;
 class World;
+class Light;
 class AbstractMaterial;
 class AbstractBehaviour;
 class GameObject;
@@ -34,6 +35,7 @@ class Level
 		static std::vector<AbstractMaterial*> _loadedMaterials;
 		static std::vector<std::string> _loadedMaterialsNames;
 		static std::vector<GameObject*> _loadedGameObjects;
+		static std::vector<Light*> _loadedLights;
 		static std::vector<glm::vec3> _butterflyPositions;
 };
 

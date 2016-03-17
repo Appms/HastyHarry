@@ -191,6 +191,7 @@
     <ClInclude Include="src\mge\core\World.hpp" />
     <ClInclude Include="src\mge\LightingDemo.hpp" />
     <ClInclude Include="src\mge\materials\AbstractMaterial.hpp" />
+    <ClInclude Include="src\mge\materials\AnimatedTextureMaterial.hpp" />
     <ClInclude Include="src\mge\materials\ColorMaterial.hpp" />
     <ClInclude Include="src\mge\materials\LitTextureMaterial.hpp" />
     <ClInclude Include="src\mge\materials\PhongMaterial.hpp" />
@@ -239,6 +240,7 @@
     <ClCompile Include="src\mge\core\World.cpp" />
     <ClCompile Include="src\mge\LightingDemo.cpp" />
     <ClCompile Include="src\mge\materials\AbstractMaterial.cpp" />
+    <ClCompile Include="src\mge\materials\AnimatedTextureMaterial.cpp" />
     <ClCompile Include="src\mge\materials\ColorMaterial.cpp" />
     <ClCompile Include="src\mge\materials\LitTextureMaterial.cpp" />
     <ClCompile Include="src\mge\materials\PhongMaterial.cpp" />

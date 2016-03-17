@@ -59,11 +59,6 @@ void LightingDemo::_initializeScene()
 	GameObject * s = new GameObject("lol");
 	_world->add(s);
 	s->setBehaviour(new ArmBehaviour(true));
-
-	//Init Light
-    Light* light = new Light("Light",glm::vec3(3.0f,3.0f,3.0f),glm::vec3(-2.0f,-1.0f,-3.0f),glm::vec3(1.0f,1.0f,1.0f),2.0f,60.0f,false);
-    _world->add(light);
-    _world->setLights(light);
 }
 
 void LightingDemo::_render() {

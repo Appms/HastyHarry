@@ -91,14 +91,14 @@ void LitTextureMaterial::render(World* pWorld, GameObject* pGameObject, Camera* 
 
     for(int i = 0; i < Light::GetLightCount(); i++)
     {
-        Light* light = pWorld->getLights(i);
+        Light* light = Light::GetLight(i);
 
         glUniform4fv(_shader->getUniformLocation("lights["+ std::to_string(i) +"].position"), 1, glm::value_ptr(light->GetPosition()));
-        glUniform3fv(_shader->getUniformLocation("lights["+ std::to_string(i) +"].intensities"), 1, glm::value_ptr(light->GetInensities()));
+        glUniform3fv(_shader->getUniformLocation("lights["+ std::to_string(i) +"].intensities"), 1, glm::value_ptr(light->GetColor()));
         glUniform3fv(_shader->getUniformLocation("lights["+ std::to_string(i) +"].direction"), 1, glm::value_ptr(light->GetDirection()));
 
-        glUniform1f(_shader->getUniformLocation("lights["+ std::to_string(i) +"].attenuation"), light->GetAttenuation());
-        glUniform1f(_shader->getUniformLocation("lights["+ std::to_string(i) +"].coneAngle"), light->GetConeAngle());
+        glUniform1f(_shader->getUniformLocation("lights["+ std::to_string(i) +"].attenuation"), light->GetIntensity());
+        glUniform1f(_shader->getUniformLocation("lights["+ std::to_string(i) +"].coneAngle"), light->GetRange());
     }
 
 
