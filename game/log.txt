@@ -31,12 +31,11 @@ Compiling shader...
 Shader compiled ok.
 Program linked ok.
 
-Level Loader: Loading level "AdisScene.xml"...
-Loading assets/mge/models/Closet.obj...300
-294
+Loading assets/mge/models/RightArm.obj...3182
+5482
 Tangents calculated!
-Mesh loaded and buffered:294 triangles.
-Texture assets/mge/textures/Closet 3.png with id 1 loaded.
+Mesh loaded and buffered:5482 triangles.
+Texture assets/mge/textures/HandUV.png with id 1 loaded.
 Caching texture.
 
 Program created with id:4
@@ -48,134 +47,136 @@ Compiling shader...
 Shader compiled ok.
 Program linked ok.
 
-Loading assets/mge/models/Bed.obj...752
-802
+Loading assets/mge/models/LeftArm.obj...5247
+2621
 Tangents calculated!
-Mesh loaded and buffered:802 triangles.
-Texture assets/mge/textures/Hospital Bed 3.png with id 2 loaded.
-Caching texture.
-Loading assets/mge/models/CrossHallway_Wall.obj...354
-168
+Mesh loaded and buffered:2621 triangles.
+Level Loader: Loading level "TestDanny.xml"...
+Loading assets/mge/models/Screen.obj...936
+924
 Tangents calculated!
-Mesh loaded and buffered:168 triangles.
-Texture assets/mge/textures/CrossroadWallUVHIGH.png with id 3 loaded.
-Caching texture.
-Loading assets/mge/models/Hallway_Wall.obj...196
-168
-Tangents calculated!
-Mesh loaded and buffered:168 triangles.
-Texture assets/mge/textures/HallwayWallUVHIGH.png with id 4 loaded.
-Caching texture.
-Loading assets/mge/models/Hallway_Ceilling.obj...76
-38
-Tangents calculated!
-Mesh loaded and buffered:38 triangles.
-Texture assets/mge/textures/HallwayCeillingUVHIGH.png with id 5 loaded.
-Caching texture.
-Loading assets/mge/models/Hallway_Floor.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/HallwayFloorUVHIGH.png with id 6 loaded.
-Caching texture.
-Loading assets/mge/models/CrossHallway_Floor.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadFloorUVHigh.png with id 7 loaded.
-Caching texture.
-Loading assets/mge/models/CrossHallway_Ceilling.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadCeillingHigh.png with id 8 loaded.
+Mesh loaded and buffered:924 triangles.
+Texture assets/mge/textures/Screen 2.png with id 2 loaded.
 Caching texture.
 Loading assets/mge/models/Waiting_Chairs.obj...622
 448
 Tangents calculated!
 Mesh loaded and buffered:448 triangles.
-Texture assets/mge/textures/Waiting Chairs 3.png with id 9 loaded.
+Texture assets/mge/textures/Waiting Chairs 2.png with id 3 loaded.
 Caching texture.
-Loading assets/mge/models/Plants3.obj...806
-660
+Loading assets/mge/models/Hallway_Ceilling.obj...76
+38
 Tangents calculated!
-Mesh loaded and buffered:660 triangles.
-Texture assets/mge/textures/Plants3level3.png with id 10 loaded.
+Mesh loaded and buffered:38 triangles.
+Texture assets/mge/textures/HallwayCeillingUVMID.png with id 4 loaded.
 Caching texture.
-Loading assets/mge/models/Plants2.obj...740
-732
+Loading assets/mge/models/Hallway_Floor.obj...24
+12
 Tangents calculated!
-Mesh loaded and buffered:732 triangles.
-Texture assets/mge/textures/Plants2Level3.png with id 11 loaded.
+Mesh loaded and buffered:12 triangles.
+Texture assets/mge/textures/HallwayFloorUVMID.png with id 5 loaded.
 Caching texture.
-Loading assets/mge/models/Screen.obj...936
-924
+Loading assets/mge/models/Hallway_Wall.obj...196
+168
 Tangents calculated!
-Mesh loaded and buffered:924 triangles.
-Texture assets/mge/textures/Screen 3.png with id 12 loaded.
+Mesh loaded and buffered:168 triangles.
+Texture assets/mge/textures/HallwayWallUVMID.png with id 6 loaded.
 Caching texture.
-Loading assets/mge/models/HospitalChair.obj...336
-328
+Loading assets/mge/models/CrossHallway_Wall.obj...354
+168
 Tangents calculated!
-Mesh loaded and buffered:328 triangles.
-Texture assets/mge/textures/Random Chair 3.png with id 13 loaded.
-Caching texture.
-Loading assets/mge/models/Keyboard.obj...18
-6
-Tangents calculated!
-Mesh loaded and buffered:6 triangles.
-Texture assets/mge/textures/Keyboardlevel3.png with id 14 loaded.
-Caching texture.
-Loading assets/mge/models/ComputerMonitor.obj...188
-106
-Tangents calculated!
-Mesh loaded and buffered:106 triangles.
-Texture assets/mge/textures/ComputerScreenlevel3.png with id 15 loaded.
+Mesh loaded and buffered:168 triangles.
+Texture assets/mge/textures/CrossroadWallUVMID.png with id 7 loaded.
 Caching texture.
 Loading assets/mge/models/Recption1.obj...267
 176
 Tangents calculated!
 Mesh loaded and buffered:176 triangles.
-Texture assets/mge/textures/Desk1level3.png with id 16 loaded.
+Texture assets/mge/textures/Desk1level2.png with id 8 loaded.
 Caching texture.
-Loading assets/mge/models/Trash2.obj...238
-288
+Loading assets/mge/models/Table.obj...336
+260
 Tangents calculated!
-Mesh loaded and buffered:288 triangles.
-Texture assets/mge/textures/Bin2Level3.png with id 17 loaded.
+Mesh loaded and buffered:260 triangles.
+Texture assets/mge/textures/Tiny Table with magazines 1.png with id 9 loaded.
 Caching texture.
-Loading assets/mge/models/Trash1.obj...Error reading obj, needing v,vn,vt
-Texture assets/mge/textures/Bin1Level3.png with id 18 loaded.
-Caching texture.
-Loading assets/mge/models/Infuus1.obj...440
-436
+Loading assets/mge/models/Magazines.obj...222
+180
 Tangents calculated!
-Mesh loaded and buffered:436 triangles.
-Texture assets/mge/textures/InfuusLevel3.png with id 19 loaded.
+Mesh loaded and buffered:180 triangles.
+Loading assets/mge/models/Cabinet.obj...378
+308
+Tangents calculated!
+Mesh loaded and buffered:308 triangles.
+Texture assets/mge/textures/Cabinet 2.png with id 10 loaded.
 Caching texture.
 Loading assets/mge/models/Plants1.obj...683
 736
 Tangents calculated!
 Mesh loaded and buffered:736 triangles.
-Texture assets/mge/textures/Plants1Level3.png with id 20 loaded.
-Caching texture.
-Loading assets/mge/models/Cabinet.obj...378
-308
-Tangents calculated!
-Mesh loaded and buffered:308 triangles.
-Texture assets/mge/textures/Cabinet 3.png with id 21 loaded.
+Texture assets/mge/textures/Plants1Level2.png with id 11 loaded.
 Caching texture.
 Loading assets/mge/models/Trash3.obj...199
 208
 Tangents calculated!
 Mesh loaded and buffered:208 triangles.
-Texture assets/mge/textures/Bin3Level3.png with id 22 loaded.
+Texture assets/mge/textures/Bin3Level2.png with id 12 loaded.
+Caching texture.
+Loading assets/mge/models/Closet.obj...300
+294
+Tangents calculated!
+Mesh loaded and buffered:294 triangles.
+Texture assets/mge/textures/Closet 3.png with id 13 loaded.
+Caching texture.
+Loading assets/mge/models/Medicine_Cabinet.obj...128
+124
+Tangents calculated!
+Mesh loaded and buffered:124 triangles.
+Texture assets/mge/textures/Medicine Cabinet.png with id 14 loaded.
+Caching texture.
+Loading assets/mge/models/TurretHolder.obj...78
+42
+Tangents calculated!
+Mesh loaded and buffered:42 triangles.
+Texture assets/mge/textures/Camera Turrets.png with id 15 loaded.
+Caching texture.
+Loading assets/mge/models/TurretCamera.obj...454
+354
+Tangents calculated!
+Mesh loaded and buffered:354 triangles.
+Loading assets/mge/models/Bed.obj...752
+802
+Tangents calculated!
+Mesh loaded and buffered:802 triangles.
+Texture assets/mge/textures/Hospital Bed guideline 2.png with id 16 loaded.
+Caching texture.
+Loading assets/mge/models/CrossHallway_Ceilling.obj...24
+12
+Tangents calculated!
+Mesh loaded and buffered:12 triangles.
+Texture assets/mge/textures/CrossroadCeillingMID.png with id 17 loaded.
+Caching texture.
+Loading assets/mge/models/CrossHallway_Floor.obj...24
+12
+Tangents calculated!
+Mesh loaded and buffered:12 triangles.
+Texture assets/mge/textures/CrossroadFloorUVMID.png with id 18 loaded.
+Caching texture.
+Texture assets/mge/textures/Closet guideline.png with id 19 loaded.
+Caching texture.
+Texture assets/mge/textures/Closet guideline more blueish.png with id 20 loaded.
+Caching texture.
+Loading assets/mge/models/ExitSign.obj...184
+148
+Tangents calculated!
+Mesh loaded and buffered:148 triangles.
+Texture assets/mge/textures/Exit Sign.png with id 21 loaded.
 Caching texture.
 Loading assets/mge/models/plane_small.obj...4
 2
 Tangents calculated!
 Mesh loaded and buffered:2 triangles.
-Texture assets/mge/textures/BottleUV.png with id 23 loaded.
+Texture assets/mge/textures/BottleUV.png with id 22 loaded.
 Caching texture.
 
 Program created with id:7
@@ -188,290 +189,604 @@ Shader compiled ok.
 Program linked ok.
 
 Level Loader: Setting up Hierarchy...
-Level Loader: "AdisScene.xml" loaded successfully!
+Level Loader: "TestDanny.xml" loaded successfully!
 
 Engine initialized.
 
 Initializing HUD
 HUD initialized.
 
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-0,0) J: (0,0,0) M: (0,0,0) R: (0,-0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-1,0) J: (0,0,0) M: (0,0,0) R: (0,-1,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-1,0) J: (0,0,0) M: (0,0,0) R: (0,-1,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-1,0) J: (0,0,0) M: (0,0,0) R: (0,-1,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-2,0) J: (0,0,0) M: (0,0,0) R: (0,-2,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-2,0) J: (0,0,0) M: (0,0,0) R: (0,-2,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-2,0) J: (0,0,0) M: (0,0,0) R: (0,-2,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-2,0) J: (0,0,0) M: (0,0,0) R: (0,-2,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-3,0) J: (0,0,0) M: (0,0,0) R: (0,-3,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-3,0) J: (0,0,0) M: (0,0,0) R: (0,-3,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-3,0) J: (0,0,0) M: (0,0,0) R: (0,-3,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-3,0) J: (0,0,0) M: (0,0,0) R: (0,-3,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-3,0) J: (0,0,0) M: (0,0,0) R: (0,-3,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-4,0) J: (0,0,0) M: (0,0,0) R: (0,-4,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-4,0) J: (0,0,0) M: (0,0,0) R: (0,-4,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-4,0) J: (0,0,0) M: (0,0,0) R: (0,-4,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-4,0) J: (0,0,0) M: (0,0,0) R: (0,-4,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-4,0) J: (0,0,0) M: (0,0,0) R: (0,-4,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-5,0) J: (0,0,0) M: (0,0,0) R: (0,-5,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-5,0) J: (0,0,0) M: (0,0,0) R: (0,-5,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,-5,0) J: (0,0,0) M: (0,0,0) R: (0,-5,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+Pos: (-0.8,0.75,0) Rot: (0,0,0,1)
+No Ceiling: 0
+P: (0,0,0) J: (0,0,0) M: (0,0,0) R: (0,0,0)
 GC running on:root
 GC running on:player
 GC running on:camera
-GC running on:AudioSource
+GC running on:RightArm
+GC running on:LeftArm
 GC running on:AudioSource
 GC running on:
-GC running on:PlayerSpawn
-GC running on:TheAscend
-GC running on:Hallway (3)
-GC running on:Closet_3 (5)
-GC running on:Closet_3 (4)
-GC running on:Closet_3 (3)
-GC running on:Closet_3 (2)
-GC running on:Closet_3 (1)
-GC running on:CrossHallway_Wall_3 (1)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:CrossHallway_Wall_3 (3)
-GC running on:CrossHallway_Wall_3 (2)
-GC running on:CrossHallway_Ceilling_3
-GC running on:CrossHallway_Wall_3
-GC running on:Hallway (2)
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway (1)
-GC running on:CrossHallway_Wall_3 (4)
-GC running on:Hallway_Floor_3 (1)
-GC running on:CrossHallway_Floor_3 (3)
-GC running on:CrossHallway_Ceilling_3 (1)
-GC running on:CrossHallway_Floor_3 (2)
-GC running on:CrossHallway_Wall_3 (3)
-GC running on:Hallway_Ceilling_3 (1)
-GC running on:CrossHallway_Wall_3 (1)
-GC running on:CrossHallway_Floor_3 (1)
-GC running on:CrossHallway_Floor_3
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway
-GC running on:Closet_3
-GC running on:Bed_3 (1)
-GC running on:Bed_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:FunnelDrop
-GC running on:HallWay
-GC running on:Hallway (17)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:Hallway (16)
-GC running on:Hallway_Floor_3 (1)
-GC running on:Hallway_Ceilling_3 (1)
-GC running on:Hallway_Ceilling_3
-GC running on:CrossHallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway (15)
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway (14)
-GC running on:CrossHallway_Wall_3 (1)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:CrossHallway_Wall_3
-GC running on:Hallway (13)
-GC running on:CrossHallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:CrossHallway_Wall_3 (1)
-GC running on:Hallway (12)
-GC running on:CrossHallway_Wall_3 (1)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:CrossHallway_Wall_3
+GC running on:Waiting_Chairs_2 (5)
+GC running on:Waiting_Chairs_2 (4)
+GC running on:Waiting_Chairs_2 (3)
+GC running on:Waiting_Chairs_2 (2)
+GC running on:Waiting_Chairs_2 (1)
+GC running on:Waiting_Chairs_2
+GC running on:FloatingRoom (1)
+GC running on:CrossHallway_Wall_2 (22)
 GC running on:Hallway (11)
-GC running on:CrossHallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:CrossHallway_Wall_3 (1)
-GC running on:Hallway (10)
-GC running on:CrossHallway_Wall_3 (1)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:CrossHallway_Wall_3
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Recption1
+GC running on:Recption1
+GC running on:Waiting Chairs (5)
+GC running on:Waiting_Chairs
+GC running on:Waiting_Chairs (1)
+GC running on:Table
+GC running on:Table
+GC running on:Magazines
+GC running on:Magazines
+GC running on:Cabinet
+GC running on:Cabinet
+GC running on:Plants1
+GC running on:Plants1
+GC running on:Trash3
+GC running on:Trash3
+GC running on:Closet
+GC running on:Closet
+GC running on:Closet (1)
+GC running on:Closet
+GC running on:Medicine Cabinet
+GC running on:Medicine_Cabinet
+GC running on:Medicine Cabinet (1)
+GC running on:Medicine_Cabinet
+GC running on:HallwayBlocks
+GC running on:Hallway_Wall_2 (9)
+GC running on:Bed_Guide_2 (3)
+GC running on:Bed_Guide_2 (2)
+GC running on:Bed_Guide_2 (1)
+GC running on:CrossHallway_Wall_2 (21)
+GC running on:Hallway_Wall_2 (8)
+GC running on:Hallway_Wall_2 (7)
+GC running on:Hallway_Wall_2 (6)
+GC running on:Hallway_Wall_2 (5)
+GC running on:Hallway_Floor_2 (4)
+GC running on:Hallway_Floor_2 (3)
+GC running on:Hallway_Floor_2 (2)
+GC running on:Hallway_Wall_2 (3)
+GC running on:Hallway_Wall_2 (2)
+GC running on:Hallway_Floor_2 (1)
+GC running on:CrossHallway_Wall_2 (20)
+GC running on:CrossHallway_Wall_2 (19)
+GC running on:Hallway_Wall_2 (1)
+GC running on:CrossHallway_Wall_2 (18)
+GC running on:CrossHallway_Wall_2 (17)
+GC running on:CrossHallway_Wall_2 (16)
+GC running on:CrossHallway_Wall_2 (15)
+GC running on:CrossHallway_Wall_2 (14)
+GC running on:CrossHallway_Wall_2 (13)
+GC running on:CrossHallway_Wall_2 (12)
+GC running on:CrossHallway_Wall_2 (11)
+GC running on:CrossHallway_Wall_2 (10)
+GC running on:CrossHallway_Ceilling_2 (3)
+GC running on:MovingColumn (1)
+GC running on:CrossHallway_Wall_2 (9)
+GC running on:CrossHallway_Wall_2 (10)
+GC running on:CrossHallway_Wall_2 (11)
+GC running on:CrossHallway_Wall_2 (12)
 GC running on:Hallway (9)
-GC running on:CrossHallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway (10)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway (11)
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway (12)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:FloatingRoom
+GC running on:CrossHallway_Wall_2 (22)
+GC running on:Medicine Cabinet (1)
+GC running on:Medicine_Cabinet
+GC running on:Medicine Cabinet
+GC running on:Medicine_Cabinet
+GC running on:Closet (1)
+GC running on:Closet
+GC running on:Closet
+GC running on:Closet
+GC running on:Trash3
+GC running on:Trash3
+GC running on:Plants1
+GC running on:Plants1
+GC running on:Cabinet
+GC running on:Cabinet
+GC running on:Magazines
+GC running on:Magazines
+GC running on:Table
+GC running on:Table
+GC running on:Waiting Chairs (5)
+GC running on:Waiting_Chairs (1)
+GC running on:Waiting_Chairs
+GC running on:Recption1
+GC running on:Recption1
+GC running on:Hallway (11)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:Turret
+GC running on:TurretHolder
+GC running on:TurretCamera
+GC running on:Bed_Guide_2
+GC running on:Hallway_Wall_2 (4)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway (10)
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:CrossHallway_Ceilling_2 (1)
+GC running on:Hallway (9)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:CrossHallway_Wall_2 (9)
+GC running on:CrossHallway_Floor_2 (1)
+GC running on:MovingColumn (2)
+GC running on:Hallway (12)
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway (11)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway (10)
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway (9)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:CrossHallway_Wall_2 (12)
+GC running on:CrossHallway_Wall_2 (11)
+GC running on:CrossHallway_Wall_2 (10)
+GC running on:CrossHallway_Wall_2 (9)
+GC running on:MovingColumn
+GC running on:HideScreen_2 (3)
+GC running on:HideScreen_2 (2)
+GC running on:HideScreen_2 (1)
+GC running on:HideScreen_2
+GC running on:Hallway (12)
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway (11)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway (10)
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway (9)
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:CrossHallway_Wall_2 (12)
+GC running on:CrossHallway_Wall_2 (11)
+GC running on:CrossHallway_Wall_2 (10)
+GC running on:CrossHallway_Wall_2 (9)
 GC running on:Hallway (8)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
 GC running on:Hallway (7)
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
 GC running on:Hallway (6)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:CrossHallway_Ceilling_2 (2)
+GC running on:CrossHallway_Wall_2 (8)
+GC running on:CrossHallway_Wall_2 (7)
 GC running on:Hallway (5)
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
 GC running on:Hallway (4)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
 GC running on:Hallway (3)
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:Closet_Guide_1 (5)
+GC running on:Closet_Guide_1 (4)
+GC running on:Closet_Guide_1 (3)
+GC running on:Closet_Guide_1 (2)
+GC running on:Closet_Guide_1 (1)
+GC running on:Closet_Guide_1
+GC running on:Closet_Guide_2 (1)
+GC running on:Closet_Guide_2
+GC running on:CrossHallway_Wall_2 (6)
+GC running on:ExitSign
+GC running on:CrossHallway_Wall_2 (5)
+GC running on:CrossHallway_Wall_2 (4)
+GC running on:CrossHallway_Wall_2 (3)
+GC running on:CrossHallway_Ceilling_2
+GC running on:CrossHallway_Wall_2 (2)
+GC running on:CrossHallway_Wall_2 (1)
+GC running on:CrossHallway_Wall_2
+GC running on:CrossHallway_Floor_2
 GC running on:Hallway (2)
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
+GC running on:Hallway_Ceilling_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
 GC running on:Hallway (1)
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:CrazyFloatingRoomSection
-GC running on:RegularShit
-GC running on:Waiting_Chairs_3
-GC running on:Plants3_3 (1)
-GC running on:Plants2_3
-GC running on:Plants3_3
-GC running on:Closet_3
-GC running on:Bed_3
-GC running on:HideScreen_3
-GC running on:Plants2_3
-GC running on:HospitalChair_3
-GC running on:Keyboard_3
-GC running on:ComputerMonitor_3 (1)
-GC running on:ComputerMonitor_3
-GC running on:Recption1_3
-GC running on:FloatingShit
-GC running on:Room4
-GC running on:Trash2_3
-GC running on:Trash1_3
-GC running on:Infuus1_3 (1)
-GC running on:HideScreen_3 (1)
-GC running on:Plants2_3 (2)
-GC running on:Waiting_Chairs_3 (1)
-GC running on:Infuus1_3
-GC running on:Plants2_3 (1)
-GC running on:Plants2_3
-GC running on:Waiting_Chairs_3
-GC running on:HideScreen_3
-GC running on:Bed_3 (1)
-GC running on:Bed_3
-GC running on:HallwayWithWall
-GC running on:CrossHallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:Room3
-GC running on:Closet_3
-GC running on:Hallway
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:HallwayWithWall
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:CrossHallway_Wall_3
-GC running on:Bed_3
-GC running on:HideScreen_3
-GC running on:Waiting_Chairs_3
-GC running on:Infuus1_3
-GC running on:Room2
-GC running on:Plants1_3
-GC running on:Plants3_3 (1)
-GC running on:Plants3_3
-GC running on:HospitalChair_3
-GC running on:Cabinet_3
-GC running on:Infuus1_3
-GC running on:HideScreen_3
-GC running on:Closet_3
-GC running on:Trash3_3
-GC running on:Hallway
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:HallwayWithWall
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:CrossHallway_Wall_3
-GC running on:Room1
-GC running on:Infuus1_3
-GC running on:Plants2_3 (1)
-GC running on:Plants2_3
-GC running on:Waiting_Chairs_3
-GC running on:HideScreen_3
-GC running on:Bed_3 (1)
-GC running on:Bed_3
-GC running on:HallwayWithWall
-GC running on:CrossHallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:1stHallway
-GC running on:Floors
-GC running on:Hallway
-GC running on:Hallway_Floor_3
-GC running on:Hallway
-GC running on:Hallway_Floor_3
-GC running on:OpenHalls
-GC running on:Hallway
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:FullHalls
-GC running on:Hallway
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Floor_3
-GC running on:Hallway
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway
-GC running on:Hallway_Floor_3
-GC running on:Hallway_Wall_3
-GC running on:Hallway_Ceilling_3
-GC running on:Hallway_Wall_3
-GC running on:lol
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Wall_2
+GC running on:Hallway_Floor_2
+GC running on:Hallway_Ceilling_2
+GC running on:PlayerSpawn
 GC running on:Light
