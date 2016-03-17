@@ -10,7 +10,7 @@ class MoveSwitch : public SwitchBehaviour
 {
 	public:
 		MoveSwitch(glm::vec3 pOrigin, glm::vec3 pEnd, float pSpeed, bool pLoop, GameObject* pParent);
-		MoveSwitch(glm::vec3 pStart, std::string params);
+		MoveSwitch(std::string params);
 		virtual ~MoveSwitch();
 
 		void trigger();

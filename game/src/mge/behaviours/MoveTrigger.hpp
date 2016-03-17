@@ -10,7 +10,7 @@ class MoveTrigger : public TriggerBehaviour
 {
 	public:
 		MoveTrigger(float pRadius, glm::vec3 pOrigin, glm::vec3 pEnd, float pSpeed, bool pLoop, GameObject* pParent);
-		MoveTrigger(glm::vec3 pStart, std::string params);
+		MoveTrigger(std::string params);
 		virtual ~MoveTrigger();
 
 	protected:

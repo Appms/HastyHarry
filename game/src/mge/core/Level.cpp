@@ -278,7 +278,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("MoveTrigger"))
 							{
-								go->setBehaviour(new MoveTrigger(go->getWorldPosition(), part->GetText()));
+								go->setBehaviour(new MoveTrigger(part->GetText()));
 							}
 							else if (0 == behName.compare("TextTrigger"))
 							{
@@ -290,7 +290,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("MovingBehaviour"))
 							{
-								go->setBehaviour(new MovingBehaviour(go->getWorldPosition(), part->GetText()));
+								go->setBehaviour(new MovingBehaviour(part->GetText()));
 							}
 							else if (0 == behName.compare("RotatingBehaviour"))
 							{
@@ -314,7 +314,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("MoveSwitch"))
 							{
-								go->setBehaviour(new MoveSwitch(go->getWorldPosition(), part->GetText()));
+								go->setBehaviour(new MoveSwitch(part->GetText()));
 							}
 							else if (0 == behName.compare("RotateSwitch"))
 							{
@@ -501,9 +501,17 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						neV3 nPos;
 						glm::mat4 m = go->getTransform();
 
-						nPos.Set(worldPos.x + collCenter.x, worldPos.y + collCenter.y, worldPos.z + collCenter.z);
+						neV3 displacementUp, displacementRight, displacementForward;
+						displacementUp.Set(Utility::glmToNe(glm::normalize(go->getUpVector()) * collCenter.y));
+						displacementRight.Set(Utility::glmToNe(glm::normalize(go->getRightVector()) * collCenter.x));
+						displacementForward.Set(Utility::glmToNe(glm::normalize(go->getForwardVector()) * collCenter.z));
+
+						nPos.Set(worldPos.x + displacementUp.X() + displacementRight.X() + displacementForward.X(), worldPos.y + displacementUp.Y() + displacementRight.Y() + displacementForward.Y(), worldPos.z + displacementUp.Z() + displacementRight.Z() + displacementForward.Z());
 						body->SetPos(nPos);
 						body->SetRotation(worldRot);
+						neM3 rot = body->GetRotationM3();
+						rot.SetColumns(rot[0] / go->getScale().x, rot[1] / go->getScale().y, rot[2] / go->getScale().z);
+						body->SetRotation(rot);
 
 						go->setAnimatedBody(body);
 					}
@@ -545,7 +553,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 						neV3 nPos;
 						glm::mat4 m = go->getTransform();
 
-						nPos.Set(worldPos.x + collCenter.x, worldPos.y + collCenter.y, worldPos.z + collCenter.z);
+						nPos.Set(worldPos.x - collCenter.x, worldPos.y - collCenter.y, worldPos.z - collCenter.z);
 						body->SetPos(nPos);
 						body->SetRotation(worldRot);
 
@@ -555,16 +563,14 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 					
 
 					//This code shows colliders
-					/*
-					GameObject* test = new GameObject("");
+					
+					/*GameObject* test = new GameObject("");
 					pWorld->add(test);
 					test->setTransform(go->getTransform());
 					test->setLocalPosition(glm::vec3(worldPos.x + collCenter.x, worldPos.y + collCenter.y, worldPos.z + collCenter.z));
 					test->setMesh(Mesh::load(config::MGE_MODEL_PATH + "cube.obj"));
 					test->setMaterial(new ColorMaterial(glm::vec3(1,0,1)));
-					test->scale(1.0f / test->getScale());
-					test->scale(glm::vec3(collSize.x * go->getScale().x, collSize.y * go->getScale().y, collSize.z * go->getScale().z));
-					*/
+					test->scale(glm::vec3(collSize.x * go->getScale().x / 2, collSize.y * go->getScale().y / 2, collSize.z * go->getScale().z / 2));*/
 				}
 			}
 			else if (0 == elemName.compare("lights"))

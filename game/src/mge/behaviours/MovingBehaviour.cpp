@@ -8,18 +8,18 @@ MovingBehaviour::MovingBehaviour(glm::vec3 pOrigin, glm::vec3 pEnd, float pSpeed
 _originPosition(pOrigin), _endPosition(pEnd), _speed(pSpeed), _loop(pLoop) {}
 
 
-MovingBehaviour::MovingBehaviour(glm::vec3 pStart, std::string params) : AbstractBehaviour()
+MovingBehaviour::MovingBehaviour(std::string params) : AbstractBehaviour()
 {
 	std::vector<std::string> str = Utility::Split(params, ',');
-	_originPosition = pStart;
-	_endPosition = _originPosition + Utility::StrToVec(str[0], str[1], str[2]);
-	_speed = atof(str[3].c_str());
+	_originPosition = Utility::StrToVec(str[0], str[1], str[2]);
+	_endPosition = _originPosition + Utility::StrToVec(str[3], str[4], str[5]);
+	_speed = atof(str[6].c_str());
 	
-	if (0 == strcmp(str[4].c_str(), "True"))
+	if (0 == strcmp(str[7].c_str(), "True"))
 	{
 		_loop = true;
 	}
-	else if (0 == strcmp(str[4].c_str(), "False"))
+	else if (0 == strcmp(str[7].c_str(), "False"))
 	{
 		_loop = false;
 	}
@@ -38,12 +38,20 @@ void MovingBehaviour::setDestroyFlag() { _destroyAtEnd = true; }
 
 void MovingBehaviour::update(float step)
 {
-	if (glm::distance(_owner->getWorldPosition(), _originPosition) < glm::distance(_endPosition, _originPosition))
+	glm::vec3 platformPos = _owner->getWorldPosition();
+	float d1 = glm::distance(_owner->getWorldPosition(), _originPosition);
+	float d2 = glm::distance(_endPosition, _originPosition);
+
+	printf("PlatformPos: %f %f %f \n", platformPos.x, platformPos.y, platformPos.z);
+	printf("D1: %f D2 %f \n", d1, d2);
+
+	if (d1 < d2)
 		_owner->setTransform(glm::mat4(
 			_owner->getTransform()[0],
 			_owner->getTransform()[1],
 			_owner->getTransform()[2],
 			_owner->getTransform()[3] + glm::vec4(glm::normalize(_endPosition - _originPosition) * _speed * step, 0.0f)));
+		//_owner->translate(glm::normalize(_endPosition - _originPosition) * _speed * step);
 	else {
 		if (_loop) {
 			glm::vec3 aux = _endPosition;

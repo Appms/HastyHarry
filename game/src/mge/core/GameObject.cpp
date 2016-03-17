@@ -70,7 +70,6 @@ std::string GameObject::getName() const
 void GameObject::setTransform (const glm::mat4& pTransform)
 {
     _transform = pTransform;
-	_worldTransform = _parent->getTransform() * _transform;
 }
 
 glm::mat4& GameObject::getTransform()
@@ -328,6 +327,7 @@ void GameObject::scale(glm::vec3 pScale)
 void GameObject::rotate(float pAngle, glm::vec3 pAxis)
 {
 	setTransform(glm::rotate(_transform, pAngle, pAxis));
+	std::cout << "Done!";
 }
 
 void GameObject::update(float pStep, const glm::mat4& pParentTransform)
@@ -354,8 +354,13 @@ void GameObject::update(float pStep, const glm::mat4& pParentTransform)
 
 				//this->setLocalPosition(this->getLocalPosition() - glm::vec3(1.0f, 0, 0));
 
+				neV3 displacementUp, displacementRight, displacementForward;
+				displacementUp.Set(Utility::glmToNe(glm::normalize(getUpVector()) * ColliderCenter.y));
+				displacementRight.Set(Utility::glmToNe(glm::normalize(getRightVector()) * ColliderCenter.x));
+				displacementForward.Set(Utility::glmToNe(glm::normalize(getForwardVector()) * ColliderCenter.z));
+
 				neV3 pos = _animatedbody->GetPos();
-				pos.Set(_worldTransform[3][0] + ColliderCenter.x, _worldTransform[3][1] + ColliderCenter.y, _worldTransform[3][2] + ColliderCenter.z);
+				pos.Set(_worldTransform[3][0] + displacementUp.X() + displacementRight.X() + displacementForward.X(), _worldTransform[3][1] + displacementUp.Y() + displacementRight.Y() + displacementForward.Y(), _worldTransform[3][2] + displacementUp.Z() + displacementRight.Z() + displacementForward.Z());
 				_animatedbody->SetPos(pos);
 				
 				//this->rotate(0.01f, glm::vec3(0, 1, 0));

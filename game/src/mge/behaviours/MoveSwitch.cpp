@@ -10,14 +10,14 @@
 MoveSwitch::MoveSwitch(glm::vec3 pOrigin, glm::vec3 pEnd, float pSpeed, bool pLoop, GameObject* pParent) : SwitchBehaviour()
 {
 	_originPosition = pOrigin;
-	_endPosition = pEnd;
+	_endPosition = _originPosition + pEnd;
 	_speed = pSpeed;
 	_loop = pLoop;
 
 	_parent = pParent;
 }
 
-MoveSwitch::MoveSwitch(glm::vec3 pStart, std::string params) : SwitchBehaviour()
+MoveSwitch::MoveSwitch(std::string params) : SwitchBehaviour()
 {
 	std::vector<std::string> str = Utility::Split(params, ',');
 
@@ -32,15 +32,15 @@ MoveSwitch::MoveSwitch(glm::vec3 pStart, std::string params) : SwitchBehaviour()
 		}
 	}
 
-	_originPosition = pStart;
+	_originPosition = Utility::StrToVec(str[1], str[2], str[3]);
 
-	_endPosition = _originPosition + Utility::StrToVec(str[1], str[2], str[3]);
-	_speed = atof(str[4].c_str());
-	if (0 == strcmp(str[5].c_str(), "True"))
+	_endPosition = _originPosition + Utility::StrToVec(str[4], str[5], str[6]);
+	_speed = atof(str[7].c_str());
+	if (0 == strcmp(str[8].c_str(), "True"))
 	{
 		_loop = true;
 	}
-	else if (0 == strcmp(str[5].c_str(), "False"))
+	else if (0 == strcmp(str[8].c_str(), "False"))
 	{
 		_loop = false;
 	}

@@ -20,7 +20,7 @@ MoveTrigger::MoveTrigger(float pRadius, glm::vec3 pOrigin, glm::vec3 pEnd, float
 	_parent = pParent;
 }
 
-MoveTrigger::MoveTrigger(glm::vec3 pStart, std::string params) : TriggerBehaviour()
+MoveTrigger::MoveTrigger(std::string params) : TriggerBehaviour()
 {
 	_activator = Level::CurrentPlayer;
 
@@ -39,16 +39,16 @@ MoveTrigger::MoveTrigger(glm::vec3 pStart, std::string params) : TriggerBehaviou
 
 	//radius name type
 	_radius = atof(str[1].c_str());
-	_originPosition = pStart;
+	_originPosition = Utility::StrToVec(str[2], str[3], str[4]);
 
-	_endPosition = _originPosition + Utility::StrToVec(str[2], str[3], str[4]);
-	_speed = atof(str[5].c_str());
+	_endPosition = _originPosition + Utility::StrToVec(str[5], str[6], str[7]);
+	_speed = atof(str[8].c_str());
 
-	if (0 == strcmp(str[6].c_str(), "True"))
+	if (0 == strcmp(str[9].c_str(), "True"))
 	{
 		_loop = true;
 	}
-	else if (0 == strcmp(str[6].c_str(), "False"))
+	else if (0 == strcmp(str[9].c_str(), "False"))
 	{
 		_loop = false;
 	}

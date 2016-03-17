@@ -37,7 +37,7 @@ bool World::initPhysics() {
 
 	// Create and initialise the simulator
 	// Tell the simulator how many rigid bodies we have
-	sizeInfo.rigidBodiesCount = 100;
+	sizeInfo.rigidBodiesCount = 500;
 	// Tell the simulator how many animated bodies we have
 	sizeInfo.animatedBodiesCount = 500;
 	//Tell the simulator how many sensors we have
