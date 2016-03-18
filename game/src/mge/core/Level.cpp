@@ -181,7 +181,7 @@ bool Level::Load(std::string pLevelName, World* pWorld)
     //_loadedMaterials.push_back(new PhongMaterial (Texture::load(config::MGE_TEXTURE_PATH+"bricks.jpg"), glm::vec3(0.2f,0.2f,0.2f), glm::vec3(0.8f,0.8f,0.8f), glm::vec3(0.1f,0.1f,0.1f), 2.0f));
 
     TiXmlDocument doc;
-	string filePath = config::MGE_LEVEL_PATH + pLevelName;
+	string filePath = pLevelName;
     if(!doc.LoadFile(filePath.c_str()))
     {
         std::cout << "Level Loader: " << doc.ErrorDesc() << std::endl;
