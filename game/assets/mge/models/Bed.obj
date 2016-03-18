@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g Bed
+mtllib BedFIXEDSIZE.mtl
+g default
 v -1.624237 0.167557 0.760663
 v 1.624237 0.167557 0.760663
 v -1.624237 0.281912 0.760663
@@ -1752,6 +1753,8 @@ vn -0.869922 -0.492861 -0.017975
 vn -0.547742 0.836448 0.018240
 vn -0.547743 0.836448 -0.018240
 s 1
+g Bed
+usemtl lambert2SG
 f 1/246/1 2/245/2 3/241/3
 f 3/241/3 2/245/2 4/242/4
 s 2

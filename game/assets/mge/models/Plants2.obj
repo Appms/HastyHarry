@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g Plants2
+mtllib Plants2FIXEDSIZE.mtl
+g default
 v 0.188344 -0.017354 -0.108740
 v 0.108740 -0.017354 -0.188344
 v 0.000000 -0.017354 -0.217481
@@ -1590,6 +1591,8 @@ vn 0.841947 -0.513966 0.164207
 vn 0.825790 -0.560487 -0.062649
 vn -0.813679 0.490355 -0.312214
 s 1
+g Plants2
+usemtl lambert2SG
 f 1/1/1 2/2/2 34/3/3
 f 34/3/3 2/2/2 33/4/4
 f 2/5/2 3/6/5 33/7/4

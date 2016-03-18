@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g Table
+mtllib TableObjectFIXEDSIZE.mtl
+g default
 v 0.447168 0.469909 -0.473085
 v 0.447168 0.398209 -0.473085
 v 0.447168 0.398209 0.526915
@@ -686,6 +687,8 @@ vn -0.925002 0.379963 0.000000
 vn -0.925002 0.379963 0.000000
 vn -0.925002 0.379963 0.000000
 s 1
+g Desk
+usemtl lambert6SG
 f 98/1/1 94/2/2 8/3/3
 f 8/3/3 94/2/2 7/4/4
 s 2

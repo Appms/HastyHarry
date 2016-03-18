@@ -1,6 +1,7 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-g Hallway_Ceilling
+mtllib Hallway_Ceilling.mtl
+g default
 v -1.257816 -0.218012 1.331756
 v 1.257816 -0.218012 1.331756
 v -1.257816 -0.012308 1.331756
@@ -146,6 +147,8 @@ vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 s 1
+g HallwayCeilling
+usemtl lambert8SG
 f 1/1/1 2/2/2 3/4/3
 f 3/4/3 2/2/2 4/3/4
 s 2

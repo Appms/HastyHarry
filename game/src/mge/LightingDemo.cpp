@@ -54,7 +54,7 @@ void LightingDemo::_initializeScene()
 {
     _renderer->setClearColor(0,0,0);
 
-	Level::Load("RobertLevel2.xml", _world);
+	Level::Load("Level1.xml", _world);
 
 	GameObject * s = new GameObject("lol");
 	_world->add(s);

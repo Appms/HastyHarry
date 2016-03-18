@@ -110,9 +110,10 @@ std::vector<GameObject*>& Level::GetGameObjects()
 bool Level::Load(std::string pLevelName, World* pWorld)
 {
 	Timer::Pause();
-	Unload();
 
 	SoundEngine::Init("AudioConfig.xml");
+
+	Unload();
 
 	CurrentWorld = pWorld;
 	CurrentWorld->initPhysics();
@@ -314,7 +315,15 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 							}
 							else if (0 == behName.compare("ButterflyBehaviour"))
 							{
-								_butterflyPositions.push_back(worldPos);
+								int index = atoi(part->GetText());
+								if (index >= _butterflyPositions.size()) {
+									int diff = index - _butterflyPositions.size() + 1;
+									for (int i = 0; i < diff; i++)
+									{
+										_butterflyPositions.push_back(glm::vec3(0,0,0));
+									}
+								}
+								_butterflyPositions[index] = worldPos;
 							}
 							else if (0 == behName.compare("CollectableTrigger"))
 							{
@@ -662,6 +671,13 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 		butterflySprites.push_back(t06);
 
 		AbstractMaterial* textureMaterial = new AnimatedTextureMaterial(butterflySprites);
+
+		std::vector<glm::vec3> aux = _butterflyPositions;
+
+		for (int i = 0; i < _butterflyPositions.size(); i++)
+		{
+			_butterflyPositions[i] = aux[_butterflyPositions.size() - 1 -i];
+		}
 
 		GameObject* butterfly = new GameObject("Butterfly", _butterflyPositions.back(), GameObject::PhysicsType::ANIMATEDBODY);
 		CurrentWorld->add(butterfly);

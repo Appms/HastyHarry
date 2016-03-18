@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g Wetfloor Sign
+mtllib Wetfloor SignFIXEDSIZE.mtl
+g default
 v 0.129488 1.175560 0.079857
 v 0.129488 1.203602 0.008877
 v 0.043163 1.175560 0.079857
@@ -926,6 +927,8 @@ vn 0.663066 -0.732203 -0.155634
 vn 0.663065 -0.732204 -0.155635
 vn 0.663064 -0.732205 -0.155635
 s 1
+g Wetfloor_Sign
+usemtl lambert2SG
 f 49/165/1 50/166/2 84/170/3
 f 50/166/2 70/167/4 84/170/3
 f 84/170/3 70/167/4 83/169/5

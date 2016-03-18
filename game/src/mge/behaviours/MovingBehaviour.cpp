@@ -12,7 +12,7 @@ MovingBehaviour::MovingBehaviour(std::string params) : AbstractBehaviour()
 {
 	std::vector<std::string> str = Utility::Split(params, ',');
 	_originPosition = Utility::StrToVec(str[0], str[1], str[2]);
-	_endPosition = _originPosition + Utility::StrToVec(str[3], str[4], str[5]);
+	_endPosition = Utility::StrToVec(str[3], str[4], str[5]);
 	_speed = atof(str[6].c_str());
 	
 	if (0 == strcmp(str[7].c_str(), "True"))
@@ -38,7 +38,10 @@ void MovingBehaviour::setDestroyFlag() { _destroyAtEnd = true; }
 
 void MovingBehaviour::update(float step)
 {
-	glm::vec3 platformPos = _owner->getWorldPosition();
+	//if (_owner->UniqueId == "14adc0dc-19fe-4dcc-838a-acdb7fcb5dd3") {
+		//std::cout << "Hi!";
+	//}
+
 	float d1 = glm::distance(_owner->getWorldPosition(), _originPosition);
 	float d2 = glm::distance(_endPosition, _originPosition);
 

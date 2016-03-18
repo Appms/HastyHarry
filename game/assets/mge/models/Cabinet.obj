@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g Cabinet
+mtllib CabinetFIXEDSIZE.mtl
+g default
 v -0.298064 0.038116 0.337500
 v 0.264882 0.038116 0.337500
 v -0.298064 0.938116 0.337500
@@ -769,6 +770,8 @@ vn 0.225638 -0.721895 0.654183
 vn 0.225638 0.721895 0.654183
 vn -0.248749 0.646541 -0.721186
 s 1
+g Cabinet1
+usemtl Cabinet
 f 26/144/1 33/156/2 25/124/3
 f 25/124/3 33/156/2 34/157/4
 s 2

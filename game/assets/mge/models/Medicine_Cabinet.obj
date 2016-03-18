@@ -1,6 +1,7 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-g Medicine Cabinet
+mtllib Medicine Cabinet.mtl
+g default
 v -0.904213 0.008805 0.333491
 v 0.904213 0.008805 0.333491
 v -0.904213 3.011296 0.333491
@@ -296,6 +297,8 @@ vn 1.000000 0.000000 0.000000
 vn 0.000000 0.000000 1.000000
 vn 0.000000 0.000000 1.000000
 s 1
+g Medicine_Cabinet
+usemtl lambert2SG
 f 38/61/1 13/62/2 39/64/3
 f 39/64/3 13/62/2 17/63/4
 s 2

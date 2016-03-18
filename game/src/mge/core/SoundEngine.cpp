@@ -23,6 +23,9 @@ std::string SoundEngine::_lastPlayedVoice;
 
 void SoundEngine::Init(std::string pConfigFileName)
 {
+	_music.stop();
+	_voice.stop();
+
 	for (int i = 0; i < MAX_SOUNDS; ++i)
 	{
 		_soundObjects[i] = new GameObject("AudioSource", glm::vec3(0, 0, 0));

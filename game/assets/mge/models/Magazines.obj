@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g Magazines
+mtllib MagazinesObjectFIXEDSIZE.mtl
+g default
 v -0.129546 0.522163 -0.033951
 v -0.115837 0.522163 -0.011805
 v -0.124669 0.522163 -0.017213
@@ -512,6 +513,8 @@ vn 0.000000 -1.000000 -0.000003
 vn 0.000000 -1.000000 -0.000000
 vn 0.000000 -1.000000 -0.000000
 s 1
+g Magazines
+usemtl lambert9SG
 f 8/1/1 2/2/2 14/3/3
 f 14/3/3 2/2/2 12/4/4
 s 2

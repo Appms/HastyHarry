@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g HospitalChair
+mtllib HospitalChairFIXEDSIZE.mtl
+g default
 v -0.207199 0.000167 -0.271952
 v -0.222199 0.000167 -0.271952
 v -0.229699 0.000167 -0.258961
@@ -785,6 +786,8 @@ vn 0.000000 0.000000 -1.000000
 vn 0.000001 0.000000 -1.000000
 vn 0.000000 0.000000 -1.000000
 s 1
+g HospitalChair_Object
+usemtl lambert3SG
 f 1/1/1 2/2/2 25/4/3
 f 25/4/3 2/2/2 24/3/4
 f 3/5/5 23/6/6 2/2/2

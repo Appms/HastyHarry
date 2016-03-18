@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g PhotoFrame
+mtllib PhotoFrameFIXEDSIZE.mtl
+g default
 v -0.005761 0.135298 -0.070501
 v 0.005761 0.135298 -0.070501
 v -0.005761 0.139747 -0.075787
@@ -170,6 +171,8 @@ vn 1.000000 0.000000 0.000000
 vn 1.000000 0.000000 0.000000
 vn 1.000000 0.000000 0.000000
 s 1
+g PhotoFrame
+usemtl lambert2SG
 f 1/6/1 12/16/2 3/7/3
 f 3/7/3 12/16/2 9/10/4
 s 2

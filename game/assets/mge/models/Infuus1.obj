@@ -1,6 +1,7 @@
 # This file uses meters as units for non-parametric coordinates.
 
-g Infuus1
+mtllib Infuus1FIXEDSIZE.mtl
+g default
 v -0.100296 2.369292 -0.441208
 v 0.111922 2.369292 -0.441208
 v -0.100296 2.581510 -0.441208
@@ -977,6 +978,8 @@ vn 0.490566 -0.719292 -0.491899
 vn 0.958834 -0.114604 -0.259813
 vn 0.000000 0.256050 -0.966663
 s 1
+g Infuus2
+usemtl lambert3SG
 f 7/17/1 8/18/2 3/28/3
 f 3/28/3 8/18/2 4/30/4
 s 2
