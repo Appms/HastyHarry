@@ -128,19 +128,25 @@ bool Level::Load(std::string pLevelName, World* pWorld)
 	CurrentPlayer->setParent(pWorld);
 	CurrentPlayer->setBehaviour(new PlayerBehaviour(camera));
 	((PlayerBehaviour *)CurrentPlayer->getBehaviour())->Initialize();
-	/*
+	
+	
 	GameObject* LeftArm = new GameObject("RightArm", glm::vec3(-0.8, 0.75, 0));
 	LeftArm->setParent(CurrentPlayer);
+	LeftArm->scale(glm::vec3(0.8f, 0.8f, 0.8f));
 	LeftArm->setBehaviour(new ArmBehaviour(false));
+	((ArmBehaviour*)(LeftArm->getBehaviour()))->Init();
 	LeftArm->setMesh(Mesh::load(config::MGE_MODEL_PATH+"RightArm.obj"));
 	LeftArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0,0,0), glm::vec3(1,1,1), glm::vec3(0,0,0), 10.0f));
-
-	GameObject* RightArm = new GameObject("LeftArm", glm::vec3(-0.8, 0.75, 0));
+	
+	
+	GameObject* RightArm = new GameObject("LeftArm", glm::vec3(0.8, 0.75, 0));
 	RightArm->setParent(CurrentPlayer);
+	RightArm->scale(glm::vec3(0.8f, 0.8f, 0.8f));
 	RightArm->setBehaviour(new ArmBehaviour(true));
+	((ArmBehaviour*)(RightArm->getBehaviour()))->Init();
 	RightArm->setMesh(Mesh::load(config::MGE_MODEL_PATH + "LeftArm.obj"));
 	RightArm->setMaterial(new PhongMaterial(Texture::load(config::MGE_TEXTURE_PATH + "HandUV.png"), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1), glm::vec3(0, 0, 0), 10.0f));
-	*/
+	
 
 	/*
 	GameObject* collectable = new GameObject("Collectable", glm::vec3(2, 1, 2));

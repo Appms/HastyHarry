@@ -28,23 +28,23 @@
 #include "mge/behaviours/DeleteSwitch.hpp"
 
 //Constants needed fot the player controller
-#define WALLRUN_GRAVITY -3.0f
-#define NORMAL_GRAVITY -9.8f
+#define WALLRUN_GRAVITY -5.0f
+#define NORMAL_GRAVITY -10.0f
 
 #define HARD_INERTIA  0.75f
-#define SOFT_INERTIA 0.9f
+#define SOFT_INERTIA 0.975f
 
 #define MOVE_FORCE 240.0f
 #define RUN_MAXVELOCITY 15.0f
 #define WALK_MAXVELOCITY 8.0f
 #define AIR_CONTROLL  0.1f
-#define AIR_MAXVELOCITY 18.5f
+#define AIR_MAXVELOCITY 16.5f
 
-#define GROUND_JUMP_FORCE 7.5f
+#define GROUND_JUMP_FORCE 5.5f
 
-#define WALLJUMP_NORMALFORCE 25.0f
-#define WALLJUMP_UPFORCE 11.0f
-#define WALLJUMP_FORWARDFORCE 30.0f
+#define WALLJUMP_NORMALFORCE 10.0f
+#define WALLJUMP_UPFORCE 5.0f
+#define WALLJUMP_FORWARDFORCE 0.0f
 
 #define ROTATE_SPEED 6.0f
 
@@ -89,22 +89,42 @@ void PlayerBehaviour::Initialize()
 	geometry->SetMaterialIndex(0);
 
 	//Add a sensor for groundcheck
+	
 	{
 		neSensor* sensor;
 		neV3 sensorPos, sensorDir;
-		sensorPos.Set(0.0f, -1.0f, 0.0f);
-		sensorDir.Set(0.0f, -0.1f, 0.0f);
+		sensorPos.Set(0.0f, 0.0f, 0.0f);
+		sensorDir.Set(0.0f, -1.1f, 0.0f);
 		sensor = rigidBody->AddSensor();
 		sensor->SetLineSensor(sensorPos, sensorDir);
 		sensor->SetUserData('g');
+	}
+	
+	//TODO Place more ground sensors
+	//Add sensors for Wall check
+	{
+		glm::vec3 sensorDir = glm::vec3(0, -2.5, 1.0);
+		sensorDir = glm::normalize(sensorDir) * 1.2f;
+		int sensorCount = 8;
+
+		for (int i = 0; i < sensorCount; ++i)
+		{
+			neSensor* sensor;
+			neV3 sensorPos;
+			sensorPos.Set(0.0f, 0.0f, 0.0f);
+			sensor = rigidBody->AddSensor();
+			sensor->SetLineSensor(sensorPos, Utility::glmToNe(sensorDir));
+			sensorDir = glm::rotateY(sensorDir, glm::radians(360.0f / sensorCount));
+			sensor->SetUserData('g');
+		}
 	}
 
 	//Add a sensor for Ceilcheck
 	{
 		neSensor* sensor;
 		neV3 sensorPos, sensorDir;
-		sensorPos.Set(0.0f, 1.0f, 0.0f);
-		sensorDir.Set(0.0f, 0.01f, 0.0f);
+		sensorPos.Set(0.0f, 0.0f, 0.0f);
+		sensorDir.Set(0.0f, 1.01f, 0.0f);
 		sensor = rigidBody->AddSensor();
 		sensor->SetLineSensor(sensorPos, sensorDir);
 		sensor->SetUserData('c');
@@ -230,9 +250,20 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			_grounded = true;
 			//_owner->setParent((GameObject*)sensor->GetDetectAnimatedBody()->GetUserData());
 		}
-		else if (sensor->GetUserData() == 'c' && sensor->GetDetectDepth() > 0.0f)
+		else if (sensor->GetUserData() == 'c')
 		{
- 			_physicsVelocity.y = 0.0f;
+			if (sensor->GetDetectDepth() > 0.0f && !_gravityReset)
+			{
+				//std::cout << "Reset: " << pStep << std::endl;
+				_physicsVelocity.y = 0.0f;
+				_gravityReset = true;
+			}
+			else if(sensor->GetDetectDepth() <= 0.0f)
+			{
+				//std::cout << "No Ceiling: " << sensor->GetDetectDepth() << std::endl;
+				_gravityReset = false;
+			}
+ 			
 		}
 		else if (sensor->GetUserData() == 'w' && sensor->GetDetectDepth() > 0.0f)
 		{
@@ -347,6 +378,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 			//TODO Revise Walljump
 			_jumpVelocity.y = WALLJUMP_UPFORCE;
 			_moveVelocity += -_camera->getForwardVector() * WALLJUMP_FORWARDFORCE + potentialNormal * WALLJUMP_NORMALFORCE;
+			_moveVelocity.y = 0.0f;
 			_wallJumped = true;
 		}
 	}
@@ -381,6 +413,8 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 		_moving = true;
 	} else if(_grounded){
 		_moveVelocity *= HARD_INERTIA;
+	} else if (!_grounded) {
+		_moveVelocity *= SOFT_INERTIA;
 	}
 
 	//Clamp the moveVelocity
@@ -427,7 +461,7 @@ void PlayerBehaviour::PlayerController(neRigidBodyController* pController, float
 	if (!Timer::IsPaused())
 	{
 		//std::cout << "P: " << glm::round(_physicsVelocity) << " J: " << glm::round(_jumpVelocity) << " M: " << glm::round(_moveVelocity) << " R: " << glm::round(_moveVelocity + _jumpVelocity + _physicsVelocity) << std::endl;
-		//std::cout << "G: " << _grounded << " W: " << _walled << " F: " << _falling << " J: " << _wallJumped << std::endl;
+		std::cout << "G: " << _grounded << " W: " << _walled << " F: " << _falling << " J: " << _wallJumped << std::endl;
 	}
 
 	//Apply the velocity

@@ -55,10 +55,6 @@ void LightingDemo::_initializeScene()
     _renderer->setClearColor(0,0,0);
 
 	Level::Load("Level1.xml", _world);
-
-	GameObject * s = new GameObject("lol");
-	_world->add(s);
-	s->setBehaviour(new ArmBehaviour(true));
 }
 
 void LightingDemo::_render() {
