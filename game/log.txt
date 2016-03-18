@@ -31,12 +31,11 @@ Compiling shader...
 Shader compiled ok.
 Program linked ok.
 
-Level Loader: Loading level "Level1.xml"...
-Loading assets/mge/models/CrossHallway_Floor.obj...24
-12
+Loading assets/mge/models/RightArm.obj...3182
+5482
 Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadFloorUV.png with id 1 loaded.
+Mesh loaded and buffered:5482 triangles.
+Texture assets/mge/textures/HandUV.png with id 1 loaded.
 Caching texture.
 
 Program created with id:4
@@ -48,133 +47,144 @@ Compiling shader...
 Shader compiled ok.
 Program linked ok.
 
+Loading assets/mge/models/LeftArm.obj...5247
+2621
+Tangents calculated!
+Mesh loaded and buffered:2621 triangles.
+Level Loader: Loading level "Level.xml"...
+Loading assets/mge/models/CrossHallway_Floor.obj...24
+12
+Tangents calculated!
+Mesh loaded and buffered:12 triangles.
+Texture assets/mge/textures/CrossroadFloorUV.png with id 2 loaded.
+Caching texture.
 Loading assets/mge/models/Trolley.obj...720
 948
 Tangents calculated!
 Mesh loaded and buffered:948 triangles.
-Texture assets/mge/textures/Trolley.png with id 2 loaded.
+Texture assets/mge/textures/Trolley.png with id 3 loaded.
 Caching texture.
 Loading assets/mge/models/Wetfloor_Sign.obj...424
 336
 Tangents calculated!
 Mesh loaded and buffered:336 triangles.
-Texture assets/mge/textures/Wetfloor Sign Guideline.png with id 3 loaded.
+Texture assets/mge/textures/Wetfloor Sign Guideline.png with id 4 loaded.
 Caching texture.
 Loading assets/mge/models/Hallway_Ceilling.obj...76
 38
 Tangents calculated!
 Mesh loaded and buffered:38 triangles.
-Texture assets/mge/textures/HallwayCeillingUV.png with id 4 loaded.
+Texture assets/mge/textures/HallwayCeillingUV.png with id 5 loaded.
 Caching texture.
 Loading assets/mge/models/Hallway_Wall.obj...196
 168
 Tangents calculated!
 Mesh loaded and buffered:168 triangles.
-Texture assets/mge/textures/HallwayWallUV.png with id 5 loaded.
+Texture assets/mge/textures/HallwayWallUV.png with id 6 loaded.
 Caching texture.
 Loading assets/mge/models/Hallway_Floor.obj...24
 12
 Tangents calculated!
 Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/HallwayFloorUV.png with id 6 loaded.
+Texture assets/mge/textures/HallwayFloorUV.png with id 7 loaded.
 Caching texture.
 Loading assets/mge/models/PhotoFrame.obj...88
 48
 Tangents calculated!
 Mesh loaded and buffered:48 triangles.
-Texture assets/mge/textures/PhotoUV.png with id 7 loaded.
+Texture assets/mge/textures/PhotoUV.png with id 8 loaded.
 Caching texture.
 Loading assets/mge/models/ComputerMonitor.obj...188
 106
 Tangents calculated!
 Mesh loaded and buffered:106 triangles.
-Texture assets/mge/textures/ComputerScreen.png with id 8 loaded.
+Texture assets/mge/textures/ComputerScreen.png with id 9 loaded.
 Caching texture.
 Loading assets/mge/models/Plants2.obj...740
 732
 Tangents calculated!
 Mesh loaded and buffered:732 triangles.
-Texture assets/mge/textures/Plants2.png with id 9 loaded.
+Texture assets/mge/textures/Plants2.png with id 10 loaded.
 Caching texture.
 Loading assets/mge/models/Waiting_Chairs.obj...622
 448
 Tangents calculated!
 Mesh loaded and buffered:448 triangles.
-Texture assets/mge/textures/Waiting Chairs 1.png with id 10 loaded.
+Texture assets/mge/textures/Waiting Chairs 1.png with id 11 loaded.
 Caching texture.
-Texture assets/mge/textures/CrossroadFloorUVMID.png with id 11 loaded.
+Texture assets/mge/textures/CrossroadFloorUVMID.png with id 12 loaded.
 Caching texture.
 Loading assets/mge/models/Document2.obj...504
 252
 Tangents calculated!
 Mesh loaded and buffered:252 triangles.
-Texture assets/mge/textures/Documentholder2UV.png with id 12 loaded.
+Texture assets/mge/textures/Documentholder2UV.png with id 13 loaded.
 Caching texture.
 Loading assets/mge/models/Pills.obj...280
 216
 Tangents calculated!
 Mesh loaded and buffered:216 triangles.
-Texture assets/mge/textures/PillsUV.png with id 13 loaded.
+Texture assets/mge/textures/PillsUV.png with id 14 loaded.
 Caching texture.
 Loading assets/mge/models/CrossHallway_Wall.obj...354
 168
 Tangents calculated!
 Mesh loaded and buffered:168 triangles.
-Texture assets/mge/textures/CrossroadWallUV.png with id 14 loaded.
+Texture assets/mge/textures/CrossroadWallUV.png with id 15 loaded.
 Caching texture.
 Loading assets/mge/models/Magazines.obj...222
 180
 Tangents calculated!
 Mesh loaded and buffered:180 triangles.
-Texture assets/mge/textures/Tiny Table with magazines 1.png with id 15 loaded.
+Texture assets/mge/textures/Tiny Table with magazines 1.png with id 16 loaded.
 Caching texture.
 Loading assets/mge/models/BeerBottle.obj...339
 418
 Tangents calculated!
 Mesh loaded and buffered:418 triangles.
-Texture assets/mge/textures/BottleUV.png with id 16 loaded.
+Texture assets/mge/textures/BottleUV.png with id 17 loaded.
 Caching texture.
 Loading assets/mge/models/CrossHallway_Ceilling.obj...24
 12
 Tangents calculated!
 Mesh loaded and buffered:12 triangles.
-Texture assets/mge/textures/CrossroadCeilling.png with id 17 loaded.
+Texture assets/mge/textures/CrossroadCeilling.png with id 18 loaded.
 Caching texture.
 Loading assets/mge/models/Plants3.obj...806
 660
 Tangents calculated!
 Mesh loaded and buffered:660 triangles.
-Texture assets/mge/textures/Plants3.png with id 18 loaded.
+Texture assets/mge/textures/Plants3.png with id 19 loaded.
 Caching texture.
 Loading assets/mge/models/Plants1.obj...683
 736
 Tangents calculated!
 Mesh loaded and buffered:736 triangles.
-Texture assets/mge/textures/Plants1.png with id 19 loaded.
+Texture assets/mge/textures/Plants1.png with id 20 loaded.
 Caching texture.
 Loading assets/mge/models/Syringe.obj...433
 410
 Tangents calculated!
 Mesh loaded and buffered:410 triangles.
-Texture assets/mge/textures/SyringUV.png with id 20 loaded.
+Texture assets/mge/textures/SyringUV.png with id 21 loaded.
 Caching texture.
 Loading assets/mge/models/Screen.obj...936
 924
 Tangents calculated!
 Mesh loaded and buffered:924 triangles.
-Texture assets/mge/textures/Screen 1.png with id 21 loaded.
+Texture assets/mge/textures/Screen 1.png with id 22 loaded.
 Caching texture.
 Loading assets/mge/models/Medicine_Cabinet.obj...128
 124
 Tangents calculated!
 Mesh loaded and buffered:124 triangles.
-Texture assets/mge/textures/Medicine Cabinet.png with id 22 loaded.
+Texture assets/mge/textures/Medicine Cabinet.png with id 23 loaded.
 Caching texture.
 Loading assets/mge/models/Infuus2.obj...816
 816
 Tangents calculated!
 Mesh loaded and buffered:816 triangles.
-Texture assets/mge/textures/InfuusLevel2.png with id 23 loaded.
+Texture assets/mge/textures/InfuusLevel2.png with id 24 loaded.
 Caching texture.
 Loading assets/mge/models/Document1.obj...173
 136
@@ -184,49 +194,49 @@ Loading assets/mge/models/Recption1.obj...267
 176
 Tangents calculated!
 Mesh loaded and buffered:176 triangles.
-Texture assets/mge/textures/Desk1.png with id 24 loaded.
+Texture assets/mge/textures/Desk1.png with id 25 loaded.
 Caching texture.
-Texture assets/mge/textures/Infuus.png with id 25 loaded.
+Texture assets/mge/textures/Infuus.png with id 26 loaded.
 Caching texture.
 Loading assets/mge/models/Closet.obj...300
 294
 Tangents calculated!
 Mesh loaded and buffered:294 triangles.
-Texture assets/mge/textures/Closet 1.png with id 26 loaded.
+Texture assets/mge/textures/Closet 1.png with id 27 loaded.
 Caching texture.
 Loading assets/mge/models/Trash3.obj...199
 208
 Tangents calculated!
 Mesh loaded and buffered:208 triangles.
-Texture assets/mge/textures/Bin3.png with id 27 loaded.
+Texture assets/mge/textures/Bin3.png with id 28 loaded.
 Caching texture.
 Loading assets/mge/models/HospitalChair.obj...336
 328
 Tangents calculated!
 Mesh loaded and buffered:328 triangles.
-Texture assets/mge/textures/Random Chair 2.png with id 28 loaded.
+Texture assets/mge/textures/Random Chair 2.png with id 29 loaded.
 Caching texture.
 Loading assets/mge/models/Standing_Lamp.obj...557
 666
 Tangents calculated!
 Mesh loaded and buffered:666 triangles.
-Texture assets/mge/textures/Standing Lamp.png with id 29 loaded.
+Texture assets/mge/textures/Standing Lamp.png with id 30 loaded.
 Caching texture.
-Texture assets/mge/textures/HallwayWallUVMID.png with id 30 loaded.
+Texture assets/mge/textures/HallwayWallUVMID.png with id 31 loaded.
 Caching texture.
-Texture assets/mge/textures/HallwayCeillingUVMID.png with id 31 loaded.
+Texture assets/mge/textures/HallwayCeillingUVMID.png with id 32 loaded.
 Caching texture.
 Loading assets/mge/models/Keyboard.obj...18
 6
 Tangents calculated!
 Mesh loaded and buffered:6 triangles.
-Texture assets/mge/textures/Keyboard.png with id 32 loaded.
+Texture assets/mge/textures/Keyboard.png with id 33 loaded.
 Caching texture.
 Loading assets/mge/models/TurretCamera.obj...454
 354
 Tangents calculated!
 Mesh loaded and buffered:354 triangles.
-Texture assets/mge/textures/Camera Turrets.png with id 33 loaded.
+Texture assets/mge/textures/Camera Turrets.png with id 34 loaded.
 Caching texture.
 Loading assets/mge/models/TurretHolder.obj...78
 42
@@ -236,58 +246,58 @@ Loading assets/mge/models/Mop.obj...1322
 1066
 Tangents calculated!
 Mesh loaded and buffered:1066 triangles.
-Texture assets/mge/textures/MopUtility.png with id 34 loaded.
+Texture assets/mge/textures/MopUtility.png with id 35 loaded.
 Caching texture.
 Loading assets/mge/models/ExitSign.obj...184
 148
 Tangents calculated!
 Mesh loaded and buffered:148 triangles.
-Texture assets/mge/textures/Exit Sign.png with id 35 loaded.
+Texture assets/mge/textures/Exit Sign.png with id 36 loaded.
 Caching texture.
 Loading assets/mge/models/Table.obj...336
 260
 Tangents calculated!
 Mesh loaded and buffered:260 triangles.
-Texture assets/mge/textures/Tiny Table with magazines guideline more blue.png with id 36 loaded.
+Texture assets/mge/textures/Tiny Table with magazines guideline more blue.png with id 37 loaded.
 Caching texture.
 Loading assets/mge/models/Medicine_Cabinet_2.obj...168
 156
 Tangents calculated!
 Mesh loaded and buffered:156 triangles.
-Texture assets/mge/textures/Medicine Cabinet 2.png with id 37 loaded.
+Texture assets/mge/textures/Medicine Cabinet 2.png with id 38 loaded.
 Caching texture.
 Loading assets/mge/models/Bed.obj...752
 802
 Tangents calculated!
 Mesh loaded and buffered:802 triangles.
-Texture assets/mge/textures/Hospital Bed 1.png with id 38 loaded.
+Texture assets/mge/textures/Hospital Bed 1.png with id 39 loaded.
 Caching texture.
-Texture assets/mge/textures/Syringes Sign Guideline.png with id 39 loaded.
+Texture assets/mge/textures/Syringes Sign Guideline.png with id 40 loaded.
 Caching texture.
-Texture assets/mge/textures/HallwayFloorUVMID.png with id 40 loaded.
+Texture assets/mge/textures/HallwayFloorUVMID.png with id 41 loaded.
 Caching texture.
 Loading assets/mge/models/Trash1.obj...Error reading obj, needing v,vn,vt
-Texture assets/mge/textures/Bin1.png with id 41 loaded.
+Texture assets/mge/textures/Bin1.png with id 42 loaded.
 Caching texture.
-Texture assets/mge/textures/Wetfloor Sign.png with id 42 loaded.
+Texture assets/mge/textures/Wetfloor Sign.png with id 43 loaded.
 Caching texture.
-Texture assets/mge/textures/Hospital Bed guideline 1.png with id 43 loaded.
+Texture assets/mge/textures/Hospital Bed guideline 1.png with id 44 loaded.
 Caching texture.
 Loading assets/mge/models/Infuus1.obj...440
 436
 Tangents calculated!
 Mesh loaded and buffered:436 triangles.
-Texture assets/mge/textures/Desk1blue.png with id 44 loaded.
+Texture assets/mge/textures/Desk1blue.png with id 45 loaded.
 Caching texture.
-Texture assets/mge/textures/Bin3blue.png with id 45 loaded.
+Texture assets/mge/textures/Bin3blue.png with id 46 loaded.
 Caching texture.
 Loading assets/mge/models/CleaningUtility.obj...1476
 1328
 Tangents calculated!
 Mesh loaded and buffered:1328 triangles.
-Texture assets/mge/textures/CleaningUtility.png with id 46 loaded.
+Texture assets/mge/textures/CleaningUtility.png with id 47 loaded.
 Caching texture.
-Texture assets/mge/textures/Closet guideline.png with id 47 loaded.
+Texture assets/mge/textures/Closet guideline.png with id 48 loaded.
 Caching texture.
 Loading assets/mge/models/Cube.obj...24
 12
@@ -301,17 +311,17 @@ Loading assets/mge/models/plane_small.obj...4
 2
 Tangents calculated!
 Mesh loaded and buffered:2 triangles.
-Texture assets/mge/textures/ButterflySprite001.png with id 48 loaded.
+Texture assets/mge/textures/ButterflySprite001.png with id 49 loaded.
 Caching texture.
-Texture assets/mge/textures/ButterflySprite002.png with id 49 loaded.
+Texture assets/mge/textures/ButterflySprite002.png with id 50 loaded.
 Caching texture.
-Texture assets/mge/textures/ButterflySprite003.png with id 50 loaded.
+Texture assets/mge/textures/ButterflySprite003.png with id 51 loaded.
 Caching texture.
-Texture assets/mge/textures/ButterflySprite004.png with id 51 loaded.
+Texture assets/mge/textures/ButterflySprite004.png with id 52 loaded.
 Caching texture.
-Texture assets/mge/textures/ButterflySprite005.png with id 52 loaded.
+Texture assets/mge/textures/ButterflySprite005.png with id 53 loaded.
 Caching texture.
-Texture assets/mge/textures/ButterflySprite006.png with id 53 loaded.
+Texture assets/mge/textures/ButterflySprite006.png with id 54 loaded.
 Caching texture.
 
 Program created with id:7
@@ -324,13 +334,112 @@ Shader compiled ok.
 Program linked ok.
 
 Level Loader: Setting up Hierarchy...
-Level Loader: "Level1.xml" loaded successfully!
+Level Loader: "Level.xml" loaded successfully!
 
 Engine initialized.
 
 Initializing HUD
 HUD initialized.
 
+G: 0 W: 0 F: 0 J: 0
+G: 1 W: 1 F: 1 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+G: 1 W: 1 F: 0 J: 0
+GC running on:root
+GC running on:player
+GC running on:camera
+GC running on:RightArm
+GC running on:LeftArm
+GC running on:AudioSource
+GC running on:AudioSource
+GC running on:AudioSource
+GC running on:AudioSource
+GC running on:AudioSource
+GC running on:AudioSource
+GC running on:AudioSource
+GC running on:AudioSource
+GC running on:AudioSource
+GC running on:
+GC running on:Directional light
+GC running on:
+GC running on:
+GC running on:
+GC running on:
+GC running on:
+GC running on:
+GC running on:
+GC running on:Butterfly
 GC running on:PhotoFrame
 GC running on:Turret
 GC running on:TurretCamera
@@ -605,8 +714,6 @@ GC running on:CornerPillar
 GC running on:3 rows hallway (4)
 GC running on:CornerPillar (5)
 GC running on:CornerPillar
-GC running on:
-GC running on:
 GC running on:Butterfly Waypoints
 GC running on:Butterfly Waypoint (20)
 GC running on:Butterfly Waypoint (2)
@@ -637,13 +744,6 @@ GC running on:Butterfly Waypoint (27)
 GC running on:Butterfly Waypoint (21)
 GC running on:Butterfly Waypoint (14)
 GC running on:Butterfly Waypoint (9)
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
 GC running on:Furniture
 GC running on:Trolley (4)
 GC running on:Wetfloor_Sign_WetFloot_Guide (1)
@@ -848,211 +948,7 @@ GC running on:Cube (1)
 GC running on:ExitSign (1)
 GC running on:ExitSign
 GC running on:HospitalChair_2 (2)
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
 GC running on:PlayerSpawn
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
 GC running on:EndTrigger
 GC running on:SoundTrigger (1)
 GC running on:SoundTrigger
-GC running on:Directional light
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:
-GC running on:player
-GC running on:camera
-GC running on:AudioSource
-GC running on:AudioSource
-GC running on:
-Loading assets/mge/models/cube.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Level Loader: Loading level "Level2.xml"...
-Loading assets/mge/models/CrossHallway_Floor.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Loading assets/mge/models/Trolley.obj...720
-948
-Tangents calculated!
-Mesh loaded and buffered:948 triangles.
-Loading assets/mge/models/Wetfloor_Sign.obj...424
-336
-Tangents calculated!
-Mesh loaded and buffered:336 triangles.
-Loading assets/mge/models/Hallway_Ceilling.obj...76
-38
-Tangents calculated!
-Mesh loaded and buffered:38 triangles.
-Loading assets/mge/models/Hallway_Wall.obj...196
-168
-Tangents calculated!
-Mesh loaded and buffered:168 triangles.
-Loading assets/mge/models/Hallway_Floor.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Loading assets/mge/models/PhotoFrame.obj...88
-48
-Tangents calculated!
-Mesh loaded and buffered:48 triangles.
-Loading assets/mge/models/ComputerMonitor.obj...188
-106
-Tangents calculated!
-Mesh loaded and buffered:106 triangles.
-Loading assets/mge/models/Plants2.obj...740
-732
-Tangents calculated!
-Mesh loaded and buffered:732 triangles.
-Loading assets/mge/models/Waiting_Chairs.obj...622
-448
-Tangents calculated!
-Mesh loaded and buffered:448 triangles.
-Loading assets/mge/models/Document2.obj...504
-252
-Tangents calculated!
-Mesh loaded and buffered:252 triangles.
-Loading assets/mge/models/Pills.obj...280
-216
-Tangents calculated!
-Mesh loaded and buffered:216 triangles.
-Loading assets/mge/models/CrossHallway_Wall.obj...354
-168
-Tangents calculated!
-Mesh loaded and buffered:168 triangles.
-Loading assets/mge/models/Magazines.obj...222
-180
-Tangents calculated!
-Mesh loaded and buffered:180 triangles.
-Loading assets/mge/models/BeerBottle.obj...339
-418
-Tangents calculated!
-Mesh loaded and buffered:418 triangles.
-Loading assets/mge/models/CrossHallway_Ceilling.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Loading assets/mge/models/Plants3.obj...806
-660
-Tangents calculated!
-Mesh loaded and buffered:660 triangles.
-Loading assets/mge/models/Plants1.obj...683
-736
-Tangents calculated!
-Mesh loaded and buffered:736 triangles.
-Loading assets/mge/models/Syringe.obj...433
-410
-Tangents calculated!
-Mesh loaded and buffered:410 triangles.
-Loading assets/mge/models/Screen.obj...936
-924
-Tangents calculated!
-Mesh loaded and buffered:924 triangles.
-Loading assets/mge/models/Medicine_Cabinet.obj...128
-124
-Tangents calculated!
-Mesh loaded and buffered:124 triangles.
-Loading assets/mge/models/Infuus2.obj...816
-816
-Tangents calculated!
-Mesh loaded and buffered:816 triangles.
-Loading assets/mge/models/Document1.obj...173
-136
-Tangents calculated!
-Mesh loaded and buffered:136 triangles.
-Loading assets/mge/models/Recption1.obj...267
-176
-Tangents calculated!
-Mesh loaded and buffered:176 triangles.
-Loading assets/mge/models/Closet.obj...300
-294
-Tangents calculated!
-Mesh loaded and buffered:294 triangles.
-Loading assets/mge/models/Trash3.obj...199
-208
-Tangents calculated!
-Mesh loaded and buffered:208 triangles.
-Loading assets/mge/models/HospitalChair.obj...336
-328
-Tangents calculated!
-Mesh loaded and buffered:328 triangles.
-Loading assets/mge/models/Standing_Lamp.obj...557
-666
-Tangents calculated!
-Mesh loaded and buffered:666 triangles.
-Loading assets/mge/models/Keyboard.obj...18
-6
-Tangents calculated!
-Mesh loaded and buffered:6 triangles.
-Loading assets/mge/models/TurretCamera.obj...454
-354
-Tangents calculated!
-Mesh loaded and buffered:354 triangles.
-Loading assets/mge/models/TurretHolder.obj...78
-42
-Tangents calculated!
-Mesh loaded and buffered:42 triangles.
-Loading assets/mge/models/Mop.obj...1322
-1066
-Tangents calculated!
-Mesh loaded and buffered:1066 triangles.
-Loading assets/mge/models/ExitSign.obj...184
-148
-Tangents calculated!
-Mesh loaded and buffered:148 triangles.
-Loading assets/mge/models/Table.obj...336
-260
-Tangents calculated!
-Mesh loaded and buffered:260 triangles.
-Loading assets/mge/models/Medicine_Cabinet_2.obj...168
-156
-Tangents calculated!
-Mesh loaded and buffered:156 triangles.
-Loading assets/mge/models/Bed.obj...752
-802
-Tangents calculated!
-Mesh loaded and buffered:802 triangles.
-Loading assets/mge/models/Trash1.obj...Error reading obj, needing v,vn,vt
-Loading assets/mge/models/Infuus1.obj...440
-436
-Tangents calculated!
-Mesh loaded and buffered:436 triangles.
-Loading assets/mge/models/CleaningUtility.obj...1476
-1328
-Tangents calculated!
-Mesh loaded and buffered:1328 triangles.
-Loading assets/mge/models/Cube.obj...24
-12
-Tangents calculated!
-Mesh loaded and buffered:12 triangles.
-Loading assets/mge/models/CornerPillar.obj...92
-76
-Tangents calculated!
-Mesh loaded and buffered:76 triangles.
-Loading assets/mge/models/plane_small.obj...4
-2
-Tangents calculated!
-Mesh loaded and buffered:2 triangles.
-Level Loader: Setting up Hierarchy...
-Level Loader: "Level2.xml" loaded successfully!

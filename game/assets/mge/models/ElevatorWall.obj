@@ -1,7 +1,7 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
 mtllib ElevatorWall.mtl
-g default
+g ElevatorWall
 v 0.263445 -3.000000 3.500000
 v 0.263445 -3.000000 -3.500000
 v 0.263445 -2.684495 -3.500000

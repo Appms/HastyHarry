@@ -26,7 +26,7 @@ void Turret::update( float step )
 {
 	if (glm::distance(_owner->getWorldPosition(), _target->getWorldPosition()) < _radius) {
 
-		glm::vec3 forward = glm::normalize(_target->getWorldPosition() - _owner->getWorldPosition());
+ 		glm::vec3 forward = glm::normalize(_target->getWorldPosition() - _owner->getWorldPosition());
 		glm::vec3 right = glm::normalize(glm::cross(glm::vec3(0, 1, 0), forward));
 		glm::vec3 up = glm::normalize(glm::cross(forward, right));
 
@@ -41,7 +41,7 @@ void Turret::update( float step )
 			Mesh* planeMeshDefault = Mesh::load(config::MGE_MODEL_PATH + "Syringe.obj");
 			AbstractMaterial* textureMaterial = new TextureMaterial(Texture::load(config::MGE_TEXTURE_PATH + "SyringUV.png"));
 			
-			/*GameObject* projectile = new GameObject("Projectile", _owner->getWorldPosition(), GameObject::PhysicsType::ANIMATEDBODY, GameObject::ColliderType::CUBE);
+			GameObject* projectile = new GameObject("Projectile", _owner->getWorldPosition(), GameObject::PhysicsType::ANIMATEDBODY, GameObject::ColliderType::CUBE);
 			Level::CurrentWorld->add(projectile);
 			projectile->setMeshWithCollider(planeMeshDefault);
 			projectile->setMaterial(textureMaterial);

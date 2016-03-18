@@ -1,7 +1,7 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
 mtllib ElevatorDoor.mtl
-g default
+g ElevatorDoor
 v 0.009990 -2.569853 3.510313
 v 0.587467 -2.569853 3.510313
 v 0.009990 1.012657 3.510313
@@ -199,7 +199,7 @@ vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 vn -1.000000 0.000000 0.000000
 s 1
-g ElevatorDoorRight
+g ElevatorDoor
 usemtl lambert11SG
 f 1/1/1 23/2/2 3/4/3
 f 3/4/3 23/2/2 24/3/4
