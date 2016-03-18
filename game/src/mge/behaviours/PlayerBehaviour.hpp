@@ -38,6 +38,7 @@ class PlayerBehaviour : public AbstractBehaviour
 		bool _wallJumped;
 		bool _walking;
 		bool _moving;
+		bool _gravityReset;
 
 		glm::vec3 _inputVector;
 		glm::vec3 _moveVelocity;
@@ -50,8 +51,6 @@ class PlayerBehaviour : public AbstractBehaviour
 		bool _dead;
 		float _respawnTimer;
 
-
-		//TODO Add switches
 		std::vector<GameObject*> _enemies;
 
 		PlayerControllerCB _playerControllerCB;

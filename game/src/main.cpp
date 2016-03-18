@@ -29,9 +29,9 @@
  */
 int main()
 {
-	std:ofstream out("log.txt");
-	std::streambuf *coutbuf = std::cout.rdbuf();
-	std::cout.rdbuf(out.rdbuf());
+	//std:ofstream out("log.txt");
+	//std::streambuf *coutbuf = std::cout.rdbuf();
+	//std::cout.rdbuf(out.rdbuf());
 
 	srand(time(NULL));
 
@@ -53,7 +53,7 @@ int main()
 
 	delete game;
 
-	std::cout.rdbuf(coutbuf);
+	//std::cout.rdbuf(coutbuf);
 
     return 0;
 }
